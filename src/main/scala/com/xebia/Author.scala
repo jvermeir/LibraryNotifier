@@ -1,3 +1,5 @@
+package com.xebia
+
 
 case class Author(val firstName:String, val lastName:String)
 

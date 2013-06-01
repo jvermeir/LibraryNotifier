@@ -1,3 +1,5 @@
+package com.xebia
+
 
 import org.scalatest.junit.JUnitRunner
 import org.scalatest.FeatureSpec

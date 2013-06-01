@@ -1,3 +1,5 @@
+package com.xebia
+
 import java.io.File
 import org.apache.commons.io.FileUtils
 
