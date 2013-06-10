@@ -38,14 +38,16 @@ object LibraryClient {
       .map(_ group 2).getOrElse("")
     val authorWithoutWebLink = Author(authorAsString)
     // TODO: find out about extractor pattern
-    Author(authorWithoutWebLink, link)
+    val linkWithAantalFieldSetTo60=link.replaceFirst("aantal=10","aantal=60")
+    Author(authorWithoutWebLink, linkWithAantalFieldSetTo60)
   }
 
   def getAuthorLinkFromAWebPage(webPage: String): String = {
     val pattern = """(?m)<td class="thsearch_wordlink">.*\n(.*)\n.*</td>""".r
-    pattern
+    val result = pattern
       .findFirstMatchIn(webPage)
       .map(_ group 1).getOrElse("")
+    result
   }
 
   def startBicatSession: Unit = {

@@ -78,8 +78,22 @@ class LibraryClientTest extends FeatureSpec with GivenWhenThen with MustMatchers
       val bookPageAsHtml: String = fromFile("data/danBrownBooks.html").mkString
       When("we get the list of books")
       val listOfBooks:List[String] = LibraryClient.getBooksFromHtmlPage(bookPageAsHtml, Author("Brown, Dan"))
+      Then("the result contains 'The Da Vinci code' and has length 3")
       listOfBooks must contain ("The Da Vinci code")
       listOfBooks.size must be === 3
+    }
+
+    scenario("get the list of books from the Internet for an author") {
+      Given("A LibraryClient")
+      LibraryClient.startBicatSession
+      val data: String = LibraryClient.getContentsOfSearchResult("Brown, Dan")
+      val danBrown = LibraryClient.getAuthorFromAWebPage(data)
+      When("we get the books for 'Brown, Dan'")
+      val bookPageAsHtml:String = LibraryClient.getBookPageAsHtmlByAuthor(danBrown)
+      val listOfBooks:List[String] = LibraryClient.getBooksFromHtmlPage(bookPageAsHtml, Author("Brown, Dan"))
+      Then("the result contains 'The Da Vinci code' and has length of at least 15")
+      listOfBooks must contain ("The Da Vinci code")
+      listOfBooks.size must be > 15
     }
 
     // Don't really need this stuff...
