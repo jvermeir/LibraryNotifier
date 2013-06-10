@@ -1,0 +1,659 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="stylesheet" type="text/css" href="/portal/css/mystyle.css" media="screen"><!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/rsrc/css/mystyle_ie.css"><![endif]--><link rel="stylesheet" type="text/css" href="/rsrc/portal/css/mystyle_print.css" media="print">
+<link rel="icon" type="image/png" href="/images/favicon.ico">
+<link xmlns:og="http://ogp.me/ns#" rel="stylesheet" type="text/css" href="../plugins/starbox/css/starbox.css" media="screen">
+<link xmlns:og="http://ogp.me/ns#" rel="stylesheet" type="text/css" href="../plugins/modalbox/css/modalbox.css" media="screen">
+<link xmlns:og="http://ogp.me/ns#" rel="stylesheet" type="text/css" href="../plugins/autocomplete/css/autocomplete.css" media="screen">
+<link xmlns:og="http://ogp.me/ns#" rel="stylesheet" type="text/css" href="../plugins/tooltip/css/opentip.css" media="screen">
+<title>Schrijver: Brown, Dan </title>
+<script>
+		var GactorEmail = 'false'; /* tijdelijke Globale variabele*/
+		var Gquerystring = 'wzstype=;zl_v=N;woord=Brown%2C%20Dan;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Brown%2C%20Dan;wzsrc=;recent=N;rubplus=TS0;recno=20543796;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;sn=11;var=portal;aantal=10'; /* tijdelijke Globale variabele*/
+		var Gbaseurl = '/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal'; /* tijdelijke Globale variabele*/
+		var Gsid = 'e26e877c-50a5-4f57-804e-9b133be37a0b'; /* tijdelijke Globale variabele*/
+		var Gmag_cwise = '0'; /* tijdelijke Globale variabele*/
+	</script><script language="Javascript">
+function checkFields_kl() {
+    var lener = document.loginform_kl.newlener.value;
+    if (lener.length==0) {
+        //alert("lenernummer invullen");
+        document.loginform_kl.newlener.focus();
+        return false;
+    }
+    var pin   = document.loginform_kl.pinkode.value;
+    if (pin.length==0) {
+        //alert("pincode invullen");
+        document.loginform_kl.pinkode.focus();
+        return false;
+    }
+    return true;
+}
+    var dcat = 0;
+    var dcats = ['1','2','3','4'];
+    var ingangcnt = [11,11,9,9];
+    var ingangoms = [['Schrijver','Titel','Reeks/serie','Onderwerp','Pim rubriek','Indeling Siso','Indeling Bladmuziek','Indeling Muziek','Woorden','ISBN'],['Schrijver','Titel','Reeks/serie','Onderwerp ','Pim rubriek','Indeling Siso','Indeling Bladmuziek','Indeling Muziek','Woorden','ISBN'],['Componist/Uitvoerende','Titel','Reeks/serie','Onderwerp ','Pim rubriek','Indeling bladmuziek','Woorden','ISBN etc'],['Componist/Uitvoerende','Titel','Reeks/serie','Onderwerp ','Pim rubriek','Indeling muziek','Woorden','ISBN etc']];
+    var ingangcod = [['01TS0','01TX0','01TX2','01TO0','01TP0','01TI0','01TI2','01TI4','01W>','01DN'],['03TS0','03TX0','03TX2','03TO0','03TP0','03TI0','03TI2','03TI4','03W>','03DN'],['12TS0','12TX0','12TX2','12TO0','12TP0','12TI2','12W>','12DN'],['13TS0','13TX0','13TX2','13TO0','13TP0','13TI4','13W>','13DN']];
+    var dcatgel = [0,0,0,0];
+    //
+    function setingang (dcatname) {
+        //window.status="setingang ["+dcatname+"]"
+        if (typeof document.zoekform=="undefined") {
+            return;
+        }   
+        var sl = document.zoekform.ingang;
+        var dcat=-1;
+	for (var i=0;i<dcats.length;i++) {
+	    if (dcats[i]==dcatname) {
+		dcat=i;
+		//alert("DCAT="+i.toString());
+	    }
+        }
+	//alert("sl.value="+sl.value);
+	if (sl.options[0]==null) {
+	  sl.options[i]= new Option();
+	  //alert("sl.value=new");
+	}
+	sl.options[0].value='00';
+	sl.options[0].text ='-- kies --';
+        if (dcat>=0) {
+  	  for (var i=1;i<ingangcnt[dcat]+1;i++) {
+	    if (sl.options[i]==null) {
+		sl.options[i]= new Option();
+	    }
+	    sl.options[i].value=ingangcod[dcat][i-1]; 
+	    sl.options[i].text =ingangoms[dcat][i-1]; 
+	  }
+	  sl.options.length=ingangcnt[dcat];
+        } else {
+	  sl.options.length=1;
+        }
+	sl.selectedIndex=0;
+        if (dcatgel[dcat]) {
+          document.zoekform.zl_v.value='N';
+        } else {
+          document.zoekform.zl_v.value='';
+        }
+    } 
+    //
+    function presetdcat (dcat,ingang) {
+        if (typeof document.zoekform=="undefined") {
+            return;
+        }   
+        var sl = document.zoekform.ingang;
+        var si =-1;
+        var ssi=0;
+	for (var i=0;i<dcats.length;i++) {
+	    if (dcats[i]==dcat) {
+		si=i;
+	    }
+        }
+        setingang(dcat);
+        if (si>=0) {
+	  for (var i=0;i<sl.options.length;i++) {
+	    if (sl.options[i].value==ingang) {
+		ssi=i;
+	    }
+          }
+        }
+        document.zoekform.dcat.selectedIndex=si+1;
+	sl.selectedIndex=ssi;
+    }
+    //
+    var ext_zoeken = false; 
+    //
+    function check_form() {
+      if (typeof document.zoekform=="undefined") {
+        return true;
+      }   
+      //alert("DCAT="+document.zoekform.dcat.value);
+      //alert("INGANG="+document.zoekform.ingang.value);
+      if (ext_zoeken) {
+         return true;
+      }
+      if (document.zoekform.dcat.value=="0" 
+       || document.zoekform.ingang.value=="00") {
+        alert("Kies eerst een (deel)catalogus en een zoekingang");
+        return false;
+      }
+      return true;
+    }
+var FALLBACK_MS=600000;
+function fallback() {
+  if (typeof(this["_local_fallback"])=="function") {
+    _local_fallback("http://bicat.cultura-ede.nl/cgi-bin/bx.pl?event=start&sid=e26e877c-50a5-4f57-804e-9b133be37a0b&groepfx=10&vestnr=8399&prt=INTERNET&cdef=002&taal=1&zl_v=N&sn=12&var=portal");
+  } else {    
+    var url="http://bicat.cultura-ede.nl/cgi-bin/bx.pl?event=start&sid=e26e877c-50a5-4f57-804e-9b133be37a0b&groepfx=10&vestnr=8399&prt=INTERNET&cdef=002&taal=1&zl_v=N&sn=12&var=portal";
+    document.location = url;
+  }
+}
+
+function doeExternWindow(uri) {
+  var w = window.open(uri,"extrawindow");
+  w.focus();
+}
+function Init() {
+  if (typeof(this["_local_init"])=="function") {
+    _local_init();
+  } else {    
+    presetdcat('1','01TS0');
+presetdcat('1','01TS0');
+setTimeout('fallback()',FALLBACK_MS);
+if ((typeof document.zoekform!="undefined") && (typeof document.zoekform.woord!="undefined")) {
+  document.zoekform.woord.focus();
+} else {
+  if ((typeof document.forms[0]!="undefined") && (typeof document.forms[0].elements[0]!="undefined")) {
+    document.forms[0].elements[0].focus();
+  }
+}
+
+  }
+}
+function doeHelp(uri) {
+  var w = window.open(uri,"helpwindow","height=400,width=640,status=no,resizable=yes");
+  w.focus();
+}
+/* hier include files */
+</script><noscript xmlns:og="http://ogp.me/ns#"><meta http-equiv="Refresh" content="0; URL=http://bicat.cultura-ede.nl/cgi-bin/bx.pl?wzstype=&amp;zl_v=N&amp;woord=Brown%2C%20Dan&amp;vestfiltgrp=&amp;dcat=1&amp;nieuw=&amp;extsdef=01&amp;event=titelset&amp;qs=Brown%2C%20Dan&amp;wzsrc=&amp;recent=N&amp;rubplus=TS0&amp;recno=20543796&amp;sid=e26e877c-50a5-4f57-804e-9b133be37a0b&amp;groepfx=10&amp;vestnr=8399&amp;prt=INTERNET&amp;cdef=002&amp;taal=1&amp;sn=11&amp;aantal=10&amp;var=geen_js;"></noscript>
+<script xmlns:og="http://ogp.me/ns#" type="text/javascript" src="../plugins/browserdetect/js/browserdetect.js"></script><script xmlns:og="http://ogp.me/ns#" type="text/javascript" src="/rsrc/js/prototype.js"></script><script xmlns:og="http://ogp.me/ns#" type="text/javascript" src="/rsrc/js/scriptaculous.js"></script><script xmlns:og="http://ogp.me/ns#" type="text/javascript" src="/rsrc/js/wise4all.js"></script><script xmlns:og="http://ogp.me/ns#" type="text/javascript" src="../plugins/starbox/js/starbox.js"></script><script xmlns:og="http://ogp.me/ns#" type="text/javascript" src="../plugins/fabtabs/js/fabtabs.js"></script><script xmlns:og="http://ogp.me/ns#" type="text/javascript" src="../plugins/modalbox/js/modalbox.js"></script><script xmlns:og="http://ogp.me/ns#" type="text/javascript" src="../plugins/editinplace/js/editinplace.js"></script><script xmlns:og="http://ogp.me/ns#" type="text/javascript" src="../plugins/livevalidation/js/livevalidation_prototype.js"></script><script xmlns:og="http://ogp.me/ns#" type="text/javascript" src="../plugins/autocomplete/js/autocomplete.js"></script><script xmlns:og="http://ogp.me/ns#" type="text/javascript" src="../plugins/tooltip/js/opentip.js"></script><!--[if lte IE 9]><script xmlns:og="http://ogp.me/ns#" type="text/javascript" src="../plugins/tooltip/js/excanvas.js"></script><![endif]--><script type="text/javascript">
+				waitForProto('e26e877c-50a5-4f57-804e-9b133be37a0b', '0', '8399', '0',  '0',   '0',   '0',   '0', '0', 'titelset', 'http://bicat.cultura-ede.nl/cgi-bin/bx.pl?wzstype=&zl_v=N&woord=Brown%2C%20Dan&vestfiltgrp=&dcat=1&nieuw=&extsdef=01&event=titelset&qs=Brown%2C%20Dan&wzsrc=&recent=N&rubplus=TS0&recno=20543796&sid=e26e877c-50a5-4f57-804e-9b133be37a0b&groepfx=10&vestnr=8399&prt=INTERNET&cdef=002&taal=1&sn=11&aantal=10&var=geen_js');
+			</script><script type="text/javascript" src="/js/portal/carousel.js"></script><script type="text/javascript" src="/js/portal/menu.js"></script>
+</HEAD>
+<BODY>
+<script type="text/javascript" src="../plugins/dynamicfontsize/js/dynamicfontsize.js"></script><div id="wrapper">
+<div id="header_wrapper">
+<div id="upper_header">
+<div id="clusterLogo">
+<a href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=main"><img alt="Logo Bibliotheek" title="Logo Bibliotheek" src="/images/logo_ede.png"></a><span id="LogoText">Alle vestigingen Ede</span>
+</div>
+<div id="header_banner"></div>
+<div xmlns:og="http://ogp.me/ns#" id="vest_keuze"><a id="keuze_link" href="/cgi-bin/bx.pl?event=vestkeuze;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal" onclick='doModal(this.href+";submap=raw","Kies andere vestiging");return false;'>Kies andere vestiging</a></div>
+<div id="loginblock">
+<form id="login_kl" name="userform" method="post" action="/cgi-bin/bx.pl" onsubmit="loginLokaal('e26e877c-50a5-4f57-804e-9b133be37a0b','8399','wzstype=;zl_v=N;woord=Brown%2C%20Dan;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Brown%2C%20Dan;wzsrc=;recent=N;rubplus=TS0;recno=20543796;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;sn=11;var=portal;aantal=10','login_kl'); return false;">
+<p><label for="newlener" class="default-value" style="display:none;">Gebruikersnaam/lenernummer</label><input type="text" name="newlener" id="newlener" size="10" tabindex="5" title="Gebruikersnaam/lenernummer"><a class="help_knop" onclick="haalWSHelp('login', 'Hoe moet ik inloggen?');return false" href="/error.html" title="Hulp bij aanmelden"></a></p>
+<p><label for="pinkode" class="default-value" style="display:none;">Wachtwoord/pincode</label><input type="password" name="pinkode" id="pinkode" size="10" tabindex="6" title="Wachtwoord/pincode"><input id="submit" type="submit" value="Aanmelden" tabindex="7"></p>
+</form>
+<p id="login_melding_lokaal" class="melding_leeg"></p>
+</div>
+</div>
+<div id="lower_header">
+<div xmlns:og="http://ogp.me/ns#" id="menu"><ul class="level1" id="topmenu">
+<li><a href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=main"><span>Start</span></a></li>
+
+
+
+
+<li><A TITLE="Aanwinsten" HREF="/cgi-bin/bx.pl?event=profgrp;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal" id="aanwinsten_topmenu"><span>Aanwinsten</span></A></li>
+<li><A TITLE="Toplijsten" HREF="/cgi-bin/bx.pl?event=topgrp;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal" id="toplijsten_topmenu"><span>Toplijsten</span></A></li>
+
+<li><a href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=recautthes"><span>Leesadvies</span></a></li>
+<li><a href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=private"><span>Mijn menu</span></a></li>
+</ul></div>
+<div id="rightmenu">
+<div><a href="#" onclick='haalWSHelp("titelset","Uitleg bij - titelset");return false;' id="help_topmenu" title="Uitleg over huidige scherm"></a></div>
+<div><a class="drempelvrij_user_menu" href="http://bicat.cultura-ede.nl/cgi-bin/bx.pl?wzstype=&amp;zl_v=N&amp;woord=Brown%2C%20Dan&amp;vestfiltgrp=&amp;dcat=1&amp;nieuw=&amp;extsdef=01&amp;event=titelset&amp;qs=Brown%2C%20Dan&amp;wzsrc=&amp;recent=N&amp;rubplus=TS0&amp;recno=20543796&amp;sid=e26e877c-50a5-4f57-804e-9b133be37a0b&amp;groepfx=10&amp;vestnr=8399&amp;prt=INTERNET&amp;cdef=002&amp;taal=1&amp;sn=11&amp;aantal=10&amp;var=geen_js" title="Ga naar drempelvrije versie (zonder javascript)"></a></div>
+<div><a id="printer" href="javascript:print();" title="printen"></a></div>
+<div id="resize-box">
+<a id="textsize_100" class="textsize" title="Kleine tekst" href="javascript:fsize(100,'px',%20'container')" style="font-size: 10px;">A</a><a id="textsize_110" class="textsize" title="Normale tekst" href="javascript:fsize(110,'px',%20'container')" style="font-size: 12px;">A</a><a id="textsize_130" class="textsize" title="Grote tekst" href="javascript:fsize(130,'px',%20'container')" style="font-size: 14px;">A</a>
+</div>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="container">
+<div class="clear"></div>
+<div class="dark_row"><div class="zoekbalk"><div class="formulier">
+<form id="searchfrm" class="zkform" name="zoekform" method="post" action="/cgi-bin/bx.pl" onsubmit="return checkForm();" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="zl_v" value="" id="zl_v"><input type="hidden" name="event" value="search" id="event"><input type="hidden" name="sid" value="e26e877c-50a5-4f57-804e-9b133be37a0b" id="sid"><input type="hidden" name="groepfx" value="10" id="groepfx"><input type="hidden" name="vestnr" value="8399" id="vestnr"><input type="hidden" name="prt" value="INTERNET" id="prt"><input type="hidden" name="cdef" value="002" id="cdef"><input type="hidden" name="taal" value="1" id="taal"><input type="hidden" name="sn" value="12" id="sn"><input type="hidden" name="var" value="portal" id="var"><input type="hidden" name="aantal" value="10"><TABLE CLASS="zoekcontext"><TR CLASS="zoekcontext" VALIGN="middle">
+<TD CLASS="zoekcontext">Zoeken in</TD>
+<TD CLASS="zoekcontext"><SELECT CLASS="zoekcontext" NAME="dcat" ONCHANGE="setingang(this.options[this.selectedIndex].value);"><OPTION VALUE="0">-- kies --</OPTION>
+<OPTION VALUE="1" SELECTED>Algemene catalogus</OPTION>
+<OPTION VALUE="2">Jeugdcatalogus</OPTION>
+<OPTION VALUE="3">Bladmuziek</OPTION>
+<OPTION VALUE="4">Muziek</OPTION></SELECT></TD>
+<TD CLASS="zoekcontext">op</TD>
+<TD CLASS="zoekcontext"><SELECT CLASS="zoekcontext" NAME="ingang"><OPTION VALUE="01TS0" SELECTED>Schrijver</OPTION></SELECT></TD>
+<TD CLASS="zoekcontext">
+<input type="text" name="qs" id="woord" class="zoekcontext" title="Vul hier een zoekterm in" tabindex="2" value="Brown, Dan" placeholder="Zoekterm.." size="25" maxlength="60"><input type="button" name="leeg_knop" id="leeg_knop" value="X" title="Wis zoekterm" tabindex="4" onclick='document.zoekform.woord.value="";document.zoekform.woord.focus();'>
+</TD>
+<TD CLASS="zoekcontext"><input type="submit" name="zoek_knop" id="zoek_knop" value="Zoek" title="Zoek" tabindex="3" onclick=""></TD>
+</TR></TABLE>
+</form>
+<div class="filters_knop">
+<input id="filter_knop" type="button" onclick='haalFilter("/cgi-bin/bx.pl?wzstype=;woord=Brown%2C%20Dan;ruboms=;vestfiltgrp=;dcat=1;nextevent=titelset;extsdef=01;event=filtinst;qs=Brown%2C%20Dan;wzsrc=;rubplus=TS0;recent=N;recno=20543796;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal","zoekfilter"); return false;' value="Filteropties |+"><input id="sluit_filter" type="button" onclick="sluitFilter('zoekfilter'); return false;" style="display:none;" value="Filteropties sluiten |x">
+</div>
+<div class="breaker"></div>
+<span id="zoekfilter"></span>
+</div></div></div>
+<div class="clear"></div>
+<div id="content">
+<div id="content_middle">
+<h1 class="content_header" id="pageheader">Schrijver: Brown, Dan <span class="em"></span>
+</h1>
+<div id="nav_buttons"><ul><li><a id="terug" title="Een scherm terug" href="javascript:history.back()">Terug</a></li></ul></div>
+<div class="clear"></div>
+<div id="messages"></div>
+<div id="majax">
+<div id="results">Resultaten: <span class="firstnum">1</span> - 
+			<span class="lastnum">10</span> van <span class="totaal">35</span>
+</div>
+<ul class="mid_nav paging">
+<li> [ </li>
+<li><span class="currentpage">1</span></li>
+<li><a xmlns:og="http://ogp.me/ns#" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=titelset;recno=20543796;extsdef=01;rubplus=TS0;ruboms=;aantal=10;recent=N;dcat=1;;offset=11" onclick="doAjax('/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=titelset;recno=20543796;extsdef=01;rubplus=TS0;ruboms=;aantal=10;recent=N;dcat=1;;offset=11','majax');return false;">2</a></li>
+<li><a xmlns:og="http://ogp.me/ns#" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=titelset;recno=20543796;extsdef=01;rubplus=TS0;ruboms=;aantal=10;recent=N;dcat=1;;offset=21" onclick="doAjax('/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=titelset;recno=20543796;extsdef=01;rubplus=TS0;ruboms=;aantal=10;recent=N;dcat=1;;offset=21','majax');return false;">3</a></li>
+<li><a xmlns:og="http://ogp.me/ns#" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=titelset;recno=20543796;extsdef=01;rubplus=TS0;ruboms=;aantal=10;recent=N;dcat=1;;offset=31" onclick="doAjax('/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=titelset;recno=20543796;extsdef=01;rubplus=TS0;ruboms=;aantal=10;recent=N;dcat=1;;offset=31','majax');return false;">4</a></li>
+<li> ] </li>
+<li><a xmlns:og="http://ogp.me/ns#" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=titelset;recno=20543796;extsdef=01;rubplus=TS0;ruboms=;aantal=10;recent=N;dcat=1;;offset=11" onclick="doAjax('/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=titelset;recno=20543796;extsdef=01;rubplus=TS0;ruboms=;aantal=10;recent=N;dcat=1;;offset=11','majax');return false;" class="next">Volgende </a></li>
+</ul>
+<ul class="list_titels">
+<li class="list_items">
+<div class="list_image"><a href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=2484;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal"><img class="list_cover_image" id="" src="/cgi-bin/momredir.pl?size=&amp;lid=2009411283;ppn=321811089;key=2484;" title="" alt=""></a></div>
+<div class="list_text">
+<a class="title" title="Angels &amp; demons" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=2484;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">Angels &amp; demons</a><ul>
+<li><span class="vet">-</span></li>
+<li>
+<span class="summ" id="summ_2484">Een verzoening tussen wetenschap en religie wordt geblokkeerd door een eeuwenoude geheime broederschap, een verwoestend nieuw wapen en een onvoorstelbaar ...</span><a class="readon" title="Angels &amp; demons" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=2484;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">...Lees meer</a>
+</li>
+</ul>
+</div>
+<div class="list_icons">
+<img src="/images/bvm_dvd.gif" alt="bvm_dvd.gif" title="DVD" class="stat_icons"><br><span class="pubjaar" title="Publicatiejaar">2009</span><span class="typering" title="Typering">Volwassenen</span><span class="typering" title="Typering">Verhalend</span><br><img src="/images/pf000019.gif" alt="Thriller" title="Thriller" class="genre_icons">
+</div>
+<div class="list_buttons">
+<span class="status"><img class="staticons" id="statgroen" src="/images/statgroen.gif" title="Beschikbaar" alt="Beschikbaar"> <span class="statgroen">Aanwezig</span></span><div class="waardering" id="2484"></div>
+<span class="lstbuttons"><a xmlns:og="http://ogp.me/ns#" class="reserveren icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=2484" title="Reserveer Angels &amp; demons" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','2484','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=2484;submap=raw', 'Reserveren');return false"> </a><a xmlns:og="http://ogp.me/ns#" class="favoriet icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=2484" title="Angels &amp; demons zet op Verlanglijst" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','2484','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=2484;submap=raw', 'zet op Verlanglijst');return false"> </a></span>
+</div>
+</li>
+<li class="list_items">
+<div class="list_image"><a href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=6441;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal"><img class="list_cover_image" id="" src="/cgi-bin/momredir.pl?size=&amp;lid=2006408374;ppn=297108468;key=6441;" title="" alt=""></a></div>
+<div class="list_text">
+<a class="title" title="The Da Vinci Code" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=6441;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">The Da Vinci Code</a><ul>
+<li><span class="vet">-</span></li>
+<li>
+<span class="summ" id="summ_6441">Een Amerikaanse kunsthistoricus wordt verdacht van moord in het Louvre, wat hem dwingt via cryptische aanwijzingen de ware schuldige te vinden .</span><a class="readon" title="The Da Vinci Code" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=6441;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">...Lees meer</a>
+</li>
+</ul>
+</div>
+<div class="list_icons">
+<img src="/images/bvm_dvd.gif" alt="bvm_dvd.gif" title="DVD" class="stat_icons"><br><span class="pubjaar" title="Publicatiejaar">2006</span><span class="ama" title="Materiaal">DVD</span><span class="typering" title="Typering">Volwassenen</span><span class="typering" title="Typering">Verhalend</span><br>
+</div>
+<div class="list_buttons">
+<span class="status"><img class="staticons" id="statgrijs" src="/images/statgrijs.gif" title="Uitgeleend" alt="Uitgeleend"> <span class="statgrijs">Uitgeleend</span></span><div class="waardering" id="6441"></div>
+<span class="lstbuttons"><a xmlns:og="http://ogp.me/ns#" class="reserveren icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=6441" title="Reserveer The Da Vinci Code" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','6441','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=6441;submap=raw', 'Reserveren');return false"> </a><a xmlns:og="http://ogp.me/ns#" class="favoriet icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=6441" title="The Da Vinci Code zet op Verlanglijst" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','6441','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=6441;submap=raw', 'zet op Verlanglijst');return false"> </a></span>
+</div>
+</li>
+<li class="list_items">
+<div class="list_image"><a href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=29291;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal"><img class="list_cover_image" id="" src="/cgi-bin/momredir.pl?size=&amp;lid=2003330004;ppn=250227290;isbn=9789054920687;key=29291;" title="" alt=""></a></div>
+<div class="list_text">
+<a class ="title" title="Het dorpje dat ging vliegen" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=29291;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">Het dorpje dat ging vliegen</a><ul>
+<li><span class="vet">Bilal, Enki</span></li>
+<li>
+<span class="summ" id="summ_29291">1e dr. Nederlandse uitg.: Brussel : Dargaud Benelux ; Haarlem : Oberon, 1978. -(Er was eens 'n voorbijganger ; 1). - Vert. van: La croisiere des oublies. - ...</span><a class="readon" title="Het dorpje dat ging vliegen" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=29291;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">...Lees meer</a>
+</li>
+</ul>
+</div>
+<div class="list_icons">
+<img src="/images/bvm_b__.gif" alt="bvm_b__.gif" title="Boek" class="stat_icons"><br><span class="pubjaar" title="Publicatiejaar">2003</span><span class="typering" title="Typering">Volwassenen</span><span class="typering" title="Typering">Verhalend</span><br><span class="genre" title="Genre">Stripverhaal</span>
+</div>
+<div class="list_buttons">
+<span class="status"><img class="staticons" id="statrood" src="/images/statrood.gif" title="Niet beschikbaar" alt="Niet beschikbaar"> <span class="statrood">Niet aanwezig</span></span><div class="waardering" id="29291"></div>
+<span class="lstbuttons"><a xmlns:og="http://ogp.me/ns#" class="reserveren icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=29291" title="Reserveer Het dorpje dat ging vliegen" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','29291','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=29291;submap=raw', 'Reserveren');return false"> </a><a xmlns:og="http://ogp.me/ns#" class="favoriet icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=29291" title="Het dorpje dat ging vliegen zet op Verlanglijst" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','29291','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=29291;submap=raw', 'zet op Verlanglijst');return false"> </a></span>
+</div>
+</li>
+<li class="list_items">
+<div class="list_image"><a href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=29320;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal"><img class="list_cover_image" id="" src="/cgi-bin/momredir.pl?size=&amp;lid=2003330005;ppn=250227711;isbn=9789054920694;key=29320;" title="" alt=""></a></div>
+<div class="list_text">
+<a class="title" title="Het schip van steen" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=29320;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">Het schip van steen</a><ul>
+<li><span class="vet">Bilal, Enki</span></li>
+<li>
+<span class="summ" id="summ_29320">1e dr. Nederlandse uitg.: Brussel : Dargaud Benelux ; Haarlem : Oberon, 1979. -(Er was eens 'n voorbijganger ; 2). - Vert. van: Le vaisseau de pierre. - ...</span><a class="readon" title="Het schip van steen" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=29320;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">...Lees meer</a>
+</li>
+</ul>
+</div>
+<div class="list_icons">
+<img src="/images/bvm_b__.gif" alt="bvm_b__.gif" title="Boek" class="stat_icons"><br><span class="pubjaar" title="Publicatiejaar">2003</span><span class="typering" title="Typering">Jeugd</span><span class="typering" title="Typering">Volwassenen</span><span class="typering" title="Typering">Verhalend</span><br><span class="genre" title="Genre">Stripverhaal</span>
+</div>
+<div class="list_buttons">
+<span class="status"><img class="staticons" id="statrood" src="/images/statrood.gif" title="Niet beschikbaar" alt="Niet beschikbaar"> <span class="statrood">Niet aanwezig</span></span><div class="waardering" id="29320"></div>
+<span class="lstbuttons"><a xmlns:og="http://ogp.me/ns#" class="reserveren icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=29320" title="Reserveer Het schip van steen" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','29320','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=29320;submap=raw', 'Reserveren');return false"> </a><a xmlns:og="http://ogp.me/ns#" class="favoriet icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=29320" title="Het schip van steen zet op Verlanglijst" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','29320','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=29320;submap=raw', 'zet op Verlanglijst');return false"> </a></span>
+</div>
+</li>
+<li class="list_items">
+<div class="list_image"><a href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=33652;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal"><img class="list_cover_image" id="" src="/cgi-bin/momredir.pl?size=&amp;lid=2005020392;ppn=250995727;isbn=9780552150736;key=33652;" title="" alt=""></a></div>
+<div class="list_text">
+<a class="title" title="Angels and demons" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=33652;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">Angels and demons</a><ul>
+<li><span class="vet">Brown, Dan</span></li>
+<li>
+<span class="summ" id="summ_33652">Oorspr. uitg.: 2000. - 1e dr. van deze uitg.: 2001. - Een verzoening tussen wetenschap en religie wordt geblokkeerd door een eeuwenoude geheime broederschap, ...</span><a class="readon" title="Angels and demons" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=33652;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">...Lees meer</a>
+</li>
+</ul>
+</div>
+<div class="list_icons">
+<img src="/images/bvm_b__.gif" alt="bvm_b__.gif" title="Boek" class="stat_icons"><br><span class="pubjaar" title="Publicatiejaar">2003</span><span class="typering" title="Typering">Volwassenen</span><span class="typering" title="Typering">Verhalend</span><br><img src="/images/pf000019.gif" alt="Thriller" title="Thriller" class="genre_icons">
+</div>
+<div class="list_buttons">
+<span class="status"><img class="staticons" id="statgroen" src="/images/statgroen.gif" title="Beschikbaar" alt="Beschikbaar"> <span class="statgroen">Aanwezig</span></span><div class="waardering" id="33652"></div>
+<span class="lstbuttons"><a xmlns:og="http://ogp.me/ns#" class="reserveren icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=33652" title="Reserveer Angels and demons" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','33652','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=33652;submap=raw', 'Reserveren');return false"> </a><a xmlns:og="http://ogp.me/ns#" class="favoriet icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=33652" title="Angels and demons zet op Verlanglijst" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','33652','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=33652;submap=raw', 'zet op Verlanglijst');return false"> </a></span>
+</div>
+</li>
+<li class="list_items">
+<div class="list_image"><a href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=33705;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal"><img class="list_cover_image" id="" src="/cgi-bin/momredir.pl?size=&amp;lid=2004200006;ppn=263108147;isbn=9789046301043;key=33705;" title="" alt=""></a></div>
+<div class="list_text">
+<a class="title" title="Het Bernini mysterie" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=33705;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">Het Bernini mysterie</a><ul>
+<li><span class="vet">Brown, Dan</span></li>
+<li>
+<span class="summ" id="summ_33705">Oorspr. Nederlandse uitg.: Amsterdam : Luitingh-Sijthoff, 2003. - Met grote letter gedrukt. - Vert. van: Angels &amp; demons. - Cop. 2000. - Een verzoening ...</span><a class="readon" title="Het Bernini mysterie" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=33705;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">...Lees meer</a>
+</li>
+</ul>
+</div>
+<div class="list_icons">
+<img src="/images/bvm_glb.gif" alt="bvm_glb.gif" title="Grootletterboek" class="stat_icons"><br><span class="pubjaar" title="Publicatiejaar">2004</span><span class="typering" title="Typering">Volwassenen</span><span class="typering" title="Typering">Verhalend</span><br><img src="/images/pf000019.gif" alt="Thriller" title="Thriller" class="genre_icons">
+</div>
+<div class="list_buttons">
+<span class="status"><img class="staticons" id="statrood" src="/images/statrood.gif" title="Niet beschikbaar" alt="Niet beschikbaar"> <span class="statrood">Niet aanwezig</span></span><div class="waardering" id="33705"></div>
+<span class="lstbuttons"><a xmlns:og="http://ogp.me/ns#" class="reserveren icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=33705" title="Reserveer Het Bernini mysterie" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','33705','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=33705;submap=raw', 'Reserveren');return false"> </a><a xmlns:og="http://ogp.me/ns#" class="favoriet icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=33705" title="Het Bernini mysterie zet op Verlanglijst" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','33705','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=33705;submap=raw', 'zet op Verlanglijst');return false"> </a></span>
+</div>
+</li>
+<li class="list_items">
+<div class="list_image"><a href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=33706;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal"><img class="list_cover_image" id="" src="/cgi-bin/momredir.pl?size=&amp;lid=2006048431;ppn=290817714;isbn=9789054445685;key=33706;" title="" alt=""></a></div>
+<div class="list_text">
+<a class="title" title="Het Bernini mysterie" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=33706;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">Het Bernini mysterie</a><ul>
+<li><span class="vet">Brown, Dan</span></li>
+<li>
+<span class="summ" id="summ_33706">Ingekorte weergave van het gelijknamige boek. - Amsterdam : Luitingh-Sijthoff. - Vert. van: Angels &amp; demons. - Opgenomen in Utrecht, 2005. - Omslag vermeldt: ...</span><a class="readon" title="Het Bernini mysterie" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=33706;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">...Lees meer</a>
+</li>
+</ul>
+</div>
+<div class="list_icons">
+<img src="/images/bvm_cdl.gif" alt="bvm_cdl.gif" title="Luisterboek" class="stat_icons"><br><span class="pubjaar" title="Publicatiejaar">2005</span><span class="typering" title="Typering">Volwassenen</span><span class="typering" title="Typering">Verhalend</span><br><img src="/images/pf000019.gif" alt="Thriller" title="Thriller" class="genre_icons">
+</div>
+<div class="list_buttons">
+<span class="status"><img class="staticons" id="statrood" src="/images/statrood.gif" title="Niet beschikbaar" alt="Niet beschikbaar"> <span class="statrood">Niet aanwezig</span></span><div class="waardering" id="33706"></div>
+<span class="lstbuttons"><a xmlns:og="http://ogp.me/ns#" class="reserveren icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=33706" title="Reserveer Het Bernini mysterie" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','33706','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=33706;submap=raw', 'Reserveren');return false"> </a><a xmlns:og="http://ogp.me/ns#" class="favoriet icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=33706" title="Het Bernini mysterie zet op Verlanglijst" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','33706','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=33706;submap=raw', 'zet op Verlanglijst');return false"> </a></span>
+</div>
+</li>
+<li class="list_items">
+<div class="list_image"><a href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=151397;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal"><img class="list_cover_image" id="" src="/cgi-bin/momredir.pl?size=&amp;lid=2011303659;ppn=322877385;isbn=9789024555390;key=151397;" title="" alt=""></a></div>
+<div class="list_text">
+<a class="title" title="Het Bernini mysterie" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=151397;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">Het Bernini mysterie</a><ul>
+<li><span class="vet">Brown, Dan</span></li>
+<li>
+<span class="summ" id="summ_151397">Een verzoening tussen wetenschap en religie wordt geblokkeerd door een eeuwenoude geheime broederschap, een verwoestend nieuw wapen en een onvoorstelbaar ...</span><a class="readon" title="Het Bernini mysterie" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=151397;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">...Lees meer</a>
+</li>
+</ul>
+</div>
+<div class="list_icons">
+<img src="/images/bvm_b__.gif" alt="bvm_b__.gif" title="Boek" class="stat_icons"><br><span class="pubjaar" title="Publicatiejaar">2009</span><span class="typering" title="Typering">Jeugd</span><span class="typering" title="Typering">Volwassenen</span><span class="typering" title="Typering">Verhalend</span><br><img src="/images/pf000019.gif" alt="Thriller" title="Thriller" class="genre_icons">
+</div>
+<div class="list_buttons">
+<span class="status"><img class="staticons" id="statgroen" src="/images/statgroen.gif" title="Beschikbaar" alt="Beschikbaar"> <span class="statgroen">Aanwezig</span></span><div class="waardering" id="151397"></div>
+<span class="lstbuttons"><a xmlns:og="http://ogp.me/ns#" class="reserveren icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=151397" title="Reserveer Het Bernini mysterie" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','151397','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=151397;submap=raw', 'Reserveren');return false"> </a><a xmlns:og="http://ogp.me/ns#" class="favoriet icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=151397" title="Het Bernini mysterie zet op Verlanglijst" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','151397','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=151397;submap=raw', 'zet op Verlanglijst');return false"> </a></span>
+</div>
+</li>
+<li class="list_items">
+<div class="list_image"><a href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=33810;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal"><img class="list_cover_image" id="" src="/cgi-bin/momredir.pl?size=&amp;lid=2006230011;ppn=29429550X;isbn=9789024557059;" title="" alt=""></a></div>
+<div class="list_text">
+<a class="title" title="The Da Vinci code" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=33810;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">The Da Vinci code</a><ul>
+<li><span class="vet">Brown, Dan</span></li>
+<li>
+<span class="summ" id="summ_33810">Een Amerikaanse kunsthistoricus wordt verdacht van moord in het Louvre, wat hem dwingt via cryptische aanwijzingen de ware schuldige te vinden.</span><a class="readon" title="The Da Vinci code" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=33810;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">...Lees meer</a>
+</li>
+</ul>
+</div>
+<div class="list_icons">
+<img src="/images/bvm_b__.gif" alt="bvm_b__.gif" title="Boek" class="stat_icons"><br><span class="pubjaar" title="Publicatiejaar">2006</span><span class="typering" title="Typering">Volwassenen</span><span class="typering" title="Typering">Verhalend</span><br><img src="/images/pf000019.gif" alt="Thriller" title="Thriller" class="genre_icons">
+</div>
+<div class="list_buttons">
+<span class="status"><img class="staticons" id="statrood" src="/images/statrood.gif" title="Niet beschikbaar" alt="Niet beschikbaar"> <span class="statrood">Niet aanwezig</span></span><div class="waardering" id="33810"></div>
+<span class="lstbuttons"><a xmlns:og="http://ogp.me/ns#" class="reserveren icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=33810" title="Reserveer The Da Vinci code" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','33810','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=33810;submap=raw', 'Reserveren');return false"> </a><a xmlns:og="http://ogp.me/ns#" class="favoriet icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=33810" title="The Da Vinci code zet op Verlanglijst" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','33810','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=33810;submap=raw', 'zet op Verlanglijst');return false"> </a></span>
+</div>
+</li>
+<li class="list_items">
+<div class="list_image"><a href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=33811;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal"><img class="list_cover_image" id="" src="/cgi-bin/momredir.pl?size=&amp;lid=2006250258;ppn=293100640;isbn=9780552154017;" title="" alt=""></a></div>
+<div class="list_text">
+<a class="title" title="The Da Vinci code" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=33811;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">The Da Vinci code</a><ul>
+<li><span class="vet">Brown, Dan</span></li>
+<li>
+<span class="summ" id="summ_33811">Een Amerikaanse kunsthistoricus wordt verdacht van moord in het Louvre, wat hem dwingt via cryptische aanwijzingen de ware schuldige te vinden.</span><a class="readon" title="The Da Vinci code" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Brown%2C%20Dan;titcode=33811;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal">...Lees meer</a>
+</li>
+</ul>
+</div>
+<div class="list_icons">
+<img src="/images/bvm_b__.gif" alt="bvm_b__.gif" title="Boek" class="stat_icons"><br><span class="pubjaar" title="Publicatiejaar">2006</span><span class="typering" title="Typering">Volwassenen</span><span class="typering" title="Typering">Verhalend</span><br><img src="/images/pf000019.gif" alt="Thriller" title="Thriller" class="genre_icons">
+</div>
+<div class="list_buttons">
+<span class="status"><img class="staticons" id="statgrijs" src="/images/statgrijs.gif" title="Uitgeleend" alt="Uitgeleend"> <span class="statgrijs">Uitgeleend</span></span><div class="waardering" id="33811"></div>
+<span class="lstbuttons"><a xmlns:og="http://ogp.me/ns#" class="reserveren icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=33811" title="Reserveer The Da Vinci code" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','33811','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=rsrvrqn;titcode=33811;submap=raw', 'Reserveren');return false"> </a><a xmlns:og="http://ogp.me/ns#" class="favoriet icon" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=33811" title="The Da Vinci code zet op Verlanglijst" onclick="titelRes('e26e877c-50a5-4f57-804e-9b133be37a0b','33811','8399','0','0','0','/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=favadd;titcode=33811;submap=raw', 'zet op Verlanglijst');return false"> </a></span>
+</div>
+</li>
+</ul>
+<ul class="mid_nav paging">
+<li> [ </li>
+<li><span class="currentpage">1</span></li>
+<li><a xmlns:og="http://ogp.me/ns#" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=titelset;recno=20543796;extsdef=01;rubplus=TS0;ruboms=;aantal=10;recent=N;dcat=1;;offset=11" onclick="doAjax('/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=titelset;recno=20543796;extsdef=01;rubplus=TS0;ruboms=;aantal=10;recent=N;dcat=1;;offset=11','majax');return false;">2</a></li>
+<li><a xmlns:og="http://ogp.me/ns#" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=titelset;recno=20543796;extsdef=01;rubplus=TS0;ruboms=;aantal=10;recent=N;dcat=1;;offset=21" onclick="doAjax('/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=titelset;recno=20543796;extsdef=01;rubplus=TS0;ruboms=;aantal=10;recent=N;dcat=1;;offset=21','majax');return false;">3</a></li>
+<li><a xmlns:og="http://ogp.me/ns#" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=titelset;recno=20543796;extsdef=01;rubplus=TS0;ruboms=;aantal=10;recent=N;dcat=1;;offset=31" onclick="doAjax('/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=titelset;recno=20543796;extsdef=01;rubplus=TS0;ruboms=;aantal=10;recent=N;dcat=1;;offset=31','majax');return false;">4</a></li>
+<li> ] </li>
+<li><a xmlns:og="http://ogp.me/ns#" href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=titelset;recno=20543796;extsdef=01;rubplus=TS0;ruboms=;aantal=10;recent=N;dcat=1;;offset=11" onclick="doAjax('/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=titelset;recno=20543796;extsdef=01;rubplus=TS0;ruboms=;aantal=10;recent=N;dcat=1;;offset=11','majax');return false;" class="next">Volgende </a></li>
+</ul>
+<div class="breaker"></div>
+<div id="haal_titelgegevens"></div>
+<script type="text/javascript" language="javascript" charset="utf-8">
+		var titcodes = $A();
+		$$('div.waardering').each(
+			function(elem, index){
+				titcodes[index] = elem.id;
+			}
+		);
+	
+		var url = '/cgi-bin/bx.pl?event=w2a;action=haalTitels20Gegevens;items='+titcodes;
+		new Ajax.Updater('haal_titelgegevens', url,
+					{
+						asynchronous:true,
+						method: 'get',
+						parameters: { sid: 'e26e877c-50a5-4f57-804e-9b133be37a0b', vestnr: '8399'},
+						evalScripts: true
+					}
+		);
+	</script>
+</div>
+<div class="content_module"></div>
+</div>
+<div id="content_right"><div xmlns:addthis="http://www.addthis.com" class="module_right">
+<div class="module_upper_dark"><p>Zoeken in cWise <a class="help_knop" onclick="haalWSHelp('cwisezoeken', 'Wat is zoeken in cWise?');return false" href="/error.html" title="Hulp bij zoeken in cWise"></a></p></div>
+<div class="module_middle"><div id="cwisezoekui">
+<div class="cwisezoekwrap">
+<form id="cwisezoekform" name="cwisezoekform" autocomplete="off" onsubmit="cWiseZoekForm();return false">
+<input type="hidden" name="sid" value="e26e877c-50a5-4f57-804e-9b133be37a0b"><input type="hidden" name="vestnr" value="8399"><input type="text" id="cwisezoekinput" name="cwisezoekinput" autocomplete="off" class="cwisezoekinactief" value="Zoek op tags" title="Begin hier met typen om het zoeken te starten." placeholder="Zoek op tags" onclick="cWiseZoekSelect();return false"><input type="button" id="zoektypesknop" value="" onclick="cWiseZoekOpties();return false" title="Klik voor meer zoekopties."><div id="ac_loader" style="display: none;"><img src="/rsrc/images/web2/ajax-loader-small.gif"></div>
+<div id="cwisezoektypes" class="cwisezoektypes">
+<ul class="cwisezoektypes">
+<li id="topborder">
+<li>
+<input id="cwisezoektype_tag" type="radio" name="action" value="zoekTag" checked text="Zoek op tags" autocomplete="off" onclick="cWiseZoekOptieSet('tekst');"><label for="cwisezoektype_tag">Tags</label>
+</li>
+<li>
+<input id="cwisezoektype_profiel" type="radio" name="action" value="zoekProfiel" text="Zoek op nickname" autocomplete="off" onclick="cWiseZoekOptieSet('nickname');"><label for="cwisezoektype_profiel">Nickname</label>
+</li>
+</ul>
+<div class="breaker"></div>
+</div>
+<div class="breaker"></div>
+<input type="submit" value="Zoek" class="cwisezoeken"><br><div class="breaker"></div>
+</form>
+<div id="cwisezoekres" class="autocomplete" style="display: none;"></div>
+<script>
+						cWiseZoekFocus('true');
+					</script><div class="breaker"></div>
+</div>
+<div class="breaker"></div>
+<br><p id="cwisezoekmelding"></p>
+</div></div>
+</div></div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+<div id="footer"><div id="footer_inner">
+<div class="clear"></div>
+<p class="legal">
+	Catalogus
+©2012 <a href="http://www.bicat.com/">HKa</a>.</p>
+</div></div>
+<script language="Javascript">
+		Init();
+	</script><!--
+		Hier zou de counter hebben gestaan.
+	--><script>
+		reading_textsize();
+	</script><div id="login_content" style="display:none;">
+<p id="login_melding" class="melding_leeg"></p>
+<a id="help_knop_login_content" href="/error.html" onclick="haalWSHelp('login', 'Hoe moet ik inloggen?');return false" class="help_knop"><div class="help_knop"></div></a><form id="login_local_form" class="login_local_form" onsubmit="loginLocal('e26e877c-50a5-4f57-804e-9b133be37a0b', '', '8399', '', 'login_local_form');return false;" method="post">
+<p><label>Gebruikersnaam: </label><br><input type="text" class="login_local_lenernummer" id="lokaal_lenernummer" name="lokaal_lenernummer"></p>
+<p><label>Wachtwoord: </label><br><input type="password" class="login_local_pincode" id="lokaal_pincode" name="lokaal_pincode"></p>
+<p><label class="login" style="display:none;"></label><input type="checkbox" name="lener_cookie_vink" value="ON" id="lener_cookie_vink-ON"><label for="lener_cookie_vink-ON">Bewaar gebruikersnaam</label></p>
+<br><p><input type="submit" value="Aanmelden"></p>
+</form>
+<a class="close_modal" href="#" title="Sluit venster" onclick="Modalbox.hide();return false;">Sluit venster |x</a><div class="breaker"></div>
+</div>
+<div id="login_geen_email" style="display:none;">
+<p><p id="login_geen_email_melding" class="update_foutmelding">Om je mening te kunnen geven, heb je een cWise-account nodig. Daarvoor moet je e-mailadres bij ons bekend zijn. Geef je e-mailadres op via <a href="/cgi-bin/bx.pl?sid=e26e877c-50a5-4f57-804e-9b133be37a0b;groepfx=10;vestnr=8399;prt=INTERNET;cdef=002;taal=1;zl_v=N;sn=12;var=portal;event=leenmut;">Algemene lenergegevens</a></p></p>
+<br><a class="close_modal" href="#" title="Sluit venster" onclick="Modalbox.hide();return false;">Sluit venster |x</a>
+</div>
+<div id="login_algemene_voorwaarden" style="display:none;">
+<p id="algemenevoorwaarden_melding" class="melding_leeg"></p>
+<div id="algemene_voorwaarden_attendering"><span class="info"><strong id="algemene_voorwaarden_omschrijving">Om een cWise profiel aan te maken moet je eerst akkoord gaan met de Algemene Voorwaarden.</strong></span></div>
+<div class="breaker"></div>
+<h3>Algemene Voorwaarden</h3>
+<p><div class="voorwaarden">
+<h4>Akkoordverklaring</h4>
+<p class="voorwaarden">
+               cWise is een dienst die wordt aangeboden binnen de webcatalogus van uw bibliotheek. cWise wordt geleverd door uw bibliotheek en HKA BV (hierna te noemen HKA of aangeduid met 'we'; of 'wij';).
+               <br><br>
+               cWise-componenten zijn o.a.
+               <ul>
+<li>
+<strong>Recensies</strong> (recensies door gebruikers)</li>
+<li>
+<strong>Waardering</strong> (waarderingen door gebruikers)</li>
+<li>
+<strong>Tags</strong> (social tagging met eigen trefwoorden door gebruikers)</li>
+<li>
+<strong>Lijsten</strong> (boekenlijstjes van gebruikers)</li>
+<li>
+<strong>Vrienden</strong> (vrienden worden met andere bibliotheekleden uit Nederland) </li>
+<li>
+<strong>Tip een vriend</strong> (een titel doorsturen naar vrienden)</li>
+</ul></p>
+<br><p>
+				Onderstaande voorwaarden behelzen in grote lijnen dat u belooft geen onbehoorlijke dingen te doen binnen de dienst cWise of zaken waar deze dienst niet voor bedoeld is, en HKA belooft geen onbehoorlijke zaken te doen met uw gegevens.
+				Voordat u gebruik kunt maken van cWise dient u akkoord te gaan met de gebruiksvoorwaarden. Bij het eerste gebruik van cWise wordt u eenmalig gevraagd of u akkoord gaat. HKA kan deze voorwaarden echter te allen tijde aanpassen zonder voorafgaande waarschuwing. U wordt geacht bekend te zijn met deze voorwaarden. Mocht u cWise na eventuele wijzigingen gebruiken dan betekent dat dat u deze wijzigingen hebt geaccepteerd. Wij beloven echter de basisprincipes van deze voorwaarden niet fundamenteel te wijzigen en grote wijzigingen aan te kondigen met de mogelijkheid uw account op te heffen. 
+            </p>
+<h4>Beperkingen van het gebruik en Fair Use policy</h4>
+<p>
+				De cWise-service is uitsluitend bedoeld voor normaal gebruik vanuit de webcatalogus van de bibliotheek. Het is niet toegestaan op enigerlei wijze geautomatiseerd (bijvoorbeeld via een script, robot, crawler of ander geautomatiseerd systeem) veelvuldig content van de webcatalogus of het cWise-systeem te downloaden of in te voeren. 
+            </p>
+<p>
+				Uw account is gekoppeld aan uw bibliotheekabonnement. De accountgegevens mogen niet gedeeld worden met derden die geen recht hebben op het gebruik van dit abonnement. 
+            </p>
+<p>
+				Bij het toevoegen van content aan cWise dient men rekening te houden met algemene normen van fatsoen. Het is niet toegestaan content te plaatsen die illegaal, obsceen, bedreigend, kwaadsprekend of lasterlijk is, rechten van derden schendt (met inbegrip van intellectueel eigendom en privacyrechten), anderszins beledigend of aanstootgevend is of een politieke of commerciële boodschap bevat.
+			</p>
+<h4>Privacy</h4>
+<p>
+				Ten behoeve van cWise worden enkele gegevens die van u bekend zijn (naam, adres, mailadres en lenersnummer) opgeslagen op de centrale cWise-server. Deze gegevens worden uitsluitend gebruikt om de dienst cWise te kunnen voeren. HKA stelt deze gegevens niet beschikbaar aan derden. HKA behoudt zich het recht voor bepaalde geaggregeerde gegevens te gebruiken en te leveren aan derden. Nooit zullen deze gegevens echter tot individuele gegevens te herleiden zijn.
+            </p>
+<p>
+				Op uw profielpagina onder instellingen kunt u opgeven welke gegevens anderen van u mogen zien. Wij zullen onze uiterste best doen om te zorgen dat uw gegevens ook privé blijven, al is dit nooit voor 100% te garanderen. We zullen uw gegevens in ieder geval nooit opzettelijk aan derden verstrekken.
+            </p>
+<h4>Gebruikersnaam</h4>
+<p>
+				Bij het aanmaken van uw profiel wordt u gevraagd om een gebruikersnaam (nickname) te kiezen. Dit is de naam die getoond wordt bij uw bijdragen in cWise. Deze gebruikersnaam moet uniek zijn binnen cWise (daar zorgt het systeem voor), en mag geen belediging voor anderen vormen (specifiek of algemeen) of obsceen taalgebruik bevatten. U mag zich niet voordoen als een andere persoon of instelling. Uw gebruikersnaam mag ook niet de indruk wekken dat u HKA, cWise of  één van de aangesloten bibliotheken vertegenwoordigt.
+            </p>
+<h4>Mail</h4>
+<p>
+                Het cWise-systeem en/of HKA kan u mail sturen. Binnen uw profielpagina kunt u aangeven welke soort berichten u wel en niet wenst te ontvangen. Uw mailadres zal nooit rechtstreeks zichtbaar worden gemaakt, anders dan op uw persoonlijke profielpagina. 
+            </p>
+<h4>Auteursrechtelijke bescherming</h4>
+<p>
+				Wanneer u content toevoegt aan cWise, dan doet u dat onder de <a href="http://creativecommons.org/licenses/by-nd/3.0/nl">Creative Commons Naamsvermelding - Geen Afgeleide werken 3.0 licentie</a>. Kort samengevat houdt dit in dat uw content door iedereen gebruikt mag worden, mits ongewijzigd en onder vermelding van uw naam. Dit betekent dat wij niet het auteursrecht claimen over de door u ingevoerde gegevens, maar dat we deze gegevens alleen mogen gebruiken. Het staat u vrij de ingevoerde gegevens ook elders te plaatsen. Zoals eerder vermeld is het alleen toegestaan content te plaatsen waarmee u niet het auteursrecht van anderen schendt. 
+            </p>
+<h4>Hoe om te gaan met misbruik</h4>
+<p>
+				Wanneer u van mening bent dat een recensie in strijd is met deze voorwaarden, dan kunt u op de "misbruik"-knop klikken. Wanneer voldoende mensen een recensie als misbruik aanmelden, dan zal deze worden verwijderd. Gebruik de "misbruik"-knop niet om te melden dat u het niet eens bent met de inhoud van de recensie. Dit is een verschil van inzicht, waarvoor u de "niet nuttig"-knop kunt gebruiken. Komt u op andere wijze misbruik tegen, dan kunt u dit melden op <a href="mailto:cwise%5Bat%5Dbicat.com">cwise</a>.			
+			</p>
+<h4>Verantwoordelijkheid en continuïteit van de dienst</h4>
+<p>
+				U bent zelf verantwoordelijk voor de content die u plaatst. HKA behoudt zich echter het recht voor ongewenste content zonder discussie of bericht te verwijderen. In geval van misbruik behoudt HKA zich het recht voor uw account te blokkeren. 
+			</p>
+<p>
+				HKA zal pogen de dienst 24 uur per dag, 7 dagen per week, operationeel te houden, en zal de opgeslagen informatie zo zorgvuldig mogelijk behandelen. Mocht dit, door welke omstandigheid dan ook, niet mogelijk blijken, dan zal HKA niet aansprakelijk zijn voor verloren informatie of het niet beschikbaar zijn van het systeem. 
+			</p>
+<h4>Vrijwaring</h4>
+<p>
+				Omdat veel van de informatie afkomstig is van medegebruikers, kan het voorkomen dat de informatie binnen cWise niet geheel juist, volledig of up-to-date is. De informatie die door gebruikers van cWise wordt geplaatst, wordt niet door HKA gecontroleerd op juistheid. Wel doet HKA haar best om gebruik, dat in strijd is met de gebruiksvoorwaarden, tegen te gaan.
+				HKA is niet verantwoordelijk voor eventuele fouten en onvolkomenheden in de verstrekte informatie en er kunnen geen rechten ontleend worden aan de inhoud van de dienst. HKA is niet aansprakelijk voor enige directe of indirecte schade die voortvloeit uit of verband houdt met het gebruik van cWise of de onmogelijkheid om deze te gebruiken.
+				De gebruiker van de website vrijwaart HKA voor alle aanspraken op schadevergoeding, zowel van de gebruiker zelf als van derden, in verband met de informatie binnen cWise of het gebruik ervan. 
+			</p>
+<h4>Nederlands recht</h4>
+<p>
+				Op deze voorwaarden is het Nederlands recht van toepassing.
+			</p>
+<br>
+</div></p>
+<p><br><form id="algemene_voorwaarden_form" onsubmit="akkoordAlgemeneVoorwaarden('e26e877c-50a5-4f57-804e-9b133be37a0b');return false">
+<input id="algemene_voorwaarden_check" type="checkbox" class="algemene_voorwaarden_check" name="algemene_voorwaarden_check"><label for="algemene_voorwaarden_check"><strong> Ik heb de Algemene Voorwaarden gelezen en ik ga akkoord.</strong></label><br><input id="algemene_voorwaarden_akkoord" value="Akkoord" class="algemene_voorwaarden_akkoord" type="submit" name="algemene_voorwaarden_akkoord">
+</form></p>
+<a class="close_modal" href="#" id="algemene_voorwaarden_sluit" title="Sluit venster" onclick="Modalbox.hide();return false;" style="display: none;">Sluit venster |x</a>
+</div>
+<div id="login_mag_cwise" style="display:none;">
+<span class="alert">Voor deze inschrijving is deelname aan cWise niet toegestaan.</span><a href="/error.html" class="close_modal" title="Sluit venster">Sluit venster |x</a>
+</div>
+<div id="login_nieuwprofiel" style="display:none;">
+<p><span class="info">Geef hier de nickname op die je wilt gebruiken voor recensies, tags etc. Je nickname moet bestaan uit minimaal 4 letters en/of cijfers. Als een nickname al in gebruik is, krijg je voorbeelden van mogelijke andere namen te zien. Natuurlijk mag je ook een hele andere nickname kiezen.
+		</span><span class="info">
+			Tip: je nickname wordt op het scherm getoond. Gebruik dus niet je pincode of postcode.
+		</span><p id="nieuwprofiel_melding" class="melding_leeg"></p><br><form id="nieuwprofiel_form" class="nickname_form" method="post" onsubmit="loginCheckNickname('e26e877c-50a5-4f57-804e-9b133be37a0b', '', '', 'nieuwprofiel_form', '');return false">
+<p><label>Gewenste nickname: </label><br><div id="nickname_div"><input type="text" class="nickname" id="nickname_veld" name="nickname"></div><input class="checknicknameloader" id="checknicknameloader" style="display: none;"><br><div id="nickname_preview"></div></p>
+<br><p><input id="nieuwprofiel_form_submit" type="submit" value="Aanvragen"></p>
+</form></p>
+<br>
+</div>
+<div id="wijzignickname" style="display:none;">
+<br><div><span class="info"><strong>
+						Wijzig hier je nickname.
+					</strong></span></div>
+<p><p id="wijzignickname_melding" class="melding_leeg"></p><p id="org_nickname" style="display: none;"></p><form id="wijzignickname_form" class="nickname_form" method="post" onsubmit="loginCheckNickname('e26e877c-50a5-4f57-804e-9b133be37a0b', '', '', 'wijzignickname_form', '');return false">
+<p><label>Gewenste nickname: </label><br><div id="wijzignickname_div"><input type="text" class="nickname" id="wijzignickname_veld" name="nickname"></div><input class="checknicknameloader" id="checknicknameloader" style="display: none;"><br><div id="wijzignickname_preview"></div></p>
+<div class="breaker"></div>
+<p class="wijzignickname-controls"><input id="wijzignickname_submit" type="submit" value="Opslaan"> of <input type="button" value="Annuleren" onclick="Modalbox.hide();return false;"></p>
+</form></p>
+<br><a href="#" class="close_modal" id="wijzignicknamesucces" title="Sluit venster" onclick="Modalbox.hide();return false;">Sluit venster |x</a>
+</div>
+<div id="login_succes" style="display:none;">
+<p><p id="login_succes_melding" class="melding_leeg"></p></p>
+<br><br><div id="nieuwprofiel_privacy_waarschuwing" style="display:none;">
+<span class="info">
+			Ter bescherming als gebruiker van cWise kun je onder <a class="bericht_knop instellingen" href="/error.html" onclick="haalProfielPrivate('e26e877c-50a5-4f57-804e-9b133be37a0b', '8399', '0');return false">Instellingen</a> (Privacy instellingen) aangeven of je betreffende zaken zichtbaar voor derden wilt maken, of juist niet.
+		</span><span class="info">
+			Aanbevolen wordt om deze instellingen na te lopen. Mocht je direct willen beginnen klik dan op <a href="/error.html" onclick="Modalbox.hide();return false;" title="Sluit venster">Sluit venster |x</a>.
+			<br><br>
+			Om bij je instellingen te komen klik je op 'mijn profiel' dat altijd aanwezig is op iedere pagina, maar alleen als je ingelogd bent.
+		</span>
+</div>
+<div class="breaker"></div>
+<br><a href="/error.html" class="close_modal" id="close_loginsucces" title="Sluit venster">Sluit venster |x</a>
+</div>
+<div id="wijzignickname_succes" style="display:none;">
+<p><p id="wijzignickname_succes_melding" class="melding_leeg"></p></p>
+<br><a href="/error.html" class="close_modal" id="wijzignicknamesucces" title="Sluit venster">Sluit venster |x</a>
+</div>
+</BODY>
+</HTML>

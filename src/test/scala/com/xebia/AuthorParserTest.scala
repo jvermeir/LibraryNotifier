@@ -55,6 +55,16 @@ class AuthorParserTest extends FeatureSpec with GivenWhenThen with MustMatchers 
       expectedResult must be === author
     }
 
+    scenario("'Lastname, firstname (1964-)' format is parsed") {
+      Given("a author in ''Lastname, firstname (1964-)' format")
+      val authorAsString = "Brown, Dan (1964-)"
+      When("the string is parsed")
+      val author = Author(authorAsString)
+      Then("one author is found")
+      val expectedResult = Author("Dan", "Brown")
+      expectedResult must be === author
+    }
+
     scenario("List of strings with author names in various formats is parsed") {
       Given("a list of authors in 'Lastname, Firstname', 'Firstname Lastname', 'Lastname' format")
       val authorsAsStrings = List("Dan Brown1","Brown2, Dan","Brown3")
