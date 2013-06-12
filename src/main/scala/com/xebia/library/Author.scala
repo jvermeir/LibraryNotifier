@@ -1,5 +1,4 @@
-package com.xebia
-
+package com.xebia.library
 
 case class Author(val firstName: String, val lastName: String, val linkToListOfBooks: String)  {
   def equalsIgnoreLink(other:Author):Boolean = {
@@ -7,6 +6,8 @@ case class Author(val firstName: String, val lastName: String, val linkToListOfB
   }
   def toFirstNameLastNameString:String = lastName + ", " + firstName
 }
+
+case class Book (val author:Author, val title:String)
 
 object Author {
   def apply(authorAsString: String): Author = {
@@ -27,11 +28,6 @@ object Author {
 
   def apply(firstName: String, lastName: String): Author = {
     Author(firstName, lastName, "")
-  }
-
-  def replaceSid(author:Author, newSid:String): Author = {
-    val newLink = author.linkToListOfBooks.replaceAll(";sid=.*?;", ";sid="+newSid+";")
-    Author(author.firstName, author.lastName, newLink)
   }
 
   def main(args: Array[String]): Unit = {

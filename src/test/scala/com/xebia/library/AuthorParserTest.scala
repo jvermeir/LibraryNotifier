@@ -1,5 +1,4 @@
-package com.xebia
-
+package com.xebia.library
 
 import org.scalatest.junit.JUnitRunner
 import org.scalatest.FeatureSpec

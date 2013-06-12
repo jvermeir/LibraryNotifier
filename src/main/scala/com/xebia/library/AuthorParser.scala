@@ -1,4 +1,4 @@
-package com.xebia
+package com.xebia.library
 
 import java.io.File
 import org.apache.commons.io.FileUtils
