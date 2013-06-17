@@ -1,13 +1,20 @@
 package com.xebia.library
 
+import scala.io.Source._
+
 case class Author(val firstName: String, val lastName: String, val linkToListOfBooks: String)  {
   def equalsIgnoreLink(other:Author):Boolean = {
     firstName.equals(other.firstName) && lastName.equals(other.lastName)
   }
   def toFirstNameLastNameString:String = lastName + ", " + firstName
+  override def equals (that:Any):Boolean = {
+    if (that.isInstanceOf[Author]) {
+      val other = that.asInstanceOf[Author]
+      other.toFirstNameLastNameString.equals(toFirstNameLastNameString)
+    } else false
+  }
+  def like(that:Author):Boolean = toFirstNameLastNameString.startsWith(that.toFirstNameLastNameString)
 }
-
-case class Book (val author:Author, val title:String)
 
 object Author {
   def apply(authorAsString: String): Author = {
@@ -35,3 +42,5 @@ object Author {
     println(authors)
   }
 }
+
+class UnknownAuthor extends Author("Unknown", "Author", "")

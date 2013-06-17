@@ -1,0 +1,3 @@
+lastname1; firstname1; book1
+lastname1; firstname1; book2
+lastname3; firstname3 ; book3

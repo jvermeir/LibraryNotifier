@@ -26,23 +26,28 @@ class LibraryClient {
   val sid = startBicatSessionAndReturnSid
   val bicatCookie = getBicatCookie
 
-  def getBooksByAuthor(authorToSearchFor:Author): List[Book] = {
-    def author = updateAuthorWithLinkToBooks(authorToSearchFor)
-    def bookpage = getBookPageAsHtmlByAuthor(author)
-    def titles = getBooksFromHtmlPage(bookpage, author)
-    def books = titles map {title => Book(author, title)}
-    books
+  def getBooksByAuthor(authorToSearchFor: Author): List[Book] = {
+    println("Getting books for " + authorToSearchFor)
+    val author = updateAuthorWithLinkToBooks(authorToSearchFor)
+    val result = if (author.like(authorToSearchFor)) {
+      val bookpage = getBookPageAsHtmlByAuthor(author)
+      val titles = getBooksFromHtmlPage(bookpage, author)
+      titles map {
+        title => Book(author, title)
+      }
+    } else List()
+    println("Found: " + result.size + " books")
+    result
   }
 
-  def getBooksForAuthors(authors:Map[String, Author]): List[Book] = {
-    val x = authors.values map (author => getBooksFromHtmlPage(getBookPageAsHtmlByAuthor(author),author) map (book => Book(author, book)))
+  def getBooksForAuthors(authors: Map[String, Author]): List[Book] = {
+    val x = authors.values map (author => getBooksByAuthor(author) map (book => Book(author, book.title)))
     (x flatten).toList
   }
 
-  protected[library] def updateAuthorWithLinkToBooks(author:Author): Author = {
+  protected[library] def updateAuthorWithLinkToBooks(author: Author): Author = {
     val authorSearchResultPage = getResultOfSearchByAuthor(author.toFirstNameLastNameString)
-    val authorWithLink = Author(author.firstName, author.lastName, getAuthorLinkFromAWebPage(authorSearchResultPage))
-    authorWithLink
+    getAuthorUpdatedWithLink(authorSearchResultPage, author)
   }
 
   protected[library] def getResultOfSearchByAuthor(authorName: String): String = {
@@ -54,15 +59,35 @@ class LibraryClient {
     EntityUtils.toString(response.getEntity)
   }
 
-  protected[library] def getParametersForAuthorQuery(authorName:String, sid:String):List[BasicNameValuePair] =
+  protected[library] def getParametersForAuthorQuery(authorName: String, sid: String): List[BasicNameValuePair] =
     new BasicNameValuePair("qs", authorName) :: new BasicNameValuePair("sid", sid) :: LibraryClient.fixedParamatersForAuthorsQuery
 
-  protected[library] def getAuthorLinkFromAWebPage(webPage: String): String = {
-    val pattern = """(?m)<td class="thsearch_wordlink">.*\n(.*)\n.*</td>""".r
-    val result = pattern
+  protected[library] def getAuthorUpdatedWithLink(webPage: String, authorWithoutLink:Author): Author = {
+    val singleLineAuthorFragmentPattern = """(?m)<td class="thsearch_wordlink">(.*?)</td>"""
+    val multiLineAuthorFragmentPattern = """(?m)<td class="thsearch_wordlink">.*\n(.*)\n.*</td>"""
+    val result = getAuthorUpdatedWithLink(webPage, singleLineAuthorFragmentPattern, authorWithoutLink)
+    result match {
+      case None => getAuthorUpdatedWithLink(webPage, multiLineAuthorFragmentPattern, authorWithoutLink) getOrElse( new UnknownAuthor)
+      case _ => result getOrElse(new UnknownAuthor)
+    }
+  }
+
+  protected[library] def getAuthorUpdatedWithLink(webPage: String, pattern: String, author: Author): Option[Author] = {
+    val authorFragment = pattern.r
       .findFirstMatchIn(webPage)
       .map(_ group 1).getOrElse("")
-    result
+    val authorLinkPattern = """<a href="(.*?)">(.*?)<""".r
+    val link = authorLinkPattern
+      .findFirstMatchIn(authorFragment)
+      .map(_ group 1).getOrElse("")
+    val authorAsString = authorLinkPattern
+      .findFirstMatchIn(authorFragment)
+      .map(_ group 2).getOrElse("")
+    val authorFromWebPage = Author(authorAsString)
+    if (author.like(authorFromWebPage)) {
+      val linkWithAantalFieldSetTo60 = link.replaceFirst("aantal=10", "aantal=60")
+      Some(Author(author, linkWithAantalFieldSetTo60))
+    } else None
   }
 
   protected[library] def startBicatSessionAndReturnSid: String = {
@@ -70,8 +95,7 @@ class LibraryClient {
     val response = httpclient.execute(httpget, httpContext)
     val page = EntityUtils.toString(response.getEntity)
     val pattern = """";sid=.*?;"""".r
-    val sid = pattern.findFirstMatchIn(page).map(_ group 1).getOrElse("")
-    sid
+    pattern.findFirstMatchIn(page).map(_ group 1).getOrElse("")
   }
 
   protected[library] def getBicatCookie: Cookie = {
@@ -82,35 +106,20 @@ class LibraryClient {
 
   protected[library] def getBookPageAsHtmlByAuthor(author: Author): String = {
     val link = author.linkToListOfBooks
-    val y = Request.Get("http://bicat.cultura-ede.nl" + link).execute().returnContent().asString()
-    y
+    Request.Get("http://bicat.cultura-ede.nl" + link).execute().returnContent().asString()
   }
 
-  protected[library] def getBooksFromHtmlPage(bookPageAsHtml: String, author:Author): List[String] = {
-    val patternString = """<a class="(?m)title" title="(.*?)".*\n<li><span class="vet">""" + author.toFirstNameLastNameString +  """</span>"""
+  protected[library] def getBooksFromHtmlPage(bookPageAsHtml: String, author: Author): List[String] = {
+    val patternString = """<a class="(?m)title" title="(.*?)".*\n<li><span class="vet">""" + author.toFirstNameLastNameString + """</span>"""
     val pattern = patternString.r
     pattern.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
   }
 
-  protected[library] def getBooksForAuthors(dataFileName:String): List[Book] = {
+  protected[library] def getBooksForAuthors(dataFileName: String): List[Book] = {
     val authors = AuthorParser.loadAuthorsFromFile(dataFileName)
     getBooksForAuthors(authors)
   }
 
-  protected[library] def getAuthorFromAWebPage(webPage: String): Author = {
-    val authorLink = getAuthorLinkFromAWebPage(webPage)
-    val pattern = """<a href="(.*?)">(.*?)<""".r
-    val link = pattern
-      .findFirstMatchIn(authorLink)
-      .map(_ group 1).getOrElse("")
-    val authorAsString = pattern
-      .findFirstMatchIn(authorLink)
-      .map(_ group 2).getOrElse("")
-    val authorWithoutWebLink = Author(authorAsString)
-    // TODO: find out about extractor pattern
-    val linkWithAantalFieldSetTo60=link.replaceFirst("aantal=10","aantal=60")
-    Author(authorWithoutWebLink, linkWithAantalFieldSetTo60)
-  }
 }
 
 object LibraryClient {
@@ -123,8 +132,12 @@ object LibraryClient {
   )
 
   def main(args: Array[String]) {
-    val res = readTextFromUrl("http://localhost/")
-    println("res: " + res)
+    val authors = AuthorParser.loadAuthorsFromFile("data/authors.txt")
+    println("authors: " + authors)
+    val libraryClient = new LibraryClient
+    val books = libraryClient.getBooksForAuthors(authors)
+    Book.writeBooksToFile("data/books.txt", books)
+    println("books: " + books)
   }
 
   def readTextFromUrl(url: String): String = {

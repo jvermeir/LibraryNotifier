@@ -57,14 +57,14 @@ class LibraryClientTest extends LibraryClient with FeatureSpec with GivenWhenThe
       When("we search for 'Dan Brown' we get a webpage that contains the text 'Brown, Dan  (1964-)'")
       val data: String = libraryClient.getResultOfSearchByAuthor("Brown, Dan")
       Then("we get the list of authors from that page and the first author in the list is 'Brown, Dan.*(1964-)'")
-      val author = libraryClient.getAuthorFromAWebPage(data)
+      val author = libraryClient.getAuthorUpdatedWithLink(data, new Author("Dan", "Brown", "link"))
       author.equalsIgnoreLink(Author("Dan", "Brown")) must be === true
     }
 
     scenario("get the page with the list of books for an author") {
       Given("A LibraryClient")
       val data: String = libraryClient.getResultOfSearchByAuthor("Brown, Dan")
-      val danBrown = libraryClient.getAuthorFromAWebPage(data)
+      val danBrown = libraryClient.getAuthorUpdatedWithLink(data, new Author("Dan", "Brown", "link"))
       When("we get the books for 'Brown, Dan'")
       val bookPageAsHtml:String = libraryClient.getBookPageAsHtmlByAuthor(danBrown)
       bookPageAsHtml must include ("The Da Vinci code")
@@ -83,7 +83,7 @@ class LibraryClientTest extends LibraryClient with FeatureSpec with GivenWhenThe
     scenario("get the list of books from the Internet for an author") {
       Given("A LibraryClient")
       val data: String = libraryClient.getResultOfSearchByAuthor("Brown, Dan")
-      val danBrown = libraryClient.getAuthorFromAWebPage(data)
+      val danBrown = libraryClient.getAuthorUpdatedWithLink(data, new Author("Dan", "Brown", "link"))
       When("we get the books for 'Brown, Dan'")
       val bookPageAsHtml:String = libraryClient.getBookPageAsHtmlByAuthor(danBrown)
       val listOfBooks:List[String] = libraryClient.getBooksFromHtmlPage(bookPageAsHtml, Author("Brown, Dan"))
@@ -94,7 +94,7 @@ class LibraryClientTest extends LibraryClient with FeatureSpec with GivenWhenThe
 
     scenario("get the books written by a list of authors from the local library") {
       Given("A map of authors")
-      val authors = Map("Brown, Dan" -> Author("Gaiman, Neil"), "Coupland, Douglas" -> Author("Coupland, Douglas"))
+      val authors = Map("Gaiman, Neil" -> Author("Gaiman, Neil"), "Coupland, Douglas" -> Author("Coupland, Douglas"))
       When("we get the books for all authors")
       val books = libraryClient.getBooksForAuthors(authors)
       Then("the result must contain 'JPod' and 'Amerikaanse goden' and has length 9+12")
@@ -105,5 +105,4 @@ class LibraryClientTest extends LibraryClient with FeatureSpec with GivenWhenThe
     def bookFilter(book:Book):Boolean = book.title == "JPod" || book.title == "Amerikaanse goden"
 
   }
-
 }
