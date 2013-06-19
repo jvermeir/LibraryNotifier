@@ -144,4 +144,12 @@ object LibraryClient {
     val content = Request.Get(url).execute().returnContent()
     content.asString()
   }
+
+  def getNewBooks(myBooks:List[Book], booksFromWeb:List[Book]):List[Book] = {
+    val candidates = booksFromWeb.toSet
+    val booksWithStatusReadOrWontRead = myBooks.filter(book => book.status!=Book.UNKNOWN)
+    val newBooks = candidates -- booksWithStatusReadOrWontRead
+    newBooks.toList
+  }
+
 }
