@@ -35,9 +35,7 @@ class LibraryClient {
     val result = if (author.like(authorToSearchFor)) {
       val bookpage = getBookPageAsHtmlByAuthor(author)
       val titles = getBooksFromHtmlPage(bookpage, author)
-      titles map {
-        title => Book(author, title)
-      }
+      titles map {title => Book(author, title)}
     } else List()
     println("Found: " + result.size + " books")
     result
@@ -115,7 +113,14 @@ class LibraryClient {
   protected[library] def getBooksFromHtmlPage(bookPageAsHtml: String, author: Author): List[String] = {
     val patternString = """<a class="(?m)title" title="(.*?)".*\n<li><span class="vet">""" + author.toFirstNameLastNameString + """</span>"""
     val pattern = patternString.r
-    pattern.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
+    val books = pattern.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
+    books.length match {
+      case 0 => {
+          val p2 = """<meta xmlns:og="http://ogp.me/ns#" name="title" content="(.*?)"""".r
+          p2.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
+        }
+      case _ => books
+    }
   }
 
   protected[library] def getBooksForAuthors(dataFileName: String): List[Book] = {

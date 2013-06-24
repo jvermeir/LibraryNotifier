@@ -15,7 +15,7 @@ jay lake
 jeffrey ford
 Ballard, Jim G.
 bacigalupi
-cory doctorov
+cory doctorow
 ken scholes
 Alexander gordon smith
 robert reed
@@ -36,7 +36,6 @@ Ken liu
 Robert R. Chase
 Mary Rosenblum
 Ian Creasey
-Underwood
 
 Lois McMaster Bujold
 Adam Christopher

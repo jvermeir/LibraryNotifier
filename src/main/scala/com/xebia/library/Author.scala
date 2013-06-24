@@ -13,7 +13,7 @@ case class Author(val firstName: String, val lastName: String, val linkToListOfB
       other.toFirstNameLastNameString.equals(toFirstNameLastNameString)
     } else false
   }
-  def like(that:Author):Boolean = toFirstNameLastNameString.startsWith(that.toFirstNameLastNameString)
+  def like(that:Author):Boolean = toFirstNameLastNameString.toLowerCase.startsWith(that.toFirstNameLastNameString.toLowerCase)
 }
 
 object Author {

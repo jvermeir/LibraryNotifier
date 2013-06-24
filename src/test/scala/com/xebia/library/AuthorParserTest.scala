@@ -93,5 +93,14 @@ class AuthorParserTest extends FeatureSpec with GivenWhenThen with MustMatchers 
       val expectedResult = Map[String, Author]("Brown1" ->  Author("Dan", "Brown1"), "Brown2" ->  Author("Dan", "Brown2"), "Brown3" ->  Author("", "Brown3"))
       expectedResult must be === authors
     }
+
+    scenario("Match author name regardless of case") {
+      Given("an Author instance")
+      val author = Author("Dan", "Brown")
+      When("compared to anothor author with different upper/lower case spelling")
+      val areEqual=author.like(Author("dan","brown"))
+      Then("the first author is considerd to be 'like' the second")
+      areEqual must be === true
+    }
   }
 }
