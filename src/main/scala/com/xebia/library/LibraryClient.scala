@@ -3,6 +3,7 @@ package com.xebia.library
 // TODO: can we split this in a part that connects to a website and a part that processes data?
 // TODO: this would make testing easier because it allows us to mock the actual library
 // TODO: aha! we need a Library abstraction...
+
 import org.apache.http.client.fluent.Request
 import org.apache.http.client.HttpClient
 import org.apache.http.impl.client.{BasicCookieStore, DefaultHttpClient}
@@ -35,15 +36,18 @@ class LibraryClient {
     val result = if (author.like(authorToSearchFor)) {
       val bookpage = getBookPageAsHtmlByAuthor(author)
       val titles = getBooksFromHtmlPage(bookpage, author)
-      titles map {title => Book(author, title)}
+      titles map {
+        title => Book(author, title)
+      }
     } else List()
     println("Found: " + result.size + " books")
     result
   }
 
-  def getBooksForAuthors(authors: Map[String, Author]): List[Book] = {  // TODO: why map from book => Book(...)??
-    val x = authors.values map (author => getBooksByAuthor(author) map (book => Book(author, book.title)))
-    (x flatten).toList
+  def getBooksForAuthors(authors: Map[String, Author]): List[Book] = {
+    // TODO: why map from book => Book(...)??
+    val books = authors.values map (author => getBooksByAuthor(author)) // map (book => Book(author, book.title)))
+    (books flatten).toList
   }
 
   protected[library] def updateAuthorWithLinkToBooks(author: Author): Author = {
@@ -63,13 +67,13 @@ class LibraryClient {
   protected[library] def getParametersForAuthorQuery(authorName: String, sid: String): List[BasicNameValuePair] =
     new BasicNameValuePair("qs", authorName) :: new BasicNameValuePair("sid", sid) :: LibraryClient.fixedParamatersForAuthorsQuery
 
-  protected[library] def getAuthorUpdatedWithLink(webPage: String, authorWithoutLink:Author): Author = {
+  protected[library] def getAuthorUpdatedWithLink(webPage: String, authorWithoutLink: Author): Author = {
     val singleLineAuthorFragmentPattern = """(?m)<td class="thsearch_wordlink">(.*?)</td>"""
     val multiLineAuthorFragmentPattern = """(?m)<td class="thsearch_wordlink">.*\n(.*)\n.*</td>"""
     val result = getAuthorUpdatedWithLink(webPage, singleLineAuthorFragmentPattern, authorWithoutLink)
     result match {
-      case None => getAuthorUpdatedWithLink(webPage, multiLineAuthorFragmentPattern, authorWithoutLink) getOrElse( new UnknownAuthor)
-      case _ => result getOrElse(new UnknownAuthor)
+      case None => getAuthorUpdatedWithLink(webPage, multiLineAuthorFragmentPattern, authorWithoutLink) getOrElse (new UnknownAuthor)
+      case _ => result getOrElse (new UnknownAuthor)
     }
   }
 
@@ -111,19 +115,19 @@ class LibraryClient {
   }
 
   protected[library] def getBooksFromHtmlPage(bookPageAsHtml: String, author: Author): List[String] = {
-    val patternString = """<a class="(?m)title" title="(.*?)".*\n<li><span class="vet">""" + author.toFirstNameLastNameString + """</span>"""
+    val patternString = """<a class="title" title="(.*?)""""
     val pattern = patternString.r
     val books = pattern.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
     books.length match {
       case 0 => {
-          val p2 = """<meta xmlns:og="http://ogp.me/ns#" name="title" content="(.*?)"""".r
-          p2.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
-        }
+        val p2 = """<meta xmlns:og="http://ogp.me/ns#" name="title" content="(.*?)"""".r
+        p2.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
+      }
       case _ => books
     }
   }
 
-  protected[library] def getBooksForAuthors(dataFileName: String): List[Book] = {
+  protected[library] def getBooksForAuthorsInFile(dataFileName: String): List[Book] = {
     val authors = AuthorParser.loadAuthorsFromFile(dataFileName)
     getBooksForAuthors(authors)
   }
@@ -153,9 +157,9 @@ object LibraryClient {
     content.asString()
   }
 
-  def getNewBooks(myBooks:List[Book], booksFromWeb:List[Book]):List[Book] = {
+  def getNewBooks(myBooks: List[Book], booksFromWeb: List[Book]): List[Book] = {
     val candidates = booksFromWeb.toSet
-    val booksWithStatusReadOrWontRead = myBooks.filter(book => book.status!=Book.UNKNOWN)
+    val booksWithStatusReadOrWontRead = myBooks.filter(book => book.status != Book.UNKNOWN)
     val newBooks = candidates -- booksWithStatusReadOrWontRead
     newBooks.toList
   }

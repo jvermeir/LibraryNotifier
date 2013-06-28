@@ -4,7 +4,7 @@ Coupland;Douglas;JPod;read
 Coupland;Douglas;Speler Een;read
 Gaiman;Neil;Amerikaanse goden;read
 Gaiman;Neil;De bende van Anansi;read
-Harland;Paul;Tegenlicht;read
 Harland;Paul;De werelden van Vince-Crux;read
 Harland;Paul;De wintertuin;read
+Harland;Paul;Computercode Cthulhu;read
 Mols;Bennie;Turings tango : waarom de mens de computer de baas blijft

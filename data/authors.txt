@@ -14,7 +14,7 @@ Richard Parks
 jay lake
 jeffrey ford
 Ballard, Jim G.
-bacigalupi
+bacigalupi, Paolo
 cory doctorow
 ken scholes
 Alexander gordon smith
@@ -43,3 +43,4 @@ Gareth Roberts
 Richard Kadrey
 Kathryn Cramer
 Neil Gaiman
+Folsom, Allan

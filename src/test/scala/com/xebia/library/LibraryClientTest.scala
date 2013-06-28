@@ -75,9 +75,9 @@ class LibraryClientTest extends LibraryClient with FeatureSpec with GivenWhenThe
       val bookPageAsHtml: String = fromFile("data/danBrownBooks.html").mkString
       When("we get the list of books")
       val listOfBooks: List[String] = libraryClient.getBooksFromHtmlPage(bookPageAsHtml, Author("Brown, Dan"))
-      Then("the result contains 'The Da Vinci code' and has length 3")
+      Then("the result contains 'The Da Vinci code' and has length 6")
       listOfBooks must contain("The Da Vinci code")
-      listOfBooks.size must be === 3
+      listOfBooks.size must be === 6
     }
 
     scenario("get the list of books from the Internet for an author") {
@@ -121,16 +121,16 @@ class LibraryClientTest extends LibraryClient with FeatureSpec with GivenWhenThe
       Given("a file with the books I've read and a list of books from my favourite writers")
       val myBooks = Book.readFromFile("data/booksForGetListOfCandidateBooks...test.txt")
       val libraryClient: LibraryClient = new LibraryClient
-      val allBooks = libraryClient.getBooksForAuthors("data/authorsForGetListOfCandidateBooks...test.txt")
+      val allBooks = libraryClient.getBooksForAuthorsInFile("data/authorsForGetListOfCandidateBooks...test.txt")
       When("we get the list of books I might want to read")
       val booksToRead:List[Book] = LibraryClient.getNewBooks(myBooks, allBooks)
       Then("the result is 1 book by Bennie Mols, 7 books by Douglas Coupland, 10 books by Neil Gaiman (yeah), 38 books by Thomas Ross and no books by Paul Harland (snif)")
       booksToRead.filter( book => book.author == Author("Bennie", "Mols","")).size must be === 1
       booksToRead.filter( book => book.author == Author("Douglas", "Coupland","")).size must be === 7
       booksToRead.filter( book => book.author == Author("Neil", "Gaiman","")).size must be === 10
-      booksToRead.filter( book => book.author == Author("Tomas", "Ross","")).size must be === 38
+      booksToRead.filter( book => book.author == Author("Tomas", "Ross","")).size must be === 45
       booksToRead.filter( book => book.author == Author("Paul", "Harland","")).size must be === 0
-      booksToRead.size must be === 56
+      booksToRead.size must be === 63
     }
 
   }
