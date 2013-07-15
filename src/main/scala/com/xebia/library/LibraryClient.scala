@@ -1,9 +1,5 @@
 package com.xebia.library
 
-// TODO: can we split this in a part that connects to a website and a part that processes data?
-// TODO: this would make testing easier because it allows us to mock the actual library
-// TODO: aha! we need a Library abstraction...
-
 import org.apache.http.client.fluent.Request
 import org.apache.http.client.HttpClient
 import org.apache.http.impl.client.{BasicCookieStore, DefaultHttpClient}
@@ -45,8 +41,7 @@ class LibraryClient {
   }
 
   def getBooksForAuthors(authors: Map[String, Author]): List[Book] = {
-    // TODO: why map from book => Book(...)??
-    val books = authors.values map (author => getBooksByAuthor(author)) // map (book => Book(author, book.title)))
+    val books = authors.values map (author => getBooksByAuthor(author))
     (books flatten).toList
   }
 
@@ -131,7 +126,6 @@ class LibraryClient {
     val authors = AuthorParser.loadAuthorsFromFile(dataFileName)
     getBooksForAuthors(authors)
   }
-
 }
 
 object LibraryClient {

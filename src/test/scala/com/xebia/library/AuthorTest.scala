@@ -7,7 +7,7 @@ import org.scalatest.matchers.MustMatchers
 import org.junit.runner.RunWith
 
 @RunWith(classOf[JUnitRunner])
-class AuthorParserTest extends FeatureSpec with GivenWhenThen with MustMatchers {
+class AuthorTest extends FeatureSpec with GivenWhenThen with MustMatchers {
 
   feature("The parser can parse author first and last names from a text") {
     info("As a family member")
