@@ -1,7 +1,7 @@
 package junk
 
 import org.apache.http.message.BasicNameValuePair
-import com.xebia.library._
+import com.library.library._
 import org.apache.http.client.fluent.Request
 
 /**

@@ -1,6 +1,6 @@
 package junk
 
-import com.xebia.library.{Author, DutchPublicLibrary}
+import com.library.library.{Author, DutchPublicLibrary}
 
 class Euro(val amount:Int) {
   override def toString:String = "Euro: " + amount
