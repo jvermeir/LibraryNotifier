@@ -8,19 +8,23 @@ import org.junit.runner.RunWith
 import scala.io.Source._
 
 @RunWith(classOf[JUnitRunner])
-class LibraryClientTest extends LibraryClient with FeatureSpec with GivenWhenThen with MustMatchers {
+class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with GivenWhenThen with MustMatchers {
+
+  val libraryClient = Config.libraryClient
+  // Start a session here because sid was changed to lazy so we need to make sure a session exists
+  // TODO: maybe we should just use the DutchPublicLibrary class here?
+  libraryClient.startBicatSessionAndReturnSid
 
   feature("The HTTP client finds books written by a list of authors and reports on their availability") {
     info("As a family member")
     info("I want to be notified when a new book by one of my favourite authors becomes available at the library")
     info("So that I can go get it")
-    val libraryClient = new LibraryClient
 
     scenario("Reading data from a URL") {
       Given("A url")
       val url = "http://localhost/"
       When("the page is loaded from the url")
-      val data: String = LibraryClient.readTextFromUrl(url);
+      val data: String = libraryClient.readTextFromUrl(url);
       Then("the text 'It works' appears in the page data")
       val itWorksFound = data.contains("It works")
       true must be === itWorksFound
@@ -30,14 +34,14 @@ class LibraryClientTest extends LibraryClient with FeatureSpec with GivenWhenThe
       Given("A url")
       val url = "http://bicat.cultura-ede.nl/cgi-bin/bx.pl?taal=1&xdoit=y&groepfx=10&vestnr=8399&cdef=002"
       When("the page is loaded from the url")
-      val data = LibraryClient.readTextFromUrl(url)
+      val data = libraryClient.readTextFromUrl(url)
       Then("the text 'Hoofdmenu' appears in the page data")
       val hoofdmenuFound = data.contains("Hoofdmenu")
       true must be === hoofdmenuFound
     }
 
     scenario("getting bicat_sid cookie from http://bicat.cultura-ede.nl/") {
-      Given("A LibraryClient")
+      Given("A libraryClient")
       When("the start page is loaded from the url")
       Then("the BICAT_SID cookie is set to a 5-part string")
       val bicatCookie = libraryClient.bicatCookie
@@ -45,7 +49,7 @@ class LibraryClientTest extends LibraryClient with FeatureSpec with GivenWhenThe
     }
 
     scenario("get the page with the list of writers that satisfy a author search criterium") {
-      Given("A LibraryClient")
+      Given("A libraryClient")
       When("we search for 'Dan Brown")
       val data: String = libraryClient.getResultOfSearchByAuthor("Brown, Dan")
       Then("we get a webpage that contains the text 'Brown, Dan  (1964-)'")
@@ -53,7 +57,7 @@ class LibraryClientTest extends LibraryClient with FeatureSpec with GivenWhenThe
     }
 
     scenario("get the list of writers that satisfy a author search criterium") {
-      Given("A LibraryClient")
+      Given("A libraryClient")
       When("we search for 'Dan Brown' we get a webpage that contains the text 'Brown, Dan  (1964-)'")
       val data: String = libraryClient.getResultOfSearchByAuthor("Brown, Dan")
       Then("we get the list of authors from that page and the first author in the list is 'Brown, Dan.*(1964-)'")
@@ -62,7 +66,7 @@ class LibraryClientTest extends LibraryClient with FeatureSpec with GivenWhenThe
     }
 
     scenario("get the page with the list of books for an author") {
-      Given("A LibraryClient")
+      Given("A libraryClient")
       val data: String = libraryClient.getResultOfSearchByAuthor("Brown, Dan")
       val danBrown = libraryClient.getAuthorUpdatedWithLink(data, new Author("Dan", "Brown", "link"))
       When("we get the books for 'Brown, Dan'")
@@ -81,7 +85,7 @@ class LibraryClientTest extends LibraryClient with FeatureSpec with GivenWhenThe
     }
 
     scenario("get the list of books from the Internet for an author") {
-      Given("A LibraryClient")
+      Given("A libraryClient")
       val data: String = libraryClient.getResultOfSearchByAuthor("Brown, Dan")
       val danBrown = libraryClient.getAuthorUpdatedWithLink(data, new Author("Dan", "Brown", "link"))
       When("we get the books for 'Brown, Dan'")
@@ -112,7 +116,7 @@ class LibraryClientTest extends LibraryClient with FeatureSpec with GivenWhenThe
       val booksFromFile: List[Book] = List(readBook, wontReadBook)
       val booksFromWeb: List[Book] = List(readBook, wontReadBook, unknownBook)
       When("the lists are compared")
-      val booksToBeRead: List[Book] = LibraryClient.getNewBooks(booksFromFile, booksFromWeb)
+      val booksToBeRead: List[Book] = libraryClient.getNewBooks(booksFromFile, booksFromWeb)
       Then("only books with status 'UNKNOWN' are returned")
       booksToBeRead must be === List(unknownBook)
     }
@@ -120,10 +124,9 @@ class LibraryClientTest extends LibraryClient with FeatureSpec with GivenWhenThe
     scenario("Get list of candidate books by reading a file and loading 'm of the web") {
       Given("a file with the books I've read and a list of books from my favourite writers")
       val myBooks = Book.readFromFile("data/booksForGetListOfCandidateBooks...test.txt")
-      val libraryClient: LibraryClient = new LibraryClient
       val allBooks = libraryClient.getBooksForAuthorsInFile("data/authorsForGetListOfCandidateBooks...test.txt")
       When("we get the list of books I might want to read")
-      val booksToRead:List[Book] = LibraryClient.getNewBooks(myBooks, allBooks)
+      val booksToRead:List[Book] = libraryClient.getNewBooks(myBooks, allBooks)
       Then("the result is 1 book by Bennie Mols, 7 books by Douglas Coupland, 10 books by Neil Gaiman (yeah), 38 books by Thomas Ross and no books by Paul Harland (snif)")
       booksToRead.filter( book => book.author == Author("Bennie", "Mols","")).size must be === 1
       booksToRead.filter( book => book.author == Author("Douglas", "Coupland","")).size must be === 7
@@ -132,6 +135,5 @@ class LibraryClientTest extends LibraryClient with FeatureSpec with GivenWhenThe
       booksToRead.filter( book => book.author == Author("Paul", "Harland","")).size must be === 0
       booksToRead.size must be === 63
     }
-
   }
 }

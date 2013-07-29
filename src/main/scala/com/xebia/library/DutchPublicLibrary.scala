@@ -14,17 +14,21 @@ import scala.collection.JavaConversions._
 import org.apache.http.util.EntityUtils
 import scala.language.postfixOps
 
-class LibraryClient {
+/**
+ * Access the website for the public library in Ede to find out if there are any new books by authors of interest.
+ */
+
+class DutchPublicLibrary extends Library {
 
   val bicatStartOfSessionUrl = "http://bicat.cultura-ede.nl/cgi-bin/bx.pl?taal=1&xdoit=y&groepfx=10&vestnr=8399&cdef=002"
   val cookieStore = new BasicCookieStore
   val httpContext = new BasicHttpContext
   val httpclient: HttpClient = new DefaultHttpClient
-  httpclient.getParams().setParameter(ClientPNames.COOKIE_POLICY, CookiePolicy.BEST_MATCH);
-  httpContext.setAttribute(ClientContext.COOKIE_STORE, cookieStore);
+  httpclient.getParams.setParameter(ClientPNames.COOKIE_POLICY, CookiePolicy.BEST_MATCH)
+  httpContext.setAttribute(ClientContext.COOKIE_STORE, cookieStore)
 
-  val sid = startBicatSessionAndReturnSid
-  val bicatCookie = getBicatCookie
+  lazy val sid = startBicatSessionAndReturnSid
+  lazy val bicatCookie = getBicatCookie
 
   def getBooksByAuthor(authorToSearchFor: Author): List[Book] = {
     println("Getting books for " + authorToSearchFor)
@@ -60,15 +64,15 @@ class LibraryClient {
   }
 
   protected[library] def getParametersForAuthorQuery(authorName: String, sid: String): List[BasicNameValuePair] =
-    new BasicNameValuePair("qs", authorName) :: new BasicNameValuePair("sid", sid) :: LibraryClient.fixedParamatersForAuthorsQuery
+    new BasicNameValuePair("qs", authorName) :: new BasicNameValuePair("sid", sid) :: fixedParamatersForAuthorsQuery
 
   protected[library] def getAuthorUpdatedWithLink(webPage: String, authorWithoutLink: Author): Author = {
     val singleLineAuthorFragmentPattern = """(?m)<td class="thsearch_wordlink">(.*?)</td>"""
     val multiLineAuthorFragmentPattern = """(?m)<td class="thsearch_wordlink">.*\n(.*)\n.*</td>"""
     val result = getAuthorUpdatedWithLink(webPage, singleLineAuthorFragmentPattern, authorWithoutLink)
     result match {
-      case None => getAuthorUpdatedWithLink(webPage, multiLineAuthorFragmentPattern, authorWithoutLink) getOrElse (new UnknownAuthor)
-      case _ => result getOrElse (new UnknownAuthor)
+      case None => getAuthorUpdatedWithLink(webPage, multiLineAuthorFragmentPattern, authorWithoutLink) getOrElse new UnknownAuthor
+      case _ => result getOrElse new UnknownAuthor
     }
   }
 
@@ -126,9 +130,6 @@ class LibraryClient {
     val authors = AuthorParser.loadAuthorsFromFile(dataFileName)
     getBooksForAuthors(authors)
   }
-}
-
-object LibraryClient {
 
   val fixedParamatersForAuthorsQuery: List[BasicNameValuePair] = List(new BasicNameValuePair("zoek_knop", "Zoek"), new BasicNameValuePair("zl_v", "vest"), new BasicNameValuePair("nr", "8399")
     , new BasicNameValuePair("var", "portal"), new BasicNameValuePair("taal", "1"), new BasicNameValuePair("sn", "10"),
@@ -137,20 +138,13 @@ object LibraryClient {
     new BasicNameValuePair("cdef", "002"), new BasicNameValuePair("aantal", "50")
   )
 
-  def main(args: Array[String]) {
-    val authors = AuthorParser.loadAuthorsFromFile("data/authors.txt")
-    println("authors: " + authors)
-    val libraryClient = new LibraryClient
-    val books = libraryClient.getBooksForAuthors(authors)
-    Book.writeBooksToFile("data/books.txt", books)
-    println("books: " + books)
-  }
-
+  // TODO: where used?
   def readTextFromUrl(url: String): String = {
     val content = Request.Get(url).execute().returnContent()
     content.asString()
   }
 
+  // TODO: where used?
   def getNewBooks(myBooks: List[Book], booksFromWeb: List[Book]): List[Book] = {
     val candidates = booksFromWeb.toSet
     val booksWithStatusReadOrWontRead = myBooks.filter(book => book.status != Book.UNKNOWN)
