@@ -1,4 +1,4 @@
-package com.library.library
+package com.library
 
 import scala.io.Source._
 import java.io.File

@@ -1,4 +1,4 @@
-package com.library.library
+package com.library
 
 import java.io.File
 import org.apache.commons.io.FileUtils

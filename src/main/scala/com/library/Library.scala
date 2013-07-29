@@ -1,4 +1,4 @@
-package com.library.library
+package com.library
 
 trait Library {
   def getBooksByAuthor(authorToSearchFor: Author): List[Book]

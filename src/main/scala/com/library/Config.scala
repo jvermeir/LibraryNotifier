@@ -1,4 +1,4 @@
-package com.library.library
+package com.library
 
 /**
   * Configuration for dependencies and stuff

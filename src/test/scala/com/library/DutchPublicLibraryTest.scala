@@ -1,4 +1,4 @@
-package com.library.library
+package com.library
 
 import org.scalatest.junit.JUnitRunner
 import org.scalatest.FeatureSpec

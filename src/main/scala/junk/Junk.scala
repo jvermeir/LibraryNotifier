@@ -1,6 +1,6 @@
 package junk
 
-import com.library.library.{Author, DutchPublicLibrary}
+import com.library.{Author, DutchPublicLibrary}
 
 class Euro(val amount:Int) {
   override def toString:String = "Euro: " + amount

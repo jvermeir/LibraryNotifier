@@ -1,4 +1,4 @@
-package com.library.library
+package com.library
 
 import org.apache.http.client.fluent.Request
 import org.apache.http.client.HttpClient
