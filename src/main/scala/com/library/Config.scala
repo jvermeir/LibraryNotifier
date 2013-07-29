@@ -1,4 +1,4 @@
-package com.xebia.library
+package com.library.library
 
 /**
   * Configuration for dependencies and stuff

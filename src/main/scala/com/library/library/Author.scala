@@ -1,4 +1,4 @@
-package com.xebia.library
+package com.library.library
 
 import scala.io.Source._
 

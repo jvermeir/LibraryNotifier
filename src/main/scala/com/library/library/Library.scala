@@ -1,4 +1,4 @@
-package com.xebia.library
+package com.library.library
 
 trait Library {
   def getBooksByAuthor(authorToSearchFor: Author): List[Book]

@@ -1,4 +1,4 @@
-package com.xebia.library
+package com.library.library
 
 import org.apache.http.client.fluent.Request
 import org.apache.http.client.HttpClient

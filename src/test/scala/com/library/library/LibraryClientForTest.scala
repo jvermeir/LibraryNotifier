@@ -1,4 +1,4 @@
-package com.xebia.library
+package com.library.library
 
 class LibraryForTest extends Library {
   val author1 = Author("firstName1", "lastName2")
