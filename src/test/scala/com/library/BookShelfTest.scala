@@ -72,12 +72,12 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers {
   class TestBookShelf extends BookShelf {
     def read: Unit = {
       books.retain((_ => false))
-      books ++= (Set(new Book(author1, "book1"), new Book(author2, "book2")))
+      books ++= Set(new Book(author1, "book1"), new Book(author2, "book2"))
     }
 
     override def refreshBooksFromLibrary(library: Library, authors: Map[String, Author]) {
       books.retain((_ => false))
-      books ++= library.getBooksForAuthors(authors)
+      books ++= library.getBooksForAuthors(authors).values.flatten
     }
 
     def write: Unit = {}
@@ -93,9 +93,7 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers {
 
     def getBooksByAuthor(authorToSearchFor: Author): List[Book] = books.get(authorToSearchFor).getOrElse(List())
 
-    // TODO: why should this return a List?
-    def getBooksForAuthors(authors: Map[String, Author]): List[Book] = books.values.toList flatten
-
+    def getBooksForAuthors(authors: Map[String, Author]): Map[Author, List[Book]] = books
   }
 
   class FirstLibraryForTest extends LibraryForTest {

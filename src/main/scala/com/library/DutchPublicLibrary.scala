@@ -44,9 +44,9 @@ class DutchPublicLibrary extends Library {
     result
   }
 
-  def getBooksForAuthors(authors: Map[String, Author]): List[Book] = {
-    val books = authors.values map (author => getBooksByAuthor(author))
-    (books flatten).toList
+  def getBooksForAuthors(authors: Map[String, Author]): Map[Author, List[Book]] = {
+    val books = authors.values map (author => author -> getBooksByAuthor(author))
+    books.toMap
   }
 
   protected[library] def updateAuthorWithLinkToBooks(author: Author): Author = {
@@ -124,11 +124,6 @@ class DutchPublicLibrary extends Library {
       }
       case _ => books
     }
-  }
-
-  protected[library] def getBooksForAuthorsInFile(dataFileName: String): List[Book] = {
-    val authors = AuthorParser.loadAuthorsFromFile(dataFileName)
-    getBooksForAuthors(authors)
   }
 
   val fixedParamatersForAuthorsQuery: List[BasicNameValuePair] = List(new BasicNameValuePair("zoek_knop", "Zoek"), new BasicNameValuePair("zl_v", "vest"), new BasicNameValuePair("nr", "8399")

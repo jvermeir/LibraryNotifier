@@ -97,15 +97,20 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
 
     scenario("get the books written by a list of authors from the local library") {
       Given("A map of authors")
-      val authors = Map("Gaiman, Neil" -> Author("Gaiman, Neil"), "Coupland, Douglas" -> Author("Coupland, Douglas"))
+      val neilGaiman: Author = Author("Gaiman, Neil")
+      val douglasCoupland: Author = Author("Coupland, Douglas")
+      val authors = Map("Gaiman, Neil" -> neilGaiman, "Coupland, Douglas" -> douglasCoupland)
       When("we get the books for all authors")
       val books = libraryClient.getBooksForAuthors(authors)
       Then("the result must contain 'JPod' and 'Amerikaanse goden' and has length 9+12")
-      books.size must be === 21
-      books.filter(bookFilter(_)).size must be === 2
+      books.size must be === 2
+      val gaimanBooks = books.getOrElse(neilGaiman, List())
+      12 must be === gaimanBooks.size
+      1 must be === gaimanBooks.filter(_.title == "Amerikaanse goden").size
+      val couplandBooks = books.getOrElse(douglasCoupland, List())
+      9 must be === couplandBooks.size
+      1 must be === couplandBooks.filter(_.title == "JPod").size
     }
-
-    def bookFilter(book: Book): Boolean = book.title == "JPod" || book.title == "Amerikaanse goden"
 
     scenario("Comparing the list of books stored on disk and the list retrieved from the Internet, create a list of books to read") {
       Given("A list of books and their status on disk and a list of books retrieved from the Internet")
