@@ -24,37 +24,6 @@ class BookListTest extends FeatureSpec with GivenWhenThen with MustMatchers {
       expectedResult must be === book
     }
 
-    scenario("Books can be read from a file") {
-      Given("a file with a list of books in 'FirstName;LastName;Title' format")
-      val fileName = "data/testFileForBookListTest.txt"
-      When("the file is parsed")
-      val books:List[Book] = Book.readFromFile(fileName)
-      Then("the list of books contains 3 books by 2 authors")
-      val expectedBooks = List(new Book(new Author("firstname1","lastname1",""), "book1")
-          ,new Book(new Author("firstname1","lastname1",""), "book2")
-          ,new Book(new Author("firstname3","lastname3",""), "book3"))
-      0 must be === (expectedBooks.toSet -- books).size
-      books.length must be === 3
-      val authors = books map ( book => book.author)
-      2 must be === authors.toSet.size
-    }
-
-    scenario("Books can be written to a file") {
-      Given("a list of books")
-      val books = List(new Book(new Author("firstname1","lastname1",""), "book1")
-        ,new Book(new Author("firstname1","lastname1",""), "book2")
-        ,new Book(new Author("firstname3","lastname3",""), "book3"))
-      val fileName="data/tmp.txt"
-      When("the list is saved in a temp file")
-      Book.writeBooksToFile(fileName, books)
-      Then("if we read the file we get the same books as before")
-      val booksReadFromDisk:List[Book] = Book.readFromFile(fileName)
-      0 must be === (books.toSet -- booksReadFromDisk).size
-      booksReadFromDisk.length must be === 3
-      val authors = booksReadFromDisk map ( book => book.author)
-      2 must be === authors.toSet.size
-    }
-
     scenario("A new book has status 'unknown'") {
       Given("A book created without an explicit status")
       val bookAsString = "Brown; Dan; The Da Vinci code"

@@ -5,6 +5,8 @@ package com.library
   */
 
 object Config {
-  var libraryClient = new DutchPublicLibrary
+  var libraryClient:Library = new DutchPublicLibrary
+  var bookShelf:BookShelf = new FileBasedBookShelf("data/boeken.dat")
+
   def reload:Unit = { }
 }

@@ -25,22 +25,6 @@ object Book {
     Book(new Author (firstName = parts(1),lastName = parts(0),""),parts(2), status)
   }
 
-  def readFromFile(fileName:String):List[Book] = {
-    val booksAsTextLines =  fromFile(fileName).getLines()
-    val books = booksAsTextLines map { book => Book(book)}
-    books.toList
-  }
-
-  def writeBooksToFile(fileName:String, books:List[Book]):Unit = {
-    def printToFile(f: java.io.File)(op: java.io.PrintWriter => Unit) {
-      val p = new java.io.PrintWriter(f)
-      try { op(p) } finally { p.close() }
-    }
-
-    printToFile(new File(fileName))(line => {
-      books.foreach(line.println)
-    })
-  }
 }
 
 

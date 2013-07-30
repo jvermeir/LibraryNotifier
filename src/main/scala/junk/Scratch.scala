@@ -18,12 +18,12 @@ object Scratch {
     )
 
     def main(args: Array[String]) {
-      val authors = AuthorParser.loadAuthorsFromFile("data/authors.txt")
+      val authors = AuthorParser.loadAuthorsFromFile("data/authors.dat")
       println("authors: " + authors)
 
       val library = new DutchPublicLibrary
       val books = library.getBooksForAuthors(authors)
-      Book.writeBooksToFile("data/books.txt", books)
+//      Book.writeBooksToFile("data/books.txt", books)
       println("books: " + books)
     }
 
@@ -44,7 +44,7 @@ object MoreJunk {
   object LibraryThingy {
     def main(args: Array[String]) {
       val client = Config.libraryClient
-//      val books = client.getBooksForAuthorsInFile("data/authors.txt")
+//      val books = client.getBooksForAuthorsInFile("data/authors.dat")
 //      for (book <- books) println(book)
     }
   }

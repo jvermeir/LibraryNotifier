@@ -10,9 +10,8 @@ import scala.io.Source._
 @RunWith(classOf[JUnitRunner])
 class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with GivenWhenThen with MustMatchers {
 
-  val libraryClient = Config.libraryClient
+  val libraryClient = new DutchPublicLibrary
   // Start a session here because sid was changed to lazy so we need to make sure a session exists
-  // TODO: maybe we should just use the DutchPublicLibrary class here?
   libraryClient.startBicatSessionAndReturnSid
 
   feature("The HTTP client finds books written by a list of authors and reports on their availability") {
@@ -76,7 +75,7 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
 
     scenario("get the list of books from a page for an author") {
       Given("A html page with the list of books for Dan Brown")
-      val bookPageAsHtml: String = fromFile("data/danBrownBooks.html").mkString
+      val bookPageAsHtml: String = fromFile("data/test/danBrownBooks.html").mkString
       When("we get the list of books")
       val listOfBooks: List[String] = libraryClient.getBooksFromHtmlPage(bookPageAsHtml, Author("Brown, Dan"))
       Then("the result contains 'The Da Vinci code' and has length 6")
@@ -119,21 +118,6 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
       val booksToBeRead: List[Book] = libraryClient.getNewBooks(booksFromFile, booksFromWeb)
       Then("only books with status 'UNKNOWN' are returned")
       booksToBeRead must be === List(unknownBook)
-    }
-
-    scenario("Get list of candidate books by reading a file and loading 'm of the web") {
-      Given("a file with the books I've read and a list of books from my favourite writers")
-      val myBooks = Book.readFromFile("data/booksForGetListOfCandidateBooks...test.txt")
-      val allBooks = libraryClient.getBooksForAuthorsInFile("data/authorsForGetListOfCandidateBooks...test.txt")
-      When("we get the list of books I might want to read")
-      val booksToRead:List[Book] = libraryClient.getNewBooks(myBooks, allBooks)
-      Then("the result is 1 book by Bennie Mols, 7 books by Douglas Coupland, 10 books by Neil Gaiman (yeah), 38 books by Thomas Ross and no books by Paul Harland (snif)")
-      booksToRead.filter( book => book.author == Author("Bennie", "Mols","")).size must be === 1
-      booksToRead.filter( book => book.author == Author("Douglas", "Coupland","")).size must be === 7
-      booksToRead.filter( book => book.author == Author("Neil", "Gaiman","")).size must be === 10
-      booksToRead.filter( book => book.author == Author("Tomas", "Ross","")).size must be === 45
-      booksToRead.filter( book => book.author == Author("Paul", "Harland","")).size must be === 0
-      booksToRead.size must be === 63
     }
   }
 }

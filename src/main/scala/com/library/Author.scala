@@ -38,7 +38,7 @@ object Author {
   }
 
   def main(args: Array[String]): Unit = {
-    val authors = AuthorParser.loadAuthorsFromFile("data/authors.txt")
+    val authors = AuthorParser.loadAuthorsFromFile("data/authors.dat")
     println(authors)
   }
 }
