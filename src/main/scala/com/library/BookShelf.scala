@@ -12,10 +12,21 @@ trait BookShelf {
   protected[library] val books:Set[Book] = Set[Book]()
   def read:Unit
   def write:Unit
+
   def getBookFromShelf(bookToSearchFor:String):Set[Book] = books.filter( _.toString == bookToSearchFor)
-  def getUnreadBooks:List[Book] = List()
+
+  def getUnreadBooks: List[Book] = books.toList filter(_.status == Book.UNKNOWN)
+
   def getAllBooks:List[Book]=books.toList
-  def refreshBooksFromLibrary(library:Library, authors:Map[String, Author]):Unit = {}
+
+  def refreshBooksFromLibrary(library: Library, authors: Map[String, Author]) {
+    books.retain((_ => false))
+    books ++= library.getBooksForAuthors(authors).values.flatten
+  }
+
+  def add(book:Book):Unit = books.add(book)
+
+  def emptyShelf:Unit = books.retain((_ => false))
 }
 
 class FileBasedBookShelf(val storeFileName:String) extends BookShelf {
@@ -25,8 +36,9 @@ class FileBasedBookShelf(val storeFileName:String) extends BookShelf {
   override def write:Unit = writeBooksToFile(storeFileName, books.toList)
 
   private def readFromFile(fileName:String):Set[Book] = {
+    emptyShelf
     val booksAsTextLines =  fromFile(fileName).getLines()
-    booksAsTextLines map { book => books.add(Book(book))}
+    books ++= (booksAsTextLines map (book => Book(book))).toSet
     books
   }
 

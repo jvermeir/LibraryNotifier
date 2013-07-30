@@ -24,48 +24,54 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers {
       Config.bookShelf = new TestBookShelf
       Config.libraryClient = new FirstLibraryForTest
       val bookShelf = Config.bookShelf
+      bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
+      2 must be === bookShelf.getUnreadBooks.size
       When("it refreshes itself from a library with an extra book for author2")
       Config.libraryClient = new SecondLibraryForTest
       bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
       Then("it finds three books")
-      val unreadBooks = bookShelf.getUnreadBooks
-      3 must be === unreadBooks.size
+      3 must be === bookShelf.getUnreadBooks.size
     }
 
-    //    scenario("Books can be read from a file") {
-    //      Given("a file with a list of books in 'FirstName;LastName;Title' format")
-    //      val fileName = "data/test/testFileForBookListTest.txt"
-    //      When("the file is parsed")
-    //      val bookShelf = new FileBasedBookShelf(fileName)
-    //      bookShelf.read
-    //      val books:List[Book] = bookShelf.getAllBooks
-    //      Then("the list of books contains 3 books by 2 authors")
-    //      val expectedBooks = List(new Book(new Author("firstname1","lastname1",""), "book1")
-    //        ,new Book(new Author("firstname1","lastname1",""), "book2")
-    //        ,new Book(new Author("firstname3","lastname3",""), "book3"))
-    //      0 must be === (expectedBooks.toSet -- books).size
-    //      books.length must be === 3
-    //      val authors = books map ( book => book.author)
-    //      2 must be === authors.toSet.size
-    //    }
-    //
-    //    scenario("Books can be written to a file") {
-    //      Given("a list of books")
-    //      val books = List(new Book(new Author("firstname1","lastname1",""), "book1")
-    //        ,new Book(new Author("firstname1","lastname1",""), "book2")
-    //        ,new Book(new Author("firstname3","lastname3",""), "book3"))
-    //      val fileName="data/test/tmp.txt"
-    //      When("the list is saved in a temp file")
-    //      Book.writeBooksToFile(fileName, books)
-    //      Then("if we read the file we get the same books as before")
-    //      val booksReadFromDisk:List[Book] = Book.readFromFile(fileName)
-    //      0 must be === (books.toSet -- booksReadFromDisk).size
-    //      booksReadFromDisk.length must be === 3
-    //      val authors = booksReadFromDisk map ( book => book.author)
-    //      2 must be === authors.toSet.size
-    //    }
-    //
+    scenario("Books can be read from a file") {
+      Given("a file with a list of books in 'FirstName;LastName;Title' format")
+      val fileName = "data/test/testFileForBookListTest.txt"
+      When("the file is parsed")
+      val bookShelf = new FileBasedBookShelf(fileName)
+      bookShelf.read
+      val books: List[Book] = bookShelf.getAllBooks
+      Then("the list of books contains 3 books by 2 authors")
+      val expectedBooks = List(new Book(new Author("firstname1", "lastname1", ""), "book1")
+        , new Book(new Author("firstname1", "lastname1", ""), "book2")
+        , new Book(new Author("firstname3", "lastname3", ""), "book3"))
+      0 must be === (expectedBooks.toSet -- books).size
+      3 must be === books.length
+      val authors = books map (book => book.author)
+      2 must be === authors.toSet.size
+    }
 
+    scenario("Books can be written to a file") {
+      Given("a list of books")
+      val expectedBooks = List(new Book(new Author("firstname1", "lastname1", ""), "book1")
+        , new Book(new Author("firstname1", "lastname1", ""), "book2")
+        , new Book(new Author("firstname3", "lastname3", ""), "book3"))
+      val fileName = "data/test/tmp.txt"
+      When("the list is saved in a temp file, the shelf is emptied and the file read back")
+      val bookShelf = new FileBasedBookShelf(fileName)
+      bookShelf.emptyShelf
+      expectedBooks.foreach(bookShelf.add(_))
+      3 must be === bookShelf.getAllBooks.size
+      bookShelf.write
+      bookShelf.emptyShelf
+      0 must be === bookShelf.getAllBooks.size
+      Then("if we read the file we get the same books as before")
+      bookShelf.read
+      val books: List[Book] = bookShelf.getAllBooks
+      0 must be === (expectedBooks.toSet -- books).size
+      3 must be === books.length
+      val authors = books map (book => book.author)
+      2 must be === authors.toSet.size
+    }
 
   }
 
@@ -75,14 +81,8 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers {
       books ++= Set(new Book(author1, "book1"), new Book(author2, "book2"))
     }
 
-    override def refreshBooksFromLibrary(library: Library, authors: Map[String, Author]) {
-      books.retain((_ => false))
-      books ++= library.getBooksForAuthors(authors).values.flatten
-    }
-
     def write: Unit = {}
 
-    override def getUnreadBooks: List[Book] = books.toList
   }
 
   class LibraryForTest extends Library {
