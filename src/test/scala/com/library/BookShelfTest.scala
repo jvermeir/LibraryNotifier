@@ -25,12 +25,12 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers {
       Config.libraryClient = new FirstLibraryForTest
       val bookShelf = Config.bookShelf
       bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
-      2 must be === bookShelf.getUnreadBooks.size
+      2 must be === bookShelf.getBooksToRead.size
       When("it refreshes itself from a library with an extra book for author2")
       Config.libraryClient = new SecondLibraryForTest
       bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
       Then("it finds three books")
-      3 must be === bookShelf.getUnreadBooks.size
+      3 must be === bookShelf.getBooksToRead.size
     }
 
     scenario("Books can be read from a file") {
@@ -71,6 +71,25 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers {
       3 must be === books.length
       val authors = books map (book => book.author)
       2 must be === authors.toSet.size
+    }
+
+    scenario("The status of a book can be changed and saved in the data store") {
+      Given("a list of books")
+      val book1 = new Book(new Author("firstname1", "lastname1", ""), "book1", Book.READ)
+      val book2 = new Book(new Author("firstname1", "lastname1", ""), "book2")
+      val book3 = new Book(new Author("firstname1", "lastname1", ""), "book3", Book.WONT_READ)
+      val book4 = new Book(new Author("firstname1", "lastname1", ""), "book4", Book.UNKNOWN)
+      val books = List(book1, book2, book3, book4)
+      val fileName = "data/test/tmp.txt"
+      When("the list is saved in a temp file, the shelf is emptied and the file read back")
+      val bookShelf = new TestBookShelf
+      bookShelf.emptyShelf
+      books.foreach(bookShelf.add(_))
+      Then("if we get unread books only book2 and book4 are returned")
+      val booksToRead = bookShelf.getBooksToRead.toSet
+      2 must be === booksToRead.size
+      true must be === booksToRead.contains(book2)
+      true must be === booksToRead.contains(book4)
     }
 
   }

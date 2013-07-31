@@ -15,7 +15,7 @@ trait BookShelf {
 
   def getBookFromShelf(bookToSearchFor:String):Set[Book] = books.filter( _.toString == bookToSearchFor)
 
-  def getUnreadBooks: List[Book] = books.toList filter(_.status == Book.UNKNOWN)
+  def getBooksToRead: List[Book] = books.toList filter(_.status == Book.UNKNOWN)
 
   def getAllBooks:List[Book]=books.toList
 
