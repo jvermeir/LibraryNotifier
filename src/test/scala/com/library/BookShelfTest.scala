@@ -5,7 +5,6 @@ import org.scalatest.FeatureSpec
 import org.scalatest.GivenWhenThen
 import org.scalatest.matchers.MustMatchers
 import org.junit.runner.RunWith
-import scala.collection.mutable.Set
 
 @RunWith(classOf[JUnitRunner])
 class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers {
@@ -16,7 +15,7 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers {
 
   feature("The bookshelf shows all books by authors I'm interested in. It also says whether I've read, won't read or haven't read them yet") {
     info("As a family member")
-    info("I want to list books on mu bookshelf that I haven't read yet")
+    info("I want to list books on my bookshelf that I haven't read yet")
     info("So I can go get 'm from the library")
 
     scenario("the bookshelf accesses the library to find out if there are any new books") {
@@ -67,20 +66,20 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers {
       Then("if we read the file we get the same books as before")
       bookShelf.read
       val books: List[Book] = bookShelf.getAllBooks
-      0 must be === (expectedBooks.toSet -- books).size
+      0 must be === (expectedBooks.toSet -- books.toSet).size
       3 must be === books.length
       val authors = books map (book => book.author)
       2 must be === authors.toSet.size
     }
 
-    scenario("The status of a book can be changed and saved in the data store") {
+    scenario("The bookshelf can get a list of books I can read") {
       Given("a list of books")
       val book1 = new Book(new Author("firstname1", "lastname1", ""), "book1", Book.READ)
       val book2 = new Book(new Author("firstname1", "lastname1", ""), "book2")
       val book3 = new Book(new Author("firstname1", "lastname1", ""), "book3", Book.WONT_READ)
       val book4 = new Book(new Author("firstname1", "lastname1", ""), "book4", Book.UNKNOWN)
       val books = List(book1, book2, book3, book4)
-      val fileName = "data/test/tmp.txt"
+      // TODO: comment, refactor?
       When("the list is saved in a temp file, the shelf is emptied and the file read back")
       val bookShelf = new TestBookShelf
       bookShelf.emptyShelf
@@ -92,12 +91,27 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers {
       true must be === booksToRead.contains(book4)
     }
 
+    scenario("The status of a book can be changed and saved in the data store") {
+      Given("a list of books on a book shelf")
+      val book1 = new Book(new Author("firstname1", "lastname1", ""), "book1", Book.READ)
+      val book2 = new Book(new Author("firstname1", "lastname1", ""), "book2")
+      val bookShelf = new TestBookShelf
+      bookShelf.add(book1)
+      bookShelf.add(book2)
+      When("if we update the status of book2 to WONT_READ")
+      bookShelf.setStatusForBook(book2, Book.WONT_READ)
+      Then("the booksToRead method returns 0")
+      0 must be === bookShelf.getBooksToRead.toSet.size
+    }
+
   }
 
   class TestBookShelf extends BookShelf {
+    val book1 = Book(author1, "title1")
+    val book2 = Book(author2, "title2")
     def read: Unit = {
-      books.retain((_ => false))
-      books ++= Set(new Book(author1, "book1"), new Book(author2, "book2"))
+      books.retain((k,v) => false)
+      books ++= Map((book1.getKey -> book1),(book2.getKey -> book2))
     }
 
     def write: Unit = {}

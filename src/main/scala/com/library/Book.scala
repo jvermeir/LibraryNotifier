@@ -4,17 +4,21 @@ import scala.io.Source._
 import java.io.File
 
 case class Book (author:Author, title:String, status:String = Book.UNKNOWN) {
-  override def toString = author.lastName + ";" + author.firstName + ";" + title
+  override def toString = getKey + ";" + status
+
   def setStatus(newStatus:String):Book = new Book(author,title,newStatus)
   override def equals(o:Any):Boolean = {
     val other = o.asInstanceOf[Book]
-    toString == other.toString
+    getKey == other.getKey
   }
+
+  def getKey:String = author.lastName + ";" + author.firstName + ";" + title
 
   override def hashCode: Int = toString.hashCode
 }
 
 object Book {
+  // TODO: this should be some type
   val UNKNOWN = "unknown"
   val READ = "read"
   val WONT_READ = "wontRead"
