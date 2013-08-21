@@ -32,6 +32,22 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers {
       3 must be === bookShelf.getBooksToRead.size
     }
 
+    scenario("if the bookshelf contains a book with status other than UNKNOWN, this status is not affected by a refreshBooksFromLibrary call") {
+      Given("a bookshelf with a book with status READ")
+      Config.bookShelf = new TestBookShelf
+      Config.libraryClient = new FirstLibraryForStatusTest
+      val bookShelf = Config.bookShelf
+      bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
+      1 must be === bookShelf.getBooksToRead.size
+      When("it refreshes itself from a library with an extra book for author2")
+      bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
+      Config.libraryClient = new SecondLibraryForStatusTest
+      bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
+      Then("it finds two books to read")
+      2 must be === bookShelf.getBooksToRead.size
+    }
+
+
     scenario("Books can be read from a file") {
       Given("a file with a list of books in 'FirstName;LastName;Title' format")
       val fileName = "data/test/testFileForBookListTest.txt"
@@ -107,13 +123,8 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers {
   }
 
   class TestBookShelf extends BookShelf {
-    val book1 = Book(author1, "title1")
-    val book2 = Book(author2, "title2")
-    def read: Unit = {
-      books.retain((k,v) => false)
-      books ++= Map((book1.getKey -> book1),(book2.getKey -> book2))
-    }
 
+    def read: Unit = {}
     def write: Unit = {}
 
   }
@@ -136,5 +147,16 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers {
   class SecondLibraryForTest extends LibraryForTest {
     override val books = Map(author1 -> List(book1), author2 -> List(book2, book3))
   }
+
+  class FirstLibraryForStatusTest extends LibraryForTest {
+    override val book2 = Book(author2, "title2", Book.READ)
+    override val books = Map(author1 -> List(book1), author2 -> List(book2))
+  }
+
+  class SecondLibraryForStatusTest extends LibraryForTest {
+    override val book2 = Book(author2, "title2", Book.READ)
+    override val books = Map(author1 -> List(book1), author2 -> List(book2, book3))
+  }
+
 
 }
