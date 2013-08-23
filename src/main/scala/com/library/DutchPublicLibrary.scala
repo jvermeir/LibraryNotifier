@@ -31,6 +31,7 @@ class DutchPublicLibrary extends Library {
   lazy val bicatCookie = getBicatCookie
 
   def getBooksByAuthor(authorToSearchFor: Author): List[Book] = {
+    println("Get books for: " + authorToSearchFor)
     val author = updateAuthorWithLinkToBooks(authorToSearchFor)
     val result = if (author.like(authorToSearchFor)) {
       val bookpage = getBookPageAsHtmlByAuthor(author)
@@ -39,6 +40,7 @@ class DutchPublicLibrary extends Library {
         title => Book(author, title)
       }
     } else List()
+    println(result.size + " books found")
     result
   }
 

@@ -19,9 +19,10 @@ trait BookShelf {
   def getAllBooks:List[Book]=books.values.toList
 
   def refreshBooksFromLibrary(library: Library, authors: Map[String, Author]) {
-    books.retain((k,v) => false)
-    val newBooks:Iterable[Book] = library.getBooksForAuthors(authors).values.flatten
+    val booksFromLibrary:Iterable[Book] = library.getBooksForAuthors(authors).values.flatten
+    val newBooks = booksFromLibrary filter (book => !books.contains(book.getKey) )
     books ++= newBooks map (book => (book.getKey -> book))
+    // TODO: remove books that are not available anymore??
   }
 
   def setStatusForBook(book:Book, newStatus:String):Unit = {
@@ -29,11 +30,21 @@ trait BookShelf {
     books += (newBook.getKey -> newBook)
   }
 
-  def add(book:Book):Unit = { books += (book.getKey -> book)
-    println("books: " + books)
-  }
+  def add(book:Book):Unit = books += (book.getKey -> book)
 
   def emptyShelf:Unit = books.retain((k,v) => false)
+
+  def printAsWishList:String = getBooksToRead.sortWith(lessThanForWishList(_,_)) map (book => printBookToWishListItem(book)) mkString("\n")
+
+  private def printBookToWishListItem(book: Book): String = book.author.lastName + ";" + book.author.firstName + ";"  + book.title
+
+  private def lessThanForWishList(firstBook:Book, secondBook:Book):Boolean = {
+    val lastNameLessOrEqualThan = firstBook.author.lastName <= secondBook.author.lastName
+    if (lastNameLessOrEqualThan && firstBook.author.lastName == secondBook.author.lastName) {
+      firstBook.title <= secondBook.title
+    } else lastNameLessOrEqualThan
+  }
+
 }
 
 class FileBasedBookShelf(val storeFileName:String) extends BookShelf {

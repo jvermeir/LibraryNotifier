@@ -40,13 +40,11 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers {
       bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
       1 must be === bookShelf.getBooksToRead.size
       When("it refreshes itself from a library with an extra book for author2")
-      bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
       Config.libraryClient = new SecondLibraryForStatusTest
       bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
       Then("it finds two books to read")
       2 must be === bookShelf.getBooksToRead.size
     }
-
 
     scenario("Books can be read from a file") {
       Given("a file with a list of books in 'FirstName;LastName;Title' format")
@@ -120,13 +118,36 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers {
       0 must be === bookShelf.getBooksToRead.toSet.size
     }
 
+    scenario("The list of books to read is printed in alphabetic order by author last name and then by title") {
+      Given("a list of books to read from the bookshelf")
+      val book1 = new Book(new Author("first", "lastnameB", ""), "book1")
+      val book2 = new Book(new Author("first", "lastnameA", ""), "book2")
+      val book3 = new Book(new Author("first", "lastnameA", ""), "book3")
+      val bookShelf = new TestBookShelf
+      bookShelf.add(book1)
+      bookShelf.add(book2)
+      bookShelf.add(book3)
+      When("the list is printed as a shopping list")
+      val actualShoppingList = bookShelf.printAsWishList
+      Then("it is ordered by the last name of the author and then by title")
+      val expectedShoppingList = "lastnameA;first;book2\n" + "lastnameA;first;book3\n" + "lastnameB;first;book1"
+      expectedShoppingList must be === actualShoppingList
+    }
   }
 
   class TestBookShelf extends BookShelf {
-
     def read: Unit = {}
     def write: Unit = {}
+  }
 
+  class TestBookShelfThatContainsABookWithStatusRead extends BookShelf {
+    override val books:scala.collection.mutable.Map[String, Book] = scala.collection.mutable.Map[String, Book]()
+    val book1 = Book(author1, "title1", Book.READ)
+    val book2 = Book(author2, "title2")
+    books.put(book1.getKey, book1)
+    books.put(book2.getKey, book2)
+    def read: Unit = {}
+    def write: Unit = {}
   }
 
   class LibraryForTest extends Library {
@@ -154,7 +175,7 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers {
   }
 
   class SecondLibraryForStatusTest extends LibraryForTest {
-    override val book2 = Book(author2, "title2", Book.READ)
+    override val book2 = Book(author2, "title2")
     override val books = Map(author1 -> List(book1), author2 -> List(book2, book3))
   }
 

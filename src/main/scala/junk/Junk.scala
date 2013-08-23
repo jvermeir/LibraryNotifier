@@ -1,6 +1,6 @@
 package junk
 
-import com.library.{Author, DutchPublicLibrary}
+import com.library.{AuthorParser, Config, Author, DutchPublicLibrary}
 
 class Euro(val amount:Int) {
   override def toString:String = "Euro: " + amount
@@ -29,10 +29,10 @@ object Test extends App {
 
 object Junk {
   def main(args: Array[String]) = {
-    val libraryClient = new DutchPublicLibrary
-    val data2 = libraryClient.getBooksByAuthor(new Author("paul","harland",""))
-    //    val data = libraryClient.getBooksByAuthor(new Author("Neil","Gaiman",""))
-    println(data2)
+    val bookShelf = Config.bookShelf
+    val authors = AuthorParser.loadAuthorsFromFile("data/authors.dat")
+    val books = bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
+    println(books)
     //val data = FileUtils.readFileToString(new File("data/walker.html"))
     //    val author = libraryClient.getAuthorUpdatedWithLink(data, new Author("Karen Thompson", "Walker",""))
     //    println(author)
