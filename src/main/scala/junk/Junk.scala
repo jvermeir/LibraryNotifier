@@ -1,6 +1,7 @@
 package junk
 
 import com.library.{AuthorParser, Config, Author, DutchPublicLibrary}
+import scala.language.implicitConversions
 
 class Euro(val amount:Int) {
   override def toString:String = "Euro: " + amount

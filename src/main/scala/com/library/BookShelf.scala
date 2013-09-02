@@ -38,6 +38,12 @@ trait BookShelf {
 
   private def printBookToWishListItem(book: Book): String = book.author.lastName + ";" + book.author.firstName + ";"  + book.title
 
+  def printAsHtml:String = { val bookTableRowsAsString = getBooksToRead.sortWith(lessThanForWishList(_,_)) map (book => printBookToHtmlTableItem(book)) mkString("\n")
+    "<table>\n" + bookTableRowsAsString + "\n</table>"
+  }
+
+  private def printBookToHtmlTableItem(book: Book): String = "<tr><td>" + book.author.lastName + "</td><td>" + book.author.firstName + "</td><td>" + book.title + "</td></tr>"
+
   private def lessThanForWishList(firstBook:Book, secondBook:Book):Boolean = {
     val lastNameLessOrEqualThan = firstBook.author.lastName <= secondBook.author.lastName
     if (lastNameLessOrEqualThan && firstBook.author.lastName == secondBook.author.lastName) {

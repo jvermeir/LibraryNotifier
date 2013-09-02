@@ -120,19 +120,36 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers {
 
     scenario("The list of books to read is printed in alphabetic order by author last name and then by title") {
       Given("a list of books to read from the bookshelf")
-      val book1 = new Book(new Author("first", "lastnameB", ""), "book1")
-      val book2 = new Book(new Author("first", "lastnameA", ""), "book2")
-      val book3 = new Book(new Author("first", "lastnameA", ""), "book3")
-      val bookShelf = new TestBookShelf
-      bookShelf.add(book1)
-      bookShelf.add(book2)
-      bookShelf.add(book3)
+      val bookShelf = getBookShelfWithThreeBooks
       When("the list is printed as a shopping list")
       val actualShoppingList = bookShelf.printAsWishList
       Then("it is ordered by the last name of the author and then by title")
       val expectedShoppingList = "lastnameA;first;book2\n" + "lastnameA;first;book3\n" + "lastnameB;first;book1"
       expectedShoppingList must be === actualShoppingList
     }
+  }
+
+  scenario("The list of books to read is printed as html page, in alphabetic order by author last name and then by title") {
+    Given("a list of books to read from the bookshelf")
+    val bookShelf = getBookShelfWithThreeBooks
+    When("the list is printed as a html")
+    val actualShoppingListAsHtml = bookShelf.printAsHtml
+    Then("it is ordered by the last name of the author and then by title")
+    val expectedShoppingListAsHtml = "<table>\n<tr><td>lastnameA</td><td>first</td><td>book2</td></tr>\n" +
+      "<tr><td>lastnameA</td><td>first</td><td>book3</td></tr>\n" +
+      "<tr><td>lastnameB</td><td>first</td><td>book1</td></tr>\n</table>"
+    expectedShoppingListAsHtml must be === actualShoppingListAsHtml
+  }
+
+def getBookShelfWithThreeBooks:BookShelf = {
+    val book1 = new Book(new Author("first", "lastnameB", ""), "book1")
+    val book2 = new Book(new Author("first", "lastnameA", ""), "book2")
+    val book3 = new Book(new Author("first", "lastnameA", ""), "book3")
+    val bookShelf = new TestBookShelf
+    bookShelf.add(book1)
+    bookShelf.add(book2)
+    bookShelf.add(book3)
+    bookShelf
   }
 
   class TestBookShelf extends BookShelf {
