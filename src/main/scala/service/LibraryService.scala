@@ -23,6 +23,7 @@ trait LibraryService extends HttpService {
 
   def start: Unit = {
     val authors = AuthorParser.loadAuthorsFromFile("data/authors.dat")
+    bookShelf.read
     bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
     bookShelf.write
   }
