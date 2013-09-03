@@ -9,6 +9,8 @@ import com.library.{AuthorParser, Config}
  */
 
 class LibraryServiceActor extends Actor with LibraryService {
+  // TODO: this causes reload from library which is rather slow.
+  // Find a way to run update in the background and refresh data later.
   start
 
   def actorRefFactory = context

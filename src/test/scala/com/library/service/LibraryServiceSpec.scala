@@ -27,6 +27,7 @@ class LibraryServiceSpec extends Specification with Specs2RouteTest with Library
       }
     }
 
+    // TODO: test fails with 404 instead of 405 ?
 //    "return a MethodNotAllowed error for PUT requests to the root path" in {
 //      Put() ~> sealRoute(libraryRoute) ~> check {
 //        status === MethodNotAllowed

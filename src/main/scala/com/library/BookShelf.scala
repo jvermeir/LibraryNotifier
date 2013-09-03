@@ -12,6 +12,7 @@ trait BookShelf {
   def read:Unit
   def write:Unit
 
+  // TODO: why would this return a Map?
   def getBookFromShelf(bookToSearchFor:String):Map[String, Book] = books.filter( _.toString == bookToSearchFor).toMap
 
   def getBooksToRead: List[Book] = books.values.toList filter(_.status == Book.UNKNOWN)
@@ -76,7 +77,8 @@ class FileBasedBookShelf(val storeFileName:String) extends BookShelf {
     }
 
     printToFile(new File(fileName))(line => {
-      books.foreach(line.println)
+      val sortedBooks = books.sortBy(_.toString)
+      sortedBooks.foreach(line.println)
     })
   }
 }
