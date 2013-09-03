@@ -55,7 +55,8 @@ trait BookShelf {
 
 class FileBasedBookShelf(val storeFileName:String) extends BookShelf {
 
-  read
+  // TODO: Find a way to init reliably without triggering a read at object creation time.
+//  read
 
   override def read:Unit = books.++(readFromFile(storeFileName))
 
