@@ -46,6 +46,8 @@ class DutchPublicLibrary extends Library {
 
   def getBooksForAuthors(authors: Map[String, Author]): Map[Author, List[Book]] = {
     val books = authors.values map (author => author -> getBooksByAuthor(author))
+    // TODO: replace with logging framework
+    println("Books read from library")
     books.toMap
   }
 

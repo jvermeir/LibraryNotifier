@@ -8,9 +8,13 @@ import java.io.File
  */
 
 trait BookShelf {
-  protected[library] val books:scala.collection.mutable.Map[String, Book] = scala.collection.mutable.Map[String, Book]()
-  def read:Unit
+  protected[library] lazy val books = scala.collection.mutable.Map[String, Book]()
+  protected def read:Unit
   def write:Unit
+
+  // TODO: this causes initialization of books and therefore tries to load books from a file
+  // Fix
+  read
 
   // TODO: why would this return a Map?
   def getBookFromShelf(bookToSearchFor:String):Map[String, Book] = books.filter( _.toString == bookToSearchFor).toMap
@@ -51,21 +55,19 @@ trait BookShelf {
       firstBook.title <= secondBook.title
     } else lastNameLessOrEqualThan
   }
-
 }
 
 class FileBasedBookShelf(val storeFileName:String) extends BookShelf {
-
   // TODO: Find a way to init reliably without triggering a read at object creation time.
-//  read
 
-  override def read:Unit = books.++(readFromFile(storeFileName))
+  override def read:Unit = { books.retain((k,v) => false)
+    books.++(readFromFile(storeFileName))}
 
   override def write:Unit = writeBooksToFile(storeFileName, books.values.toList)
 
   private def readFromFile(fileName:String):Map[String, Book] = {
     emptyShelf
-    val booksAsTextLines =  fromFile(fileName).getLines()
+    val booksAsTextLines = fromFile(fileName).getLines()
     books ++= booksAsTextLines map (book => {val b = Book(book); (b.getKey -> b) })
     books.toMap
   }

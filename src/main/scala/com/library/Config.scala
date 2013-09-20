@@ -5,8 +5,10 @@ package com.library
   */
 
 object Config {
-  var libraryClient:Library = new DutchPublicLibrary
-  var bookShelf:BookShelf = new FileBasedBookShelf("data/boeken.dat")
+  // TODO: ugly init is necessary because bookshelf tries to load a file
+
+  var libraryClient:Library = null // = new DutchPublicLibrary
+  var bookShelf:BookShelf = null // = new FileBasedBookShelf("data/boeken.dat")
 
   def reload:Unit = { }
 }

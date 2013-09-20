@@ -47,7 +47,7 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
       val fileName = "data/test/testFileForBookListTest.txt"
       When("the file is parsed")
       val bookShelf = new FileBasedBookShelf(fileName)
-      bookShelf.read
+//      bookShelf.read
       val books: List[Book] = bookShelf.getAllBooks
       Then("the list of books contains 3 books by 2 authors")
       val expectedBooks = List(new Book(new Author("firstname1", "lastname1", ""), "book1")

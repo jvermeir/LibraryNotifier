@@ -5,9 +5,13 @@ package com.library
  */
 object Main {
   def main(args: Array[String]) = {
+    // TODO: Move into Config
+    Config.libraryClient = new DutchPublicLibrary
+    Config.bookShelf = new FileBasedBookShelf("data/boeken.dat")
+
     val bookShelf = Config.bookShelf
     val authors = AuthorParser.loadAuthorsFromFile("data/authors.dat")
-    bookShelf.read
+//    bookShelf.read
     bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
     bookShelf.write
     val booksToReadAsString = bookShelf.printAsWishList
