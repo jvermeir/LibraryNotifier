@@ -11,7 +11,6 @@ object Main {
 
     val bookShelf = Config.bookShelf
     val authors = AuthorParser.loadAuthorsFromFile("data/authors.dat")
-//    bookShelf.read
     bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
     bookShelf.write
     val booksToReadAsString = bookShelf.printAsWishList

@@ -12,8 +12,6 @@ trait BookShelf {
   protected def read:Unit
   def write:Unit
 
-  // TODO: this causes initialization of books and therefore tries to load books from a file
-  // Fix
   read
 
   // TODO: why would this return a Map?
@@ -50,6 +48,7 @@ trait BookShelf {
   private def printBookToHtmlTableItem(book: Book): String = "<tr><td>" + book.author.lastName + "</td><td>" + book.author.firstName + "</td><td>" + book.title + "</td></tr>"
 
   private def lessThanForWishList(firstBook:Book, secondBook:Book):Boolean = {
+    // TODO: introduce methods with meaningfull names for comparisons
     val lastNameLessOrEqualThan = firstBook.author.lastName <= secondBook.author.lastName
     if (lastNameLessOrEqualThan && firstBook.author.lastName == secondBook.author.lastName) {
       firstBook.title <= secondBook.title
@@ -58,7 +57,6 @@ trait BookShelf {
 }
 
 class FileBasedBookShelf(val storeFileName:String) extends BookShelf {
-  // TODO: Find a way to init reliably without triggering a read at object creation time.
 
   override def read:Unit = { books.retain((k,v) => false)
     books.++(readFromFile(storeFileName))}

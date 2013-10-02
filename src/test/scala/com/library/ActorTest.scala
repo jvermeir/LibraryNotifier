@@ -17,7 +17,7 @@ class ActorTest extends FeatureSpec with GivenWhenThen with MustMatchers {
     ignore ("The app starts and shows cached data") {
       Given("The data stored in 'boeken.dat'")
       When("The app starts")
-      Then("The stored data is retured immediately")
+      Then("The stored data is returned immediately")
     }
 
     ignore ("The app refreshes data in the background") {

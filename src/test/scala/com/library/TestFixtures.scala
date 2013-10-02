@@ -22,8 +22,6 @@ trait TestFixtures {
 }
 
 class TestBookShelf extends BookShelf {
-  // TODO: init here?
-  read
 
   override def read = scala.collection.mutable.Map[String, Book] ()
 
