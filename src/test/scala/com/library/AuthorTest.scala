@@ -102,5 +102,15 @@ class AuthorTest extends FeatureSpec with GivenWhenThen with MustMatchers {
       Then("the first author is considerd to be 'like' the second")
       areEqual must be === true
     }
+
+    // TODO: ??? doesn't fail while it happend once in real life. maybe when reading from a file?
+    scenario("Author names starting with a blank are trimmed") {
+      Given("an author name staring with a blank")
+      val authorNameStartingWithABlank = "  lastname, firstname"
+      When("the name is parsed")
+      val author = Author.apply(authorNameStartingWithABlank)
+      Then("leading blanks are removed")
+      Author("firstname", "lastname") must be === author
+    }
   }
 }
