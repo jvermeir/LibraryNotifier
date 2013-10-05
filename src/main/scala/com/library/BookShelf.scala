@@ -58,7 +58,7 @@ trait BookShelf {
 
 class FileBasedBookShelf(val storeFileName:String) extends BookShelf {
 
-  override def read:Unit = { books.retain((k,v) => false)
+  override def read:Unit = { emptyShelf
     books.++(readFromFile(storeFileName))}
 
   override def write:Unit = writeBooksToFile(storeFileName, books.values.toList)

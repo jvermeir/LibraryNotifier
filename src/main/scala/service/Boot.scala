@@ -10,6 +10,7 @@ object Boot extends App {
   private val HTTP_PORT: Int = 9181
   Config.libraryClient = new DutchPublicLibrary
   Config.bookShelf = new FileBasedBookShelf("data/boeken.dat")
+  // TODO: reload bookshelf in the background.
 
   // TODO: Actor isn't restarted?
   implicit val system = ActorSystem("on-spray-can")

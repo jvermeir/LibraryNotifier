@@ -1,28 +1,17 @@
 package com.library.service
 
-import akka.actor.Actor
+import akka.actor.{ActorSystem, Props, Actor}
 import spray.routing._
-import com.library.{AuthorParser, Config}
+import com.library.{BookShelf, AuthorParser, Author, Config}
 import spray.http.MediaTypes._
+import com.library.service.ReloadActorProtocol.ReloadMessage
 
 /**
  * Service allows access to the BookShelf over HTTP
  */
 
 class LibraryServiceActor extends Actor with LibraryService {
-  // TODO: this causes reload from library which is rather slow.
-  /*
-    plan A: - load data from file and return that as first version
-            - start actor in background to update the database
-            -> cache pattern? find a cache implementation in Akka?
-   */
-  try {
-    println("before start")
-    start
-  } catch {
-    case e: Exception => println("help")
-  }
-  println("started")
+  reloadBooksFromLibrary
 
   def actorRefFactory = context
 
@@ -32,11 +21,11 @@ class LibraryServiceActor extends Actor with LibraryService {
 trait LibraryService extends HttpService {
   lazy val bookShelf = Config.bookShelf
 
-  def start: Unit = {
+  def reloadBooksFromLibrary: Unit = {
     val authors = AuthorParser.loadAuthorsFromFile("data/authors.dat")
-    //    bookShelf.read
-    bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
-    bookShelf.write
+    implicit val system = ActorSystem("library")
+    val reloadService = system.actorOf(Props[ReloadActor], "reload-service")
+    reloadService ! new ReloadMessage(authors, bookShelf)
   }
 
   val libraryRoute =
@@ -57,4 +46,27 @@ trait LibraryService extends HttpService {
             }
           }
       }
+}
+
+class ReloadActor extends Actor {
+  // TODO: this Actor should probably create a new BookShelf instance, but then we need a way
+  // to update the bookShelf used by the LibraryService
+
+  import ReloadActorProtocol._
+
+  def receive = {
+    case ReloadMessage(authors: Map[String, Author], bookShelf: BookShelf) => reload(authors, bookShelf)
+  }
+
+  private def reload(authors: Map[String, Author], bookShelf: BookShelf): BookShelf = {
+    bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
+    bookShelf.write
+    bookShelf
+  }
+}
+
+object ReloadActorProtocol {
+
+  case class ReloadMessage(authors: Map[String, Author], bookShelf: BookShelf)
+
 }
