@@ -28,22 +28,22 @@ object Test extends App {
   println("ed: " + ed)
 }
 
-object Junk {
-  def main(args: Array[String]) = {
-    val bookShelf = Config.bookShelf
-    val authors = AuthorParser.loadAuthorsFromFile("data/authors.dat")
-    val books = bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
-    println(books)
-    //val data = FileUtils.readFileToString(new File("data/walker.html"))
-    //    val author = libraryClient.getAuthorUpdatedWithLink(data, new Author("Karen Thompson", "Walker",""))
-    //    println(author)
-    //    val books = libraryClient.getBooksByAuthor(author)
-    //    println("books.size: " + books.size)
-    //    println(books)
-    ////    val data2 = FileUtils.readFileToString(new File("data/gaiman.html"))
-    //    val booksByNeilGaiman = libraryClient.getBooksByAuthor(Author("Neil", "Gaiman",""))
-    //    println(booksByNeilGaiman)
-    //    val booksByKateWalker = libraryClient.getBooksByAuthor(Author("Kate", "Walker",""))
-    //    println("Kate's books: " + booksByKateWalker)
-  }
-}
+//object Junk {
+//  def main(args: Array[String]) = {
+//    val bookShelf = Config.bookShelf
+//    val authors = AuthorParser.loadAuthorsFromFile("data/authors.dat")
+//    val books = bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
+//    println(books)
+//    //val data = FileUtils.readFileToString(new File("data/walker.html"))
+//    //    val author = libraryClient.getAuthorUpdatedWithLink(data, new Author("Karen Thompson", "Walker",""))
+//    //    println(author)
+//    //    val books = libraryClient.getBooksByAuthor(author)
+//    //    println("books.size: " + books.size)
+//    //    println(books)
+//    ////    val data2 = FileUtils.readFileToString(new File("data/gaiman.html"))
+//    //    val booksByNeilGaiman = libraryClient.getBooksByAuthor(Author("Neil", "Gaiman",""))
+//    //    println(booksByNeilGaiman)
+//    //    val booksByKateWalker = libraryClient.getBooksByAuthor(Author("Kate", "Walker",""))
+//    //    println("Kate's books: " + booksByKateWalker)
+//  }
+//}

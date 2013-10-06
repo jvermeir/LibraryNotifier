@@ -1,6 +1,7 @@
 package com.library
 
 import scala.io.Source._
+import akka.actor.{Props, ActorSystem, Actor}
 import java.io.File
 
 /**
@@ -8,11 +9,20 @@ import java.io.File
  */
 
 trait BookShelf {
+
   protected[library] lazy val books = scala.collection.mutable.Map[String, Book]()
   protected def read:Unit
   def write:Unit
 
+  // TODO: sneaky init code below...
   read
+
+  // TODO: rename booksFromLibrary
+  def updateBooks (booksFromLibrary:Iterable[Book]):Unit = {
+    val newBooks = booksFromLibrary filter (book => !books.contains(book.getKey) )
+    books ++= newBooks map (book => (book.getKey -> book))
+    write
+  }
 
   // TODO: why would this return a Map?
   def getBookFromShelf(bookToSearchFor:String):Map[String, Book] = books.filter( _.toString == bookToSearchFor).toMap
@@ -20,13 +30,6 @@ trait BookShelf {
   def getBooksToRead: List[Book] = books.values.toList filter(_.status == Book.UNKNOWN)
 
   def getAllBooks:List[Book]=books.values.toList
-
-  def refreshBooksFromLibrary(library: Library, authors: Map[String, Author]) {
-    val booksFromLibrary:Iterable[Book] = library.getBooksForAuthors(authors).values.flatten
-    val newBooks = booksFromLibrary filter (book => !books.contains(book.getKey) )
-    books ++= newBooks map (book => (book.getKey -> book))
-    // TODO: remove books that are not available anymore??
-  }
 
   def setStatusForBook(book:Book, newStatus:String):Unit = {
     val newBook = book.setStatus(newStatus)
@@ -59,7 +62,9 @@ trait BookShelf {
 class FileBasedBookShelf(val storeFileName:String) extends BookShelf {
 
   override def read:Unit = { emptyShelf
-    books.++(readFromFile(storeFileName))}
+    if (new File(storeFileName).exists)
+      books.++(readFromFile(storeFileName))
+  }
 
   override def write:Unit = writeBooksToFile(storeFileName, books.values.toList)
 

@@ -5,6 +5,7 @@ import org.scalatest.FeatureSpec
 import org.scalatest.GivenWhenThen
 import org.scalatest.matchers.MustMatchers
 import org.junit.runner.RunWith
+import java.io.File
 
 @RunWith(classOf[JUnitRunner])
 class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers with TestFixtures{
@@ -18,12 +19,14 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
       Given("a bookshelf with 1 book by author1 and one by author2")
       Config.bookShelf = new TestBookShelf
       Config.libraryClient = new FirstLibraryForTest
+      val libraryClient = Config.libraryClient
       val bookShelf = Config.bookShelf
-      bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
+      bookShelf.updateBooks(libraryClient.getBooksForAuthors(authors).values.flatten)
       2 must be === bookShelf.getBooksToRead.size
+
       When("it refreshes itself from a library with an extra book for author2")
       Config.libraryClient = new SecondLibraryForTest
-      bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
+      bookShelf.updateBooks(Config.libraryClient.getBooksForAuthors(authors).values.flatten)
       Then("it finds three books")
       3 must be === bookShelf.getBooksToRead.size
     }
@@ -32,12 +35,14 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
       Given("a bookshelf with a book with status READ")
       Config.bookShelf = new TestBookShelf
       Config.libraryClient = new FirstLibraryForStatusTest
+      val libraryClient = Config.libraryClient
       val bookShelf = Config.bookShelf
-      bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
+      bookShelf.updateBooks(libraryClient.getBooksForAuthors(authors).values.flatten)
+
       1 must be === bookShelf.getBooksToRead.size
       When("it refreshes itself from a library with an extra book for author2")
       Config.libraryClient = new SecondLibraryForStatusTest
-      bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
+      bookShelf.updateBooks(Config.libraryClient.getBooksForAuthors(authors).values.flatten)
       Then("it finds two books to read")
       2 must be === bookShelf.getBooksToRead.size
     }
@@ -65,6 +70,7 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
         , new Book(new Author("firstname1", "lastname1", ""), "book2")
         , new Book(new Author("firstname3", "lastname3", ""), "book3"))
       val fileName = "data/test/tmp.txt"
+      new File(fileName).delete
       When("the list is saved in a temp file, the shelf is emptied and the file read back")
       val bookShelf = new FileBasedBookShelf(fileName)
       bookShelf.emptyShelf
