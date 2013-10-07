@@ -23,8 +23,6 @@ trait TestFixtures {
 
 class TestBookShelf extends BookShelf {
 
-  // TODO: override refresh method???
-
   override def read = scala.collection.mutable.Map[String, Book] ()
 
   override def write: Unit = {}

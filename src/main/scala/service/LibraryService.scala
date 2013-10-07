@@ -1,8 +1,8 @@
 package com.library.service
 
-import akka.actor.{ActorSystem, Props, Actor}
+import akka.actor.Actor
 import spray.routing._
-import com.library.{BookShelf, AuthorParser, Author, Config}
+import com.library.Config
 import spray.http.MediaTypes._
 
 /**

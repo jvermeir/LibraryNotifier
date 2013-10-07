@@ -1,7 +1,6 @@
 package com.library
 
 import scala.io.Source._
-import akka.actor.{Props, ActorSystem, Actor}
 import java.io.File
 
 /**
@@ -17,7 +16,6 @@ trait BookShelf {
   // TODO: sneaky init code below...
   read
 
-  // TODO: rename booksFromLibrary
   def updateBooks (booksFromLibrary:Iterable[Book]):Unit = {
     val newBooks = booksFromLibrary filter (book => !books.contains(book.getKey) )
     books ++= newBooks map (book => (book.getKey -> book))
@@ -51,11 +49,11 @@ trait BookShelf {
   private def printBookToHtmlTableItem(book: Book): String = "<tr><td>" + book.author.lastName + "</td><td>" + book.author.firstName + "</td><td>" + book.title + "</td></tr>"
 
   private def lessThanForWishList(firstBook:Book, secondBook:Book):Boolean = {
-    // TODO: introduce methods with meaningfull names for comparisons
-    val lastNameLessOrEqualThan = firstBook.author.lastName <= secondBook.author.lastName
-    if (lastNameLessOrEqualThan && firstBook.author.lastName == secondBook.author.lastName) {
+    val lastNameLessOrEqual = firstBook.author.lastName <= secondBook.author.lastName
+    val lastNamesEqual = firstBook.author.lastName == secondBook.author.lastName
+    if (lastNameLessOrEqual && lastNamesEqual) {
       firstBook.title <= secondBook.title
-    } else lastNameLessOrEqualThan
+    } else lastNameLessOrEqual
   }
 }
 

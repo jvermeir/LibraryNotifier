@@ -135,13 +135,11 @@ class DutchPublicLibrary extends Library {
     new BasicNameValuePair("cdef", "002"), new BasicNameValuePair("aantal", "50")
   )
 
-  // TODO: where used?
   def readTextFromUrl(url: String): String = {
     val content = Request.Get(url).execute().returnContent()
     content.asString()
   }
 
-  // TODO: where used?
   def getNewBooks(myBooks: List[Book], booksFromWeb: List[Book]): List[Book] = {
     val candidates = booksFromWeb.toSet
     val booksWithStatusReadOrWontRead = myBooks.filter(book => book.status != Book.UNKNOWN)

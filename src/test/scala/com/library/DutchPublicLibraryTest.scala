@@ -105,10 +105,10 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
       Then("the result must contain 'JPod' and 'Amerikaanse goden' and has length 9+12")
       books.size must be === 2
       val gaimanBooks = books.getOrElse(neilGaiman, List())
-      12 must be === gaimanBooks.size
+      13 must be === gaimanBooks.size
       1 must be === gaimanBooks.filter(_.title == "Amerikaanse goden").size
       val couplandBooks = books.getOrElse(douglasCoupland, List())
-      8 must be === couplandBooks.size
+      7 must be === couplandBooks.size
       1 must be === couplandBooks.filter(_.title == "JPod").size
     }
 
