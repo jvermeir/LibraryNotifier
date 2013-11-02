@@ -17,7 +17,8 @@ libraryDependencies ++= Seq (
   "commons-io"                              %   "commons-io"                  % "2.4",
   "org.scalatest"                           %   "scalatest_2.10"              % "1.9.1"       % "test",
   "org.specs2"                              %%  "specs2"                      % "1.14"        % "test",
-  "junit"                                   %   "junit"                       % "4.8.2"       % "test"
+  "junit"                                   %   "junit"                       % "4.8.2"       % "test",
+  "com.typesafe"                            %   "config"                      % "1.0.2"
 )
 
 libraryDependencies ++= Seq(

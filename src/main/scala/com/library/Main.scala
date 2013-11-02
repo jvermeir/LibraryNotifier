@@ -12,7 +12,7 @@ object Main {
 
     val bookShelf = Config.bookShelf
     val authors = AuthorParser.loadAuthorsFromFile("data/authors.dat")
-//    bookShelf.refreshBooksFromLibrary(Config.libraryClient, authors)
+    bookShelf.updateBooks(Config.libraryClient.getBooksForAuthors(authors).values.flatten)
     bookShelf.write
     val booksToReadAsString = bookShelf.printAsWishList
     println (booksToReadAsString)
