@@ -140,4 +140,30 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
       "<tr><td>lastnameB</td><td>first</td><td>book1</td></tr>\n</table>"
     expectedShoppingListAsHtml must be === actualShoppingListAsHtml
   }
+
+  scenario("The list of books to read is printed as JSON") {
+    Given("a list of books to read from the bookshelf")
+    val bookShelf = getBookShelfWithThreeBooks
+    When("the list is printed as a JSON string")
+    val actualShoppingListAsJSON = bookShelf.printAsJson
+    Then("a valid JSON document is returned")
+    // TODO: find a better test
+    actualShoppingListAsJSON.indexOf("""{"books" : [{""") must be === 0
+//    expectedShoppingListAsJSON must be === actualShoppingListAsJSON
+  }
+  val expectedShoppingListAsJSON =
+    """[{"author" : {"firstName" : "first",
+      |"lastName" : "lastnameA"}
+      |, "title" : "book2"
+      |},
+      |{"author" : {"firstName" : "first",
+      |"lastName" : "lastnameA"}
+      |, "title" : "book3"
+      |},
+      |{"author" : {"firstName" : "first",
+      |"lastName" : "lastnameB"}
+      |, "title" : "book1"
+      |}]
+      |
+    """.stripMargin
 }

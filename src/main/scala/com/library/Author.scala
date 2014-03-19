@@ -14,6 +14,11 @@ case class Author(val firstName: String, val lastName: String, val linkToListOfB
     } else false
   }
   def like(that:Author):Boolean = toFirstNameLastNameString.toLowerCase.startsWith(that.toFirstNameLastNameString.toLowerCase)
+
+  def asJSONString:String = {
+    "\"author\" : {\"firstName\" : \"" + firstName +"\",\n" +
+      "\"lastName\" : \"" + lastName +"\"}\n"
+  }
 }
 
 object Author {
@@ -41,6 +46,7 @@ object Author {
     val authors = AuthorParser.loadAuthorsFromFile("data/authors.dat")
     println(authors)
   }
+
 }
 
 class UnknownAuthor extends Author("Unknown", "Author", "")

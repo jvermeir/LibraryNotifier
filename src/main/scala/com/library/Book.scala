@@ -15,6 +15,11 @@ case class Book (author:Author, title:String, status:String = Book.UNKNOWN) {
   def getKey:String = author.lastName + ";" + author.firstName + ";" + title
 
   override def hashCode: Int = toString.hashCode
+
+  def asJSONString:String = {
+      author.asJSONString +
+    ", \"title\" : \"" + title + "\", \"status\" : " + status + "\n"
+  }
 }
 
 object Book {

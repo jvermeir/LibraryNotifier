@@ -6,10 +6,11 @@ import spray.can.Http
 import com.library._
 import com.library.service.ReloadActorProtocol.ReloadMessage
 
-object Boot extends App {
+object BootForTest extends App {
 
   private val HTTP_PORT: Int = 9181
-  Config.libraryClient = new DutchPublicLibrary
+
+  Config.libraryClient = new LibraryForTest
   Config.bookShelf = new FileBasedBookShelf("data/boeken.dat")
 
   // TODO: Actor isn't restarted?

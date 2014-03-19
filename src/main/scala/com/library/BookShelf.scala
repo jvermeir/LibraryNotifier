@@ -2,6 +2,8 @@ package com.library
 
 import scala.io.Source._
 import java.io.File
+import scala.util.parsing.json.{JSONFormat, JSONArray, JSONObject}
+import scala.language.postfixOps
 
 /**
  * Books that are on my book shelf
@@ -44,6 +46,12 @@ trait BookShelf {
 
   def printAsHtml:String = { val bookTableRowsAsString = getBooksToRead.sortWith(lessThanForWishList(_,_)) map (book => printBookToHtmlTableItem(book)) mkString("\n")
     "<table>\n" + bookTableRowsAsString + "\n</table>"
+  }
+
+  def printAsJson: String = {
+    val sortedBooks = getBooksToRead.sortWith(lessThanForWishList(_, _))
+    val booksAsJSON = sortedBooks map (_.asJSONString)
+    "{\"books\" : [{" + booksAsJSON.mkString("},\n{") + "}]}"
   }
 
   private def printBookToHtmlTableItem(book: Book): String = "<tr><td>" + book.author.lastName + "</td><td>" + book.author.firstName + "</td><td>" + book.title + "</td></tr>"

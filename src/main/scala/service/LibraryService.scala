@@ -22,9 +22,9 @@ trait LibraryService extends HttpService {
   val libraryRoute =
     path("books") {
       get {
-        respondWithMediaType(`text/html`) {
+        respondWithMediaType(`application/json`) {
           complete {
-            bookShelf.printAsHtml
+            bookShelf.printAsJson
           }
         }
       }
