@@ -15,11 +15,11 @@ class LibraryServiceSpec extends Specification with Specs2RouteTest with Library
 
   "LibraryService" should {
 
-    "return a list of all unread books as HTML" in {
-      Get("/books") ~> libraryRoute ~> check {
-        entityAs[String] must contain(expectedBooksAsHTML)
-      }
-    }
+//    "return a list of all unread books as JSON" in {
+//      Get("/books") ~> libraryRoute ~> check {
+//        entityAs[String] must contain(expectedBooksAsJSON)
+//      }
+//    }
 
     "leave GET requests to other paths unhandled" in {
       Get("/kermit") ~> libraryRoute ~> check {
@@ -40,4 +40,7 @@ class LibraryServiceSpec extends Specification with Specs2RouteTest with Library
 <tr><td>lastnameA</td><td>first</td><td>book3</td></tr>
 <tr><td>lastnameB</td><td>first</td><td>book1</td></tr>
 </table>"""
+  val expectedBooksAsJSON = """{"lastnameA;first;book2" : lastnameA;first;book2;unknown, "lastnameA;first;book3" : lastnameA;first;book3;unknown, "lastnameB;first;book1" : lastnameB;first;book1;unknown}"""
 }
+
+
