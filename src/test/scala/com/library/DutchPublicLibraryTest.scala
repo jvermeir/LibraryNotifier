@@ -19,16 +19,6 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
     info("I want to be notified when a new book by one of my favourite authors becomes available at the library")
     info("So that I can go get it")
 
-    scenario("Reading data from a URL") {
-      Given("A url")
-      val url = "http://localhost/"
-      When("the page is loaded from the url")
-      val data: String = libraryClient.readTextFromUrl(url);
-      Then("the text 'It works' appears in the page data")
-      val itWorksFound = data.contains("It works")
-      true must be === itWorksFound
-    }
-
     scenario("Reading data from http://bicat.cultura-ede.nl/") {
       Given("A url")
       val url = "http://bicat.cultura-ede.nl/cgi-bin/bx.pl?taal=1&xdoit=y&groepfx=10&vestnr=8399&cdef=002"
