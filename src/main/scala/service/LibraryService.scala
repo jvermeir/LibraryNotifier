@@ -6,7 +6,7 @@ import com.library.Config
 import spray.http.MediaTypes._
 
 /**
- * Service allows access to the BookShelf over HTTP
+ * Service allows access to the BookShelf over HTTP and returns a JSON object.
  */
 
 class LibraryServiceActor extends Actor with LibraryService {
