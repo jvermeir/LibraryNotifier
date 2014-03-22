@@ -115,7 +115,7 @@ class DutchPublicLibrary extends Library {
     val link = author.linkToListOfBooks
 
     val httpParams:HttpParams  = new BasicHttpParams
-    httpParams.setParameter("Content-Type","text/plain; charset=utf-8")
+    httpParams.setParameter("Content-Type","text/plain; charset=windows-1252")
     val httpclient = new DefaultHttpClient(httpParams)
     val url = "http://bicat.cultura-ede.nl" + link
     val localContext = new BasicHttpContext
