@@ -3,9 +3,9 @@ package com.library
 import org.apache.http.client.fluent.Request
 import org.apache.http.client.HttpClient
 import org.apache.http.impl.client.{BasicCookieStore, DefaultHttpClient}
-import org.apache.http.client.methods.{HttpPost, HttpGet}
+import org.apache.http.client.methods.{HttpHead, HttpPost, HttpGet}
 import org.apache.http.client.params.{ClientPNames, CookiePolicy}
-import org.apache.http.protocol.BasicHttpContext
+import org.apache.http.protocol.{HttpContext, BasicHttpContext}
 import org.apache.http.client.protocol.ClientContext
 import org.apache.http.message.BasicNameValuePair
 import org.apache.http.client.entity.UrlEncodedFormEntity
@@ -13,6 +13,7 @@ import org.apache.http.cookie.Cookie
 import scala.collection.JavaConversions._
 import org.apache.http.util.EntityUtils
 import scala.language.postfixOps
+import org.apache.http.params.{HttpParams, HttpConnectionParams, BasicHttpParams}
 
 /**
  * Access the website for the public library in Ede to find out if there are any new books by authors of interest.
@@ -112,7 +113,17 @@ class DutchPublicLibrary extends Library {
 
   protected[library] def getBookPageAsHtmlByAuthor(author: Author): String = {
     val link = author.linkToListOfBooks
-    Request.Get("http://bicat.cultura-ede.nl" + link).execute().returnContent().asString()
+
+    val httpParams:HttpParams  = new BasicHttpParams
+    httpParams.setParameter("Content-Type","text/plain; charset=utf-8")
+    val httpclient = new DefaultHttpClient(httpParams)
+    val url = "http://bicat.cultura-ede.nl" + link
+    val localContext = new BasicHttpContext
+    val httpget = new HttpGet(url)
+    val response = httpclient.execute(httpget, localContext)
+        val result = scala.io.Source.fromInputStream(response.getEntity.getContent).mkString("")
+    //Request.Get("http://bicat.cultura-ede.nl" + link).execute().returnContent().asString()
+    result
   }
 
   protected[library] def getBooksFromHtmlPage(bookPageAsHtml: String, author: Author): List[String] = {
