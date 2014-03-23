@@ -14,6 +14,7 @@ import scala.collection.JavaConversions._
 import org.apache.http.util.EntityUtils
 import scala.language.postfixOps
 import org.apache.http.params.{HttpParams, HttpConnectionParams, BasicHttpParams}
+import scala.io.Codec
 
 /**
  * Access the website for the public library in Ede to find out if there are any new books by authors of interest.
@@ -118,16 +119,31 @@ class DutchPublicLibrary extends Library {
     val link = author.linkToListOfBooks
 
     val httpParams:HttpParams  = new BasicHttpParams
-    httpParams.setParameter("Content-Type","text/plain; charset=windows-1252")
+    httpParams.setParameter("Content-Type","text/plain; charset=ISO-8859-15")
     val httpclient = new DefaultHttpClient(httpParams)
     val url = "http://bicat.cultura-ede.nl" + link
+//    println("url: " +url)
     val localContext = new BasicHttpContext
+//    println("localcontext: " + localContext)
     val httpget = new HttpGet(url)
     val response = httpclient.execute(httpget, localContext)
-        val result = scala.io.Source.fromInputStream(response.getEntity.getContent).mkString("")
+//    println("response:" + response)
+    val result = scala.io.Source.fromInputStream(response.getEntity.getContent)(Codec.ISO8859).mkString("")
+//    println("result: " + result)
     //Request.Get("http://bicat.cultura-ede.nl" + link).execute().returnContent().asString()
     result
   }
+
+//
+//  val formParameters = getParametersForAuthorQuery(authorName, sid)
+//  val entity = new UrlEncodedFormEntity(formParameters, "UTF-8")
+//  val httpPost = new HttpPost("http://bicat.cultura-ede.nl/cgi-bin/bx.pl")
+//  val httpParams:HttpParams  = new BasicHttpParams
+//  httpParams.setParameter("Content-Type","text/plain; charset=ISO-8859-15")
+//  val httpclient = new DefaultHttpClient(httpParams)
+//  httpPost.setEntity(entity)
+//  val response = httpclient.execute(httpPost, httpContext)
+//  EntityUtils.toString(response.getEntity)
 
   protected[library] def getBooksFromHtmlPage(bookPageAsHtml: String, author: Author): List[String] = {
     val patternString = """<a class="title" title="(.*?)""""
