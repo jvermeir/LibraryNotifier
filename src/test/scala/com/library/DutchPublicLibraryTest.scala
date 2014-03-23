@@ -6,6 +6,7 @@ import org.scalatest.GivenWhenThen
 import org.scalatest.matchers.MustMatchers
 import org.junit.runner.RunWith
 import scala.io.Source._
+import scala.io.Codec
 
 @RunWith(classOf[JUnitRunner])
 class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with GivenWhenThen with MustMatchers {
@@ -39,15 +40,10 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
 
     scenario("get the page with the list of writers that satisfy a author search criteria") {
       Given("A libraryClient")
-      println("na given")
       When("we search for 'Dan Brown")
-      println("na when")
       val data: String = libraryClient.getResultOfSearchByAuthor("Brown, Dan")
-      println("data init'd")
       Then("we get a webpage that contains the text 'Brown, Dan  (1964-)'")
-      println("na then")
       data must include regex ("Brown, Dan.*(1964-)")
-      println("na test")
     }
 
     scenario("get the list of writers that satisfy a author search criterium") {
@@ -70,7 +66,7 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
 
     scenario("get the list of books from a page for an author") {
       Given("A html page with the list of books for Dan Brown")
-      val bookPageAsHtml: String = fromFile("data/test/danBrownBooks.html").mkString
+      val bookPageAsHtml: String = fromFile("data/test/danBrownBooks.html")(Codec.ISO8859).mkString
       When("we get the list of books")
       val listOfBooks: List[String] = libraryClient.getBooksFromHtmlPage(bookPageAsHtml, Author("Brown, Dan"))
       Then("the result contains 'The Da Vinci code' and has length 6")
