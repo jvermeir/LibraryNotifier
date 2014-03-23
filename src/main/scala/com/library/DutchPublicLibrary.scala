@@ -61,6 +61,9 @@ class DutchPublicLibrary extends Library {
     val formParameters = getParametersForAuthorQuery(authorName, sid)
     val entity = new UrlEncodedFormEntity(formParameters, "UTF-8")
     val httpPost = new HttpPost("http://bicat.cultura-ede.nl/cgi-bin/bx.pl")
+    val httpParams:HttpParams  = new BasicHttpParams
+    httpParams.setParameter("Content-Type","text/plain; charset=ISO-8859-15")
+    val httpclient = new DefaultHttpClient(httpParams)
     httpPost.setEntity(entity)
     val response = httpclient.execute(httpPost, httpContext)
     EntityUtils.toString(response.getEntity)
