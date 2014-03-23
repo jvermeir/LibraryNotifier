@@ -37,12 +37,17 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
       5 must be === bicatCookie.getValue.split("-").size
     }
 
-    scenario("get the page with the list of writers that satisfy a author search criterium") {
+    scenario("get the page with the list of writers that satisfy a author search criteria") {
       Given("A libraryClient")
+      println("na given")
       When("we search for 'Dan Brown")
+      println("na when")
       val data: String = libraryClient.getResultOfSearchByAuthor("Brown, Dan")
+      println("data init'd")
       Then("we get a webpage that contains the text 'Brown, Dan  (1964-)'")
+      println("na then")
       data must include regex ("Brown, Dan.*(1964-)")
+      println("na test")
     }
 
     scenario("get the list of writers that satisfy a author search criterium") {
