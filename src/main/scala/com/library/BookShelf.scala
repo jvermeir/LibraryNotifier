@@ -4,6 +4,7 @@ import scala.io.Source._
 import java.io.File
 import scala.util.parsing.json.{JSONFormat, JSONArray, JSONObject}
 import scala.language.postfixOps
+import scala.io.Codec
 
 /**
  * Books that are on my book shelf
@@ -76,7 +77,9 @@ class FileBasedBookShelf(val storeFileName:String) extends BookShelf {
 
   private def readFromFile(fileName:String):Map[String, Book] = {
     emptyShelf
-    val booksAsTextLines = fromFile(fileName).getLines()
+    //val booksAsTextLines = fromFile(fileName).getLines()
+    val booksAsTextLines = fromFile(fileName)(Codec.ISO8859).getLines()
+
     books ++= booksAsTextLines map (book => {val b = Book(book); (b.getKey -> b) })
     books.toMap
   }

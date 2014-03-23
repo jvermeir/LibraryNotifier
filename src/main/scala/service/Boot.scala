@@ -19,7 +19,7 @@ object Boot extends App {
 
   reloadBooksFromLibrary
 
-  IO(Http) ! Http.Bind(service, interface = "192.168.10.129", port = HTTP_PORT)
+  IO(Http) ! Http.Bind(service, interface = "0.0.0.0", port = HTTP_PORT)
 
   def reloadBooksFromLibrary: Unit = {
     val authors = AuthorParser.loadAuthorsFromFile("data/authors.dat")
