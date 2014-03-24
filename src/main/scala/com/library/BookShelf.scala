@@ -78,7 +78,6 @@ class FileBasedBookShelf(val storeFileName:String) extends BookShelf {
   private def readFromFile(fileName:String):Map[String, Book] = {
     emptyShelf
     val booksAsTextLines = fromFile(fileName).getLines()
-//    val booksAsTextLines = fromFile(fileName)(Codec.ISO8859).getLines()
 
     books ++= booksAsTextLines map (book => {val b = Book(book); (b.getKey -> b) })
     books.toMap
