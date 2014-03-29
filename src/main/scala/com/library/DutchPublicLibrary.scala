@@ -15,7 +15,6 @@ import org.apache.http.util.EntityUtils
 import scala.language.postfixOps
 import org.apache.http.params.{HttpParams, HttpConnectionParams, BasicHttpParams}
 import scala.io.Codec
-import scala.io.Source._
 import scala.Some
 
 /**
@@ -73,7 +72,7 @@ class DutchPublicLibrary extends Library {
   }
 
   protected[library] def getParametersForAuthorQuery(authorName: String, sid: String): List[BasicNameValuePair] =
-    new BasicNameValuePair("qs", authorName) :: new BasicNameValuePair("sid", sid) :: fixedParamatersForAuthorsQuery
+    new BasicNameValuePair("qs", authorName) :: new BasicNameValuePair("sid", sid) :: fixedParametersForAuthorsQuery
 
   protected[library] def getAuthorUpdatedWithLink(webPage: String, authorWithoutLink: Author): Author = {
     val singleLineAuthorFragmentPattern = """(?m)<td class="thsearch_wordlink">(.*?)</td>"""
@@ -145,7 +144,7 @@ class DutchPublicLibrary extends Library {
     }
   }
 
-  val fixedParamatersForAuthorsQuery: List[BasicNameValuePair] = List(new BasicNameValuePair("zoek_knop", "Zoek"), new BasicNameValuePair("zl_v", "vest"), new BasicNameValuePair("nr", "8399")
+  val fixedParametersForAuthorsQuery: List[BasicNameValuePair] = List(new BasicNameValuePair("zoek_knop", "Zoek"), new BasicNameValuePair("zl_v", "vest"), new BasicNameValuePair("nr", "8399")
     , new BasicNameValuePair("var", "portal"), new BasicNameValuePair("taal", "1"), new BasicNameValuePair("sn", "10"),
     new BasicNameValuePair("prt", "INTERNET"), new BasicNameValuePair("ingang", "01TS0"),
     new BasicNameValuePair("groepfx", "10"), new BasicNameValuePair("event", "search"), new BasicNameValuePair("dcat", "1"),
@@ -163,5 +162,23 @@ class DutchPublicLibrary extends Library {
     val newBooks = candidates -- booksWithStatusReadOrWontRead
     newBooks.toList
   }
+
+  /*
+  check the books page, return true if it contains a line with 'BeschikbaarBeschikbaar' and 'Ede Centrale'
+<div class="exemplaar_row">
+<div class="exemplaar_stat">
+<img class="staticons" alt="Beschikbaar" title="Beschikbaar" src="/images/statgroen.gif">
+Beschikbaar
+</div>
+<div class="exemplaar_vest">Ede Centrale</div>
+<div class="exemplaar_kast">Spannend & actief Thriller KAVA</div>
+</div>
+
+link to a book from the page of books for an author:
+<a href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Janssen%2C%20Roel;titcode=342879;rubplus=TS001;vv=NJ;vestfiltgrp=;sid=a30bcdc7-1ea8-4ea7-b85b-8d68c7ada131;vestnr=8399;prt=INTERNET;sn=11;fmt=xml;var=portal"
+
+ title="De euro : twintig jaar na het verdrag van Maastricht" class="title">De euro : twintig jaar na het verdrag van Maastricht</a>
+   */
+  override def isBookAvailable(book: Book): Boolean = true
 
 }

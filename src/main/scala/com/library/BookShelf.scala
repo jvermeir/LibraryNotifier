@@ -4,14 +4,13 @@ import scala.io.Source._
 import java.io.File
 import scala.util.parsing.json.{JSONFormat, JSONArray, JSONObject}
 import scala.language.postfixOps
-import scala.io.Codec
+import scala.util.Random
 
 /**
  * Books that are on my book shelf
  */
 
 trait BookShelf {
-
   protected[library] lazy val books = scala.collection.mutable.Map[String, Book]()
   protected def read:Unit
   def write:Unit
@@ -64,6 +63,20 @@ trait BookShelf {
       firstBook.title <= secondBook.title
     } else lastNameLessOrEqual
   }
+
+  protected[library] def getRandomizedListOfBooks:List[Book] = Random.shuffle(getBooksToRead)
+
+  def getRecommendations:List[Book] = recommendations.toList
+
+  val recommendations = scala.collection.mutable.ListBuffer[Book]()
+
+  def storeRecommendations(newRecommendations:List[Book]):Unit = recommendations ++= newRecommendations
+
+  def printRecommendationsAsJson: String = {
+    val booksAsJSON = getRecommendations map (_.asJSONString)
+    "{\"books\" : [{" + booksAsJSON.mkString("},\n{") + "}]}"
+  }
+
 }
 
 class FileBasedBookShelf(val storeFileName:String) extends BookShelf {

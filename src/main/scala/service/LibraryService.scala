@@ -29,6 +29,15 @@ trait LibraryService extends HttpService {
         }
       }
     } ~
+      path("recommendations") {
+        get {
+          respondWithMediaType(`application/json`) {
+            complete {
+              bookShelf.printRecommendationsAsJson
+            }
+          }
+        }
+      } ~
       pathPrefix("book" / RestPath) {
         part =>
           path("") {

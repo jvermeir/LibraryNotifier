@@ -1,6 +1,8 @@
 package com.library
 
 trait Library {
+  def isBookAvailable(book: Book): Boolean
+
   def getBooksByAuthor(authorToSearchFor: Author): List[Book]
 
   def getBooksForAuthors(authors: Map[String, Author]): Map[Author, List[Book]]
