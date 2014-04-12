@@ -152,15 +152,6 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
 //    expectedShoppingListAsJSON must be === actualShoppingListAsJSON
   }
 
-  ignore("The bookshelf shows 5 recommendations randomly choosen from available books") {
-    Given("a bookshelf with a list of unread books")
-    val bookShelf = getBookShelfWithSixBooks
-    When("asked for recommendations")
-    val recommendations = bookShelf.getRecommendations
-    Then("a list of 5 randomly choosen books is returned from the list of available books")
-    getListOfFiveRecommendedBooks must be === recommendations
-  }
-
   scenario("The list of books is placed in random order") {
     Given("A bookshelf")
     Config.bookShelf = new FileBasedBookShelf("data/boeken.dat")
@@ -172,7 +163,6 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
     books1(1) must not equal books2(1)
     books1(2) must not equal books2(2)
   }
-
 
   val expectedShoppingListAsJSON =
     """[{"author" : {"firstName" : "first",

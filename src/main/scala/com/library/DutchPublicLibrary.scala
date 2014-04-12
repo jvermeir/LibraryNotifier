@@ -16,12 +16,14 @@ import scala.language.postfixOps
 import org.apache.http.params.{HttpParams, HttpConnectionParams, BasicHttpParams}
 import scala.io.Codec
 import scala.Some
+import scala.util.matching.Regex
+import com.library.service.LogHelper
 
 /**
  * Access the website for the public library in Ede to find out if there are any new books by authors of interest.
  */
 
-class DutchPublicLibrary extends Library {
+class DutchPublicLibrary extends Library with LogHelper {
 
   val bicatStartOfSessionUrl = "http://bicat.cultura-ede.nl/cgi-bin/bx.pl?taal=1&xdoit=y&groepfx=10&vestnr=8399&cdef=002"
   val cookieStore = new BasicCookieStore
@@ -34,23 +36,22 @@ class DutchPublicLibrary extends Library {
   lazy val bicatCookie = getBicatCookie
 
   def getBooksByAuthor(authorToSearchFor: Author): List[Book] = {
-    println("Get books for: " + authorToSearchFor)
+    logger.info("Get books for: " + authorToSearchFor)
     val author = updateAuthorWithLinkToBooks(authorToSearchFor)
     val result = if (author.like(authorToSearchFor)) {
       val bookpage = getBookPageAsHtmlByAuthor(author)
-      val titles = getBooksFromHtmlPage(bookpage, author)
-      titles map {
-        title => Book(author, title)
+      val titlesAndLinks = getBooksFromHtmlPage(bookpage, author)
+      titlesAndLinks map {
+//        titleAndLink => Book(author, titleAndLink._1, titleAndLink._2)
+          titleAndLink => Book(author, titleAndLink)
       }
     } else List()
-    println(result.size + " books found")
+    logger.debug(result.size + " books found")
     result
   }
 
   def getBooksForAuthors(authors: Map[String, Author]): Map[Author, List[Book]] = {
     val books = authors.values map (author => author -> getBooksByAuthor(author))
-    // TODO: replace with logging framework
-    println("Books read from library")
     books.toMap
   }
 
@@ -75,6 +76,7 @@ class DutchPublicLibrary extends Library {
     new BasicNameValuePair("qs", authorName) :: new BasicNameValuePair("sid", sid) :: fixedParametersForAuthorsQuery
 
   protected[library] def getAuthorUpdatedWithLink(webPage: String, authorWithoutLink: Author): Author = {
+    logger.debug("getAuthorUpdatedWithLink " + authorWithoutLink)
     val singleLineAuthorFragmentPattern = """(?m)<td class="thsearch_wordlink">(.*?)</td>"""
     val multiLineAuthorFragmentPattern = """(?m)<td class="thsearch_wordlink">.*\n(.*)\n.*</td>"""
     val result = getAuthorUpdatedWithLink(webPage, singleLineAuthorFragmentPattern, authorWithoutLink)
@@ -85,6 +87,7 @@ class DutchPublicLibrary extends Library {
   }
 
   protected[library] def getAuthorUpdatedWithLink(webPage: String, pattern: String, author: Author): Option[Author] = {
+    logger.debug("getAuthorUpdatedWithLink: " + author)
     val authorFragment = pattern.r
       .findFirstMatchIn(webPage)
       .map(_ group 1).getOrElse("")
@@ -96,10 +99,12 @@ class DutchPublicLibrary extends Library {
       .findFirstMatchIn(authorFragment)
       .map(_ group 2).getOrElse("")
     val authorFromWebPage = Author(authorAsString)
-    if (author.like(authorFromWebPage)) {
+    val result = if (author.like(authorFromWebPage)) {
       val linkWithAantalFieldSetTo60 = link.replaceFirst("aantal=10", "aantal=60")
       Some(Author(author, linkWithAantalFieldSetTo60))
     } else None
+    logger.debug("getAuthorUpdatedWithLink(result): " + result)
+    result
   }
 
   protected[library] def startBicatSessionAndReturnSid: String = {
@@ -117,8 +122,8 @@ class DutchPublicLibrary extends Library {
   }
 
   protected[library] def getBookPageAsHtmlByAuthor(author: Author): String = {
+    logger.debug("getBookPageAsHtmlByAuthor: " + author)
     val link = author.linkToListOfBooks
-
     val httpParams:HttpParams  = new BasicHttpParams
     httpParams.setParameter("Content-Type","text/plain; charset=ISO-8859-15")
     val httpclient = new DefaultHttpClient(httpParams)
@@ -128,20 +133,32 @@ class DutchPublicLibrary extends Library {
     val response = httpclient.execute(httpget, localContext)
     val result = scala.io.Source.fromInputStream(response.getEntity.getContent)(Codec.ISO8859).mkString("")
     //Request.Get("http://bicat.cultura-ede.nl" + link).execute().returnContent().asString()
+    logger.debug("getBookPageAsHtmlByAuthor: " + result)
     result
   }
 
+  // TODO: get link to book page as well as title from this method
   protected[library] def getBooksFromHtmlPage(bookPageAsHtml: String, author: Author): List[String] = {
+    logger.debug("getBooksFromHtmlPage for author: " + author)
     val patternString = """<a class="title" title="(.*?)""""
     val pattern = patternString.r
     val books = pattern.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
-    books.length match {
+    val result = books.length match {
       case 0 => {
         val p2 = """<meta xmlns:og="http://ogp.me/ns#" name="title" content="(.*?)"""".r
         p2.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
       }
       case _ => books
     }
+    logger.debug("getBooksFromHtmlPage result: " + result)
+    result
+  }
+
+  private def results(a:Regex.Match):(String, String) = {
+    (a group 1, a group 2)
+  }
+  private def results1(a:Regex.Match):(String, String) = {
+    (a group 1, "")
   }
 
   val fixedParametersForAuthorsQuery: List[BasicNameValuePair] = List(new BasicNameValuePair("zoek_knop", "Zoek"), new BasicNameValuePair("zl_v", "vest"), new BasicNameValuePair("nr", "8399")

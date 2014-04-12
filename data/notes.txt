@@ -1,0 +1,4 @@
+special cases:
+
+1. enter search string for author, hit 'zoek', click author link. if author has only one book the pages looks like
+    'alistair.html'

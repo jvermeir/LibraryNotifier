@@ -1,3 +1,7 @@
+Andriesse;Gauke;De dode opdrachtgever;unknown
+Andriesse;Gauke;De handen van Kalman Teller;unknown
+Andriesse;Gauke;De verdwenen schilderijen;unknown
+Andriesse;Gauke;Stilzwijgen;unknown
 Atwood;Margaret;Brave new world;unknown
 Atwood;Margaret;Cat's eye;unknown
 Atwood;Margaret;Dansende meisjes;unknown
@@ -27,7 +31,7 @@ Baldacci;David;De rechtvaardigen [Bd. 2]. - Bd. 2;wontread
 Baldacci;David;De rechtvaardigen;unknown
 Baldacci;David;De samenzwering;unknown
 Baldacci;David;Deliver us from evil;read
-Baldacci;David;Divine justice;unknown
+Baldacci;David;Divine justice;read
 Baldacci;David;Doelwit;unknown
 Baldacci;David;Duister lot;unknown
 Baldacci;David;Familieverraad [Bd. 1]. - Bd. 1;wontread
@@ -199,6 +203,8 @@ Coupland;Douglas;The gum thief;read
 Cumming;Charles;A spy by nature;unknown
 Cumming;Charles;The Trinity Six;unknown
 Cumming;Charles;Typhoon;unknown
+Ellis;warren;RED 2;unknown
+Ellis;warren;RED;unknown
 Folsom;Allan;Dag van bekentenis;unknown
 Folsom;Allan;Dag van de samenzwering;unknown
 Folsom;Allan;Dag van ontmaskering;unknown
@@ -207,7 +213,7 @@ Folsom;Allan;De dag na morgen;unknown
 Folsom;Allan;The Hadrian Memorandum;unknown
 Folsom;Allan;The Hadrian memorandum;unknown
 Folsom;Allan;The exile;unknown
-Gaiman;Neil;Alles is breekbaar;unknown
+Gaiman;Neil;Alles is breekbaar;read
 Gaiman;Neil;Amerikaanse goden;read
 Gaiman;Neil;Coraline;unknown
 Gaiman;Neil;De bende van Anansi;read
@@ -240,6 +246,14 @@ Harper;Tom;Erfgename van de graal;unknown
 Harper;Tom;Het verboden boek;read
 Harper;Tom;The Lazarus vault;unknown
 Harper;Tom;The book of secrets;unknown
+Harris;robert;An officer and a spy;unknown
+Harris;robert;De angst-index;unknown
+Harris;robert;Enigma;unknown
+Harris;robert;Geest;unknown
+Harris;robert;Imperium;unknown
+Harris;robert;Lustrum;unknown
+Harris;robert;Pompeii;unknown
+Harris;robert;The ghost;unknown
 Hurwitz;Gregg;Dan sterft ze;unknown
 Hurwitz;Gregg;De misdaadschrijver;unknown
 Hurwitz;Gregg;They're watching;unknown
@@ -247,7 +261,12 @@ Hurwitz;Gregg;Trust no one;read
 Hurwitz;Gregg;Vertrouw niemand;wontread
 Hurwitz;Gregg;We know;unknown
 Hurwitz;Gregg;You're next;read
+Jansen;roel;De essentie van tai chi : basisoefeningen voor een bewuster leven;unknown
 Kay;Guy Gavriel;Ysabel;unknown
+Lapidus;jens;Bloedlink;unknown
+Lapidus;jens;Snel geld;unknown
+Lapidus;jens;Stockholm Zuid;unknown
+Lapidus;jens;Val dood;unknown
 Maier;Paul;Codex Constantijn;wontread
 Maier;Paul;De brand van Rome : roman;wontread
 Maier;Paul;En het geschiedde... : de historische gegevens rond de geboorte van Jezus;wontread
@@ -325,6 +344,51 @@ Patterson;James;The 6th target;unknown
 Patterson;James;The Christmas wedding;unknown
 Patterson;James;The beach house;unknown
 Patterson;James;Thriller : verhalen die je uit je slaap houden;unknown
+Pratchett;Terry;A blink of the screen : collected short fiction;unknown
+Pratchett;Terry;Academische boys;unknown
+Pratchett;Terry;Bam!;unknown
+Pratchett;Terry;Berevaar;unknown
+Pratchett;Terry;Betoverkind &amp; De plaagzusters;unknown
+Pratchett;Terry;Betoverkind &amp;De plaagzusters
+Pratchett;Terry;Dat wonderbare licht;unknown
+Pratchett;Terry;De dief van tijd;unknown
+Pratchett;Terry;De kleur van toverij;unknown
+Pratchett;Terry;De vijfde olifant;unknown
+Pratchett;Terry;De vrijgemaakte Ortjes;unknown
+Pratchett;Terry;Dunne Hein;unknown
+Pratchett;Terry;Een hoed van lucht;unknown
+Pratchett;Terry;Geld moet wapperen;unknown
+Pratchett;Terry;Heksen in de lucht;unknown
+Pratchett;Terry;Het jongste werelddeel;unknown
+Pratchett;Terry;Hoge omens : de oprechte en secure voorspellingen van Agnes Nutter, een heks : een roman;unknown
+Pratchett;Terry;Hogfather;unknown
+Pratchett;Terry;Houzee!;unknown
+Pratchett;Terry;Ik ga in middernacht;unknown
+Pratchett;Terry;Interessante tijden;unknown
+Pratchett;Terry;Kleingoderij;unknown
+Pratchett;Terry;Lemen voeten;unknown
+Pratchett;Terry;Maaierstijd;unknown
+Pratchett;Terry;Making money;read
+Pratchett;Terry;Meidezeggenschap &amp; Dunne Hein;unknown
+Pratchett;Terry;Meidezeggenschap &amp;Dunne Hein
+Pratchett;Terry;Meidezeggenschap;unknown
+Pratchett;Terry;Mirakelse Maurits en zijn gestudeerde knaagdieren;unknown
+Pratchett;Terry;Monsterlijk regiment;unknown
+Pratchett;Terry;Pluk de strot;unknown
+Pratchett;Terry;Posterijen;unknown
+Pratchett;Terry;Pyramides : (Het boek van Derwaarts Gaan);unknown
+Pratchett;Terry;Rollende prenten;unknown
+Pratchett;Terry;Schijfwereld-omnibus;unknown
+Pratchett;Terry;Snuif;unknown
+Pratchett;Terry;Te wapen;unknown
+Pratchett;Terry;The Bromeliad;unknown
+Pratchett;Terry;The colour of magic;unknown
+Pratchett;Terry;The long earth;unknown
+Pratchett;Terry;Unseen academicals;read
+Pratchett;Terry;Volk;unknown
+Pratchett;Terry;Wacht! Wacht!;unknown
+Pratchett;Terry;Wintersmid;unknown
+Pratchett;Terry;Zieltonen;unknown
 Preston;Douglas;De gruwelkamer;unknown
 Preston;Douglas;De vloek van het oerwoud;unknown
 Preston;Douglas;Goddeloos;unknown
@@ -332,6 +396,19 @@ Preston;Douglas;IJsgrens;unknown
 Preston;Douglas;Virus;unknown
 Raven;Rik;Zucht;read
 Reynolds;Alastair;Terminal world;read
+Robotham;Michael;Bleed for me;unknown
+Robotham;Michael;Boetedoening;unknown
+Robotham;Michael;Bombproof;unknown
+Robotham;Michael;De afrekening;unknown
+Robotham;Michael;De verdenking;unknown
+Robotham;Michael;Door mijn ogen;unknown
+Robotham;Michael;Gebroken;unknown
+Robotham;Michael;Het verlies;unknown
+Robotham;Michael;Nachtboot;unknown
+Robotham;Michael;Shatter;read
+Robotham;Michael;The wreckage;unknown
+Robotham;Michael;Vuurvast;unknown
+Robotham;Michael;Zeg dat het je spijt;unknown
 Ross;Tomas;Babyface : King en de moordtransfer : thriller;unknown
 Ross;Tomas;Beestachtig : dieren in de misdaadliteratuur;unknown
 Ross;Tomas;Beta : thriller;read
@@ -382,21 +459,25 @@ Schätzing;Frank;De dood en de duivel;unknown
 Schätzing;Frank;De zwerm;read
 Schätzing;Frank;Geluidloos;read
 Schätzing;Frank;Limiet;read
+Sheehan;Daron;Het Socrates project;unknown
 Simmons;Dan;Drood;unknown
 Simmons;Dan;Hyperion en, De ondergang van Hyperion;read
 Simmons;Dan;Ilium;read
 Simmons;Dan;Lood;unknown
 Simmons;Dan;Moedwil;unknown
 Simmons;Dan;Olympos;read
-Simmons;Dan;The abominable ;unknown
 Simmons;Dan;The abominable;unknown
 Simmons;Dan;The terror : a novel;unknown
+Soetewey;Rudy;2017;read
+Soetewey;Rudy;De laatste reis;unknown
+Soetewey;Rudy;Getuigen;unknown
+Soetewey;Rudy;Moord;unknown
+Soetewey;Rudy;Vrienden;unknown
 Stone;Robert;Damascuspoort;read
 Suarez;Daniel;Ctrl Alt Delete;read
 Suarez;Daniel;Daemon;unknown
 Tex;Charles den;' Ik ben koopman' : kroniek van de familie Fentener van Vlissingen;unknown
 Tex;Charles den;Angstval;unknown
-Tex;Charles den;Bellicher. - [De complete 2e televisieserie]: Cel / [cast] Daan Schuurmans ... [et al.] ; regie Peter de Baan;unknown
 Tex;Charles den;Bellicher. - [De complete 2e televisieserie]: Cel / [cast] Daan Schuurmans ... [et al.];regie Peter de Baan
 Tex;Charles den;Cel;read
 Tex;Charles den;Claim;read
@@ -429,14 +510,28 @@ Vance;Jack;Emphyrio;unknown
 Vance;Jack;Het laatste kasteel;unknown
 Vance;Jack;Marune;read
 Vance;Jack;Spelevaren op Grote Planeet;unknown
+Vemde;Herman;Basuko;unknown
+Vemde;Herman;Dame Blanche : thriller;unknown
+Vemde;Herman;Dossier Trapani : thriller;unknown
+Vemde;Herman;Harry's dubbelspel : thriller;unknown
+Vemde;Herman;Oranjebom;unknown
+Vemde;Herman;Sarin;unknown
+Vemde;Herman;Tequila Sunrise;read
 Walker;Karen Thompson;Wij waren hier;unknown
+Weijts;christiaan;Art. 285b : roman;unknown
+Weijts;christiaan;De donkere kamer van Damokles;unknown
+Weijts;christiaan;De etaleur : dansnovelle;unknown
+Weijts;christiaan;Euforie : roman;unknown
+Weijts;christiaan;Mokusei! &amp; De Boeddha achter de schutting : twee verhalen;unknown
+Weijts;christiaan;Mokusei! &amp;De Boeddha achter de schutting : twee verhalen
+Weijts;christiaan;Via Cappello 23 : roman;unknown
+Wieringa;Tommy;Alles over Tristan : roman;unknown
 Wieringa;Tommy;Alles over Tristan;unknown
 Wieringa;Tommy;Caesarion : roman;unknown
 Wieringa;Tommy;Caesarion;unknown
 Wieringa;Tommy;De grens;unknown
 Wieringa;Tommy;Dit zijn de namen : roman;unknown
 Wieringa;Tommy;Dit zijn de namen;unknown
-Wieringa;Tommy;Een mooie jonge vrouw ;unknown
 Wieringa;Tommy;Een mooie jonge vrouw;unknown
 Wieringa;Tommy;Ga niet naar zee;unknown
 Wieringa;Tommy;Ik was nooit in Isfahaan : reisverhalen;unknown

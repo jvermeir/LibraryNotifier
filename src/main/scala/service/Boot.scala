@@ -27,7 +27,7 @@ object Boot extends App  {
   val authors = AuthorParser.loadAuthorsFromFile("data/authors.dat")
 
   getRecommendations
-//  reloadBooksFromLibrary
+  reloadBooksFromLibrary
 
   IO(Http) ! Http.Bind(libraryService, interface = "0.0.0.0", port = HTTP_PORT)
 
@@ -54,9 +54,12 @@ class ReloadActor extends Actor {
   }
 
   private def reload(authors: Map[String, Author], bookShelf: BookShelf):Unit = {
-    val libraryClient = Config.libraryClient
-    val booksFromLibrary:Iterable[Book] = libraryClient.getBooksForAuthors(authors).values.flatten
-    bookShelf.updateBooks(booksFromLibrary)
+    // TODO: reload decision should be taken by bookShelf, so refactor use of libraryclient into bookshelf
+    if (bookShelf.shouldReload) {
+      val libraryClient = Config.libraryClient
+      val booksFromLibrary: Iterable[Book] = libraryClient.getBooksForAuthors(authors).values.flatten
+      bookShelf.updateBooks(booksFromLibrary)
+    }
   }
 }
 

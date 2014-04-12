@@ -17,6 +17,7 @@ libraryDependencies ++= Seq(
   "commons-io" % "commons-io" % "2.4",
   "commons-logging" % "commons-logging" % "1.1.1",
   "commons-codec" % "commons-codec" % "1.6",
+  "log4j" % "log4j" % "1.2.17",
   "org.apache.httpcomponents" % "httpclient" % "4.2.5",
   "org.apache.httpcomponents" % "httpclient-cache" % "4.2.5",
   "org.apache.httpcomponents" % "httpcore" % "4.2.5",

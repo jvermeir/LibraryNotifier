@@ -30,6 +30,7 @@ trait TestFixtures {
     bookShelf.add(book4)
     bookShelf.add(book5)
     bookShelf.add(book6)
+    bookShelf.storeRecommendations(bookShelf.getBooksToRead)
     bookShelf
   }
 

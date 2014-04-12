@@ -11,6 +11,8 @@ import scala.util.Random
  */
 
 trait BookShelf {
+  def shouldReload: Boolean = ! new File("dontReload").exists
+
   protected[library] lazy val books = scala.collection.mutable.Map[String, Book]()
   protected def read:Unit
   def write:Unit

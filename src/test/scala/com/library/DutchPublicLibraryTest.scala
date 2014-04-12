@@ -68,9 +68,10 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
       Given("A html page with the list of books for Dan Brown")
       val bookPageAsHtml: String = fromFile("data/test/danBrownBooks.html")(Codec.ISO8859).mkString
       When("we get the list of books")
-      val listOfBooks: List[String] = libraryClient.getBooksFromHtmlPage(bookPageAsHtml, Author("Brown, Dan"))
+      val listOfBooks = libraryClient.getBooksFromHtmlPage(bookPageAsHtml, Author("Brown, Dan"))
       Then("the result contains 'The Da Vinci code' and has length 6")
       listOfBooks must contain("The Da Vinci code")
+//      listOfBooks map (_._1) must contain("The Da Vinci code")
       listOfBooks.size must be === 6
     }
 
@@ -80,8 +81,9 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
       val danBrown = libraryClient.getAuthorUpdatedWithLink(data, new Author("Dan", "Brown", "link"))
       When("we get the books for 'Brown, Dan'")
       val bookPageAsHtml: String = libraryClient.getBookPageAsHtmlByAuthor(danBrown)
-      val listOfBooks: List[String] = libraryClient.getBooksFromHtmlPage(bookPageAsHtml, Author("Brown, Dan"))
+      val listOfBooks = libraryClient.getBooksFromHtmlPage(bookPageAsHtml, Author("Brown, Dan"))
       Then("the result contains 'The Da Vinci code' and has length of at least 15")
+//      listOfBooks map (_._1) must contain("The Da Vinci code")
       listOfBooks must contain("The Da Vinci code")
       listOfBooks.size must be > 15
     }
