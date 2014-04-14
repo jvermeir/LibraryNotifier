@@ -101,8 +101,8 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
       13 must be === gaimanBooks.size
       1 must be === gaimanBooks.filter(_.title == "Amerikaanse goden").size
       val couplandBooks = books.getOrElse(douglasCoupland, List())
-      6 must be === couplandBooks.size
-      1 must be === couplandBooks.filter(_.title == "JPod").size
+      5 must be === couplandBooks.size
+      1 must be === couplandBooks.filter(_.title == "Speler Een").size
     }
 
     scenario("Comparing the list of books stored on disk and the list retrieved from the Internet, create a list of books to read") {
