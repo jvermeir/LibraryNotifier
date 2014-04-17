@@ -20,17 +20,7 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
     info("I want to be notified when a new book by one of my favourite authors becomes available at the library")
     info("So that I can go get it")
 
-    scenario("Reading data from http://bicat.cultura-ede.nl/") {
-      Given("A url")
-      val url = "http://bicat.cultura-ede.nl/cgi-bin/bx.pl?taal=1&xdoit=y&groepfx=10&vestnr=8399&cdef=002"
-      When("the page is loaded from the url")
-      val data = libraryClient.readTextFromUrl(url)
-      Then("the text 'Hoofdmenu' appears in the page data")
-      val hoofdmenuFound = data.contains("Hoofdmenu")
-      true must be === hoofdmenuFound
-    }
-
-    scenario("getting bicat_sid cookie from http://bicat.cultura-ede.nl/") {
+    ignore("getting bicat_sid cookie from http://bicat.cultura-ede.nl/") {
       Given("A libraryClient")
       When("the start page is loaded from the url")
       Then("the BICAT_SID cookie is set to a 5-part string")

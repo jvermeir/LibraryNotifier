@@ -1,0 +1,730 @@
+<html class=" js "><head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content=" user-scalable=yes" name="viewport">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta content="http://bicat.cultura-ede.nl/cgi-bin/bx.pl?var=portal&amp;fmt=xml&amp;share=addthis&amp;event=tdetail&amp;vestnr=8399&amp;titcode=53895&amp;titel_id=4808614&amp;" property="og:url" xmlns:og="http://ogp.me/ns#">
+    <link href="http://bicat.cultura-ede.nl/cgi-bin/momredir.pl?size=200&amp;lid=2008110023&amp;ppn=306154846&amp;isbn=9789024513574&amp;" rel="image_src" xmlns:og="http://ogp.me/ns#">
+    <meta content="http://bicat.cultura-ede.nl/cgi-bin/momredir.pl?size=200&amp;lid=2008110023&amp;ppn=306154846&amp;isbn=9789024513574&amp;" property="og:image" xmlns:og="http://ogp.me/ns#">
+    <meta content="http://bicat.cultura-ede.nl/cgi-bin/momredir.pl?size=200&amp;lid=2008110023&amp;ppn=306154846&amp;isbn=9789024513574&amp;" property="og:image:url" xmlns:og="http://ogp.me/ns#">
+    <meta content="Alles is breekbaar" name="title" xmlns:og="http://ogp.me/ns#">
+    <meta content="Alles is breekbaar" property="og:title" xmlns:og="http://ogp.me/ns#">
+    <meta content="Bundel met zevenentwintig korte verhalen over gewone mensen die te maken krijgen met bijzondere, soms bovennatuurlijke gebeurtenissen." name="description" xmlns:og="http://ogp.me/ns#">
+    <meta content="Bundel met zevenentwintig korte verhalen over gewone mensen die te maken krijgen met bijzondere, soms bovennatuurlijke gebeurtenissen." property="og:description" xmlns:og="http://ogp.me/ns#">
+    <link media="screen" href="/portal/css/mystyle.css" type="text/css" rel="stylesheet"><!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/rsrc/css/mystyle_ie.css"><![endif]--><link media="print" href="/rsrc/portal/css/mystyle_print.css" type="text/css" rel="stylesheet">
+    <link href="/images/favicon.ico" type="image/png" rel="icon">
+    <link media="screen" href="../plugins/starbox/css/starbox.css" type="text/css" rel="stylesheet" xmlns:og="http://ogp.me/ns#">
+    <link media="screen" href="../plugins/modalbox/css/modalbox.css" type="text/css" rel="stylesheet" xmlns:og="http://ogp.me/ns#">
+    <link media="screen" href="../plugins/autocomplete/css/autocomplete.css" type="text/css" rel="stylesheet" xmlns:og="http://ogp.me/ns#">
+    <link media="screen" href="../plugins/tooltip/css/opentip.css" type="text/css" rel="stylesheet" xmlns:og="http://ogp.me/ns#">
+    <title>Titeldetail</title>
+    <script>
+		var GactorEmail = 'false'; /* tijdelijke Globale variabele*/
+		var Gquerystring = 'dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Gaiman%2C%20Neil;titcode=53895;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=16;var=portal'; /* tijdelijke Globale variabele*/
+		var Gbaseurl = '/cgi-bin/bx.pl?sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal'; /* tijdelijke Globale variabele*/
+		var Gsid = 'b9326e88-50f6-4c8e-a7ff-95569860cd6f'; /* tijdelijke Globale variabele*/
+		var Gmag_cwise = '0'; /* tijdelijke Globale variabele*/
+	</script><script language="Javascript">
+function checkFields_kl() {
+    var lener = document.loginform_kl.newlener.value;
+    if (lener.length==0) {
+        //alert("lenernummer invullen");
+        document.loginform_kl.newlener.focus();
+        return false;
+    }
+    var pin   = document.loginform_kl.pinkode.value;
+    if (pin.length==0) {
+        //alert("pincode invullen");
+        document.loginform_kl.pinkode.focus();
+        return false;
+    }
+    return true;
+}
+    var dcat = 0;
+    var dcats = ['1','2','3','4'];
+    var ingangcnt = [11,11,9,9];
+    var ingangoms = [['Schrijver','Titel','Reeks/serie','Onderwerp','Pim rubriek','Indeling Siso','Indeling Bladmuziek','Indeling Muziek','Woorden','ISBN'],['Schrijver','Titel','Reeks/serie','Onderwerp ','Pim rubriek','Indeling Siso','Indeling Bladmuziek','Indeling Muziek','Woorden','ISBN'],['Componist/Uitvoerende','Titel','Reeks/serie','Onderwerp ','Pim rubriek','Indeling bladmuziek','Woorden','ISBN etc'],['Componist/Uitvoerende','Titel','Reeks/serie','Onderwerp ','Pim rubriek','Indeling muziek','Woorden','ISBN etc']];
+    var ingangcod = [['01TS0','01TX0','01TX2','01TO0','01TP0','01TI0','01TI2','01TI4','01W&gt;','01DN'],['03TS0','03TX0','03TX2','03TO0','03TP0','03TI0','03TI2','03TI4','03W&gt;','03DN'],['12TS0','12TX0','12TX2','12TO0','12TP0','12TI2','12W&gt;','12DN'],['13TS0','13TX0','13TX2','13TO0','13TP0','13TI4','13W&gt;','13DN']];
+    var dcatgel = [0,0,0,0];
+    //
+    function setingang (dcatname) {
+        //window.status="setingang ["+dcatname+"]"
+        if (typeof document.zoekform=="undefined") {
+            return;
+        }
+        var sl = document.zoekform.ingang;
+        var dcat=-1;
+	for (var i=0;i&lt;dcats.length;i++) {
+	    if (dcats[i]==dcatname) {
+		dcat=i;
+		//alert("DCAT="+i.toString());
+	    }
+        }
+	//alert("sl.value="+sl.value);
+	if (sl.options[0]==null) {
+	  sl.options[i]= new Option();
+	  //alert("sl.value=new");
+	}
+	sl.options[0].value='00';
+	sl.options[0].text ='-- kies --';
+        if (dcat&gt;=0) {
+  	  for (var i=1;i&lt;ingangcnt[dcat]+1;i++) {
+	    if (sl.options[i]==null) {
+		sl.options[i]= new Option();
+	    }
+	    sl.options[i].value=ingangcod[dcat][i-1];
+	    sl.options[i].text =ingangoms[dcat][i-1];
+	  }
+	  sl.options.length=ingangcnt[dcat];
+        } else {
+	  sl.options.length=1;
+        }
+	sl.selectedIndex=0;
+        if (dcatgel[dcat]) {
+          document.zoekform.zl_v.value='N';
+        } else {
+          document.zoekform.zl_v.value='';
+        }
+    }
+    //
+    function presetdcat (dcat,ingang) {
+        if (typeof document.zoekform=="undefined") {
+            return;
+        }
+        var sl = document.zoekform.ingang;
+        var si =-1;
+        var ssi=0;
+	for (var i=0;i&lt;dcats.length;i++) {
+	    if (dcats[i]==dcat) {
+		si=i;
+	    }
+        }
+        setingang(dcat);
+        if (si&gt;=0) {
+	  for (var i=0;i&lt;sl.options.length;i++) {
+	    if (sl.options[i].value==ingang) {
+		ssi=i;
+	    }
+          }
+        }
+        document.zoekform.dcat.selectedIndex=si+1;
+	sl.selectedIndex=ssi;
+    }
+    //
+    var ext_zoeken = false;
+    //
+    function check_form() {
+      if (typeof document.zoekform=="undefined") {
+        return true;
+      }
+      //alert("DCAT="+document.zoekform.dcat.value);
+      //alert("INGANG="+document.zoekform.ingang.value);
+      if (ext_zoeken) {
+         return true;
+      }
+      if (document.zoekform.dcat.value=="0"
+       || document.zoekform.ingang.value=="00") {
+        alert("Kies eerst een (deel)catalogus en een zoekingang");
+        return false;
+      }
+      return true;
+    }
+var FALLBACK_MS=600000;
+function fallback() {
+  if (typeof(this["_local_fallback"])=="function") {
+    _local_fallback("http://bicat.cultura-ede.nl/cgi-bin/bx.pl?dcat=1&amp;event=start&amp;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f&amp;groepfx=10&amp;vestnr=8399&amp;prt=INTERNET&amp;taal=1&amp;zl_v=N&amp;sn=17&amp;var=portal");
+  } else {
+    var url="http://bicat.cultura-ede.nl/cgi-bin/bx.pl?dcat=1&amp;event=start&amp;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f&amp;groepfx=10&amp;vestnr=8399&amp;prt=INTERNET&amp;taal=1&amp;zl_v=N&amp;sn=17&amp;var=portal";
+    document.location = url;
+  }
+}
+
+function doeExternWindow(uri) {
+  var w = window.open(uri,"extrawindow");
+  w.focus();
+}
+function Init() {
+  if (typeof(this["_local_init"])=="function") {
+    _local_init();
+  } else {
+    presetdcat('1','01TS0');
+presetdcat('1','01TS0');
+setTimeout('fallback()',FALLBACK_MS);
+if ((typeof document.zoekform!="undefined") &amp;&amp; (typeof document.zoekform.woord!="undefined")) {
+  document.zoekform.woord.focus();
+} else {
+  if ((typeof document.forms[0]!="undefined") &amp;&amp; (typeof document.forms[0].elements[0]!="undefined")) {
+    document.forms[0].elements[0].focus();
+  }
+}
+
+  }
+}
+function doeHelp(uri) {
+  var w = window.open(uri,"helpwindow","height=400,width=640,status=no,resizable=yes");
+  w.focus();
+}
+/* hier include files */
+</script><noscript xmlns:og="http://ogp.me/ns#">&lt;meta http-equiv="Refresh" content="0; URL=http://bicat.cultura-ede.nl/cgi-bin/bx.pl?dcat=1&amp;amp;wzstype=&amp;amp;extsdef=01&amp;amp;event=tdetail&amp;amp;wzsrc=&amp;amp;woord=Gaiman%2C%20Neil&amp;amp;titcode=53895&amp;amp;rubplus=TS0&amp;amp;vv=NJ&amp;amp;vestfiltgrp=&amp;amp;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f&amp;amp;groepfx=10&amp;amp;vestnr=8399&amp;amp;prt=INTERNET&amp;amp;taal=1&amp;amp;zl_v=N&amp;amp;sn=16&amp;amp;var=geen_js;"&gt;</noscript>
+    <script src="../plugins/browserdetect/js/browserdetect.js" type="text/javascript" xmlns:og="http://ogp.me/ns#"></script><script src="/rsrc/js/prototype.js" type="text/javascript" xmlns:og="http://ogp.me/ns#"></script><script src="/rsrc/js/scriptaculous.js" type="text/javascript" xmlns:og="http://ogp.me/ns#"></script><script src="http://bicat.cultura-ede.nl/rsrc/js/builder.js" type="text/javascript"></script><script src="http://bicat.cultura-ede.nl/rsrc/js/effects.js" type="text/javascript"></script><script src="http://bicat.cultura-ede.nl/rsrc/js/dragdrop.js" type="text/javascript"></script><script src="http://bicat.cultura-ede.nl/rsrc/js/controls.js" type="text/javascript"></script><script src="http://bicat.cultura-ede.nl/rsrc/js/slider.js" type="text/javascript"></script><script src="http://bicat.cultura-ede.nl/rsrc/js/sound.js" type="text/javascript"></script><script src="/rsrc/js/wise4all.js" type="text/javascript" xmlns:og="http://ogp.me/ns#"></script><script src="../plugins/starbox/js/starbox.js" type="text/javascript" xmlns:og="http://ogp.me/ns#"></script><script src="../plugins/fabtabs/js/fabtabs.js" type="text/javascript" xmlns:og="http://ogp.me/ns#"></script><script src="../plugins/modalbox/js/modalbox.js" type="text/javascript" xmlns:og="http://ogp.me/ns#"></script><script src="../plugins/editinplace/js/editinplace.js" type="text/javascript" xmlns:og="http://ogp.me/ns#"></script><script src="../plugins/livevalidation/js/livevalidation_prototype.js" type="text/javascript" xmlns:og="http://ogp.me/ns#"></script><script src="../plugins/autocomplete/js/autocomplete.js" type="text/javascript" xmlns:og="http://ogp.me/ns#"></script><script src="../plugins/tooltip/js/opentip.js" type="text/javascript" xmlns:og="http://ogp.me/ns#"></script><!--[if lte IE 9]><script xmlns:og="http://ogp.me/ns#" type="text/javascript" src="../plugins/tooltip/js/excanvas.js"></script><![endif]--><script type="text/javascript">
+				waitForProto('b9326e88-50f6-4c8e-a7ff-95569860cd6f', '53895', '8399', '4808614',  '53895',   '0',   '0',   '0', '0', 'tdetail', 'http://bicat.cultura-ede.nl/cgi-bin/bx.pl?dcat=1&amp;wzstype=&amp;extsdef=01&amp;event=tdetail&amp;wzsrc=&amp;woord=Gaiman%2C%20Neil&amp;titcode=53895&amp;rubplus=TS0&amp;vv=NJ&amp;vestfiltgrp=&amp;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f&amp;groepfx=10&amp;vestnr=8399&amp;prt=INTERNET&amp;taal=1&amp;zl_v=N&amp;sn=16&amp;var=geen_js');
+			</script><script src="/js/portal/carousel.js" type="text/javascript"></script><script src="/js/portal/menu.js" type="text/javascript"></script><script src="/js/modernizr.min.js" type="text/javascript"></script>
+</head>
+<body>
+<script src="../plugins/dynamicfontsize/js/dynamicfontsize.js" type="text/javascript"></script><div id="wrapper">
+<div id="header_wrapper">
+    <div id="upper_header">
+        <div id="clusterLogo">
+            <a href="/cgi-bin/bx.pl?sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal;event=main"><img src="/images/logo_ede.png" title="Logo Bibliotheek" alt="Logo Bibliotheek"></a><span id="LogoText">Alle vestigingen Ede</span>
+        </div>
+        <div id="header_banner"></div>
+        <div id="vest_keuze" xmlns:og="http://ogp.me/ns#"><a onclick="doModal(this.href+&quot;;submap=raw&quot;,&quot;Kies andere vestiging&quot;);return false;" href="/cgi-bin/bx.pl?event=vestkeuze;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal" id="keuze_link">Kies andere vestiging</a></div>
+        <div id="loginblock">
+            <form onsubmit="loginLokaal('b9326e88-50f6-4c8e-a7ff-95569860cd6f','8399','dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Gaiman%2C%20Neil;titcode=53895;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=16;var=portal','login_kl'); return false;" action="/cgi-bin/bx.pl" method="post" name="userform" id="login_kl">
+                <p><label style="display:none;" class="default-value" for="newlener">Gebruikersnaam/lenernummer</label><input type="text" title="Gebruikersnaam/lenernummer" tabindex="5" size="10" id="newlener" name="newlener"><a title="Hulp bij aanmelden" href="/error.html" onclick="haalWSHelp('login', 'Hoe moet ik inloggen?');return false" class="help_knop"></a></p>
+                <p><label style="display:none;" class="default-value" for="pinkode">Wachtwoord/pincode</label><input type="password" title="Wachtwoord/pincode" tabindex="6" size="10" id="pinkode" name="pinkode"><input type="submit" tabindex="7" value="Aanmelden" id="submit"></p>
+            </form>
+            <p class="melding_leeg" id="login_melding_lokaal"></p>
+        </div>
+    </div>
+    <div id="lower_header">
+        <div id="menu" xmlns:og="http://ogp.me/ns#"><ul id="topmenu" class="level1">
+            <li><a href="/cgi-bin/bx.pl?sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal;event=main"><span>Start</span></a></li>
+
+
+
+
+            <li><a id="aanwinsten_topmenu" href="/cgi-bin/bx.pl?event=profgrp;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal" title="Aanwinsten"><span>Aanwinsten</span></a></li>
+            <li><a id="toplijsten_topmenu" href="/cgi-bin/bx.pl?event=topgrp;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal" title="Toplijsten"><span>Toplijsten</span></a></li>
+
+            <li><a href="/cgi-bin/bx.pl?sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal;event=recautthes"><span>Lees- of luisteradvies</span></a></li>
+            <li><a href="/cgi-bin/bx.pl?sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal;event=private"><span>Mijn menu</span></a></li>
+        </ul></div>
+        <div id="rightmenu">
+            <div><a title="Uitleg over huidige scherm" id="help_topmenu" onclick="haalWSHelp(&quot;tdetail&quot;,&quot;Uitleg bij - tdetail&quot;);return false;" href="#"></a></div>
+            <div><a title="Ga naar drempelvrije versie (zonder javascript)" href="http://bicat.cultura-ede.nl/cgi-bin/bx.pl?dcat=1&amp;wzstype=&amp;extsdef=01&amp;event=tdetail&amp;wzsrc=&amp;woord=Gaiman%2C%20Neil&amp;titcode=53895&amp;rubplus=TS0&amp;vv=NJ&amp;vestfiltgrp=&amp;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f&amp;groepfx=10&amp;vestnr=8399&amp;prt=INTERNET&amp;taal=1&amp;zl_v=N&amp;sn=16&amp;var=geen_js" class="drempelvrij_user_menu"></a></div>
+            <div><a title="printen" href="javascript:print();" id="printer"></a></div>
+            <div id="resize-box">
+                <a style="font-size: 10px;" href="javascript:firefoxFsize()" title="Kleine tekst" class="textsize selected_size" id="textsize_100">A</a><a style="font-size: 12px;" href="javascript:firefoxFsize()" title="Normale tekst" class="textsize" id="textsize_110">A</a><a style="font-size: 14px;" href="javascript:firefoxFsize()" title="Grote tekst" class="textsize" id="textsize_130">A</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div id="container">
+<div class="clear"></div>
+<div class="dark_row"><div class="zoekbalk"><div class="formulier">
+    <form enctype="application/x-www-form-urlencoded" onsubmit="return checkForm();" action="/cgi-bin/bx.pl" method="post" name="zoekform" class="zkform" id="searchfrm">
+        <input type="hidden" id="zl_v" value="" name="zl_v"><input type="hidden" id="event" value="search" name="event"><input type="hidden" id="sid" value="b9326e88-50f6-4c8e-a7ff-95569860cd6f" name="sid"><input type="hidden" id="groepfx" value="10" name="groepfx"><input type="hidden" id="vestnr" value="8399" name="vestnr"><input type="hidden" id="prt" value="INTERNET" name="prt"><input type="hidden" id="taal" value="1" name="taal"><input type="hidden" id="sn" value="17" name="sn"><input type="hidden" id="var" value="portal" name="var"><input type="hidden" value="10" name="aantal"><table class="zoekcontext"><tbody><tr valign="middle" class="zoekcontext">
+        <td class="zoekcontext">Zoeken in</td>
+        <td class="zoekcontext"><select onchange="setingang(this.options[this.selectedIndex].value);" name="dcat" class="zoekcontext"><option value="0">-- kies --</option>
+            <option selected="" value="1">Algemene catalogus</option>
+            <option value="2">Jeugdcatalogus</option>
+            <option value="3">Bladmuziek</option>
+            <option value="4">Muziek</option></select></td>
+        <td class="zoekcontext">op</td>
+        <td class="zoekcontext"><select name="ingang" class="zoekcontext"><option selected="" value="00">-- kies --</option><option value="01TS0">Schrijver</option><option value="01TX0">Titel</option><option value="01TX2">Reeks/serie</option><option value="01TO0">Onderwerp</option><option value="01TP0">Pim rubriek</option><option value="01TI0">Indeling Siso</option><option value="01TI2">Indeling Bladmuziek</option><option value="01TI4">Indeling Muziek</option><option value="01W&gt;">Woorden</option><option value="01DN">ISBN</option></select></td>
+        <td class="zoekcontext">
+            <input type="text" maxlength="60" size="25" placeholder="Zoekterm.." value="Gaiman, Neil" tabindex="2" title="Vul hier een zoekterm in" class="zoekcontext" id="woord" name="qs"><input type="button" onclick="document.zoekform.woord.value=&quot;&quot;;document.zoekform.woord.focus();" tabindex="4" title="Wis zoekterm" value="X" id="leeg_knop" name="leeg_knop">
+        </td>
+        <td class="zoekcontext"><input type="submit" onclick="" tabindex="3" title="Zoek" value="Zoek" id="zoek_knop" name="zoek_knop"></td>
+    </tr></tbody></table>
+    </form>
+    <div class="breaker"></div>
+</div></div></div>
+<div class="clear"></div>
+<div id="content">
+<div id="content_middle">
+<h1 id="pageheader" class="content_header">Titeldetail</h1>
+<div id="nav_buttons"><ul>
+    <li><a href="http://bicat.cultura-ede.nl/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Gaiman%2C%20Neil;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Gaiman%2C%20Neil;wzsrc=;recent=N;rubplus=TS0;recno=7488613;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=15;var=portal;aantal=10" title="Terug naar het titeloverzicht" id="omhoog">Terug naar lijst</a></li>
+    <li><a href="/cgi-bin/bx.pl?titcode=53895;event=ntit;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal" title="Naar de volgende titel" id="volgende">Volgende</a></li>
+</ul></div>
+<div class="clear"></div>
+<div id="messages"></div>
+<div style="display:none;" class="nieuw_bericht_container_modalbox" id="titeltip_bericht_container" xmlns:addthis="http://www.addthis.com">
+    <div class="breaker"></div>
+    <table cellpadding="3" class="wijsoptitel_nieuw_bericht" colspan="3" id="titeltip_bericht_overzicht"><tbody><tr class="bericht" id="titeltip_nieuw_bericht"><td width="450px" class="bericht_inhoud">
+        <div class="composer"><form onsubmit="plaatsBericht('b9326e88-50f6-4c8e-a7ff-95569860cd6f', '8399', 'titeltip_bericht_antwoord_form', 'wijs_op_titel', '', '0', '4808614');return false" id="titeltip_bericht_antwoord_form">
+            <span width="450px" class="info" id="titeltip_bericht_antwoord_form_melding">Typ de naam van één of meer vriend(en) in het 'Aan:' veld. Klik op de 'Aan:' knop om uit uw vriendenlijst te selecteren.</span><div class="breaker"></div>
+            <div class="container_bericht_antwoord" id="container_titeltip_bericht_antwoord">
+                <h3 id="titeltip_anoniem_titel" class="anoniem_titel"><strong id="titeltip_anoniem_titel_titel">Alles is breekbaar</strong></h3>
+                <div class="breaker"></div>
+                <div class="container_titeltip_left">
+                    <div id="container_titeltip_cover">
+                        <div id="titeltip_titel_cover"><img alt="Alles is breekbaar..." src="/cgi-bin/momredir.pl?size=&amp;lid=2008110023;ppn=306154846;isbn=9789024513574;"></div>
+                        <input type="hidden" value="lid=2008110023;ppn=306154846;isbn=9789024513574;" name="titeltip_link_cover" id="titeltip_link_cover"><input type="hidden" value="Alles is breekbaar" name="titeltip_titel" id="titeltip_titel">
+                    </div>
+                    <div style="display: none;" id="titeltip_vriendenlijst">
+                        <div class="vriendenlijst_sluit"><a onclick="$('titeltip_vriendenlijst').toggle();$('container_titeltip_cover').toggle();Modalbox.resizeToContent();return false" href="/error.html" id="vriendenlijst_sluit">Sluit</a></div>
+                        <div class="breaker"></div>
+                        <div class="clearfix autocomplete typeahead_list"><ul id="vriendenlijst"></ul></div>
+                    </div>
+                </div>
+                <div id="container_titeltip_right" class="container_titeltip_right"><dl class="composer_fields clearfix">
+                    <dt id="dt_to_field"><label for="to_field"><button onclick="$('titeltip_vriendenlijst').toggle();$('container_titeltip_cover').toggle();Modalbox.resizeToContent();return false" title="Vrienden uit een lijst selecteren">Aan:</button></label></dt>
+                    <dd class="field" id="dd_to_field">
+                        <div onclick="$('autocomplete_input').focus(); $('titeltip_populate').show(); Modalbox.resizeToContent(); return false;" class="clearfix tokenizer" id="ids" tabindex="-1">
+                            <span class="tokenizer_stretcher"></span><span class="tab_stop"><input type="text" tabindex="-1" id="hidden_input"></span><div class="tokenizer_input" id="autocomplete_display"><input type="text" id="autocomplete_input" tabindex="" size="1"></div>
+                        </div>
+                        <div style="width: 251px; height: auto; overflow-y: hidden; padding 3px; display:none" class="clearfix autocomplete typeahead_list" id="titeltip_populate"><div class="typeahead_message">Typ de naam van één of meer vriend(en).</div></div>
+                        <script type="text/javascript">
+														// preload images.
+														(new Image()).src='/plugins/autocomplete/images/token.gif';
+														(new Image()).src='/plugins/autocomplete/images/token_selected.gif';
+														(new Image()).src='/plugins/autocomplete/images/token_hover.gif';
+														(new Image()).src='/plugins/autocomplete/images/token_x.gif';
+
+														</script>
+                    </dd>
+                    <dt><label for="subject_field">Onderwerp:</label></dt>
+                    <dd class="field"><input name="titeltip_bericht_onderwerp" id="titeltip_bericht_onderwerp"></dd>
+                    <dt><label for="message_field">Bericht:</label></dt>
+                    <dd class="field"><textarea class="bericht_body_groot" value="" name="titeltip_antwoord_box" id="nieuw_bericht_box"> stuurt deze titel als een tip. Klik snel op de titel om een kijkje te nemen. </textarea></dd>
+                    <dt><label for="message_field"><span class="activiteit_tekst"></span></label></dt>
+                    <dd class="submits">
+                        <div class="bericht_antwoord_knoppen_container">
+                            <input type="submit" value="Verzenden" class="lijst_nieuw" id="titeltip_bericht_antwoord_opslaan">    <input type="button" onclick="Modalbox.hide();return false" value="Annuleren" class="lijst_nieuw" id="titeltip_bericht_antwoord_annuleren">
+                        </div>
+                        <div class="sub_controls"></div>
+                    </dd>
+                </dl></div>
+                <div class="breaker"></div>
+                <br>
+            </div>
+        </form></div>
+        <script language="javascript">
+							var url = document.location.search;
+							if (url.match('titel_tip=true')) {
+							document.observe('dom:loaded', function() {
+								titelTip('b9326e88-50f6-4c8e-a7ff-95569860cd6f', '53895', '8399', '4808614', '0', '0', '0', '0');
+							});
+							}
+							$('titeltip_bericht_antwoord_form').reset();
+						</script>
+    </td></tr></tbody></table>
+    <div class="breaker"></div>
+    <a onclick="Modalbox.hide();return false;" title="Sluit venster" href="#" class="close_modal">Sluit venster |x</a><br>
+</div>
+<div class="tdetail_top" id="tdetail_top">
+    <div class="anoniem_titel_overzicht" id="titel_overzicht_id_top">
+        <h3 class="anoniem_titel"><strong id="anoniem_titel_titel"><img class="stat_icons" title="Boek" alt="bvm_b__.gif" src="/images/bvm_b__.gif">Alles is breekbaar</strong></h3>
+        <table class="tdet_top">
+            <tbody><tr>
+                <td class="cover"><div id="tdetail_titel_cover" class="anoniem_titel_cover"><a onclick="doModalImage('/cgi-bin/momredir.pl?size=300&amp;lid=2008110023;ppn=306154846;isbn=9789024513574;','300','Cover van titel');return false;" href="/cgi-bin/momredir.pl?size=300&amp;lid=2008110023;ppn=306154846;isbn=9789024513574;"><img title="Cover van titel" src="/cgi-bin/momredir.pl?size=&amp;lid=2008110023;ppn=306154846;isbn=9789024513574;" class="cover_image" id="cover_image"></a></div></td>
+                <td class="tussenstuk"><table class="titel_overzicht_details">
+                    <tbody><tr>
+                        <th id="titel_overzicht_auteur_label">Auteur:</th>
+                        <td id="titel_overzicht_auteur">
+                            <a href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=hyperlink;wzsrc=;woord=Gaiman%2C%20Neil%20%281960-%29;ruboms=Auteur;rubplus=TS001;recno=7488613;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal;aantal=10" title="Naar titels met Auteur 'Gaiman, Neil (1960-)'" class="tdetails_link">Gaiman, Neil (1960-)</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th id="titel_overzicht_info_label" class="noborder">Inhoud:</th>
+                        <td id="titel_overzicht_info" class="noborder">Bundel met zevenentwintig korte verhalen over gewone mensen die te maken krijgen met bijzondere, soms bovennatuurlijke gebeurtenissen.</td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td class="genre">
+                            <span title="Genre" class="genre">Verhalenbundel</span>Boeken<span class="activiteit_tekst"></span>Nederlands<span class="activiteit_tekst"></span>2007</td>
+                    </tr>
+                    <tr style="display: none;" id="titel_overzicht_top_tags_rij">
+                        <th>Toptags:</th>
+                        <td id="titel_overzicht_top_tags_top"></td>
+                    </tr>
+                    <tr style="" id="titel_overzicht_waardering_rij">
+                        <th>Waardering:</th>
+                        <td>
+                            <span id="titel_overzicht_waardering_top" class="starbox"><div class="default" style="position: relative;"><div><div class=""><div class="stars" style="overflow: hidden; position: relative; width: 85px; height: 17px;"><div class="ghost" style="position: absolute; top: 0px; left: -34px; width: 85px; height: 17px;" id="anonymous_element_1"></div><div class="colorbar" style="position: absolute; top: 0px; left: -34px; width: 85px; height: 17px;" id="anonymous_element_2"></div><div style="position: absolute; top: 0px; left: 0px; width: 85px; height: 17px;"><div style="position: relative; width: 85px; height: 17px;"><div style="background: url(&quot;http://bicat.cultura-ede.nl/plugins/starbox/images/default.png&quot;) no-repeat scroll left top transparent; position: absolute; top: 0px; left: 0px; width: 17px; height: 17px;"></div><div style="background: url(&quot;http://bicat.cultura-ede.nl/plugins/starbox/images/default.png&quot;) no-repeat scroll left top transparent; position: absolute; top: 0px; left: 17px; width: 17px; height: 17px;"></div><div style="background: url(&quot;http://bicat.cultura-ede.nl/plugins/starbox/images/default.png&quot;) no-repeat scroll left top transparent; position: absolute; top: 0px; left: 34px; width: 17px; height: 17px;"></div><div style="background: url(&quot;http://bicat.cultura-ede.nl/plugins/starbox/images/default.png&quot;) no-repeat scroll left top transparent; position: absolute; top: 0px; left: 51px; width: 17px; height: 17px;"></div><div style="background: url(&quot;http://bicat.cultura-ede.nl/plugins/starbox/images/default.png&quot;) no-repeat scroll left top transparent; position: absolute; top: 0px; left: 68px; width: 17px; height: 17px;"></div><div href="javascript:;" style="position: absolute; top: 0px; left: 0px; width: 8.5px; height: 17px; cursor: pointer;"></div><div href="javascript:;" style="position: absolute; top: 0px; left: 8.5px; width: 8.5px; height: 17px; cursor: pointer;"></div><div href="javascript:;" style="position: absolute; top: 0px; left: 17px; width: 8.5px; height: 17px; cursor: pointer;"></div><div href="javascript:;" style="position: absolute; top: 0px; left: 25.5px; width: 8.5px; height: 17px; cursor: pointer;"></div><div href="javascript:;" style="position: absolute; top: 0px; left: 34px; width: 8.5px; height: 17px; cursor: pointer;"></div><div href="javascript:;" style="position: absolute; top: 0px; left: 42.5px; width: 8.5px; height: 17px; cursor: pointer;"></div><div href="javascript:;" style="position: absolute; top: 0px; left: 51px; width: 8.5px; height: 17px; cursor: pointer;"></div><div href="javascript:;" style="position: absolute; top: 0px; left: 59.5px; width: 8.5px; height: 17px; cursor: pointer;"></div><div href="javascript:;" style="position: absolute; top: 0px; left: 68px; width: 8.5px; height: 17px; cursor: pointer;"></div><div href="javascript:;" style="position: absolute; top: 0px; left: 76.5px; width: 8.5px; height: 17px; cursor: pointer;"></div></div></div></div></div></div></div></span><span id="waardering_omschrijving_rij_top"><span id="waardering_omschrijving_top">(3 stemmen)</span></span>
+                        </td>
+                    </tr>
+                    </tbody></table></td>
+                <td><div title="Meningen over deze titel" class="titel_overzicht_knoppen">
+                    <a class="help_knop" onclick="haalWSHelp('overzicht', 'Mijn mening over deze titel');return false" href="/error.html" id="help_knop_overzicht_top"><div class="help_knop"></div></a><div style="" id="anoniem_titel_knoppen"><div class="cwise_ingang">
+                    <span id="cwise_ingang">Wat vind jij?</span><div class="cwise_item"><a title="Log in en geef uw mening over deze titel" href="javascript:Gmytabs.showTab('tab4');showcWise();goIntern('_tab4')" class="cwise_mening" id="cwise_ingang_recensies">Mening geven</a></div>
+                    <div class="cwise_item"><a title="Log in en zet deze titel op een lijst" href="javascript:Gmytabs.showTab('tab5');showcWise();goIntern('_tab5')" class="cwise_lijsten" id="cwise_ingang_lijsten">Zet op een lijst</a></div>
+                    <div class="cwise_item"><a title="Log in en voeg tags toe aan deze titel" href="javascript:Gmytabs.showTab('tab3');showcWise();goIntern('_tab3')" class="cwise_taggen" id="cwise_ingang_tags">Taggen</a></div>
+                    <div class="cwise_item"><a title="Log in en start een discussie over deze titel" href="javascript:Gmytabs.showTab('tab6');showcWise();goIntern('_tab6')" class="cwise_discussies" id="cwise_ingang_discussies">Discussiëren</a></div>
+                </div></div>
+                    <div style="display:none;" id="anoniem_titel_knoppen_wijzigen"><div class="cwise_ingang">
+                        <span id="cwise_ingang">Mijn mening</span><div class="cwise_item"><a title="Schrijf een recensie voor deze titel" href="javascript:Gmytabs.showTab('tab4');goIntern('_tab4')" class="cwise_mijn_recensies" id="cwise_ingang_recensies">Mijn recensies</a></div>
+                        <div class="cwise_item"><a title="Zet deze titel op een lijst" href="javascript:Gmytabs.showTab('tab5');goIntern('_tab5')" class="cwise_mijn_lijsten" id="cwise_ingang_lijsten">Mijn lijsten</a></div>
+                        <div class="cwise_item"><a title="Voeg tags toe aan deze titel" href="javascript:Gmytabs.showTab('tab3');goIntern('_tab3')" class="cwise_mijn_tags" id="cwise_ingang_tags">Mijn tags</a></div>
+                        <div class="cwise_item"><a title="Start een discussie over deze titel" href="javascript:Gmytabs.showTab('tab6');goIntern('_tab6')" class="cwise_mijn_discussies" id="cwise_ingang_lijsten">Mijn discussies</a></div>
+                        <br><div class="cwise_item"><strong><a title="Terug naar titeloverzicht" href="javascript:haalTitelInfo('b9326e88-50f6-4c8e-a7ff-95569860cd6f',%20'8399',%20'53895',%20'4808614');" class="cwise_terug_naar">Titeloverzicht</a></strong></div>
+                    </div></div>
+                    <div class="cwise_overige_knoppen"><a title="Stuur deze titel als tip door naar een vriend" onclick="titelTip('b9326e88-50f6-4c8e-a7ff-95569860cd6f', '53895', '8399', '4808614', '0', '0', '0', '0');return false" href="/error.html" class="cwise_titeltip" id="cwise_titeltip">
+                        Tip een vriend
+                    </a></div>
+                </div></td>
+            </tr>
+            <tr><td colspan="3"><div class="tdetail_titel_overzicht_knoppen">
+                <a title="Reserveer deze titel" class="button-orange resknop" onclick="titelRes('b9326e88-50f6-4c8e-a7ff-95569860cd6f','53895','8399','0','0','0','/cgi-bin/bx.pl?sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal;event=rsrvrqn;titcode=53895;submap=raw','Reserveren van deze titel');return false" href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;tref=Alles%20is%20breekbaar;event=rsrvrqn;wzsrc=;titcode=53895;medium=BOE;rubplus=TS0;vestfiltgrp=;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal">Reserveer</a><a title="zet op Verlanglijst" class="button-light favlink" onclick="titelRes('b9326e88-50f6-4c8e-a7ff-95569860cd6f','53895','8399','0','0','0','/cgi-bin/bx.pl?sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal;event=favadd;titcode=53895;submap=raw','Deze titel toevoegen aan uw verlanglijst');return false" href="/cgi-bin/bx.pl?titcode=53895;event=favadd;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal">Verlanglijst</a><div class="qrdiv"><a target="_blank" onclick="doModalImage(&quot;/cgi-bin/imgredir.pl?urlparams=event=tdetail|var=mob|vestnr=8399|titcode=53895&amp;type=qr2&quot;,240,&quot;Scan deze code met uw smartphone om de titel te onthouden&quot;);return false;" href="/cgi-bin/imgredir.pl?urlparams=event=tdetail%7Cvar=mob%7Cvestnr=8399%7Ctitcode=53895&amp;type=qr2"><img class="qr_img" title="Scan deze code met uw smartphone om de titel te onthouden" src="/cgi-bin/imgredir.pl?urlparams=event=tdetail%7Cvar=mob%7Cvestnr=8399%7Ctitcode=53895&amp;type=qr"></a></div>
+            </div></td></tr>
+            </tbody></table>
+        <div class="breaker"></div>
+    </div>
+    <div class="breaker"></div>
+</div>
+<div class="breaker"></div>
+<div class="tdetail_content" id="tdetail_content"><div style="" id="tab_container" class="tab_container">
+    <script type="text/javascript">
+						$('tab_container').show();
+					</script><div class="mainmenu_tdet" id="mainmenu"><div class="tabs_background"><ul class="tabs_tdet" id="tabs">
+    <li><a onclick="hidecWise();return false" id="exemplaren_tab" href="#tab2" class="active-tab">Exemplaren
+        (1)</a></li>
+    <li><a onclick="hidecWise();return false" id="overzicht_tab" href="#tab1">Titelinfo</a></li>
+    <li id="subtab_recensies"><a onclick="showcWise();return false" href="#tab4" id="recensies_tab">Recensies (<strong id="recensies_totaal">0</strong>)</a></li>
+    <li id="subtab_lijsten"><a onclick="showcWise();return false" href="#tab5" id="lijsten_tab">Lijsten (<strong id="lijsten_totaal">0</strong>)</a></li>
+    <li id="subtab_tags"><a onclick="showcWise();return false" href="#tab3" id="tags_tab">Tags (<strong id="tags_totaal">0</strong>)</a></li>
+    <li id="subtab_discussies"><a onclick="showcWise();return false" href="#tab6" id="discussies_tab">Discussies (<strong id="discussies_totaal">0</strong>)</a></li>
+</ul></div></div>
+    <div class="tdet_tabs_to_panel"></div>
+    <div id="_tab1" class="tdet_panel"><div class="tdet_classic_overzicht">
+        <table class="tdet_tab">
+            <tbody><tr>
+                <td class="tdet_label">Titelblok:</td>
+                <td class="tdet_inh">Alles is breekbaar / Neil Gaiman ; [vert. uit het Engels: Emmy van Beest ... et al.]</td>
+            </tr>
+            <tr>
+                <td class="tdet_label">Uitgave:</td>
+                <td class="tdet_inh">Amsterdam : Luitingh, 2007</td>
+            </tr>
+            <tr>
+                <td class="tdet_label">Collatie:</td>
+                <td class="tdet_inh">366 p : ill ; 23 cm</td>
+            </tr>
+            <tr>
+                <td class="tdet_label">Noot:</td>
+                <td class="tdet_inh">Vert. van: Fragile things. - Cop. 2006.</td>
+            </tr>
+            <tr>
+                <td class="tdet_label">Inhoud:</td>
+                <td class="tdet_inh">Bundel met zevenentwintig korte verhalen over gewone mensen die te maken krijgen met bijzondere, soms bovennatuurlijke gebeurtenissen.</td>
+            </tr>
+            <tr>
+                <td class="tdet_label">Isbn:</td>
+                <td class="tdet_inh">9789024513574</td>
+            </tr>
+            <tr>
+                <td class="tdet_label">Auteur:</td>
+                <td class="tdet_inh"><a href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=hyperlink;wzsrc=;woord=Gaiman%2C%20Neil%20%281960-%29;ruboms=Auteur;rubplus=TS001;recno=7488613;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal;aantal=10" title="Naar titels met Auteur 'Gaiman, Neil (1960-)'" class="tdetails_link">Gaiman, Neil (1960-)</a></td>
+            </tr>
+            <tr>
+                <td class="tdet_label">Medewerker:</td>
+                <td class="tdet_inh"><a href="/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=hyperlink;wzsrc=;woord=Beest%2C%20Emmy%20van;ruboms=Medewerker;rubplus=TS011;recno=23622014;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal;aantal=10" title="Naar titels met Medewerker 'Beest, Emmy van'" class="tdetails_link">Beest, Emmy van</a></td>
+            </tr>
+            <tr>
+                <td class="tdet_label">Materiaal:</td>
+                <td class="tdet_inh">Boeken</td>
+            </tr>
+            <tr>
+                <td class="tdet_label">Taalcode:</td>
+                <td class="tdet_inh">Nederlands</td>
+            </tr>
+            <tr>
+                <td class="tdet_label">Mediumsoort:</td>
+                <td class="tdet_inh">Boek</td>
+            </tr>
+            <tr>
+                <td class="tdet_label">Publ.jaar:</td>
+                <td class="tdet_inh">2007</td>
+            </tr>
+            <tr>
+                <td class="tdet_label">Jeugd/Volw.:</td>
+                <td class="tdet_inh">Volwassen</td>
+            </tr>
+            <tr>
+                <td class="tdet_label">Inform./Verh.:</td>
+                <td class="tdet_inh">Verhalend</td>
+            </tr>
+            <tr>
+                <td class="tdet_label">Genretype:</td>
+                <td class="tdet_inh">Verhalenbundel</td>
+            </tr>
+            <tr>
+                <td class="tdet_label">Stat.cat.:</td>
+                <td class="tdet_inh">0138 verhalenbundel</td>
+            </tr>
+            <tr>
+                <td class="tdet_label">Zoektitel:</td>
+                <td class="tdet_inh">Alles is breekbaar</td>
+            </tr>
+            <tr>
+                <td class="tdet_label">Vertaald van:</td>
+                <td class="tdet_inh">Fragile things</td>
+            </tr>
+            <tr>
+                <td class="tdet_label">AI-tekst:</td>
+                <td class="tdet_inh">Gaiman, bekend, veelzijdig auteur van gothic novels en moderne fantasy, o. a. 'Stardust' en het kinderboek 'Coraline', werd in 1960 geboren in Engeland, maar woont en werkt al jaren in Amerika. Voor de cult stripserie 'The Sandman' kreeg hij de World Fantasy Award en voor 'American Gods' de Hugo Award en Nebula Award. Hij bundelde in deze merkwaardige compilatie 23 zeer diverse 'fantastische vertellingen' en 8 gedichten. Het werd een bont geheel waarin hij verschillende genres en stijlen bespeelt: van een pastiche op Sherlock Holmes, een omgekeerd scheppingsverhaal, een barokke gothic-story, tot grimmige sprookjes en mythen, stukjes commedia dell'arte, en raamvertellingen, zoals die waarin de maanden van het jaar elkaar verhalen vertellen bij het vuur. De verhalen bevatten nogal wat knipoogjes naar andere boeken, films, strips, popsongs. Een staalkaart van Gaimans humor en rijke fantasie brengt deze compilatie zeker, maar de geniale postmoderne Grimm die de flaptekst belooft is hij niet. Vrij kleine druk.<br>Marita de Sterck</td>
+            </tr>
+            <tr>
+                <td class="tdet_label">Titelnr:</td>
+                <td class="tdet_inh">53895</td>
+            </tr>
+            </tbody></table>
+        <div class="legenda"></div>
+    </div></div>
+    <div id="_tab2" class="tdet_panel active-tab-body"><div class="exemplaarinfo">
+        <div id="majax">
+            <div class="module_header">Beschikbaarheid / exemplaarinformatie</div>
+            <div class="exemplaar_row">
+                <div class="exemplaar_stat"><span class="label">Status</span></div>
+                <div class="exemplaar_vest"><span class="label">Vestiging</span></div>
+                <div class="exemplaar_kast"><span class="label">Plaatsing</span></div>
+            </div>
+            <div class="exemplaar_row">
+                <div class="exemplaar_stat">
+                    <img alt="Beschikbaar" title="Beschikbaar" src="/images/statgroen.gif" class="staticons">Beschikbaar</div>
+                <div class="exemplaar_vest">Ede Centrale</div>
+                <div class="exemplaar_kast">Literatuur Romans zonder genre GAIM</div>
+            </div>
+        </div>
+        <div id="elders_button"><a title="Exemplaren in andere vestigingen" id="elders_link" class="button elders" onclick="doAjax('/cgi-bin/bx.pl?vestgr=1;dcat=1;wzstype=;extsdef=01;tref=Alles%20is%20breekbaar;event=exemhier;wzsrc=;subset=;titcode=53895;medium=BOE;rubplus=TS0;vestfiltgrp=;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal','eajax');return false;" href="/cgi-bin/bx.pl?vestgr=1;dcat=1;wzstype=;extsdef=01;tref=Alles%20is%20breekbaar;event=exemhier;wzsrc=;subset=;titcode=53895;medium=BOE;rubplus=TS0;vestfiltgrp=;sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal">
+            Klik hier voor exemplaren in andere bibliotheken
+        </a></div>
+        <div class="breaker"></div>
+        <br><div id="eajax"></div>
+    </div></div>
+
+    <div style="display:none;" class="landelijke_content" id="landelijke_content"><p class="melding_leeg" id="haaltitel_melding"></p><div style="display:none;" class="anoniem_titel_overzicht" id="titel_overzicht_id">
+        <span id="anoniem_titelinfo_titel">Alles is breekbaar</span><span class="anoniem_titel_auteur" id="anoniem_titel_auteur">Gaiman, Neil</span><span id="titel_info"></span><span class="top_tags" id="top_tags"></span><div class="breaker"></div>
+    </div><div class="breaker"></div><div id="_tab3" class="titelinfo_panel"><div class="panel_content">
+        <div class="gebruikersattendering_help"><a title="Open een scherm met hulp bij dit onderwerp" class="help_knop" onclick="haalWSHelp('tags', 'Tags');return false" href="/error.html" id="help_knop_tags"><div class="help_knop"></div></a></div>
+        <span class="info"><a title="Ga naar Mijn tags bij deze titel" onclick="titelInfoWijzigen('b9326e88-50f6-4c8e-a7ff-95569860cd6f', '53895', '8399', '4808614', '0', '0', '0', 'tab3'); updateMessage('login_melding', 'Eerst inloggen s.v.p.', 'foutmelding');return false" href="/error.html" class="attentie_link">Wees de eerste die een tag toevoegt aan deze titel.</a></span><div class="breaker"></div>
+        <p class="nog_geen_items">Er zijn nog geen tags voor deze titel.</p>
+    </div></div><div id="_tab4" class="titelinfo_panel"><div class="panel_content">
+        <div class="gebruikersattendering_help"><a title="Open een scherm met hulp bij dit onderwerp" class="help_knop" onclick="haalWSHelp('recensies', 'Recensies');return false" href="/error.html" id="help_knop_recensies"><div class="help_knop"></div></a></div>
+        <span class="info"><a title="Ga naar Mijn recensies bij deze titel" onclick="titelInfoWijzigen('b9326e88-50f6-4c8e-a7ff-95569860cd6f', '53895', '8399', '4808614', '0', '0', '0', 'tab4'); updateMessage('login_melding', 'Eerst inloggen s.v.p.', 'foutmelding');return false" href="/error.html" class="attentie_link">Wees de eerste en schrijf een recensie voor deze titel.</a></span><p class="nog_geen_items">Er zijn nog geen recensies voor deze titel.</p>
+    </div></div><div id="_tab5" class="titelinfo_panel"><div class="panel_content">
+        <div class="gebruikersattendering_help"><a title="Open een scherm met hulp bij dit onderwerp" class="help_knop" onclick="haalWSHelp('lijsten', 'Lijsten');return false" href="/error.html" id="help_knop_lijsten"><div class="help_knop"></div></a></div>
+        <span class="info"><a title="Ga naar Mijn lijsten bij deze titel" onclick="titelInfoWijzigen('b9326e88-50f6-4c8e-a7ff-95569860cd6f', '53895', '8399', '4808614', '0', '0', '0', 'tab5'); updateMessage('login_melding', 'Eerst inloggen s.v.p.', 'foutmelding');return false" href="/error.html" class="attentie_link">Wees de eerste en zet deze titel op een lijst.</a></span><p class="nog_geen_items">Er zijn nog geen gedeelde lijsten bij deze titel.</p>
+    </div></div><div id="_tab6" class="titelinfo_panel"><div class="panel_content">
+        <div class="gebruikersattendering_help"><a title="Open een scherm met hulp bij dit onderwerp" class="help_knop" onclick="haalWSHelp('discussies', 'Discussies');return false" href="/error.html" id="help_knop_discussies"><div class="help_knop"></div></a></div>
+        <span class="info"><a title="Ga naar Mijn discussies bij deze titel" onclick="titelInfoWijzigen('b9326e88-50f6-4c8e-a7ff-95569860cd6f', '53895', '8399', '4808614', '0', '0', '0', 'tab6'); updateMessage('login_melding', 'Eerst inloggen s.v.p.', 'foutmelding');return false" href="/error.html" class="attentie_link">Wees de eerste en start een discussie over deze titel.</a></span><p class="nog_geen_items">Er zijn nog geen discussies bij deze titel.</p>
+    </div></div><div id="_tab7" class="titelinfo_panel"><div class="panel_content">
+        <div class="gebruikersattendering_help"><a title="Open een scherm met hulp bij dit onderwerp" class="help_knop" onclick="haalWSHelp('beleef', 'Beleefpakketten');return false" href="/error.html" id="help_knop_beleef"><div class="help_knop"></div></a></div>
+        <span class="info">Er zijn geen beleefpakketten bij deze titel.</span><p class="nog_geen_items">Er zijn geen beleefpakketten bij deze titel.</p>
+    </div></div>
+    </div>
+</div></div>
+<div class="content_module"></div>
+</div>
+<div id="content_right"><div class="module_right" xmlns:addthis="http://www.addthis.com">
+    <div class="module_upper_dark"><p>Zoeken in cWise <a title="Hulp bij zoeken in cWise" href="/error.html" onclick="haalWSHelp('cwisezoeken', 'Wat is zoeken in cWise?');return false" class="help_knop"></a></p></div>
+    <div class="module_middle"><div id="cwisezoekui">
+        <div class="cwisezoekwrap">
+            <form onsubmit="cWiseZoekForm();return false" autocomplete="off" name="cwisezoekform" id="cwisezoekform">
+                <input type="hidden" value="b9326e88-50f6-4c8e-a7ff-95569860cd6f" name="sid"><input type="hidden" value="8399" name="vestnr"><input type="text" onclick="cWiseZoekSelect();return false" placeholder="Zoek op tags" title="Begin hier met typen om het zoeken te starten." value="Zoek op tags" class="cwisezoekinactief" autocomplete="off" name="cwisezoekinput" id="cwisezoekinput"><input type="button" title="Klik voor meer zoekopties." onclick="cWiseZoekOpties();return false" value="" id="zoektypesknop"><div style="display: none;" id="ac_loader"><img src="/rsrc/images/web2/ajax-loader-small.gif"></div>
+                <div class="cwisezoektypes" id="cwisezoektypes">
+                    <ul class="cwisezoektypes">
+                        <li id="topborder">
+                        </li><li>
+                        <input type="radio" onclick="cWiseZoekOptieSet('tekst');" autocomplete="off" text="Zoek op tags" checked="" value="zoekTag" name="action" id="cwisezoektype_tag"><label for="cwisezoektype_tag">Tags</label>
+                    </li>
+                        <li>
+                            <input type="radio" onclick="cWiseZoekOptieSet('nickname');" autocomplete="off" text="Zoek op nickname" value="zoekProfiel" name="action" id="cwisezoektype_profiel"><label for="cwisezoektype_profiel">Nickname</label>
+                        </li>
+                    </ul>
+                    <div class="breaker"></div>
+                </div>
+                <div class="breaker"></div>
+                <input type="submit" class="cwisezoeken" value="Zoek"><br><div class="breaker"></div>
+            </form>
+            <div style="display: none;" class="autocomplete" id="cwisezoekres"></div>
+            <script>
+						cWiseZoekFocus('true');
+					</script><div class="breaker"></div>
+        </div>
+        <div class="breaker"></div>
+        <br><p id="cwisezoekmelding"></p>
+    </div></div>
+</div></div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+<div id="footer"><div id="footer_inner">
+    <div class="footer_module">
+        <div class="module_upper_dark"><p>Dit heb ik bekeken
+        </p></div>
+        <div class="footer_module_middle"><ul id="vistitels"><li><a title="Terminal world" href="/cgi-bin/bx.pl?sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal;event=tdetail;titcode=264000" class="vis_img"><img alt="Terminal world" src="/cgi-bin/momredir.pl?size=&amp;lid=2011243687;ppn=330106597;isbn=9780575088504;" class="vis_coverimg"></a></li></ul></div>
+    </div>
+    <div class="clear"></div>
+    <p class="legal">
+        Catalogus
+        &copy;2013 <a href="http://www.bicat.com/">HKa</a>.</p>
+</div></div>
+<script language="Javascript">
+		Init();
+	</script><!--
+		Hier zou de counter hebben gestaan.
+	--><script>
+		reading_textsize();
+	</script><div style="display:block; position:fixed;top:0; right:0; width:0; height:0; overflow:hidden;" id="hide-all-modalboxes">
+    <div style="display:block;" id="login_content">
+        <p class="melding_leeg" id="login_melding"></p>
+        <a class="help_knop" onclick="haalWSHelp('login', 'Hoe moet ik inloggen?');return false" href="/error.html" id="help_knop_login_content"><div class="help_knop"></div></a><form method="post" onsubmit="loginLocal('b9326e88-50f6-4c8e-a7ff-95569860cd6f', '53895', '8399', '4808614', 'login_local_form');return false;" class="login_local_form" id="login_local_form">
+        <p><label>Gebruikersnaam: </label><br><input type="text" name="lokaal_lenernummer" id="lokaal_lenernummer" class="login_local_lenernummer"></p>
+        <p><label>Wachtwoord: </label><br><input type="password" name="lokaal_pincode" id="lokaal_pincode" class="login_local_pincode"></p>
+        <p><label style="display:none;" class="login"></label><input type="checkbox" id="lener_cookie_vink-ON" value="ON" name="lener_cookie_vink"><label for="lener_cookie_vink-ON">Bewaar gebruikersnaam</label></p>
+        <br><p><input type="submit" value="Aanmelden"></p>
+    </form>
+        <a onclick="Modalbox.hide();return false;" title="Sluit venster" href="#" class="close_modal">Sluit venster |x</a><div class="breaker"></div>
+    </div>
+    <div style="display:block;" id="login_geen_email">
+        <p></p><p class="update_foutmelding" id="login_geen_email_melding">Om uw mening te kunnen geven, heeft u een cWise-account nodig. Daarvoor moet uw e-mailadres bij ons bekend zijn. Geef uw e-mailadres op via <a href="/cgi-bin/bx.pl?sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal;event=leenmut;">Algemene lenergegevens</a></p><p></p>
+        <br><a onclick="Modalbox.hide();return false;" title="Sluit venster" href="#" class="close_modal">Sluit venster |x</a>
+    </div>
+    <div style="display:block;" id="login_algemene_voorwaarden">
+        <p class="melding_leeg" id="algemenevoorwaarden_melding"></p>
+        <div id="algemene_voorwaarden_attendering"><span class="info"><strong id="algemene_voorwaarden_omschrijving">Om een cWise profiel aan te maken moet u eerst akkoord gaan met de Algemene Voorwaarden.</strong></span></div>
+        <div class="breaker"></div>
+        <h3>Algemene Voorwaarden</h3>
+        <p></p><div class="voorwaarden">
+        <h4>Akkoordverklaring</h4>
+        <p class="voorwaarden">
+            cWise is een dienst die wordt aangeboden binnen de webcatalogus van uw bibliotheek. cWise wordt geleverd door uw bibliotheek en HKA BV (hierna te noemen HKA of aangeduid met 'we'; of 'wij';).
+            <br><br>
+            cWise-componenten zijn o.a.
+        </p><ul>
+        <li>
+            <strong>Recensies</strong> (recensies door gebruikers)</li>
+        <li>
+            <strong>Waardering</strong> (waarderingen door gebruikers)</li>
+        <li>
+            <strong>Tags</strong> (social tagging met eigen trefwoorden door gebruikers)</li>
+        <li>
+            <strong>Lijsten</strong> (boekenlijstjes van gebruikers)</li>
+        <li>
+            <strong>Vrienden</strong> (vrienden worden met andere bibliotheekleden uit Nederland) </li>
+        <li>
+            <strong>Tip een vriend</strong> (een titel doorsturen naar vrienden)</li>
+    </ul><p></p>
+        <br><p>
+        Onderstaande voorwaarden behelzen in grote lijnen dat u belooft geen onbehoorlijke dingen te doen binnen de dienst cWise of zaken waar deze dienst niet voor bedoeld is, en HKA belooft geen onbehoorlijke zaken te doen met uw gegevens.
+        Voordat u gebruik kunt maken van cWise dient u akkoord te gaan met de gebruiksvoorwaarden. Bij het eerste gebruik van cWise wordt u eenmalig gevraagd of u akkoord gaat. HKA kan deze voorwaarden echter te allen tijde aanpassen zonder voorafgaande waarschuwing. U wordt geacht bekend te zijn met deze voorwaarden. Mocht u cWise na eventuele wijzigingen gebruiken dan betekent dat dat u deze wijzigingen hebt geaccepteerd. Wij beloven echter de basisprincipes van deze voorwaarden niet fundamenteel te wijzigen en grote wijzigingen aan te kondigen met de mogelijkheid uw account op te heffen.
+    </p>
+        <h4>Beperkingen van het gebruik en Fair Use policy</h4>
+        <p>
+            De cWise-service is uitsluitend bedoeld voor normaal gebruik vanuit de webcatalogus van de bibliotheek. Het is niet toegestaan op enigerlei wijze geautomatiseerd (bijvoorbeeld via een script, robot, crawler of ander geautomatiseerd systeem) veelvuldig content van de webcatalogus of het cWise-systeem te downloaden of in te voeren.
+        </p>
+        <p>
+            Uw account is gekoppeld aan uw bibliotheekabonnement. De accountgegevens mogen niet gedeeld worden met derden die geen recht hebben op het gebruik van dit abonnement.
+        </p>
+        <p>
+            Bij het toevoegen van content aan cWise dient men rekening te houden met algemene normen van fatsoen. Het is niet toegestaan content te plaatsen die illegaal, obsceen, bedreigend, kwaadsprekend of lasterlijk is, rechten van derden schendt (met inbegrip van intellectueel eigendom en privacyrechten), anderszins beledigend of aanstootgevend is of een politieke of commerciële boodschap bevat.
+        </p>
+        <h4>Privacy</h4>
+        <p>
+            Ten behoeve van cWise worden enkele gegevens die van u bekend zijn (naam, adres, mailadres en lenersnummer) opgeslagen op de centrale cWise-server. Deze gegevens worden uitsluitend gebruikt om de dienst cWise te kunnen voeren. HKA stelt deze gegevens niet beschikbaar aan derden. HKA behoudt zich het recht voor bepaalde geaggregeerde gegevens te gebruiken en te leveren aan derden. Nooit zullen deze gegevens echter tot individuele gegevens te herleiden zijn.
+        </p>
+        <p>
+            Op uw profielpagina onder instellingen kunt u opgeven welke gegevens anderen van u mogen zien. Wij zullen onze uiterste best doen om te zorgen dat uw gegevens ook privé blijven, al is dit nooit voor 100% te garanderen. We zullen uw gegevens in ieder geval nooit opzettelijk aan derden verstrekken.
+        </p>
+        <h4>Gebruikersnaam</h4>
+        <p>
+            Bij het aanmaken van uw profiel wordt u gevraagd om een gebruikersnaam (nickname) te kiezen. Dit is de naam die getoond wordt bij uw bijdragen in cWise. Deze gebruikersnaam moet uniek zijn binnen cWise (daar zorgt het systeem voor), en mag geen belediging voor anderen vormen (specifiek of algemeen) of obsceen taalgebruik bevatten. U mag zich niet voordoen als een andere persoon of instelling. Uw gebruikersnaam mag ook niet de indruk wekken dat u HKA, cWise of  één van de aangesloten bibliotheken vertegenwoordigt.
+        </p>
+        <h4>Mail</h4>
+        <p>
+            Het cWise-systeem en/of HKA kan u mail sturen. Binnen uw profielpagina kunt u aangeven welke soort berichten u wel en niet wenst te ontvangen. Uw mailadres zal nooit rechtstreeks zichtbaar worden gemaakt, anders dan op uw persoonlijke profielpagina.
+        </p>
+        <h4>Auteursrechtelijke bescherming</h4>
+        <p>
+            Wanneer u content toevoegt aan cWise, dan doet u dat onder de <a href="http://creativecommons.org/licenses/by-nd/3.0/nl">Creative Commons Naamsvermelding - Geen Afgeleide werken 3.0 licentie</a>. Kort samengevat houdt dit in dat uw content door iedereen gebruikt mag worden, mits ongewijzigd en onder vermelding van uw naam. Dit betekent dat wij niet het auteursrecht claimen over de door u ingevoerde gegevens, maar dat we deze gegevens alleen mogen gebruiken. Het staat u vrij de ingevoerde gegevens ook elders te plaatsen. Zoals eerder vermeld is het alleen toegestaan content te plaatsen waarmee u niet het auteursrecht van anderen schendt.
+        </p>
+        <h4>Hoe om te gaan met misbruik</h4>
+        <p>
+            Wanneer u van mening bent dat een recensie in strijd is met deze voorwaarden, dan kunt u op de "misbruik"-knop klikken. Wanneer voldoende mensen een recensie als misbruik aanmelden, dan zal deze worden verwijderd. Gebruik de "misbruik"-knop niet om te melden dat u het niet eens bent met de inhoud van de recensie. Dit is een verschil van inzicht, waarvoor u de "niet nuttig"-knop kunt gebruiken. Komt u op andere wijze misbruik tegen, dan kunt u dit melden op <a href="mailto:cwise%5Bat%5Dbicat.com">cwise</a>.
+        </p>
+        <h4>Verantwoordelijkheid en continuïteit van de dienst</h4>
+        <p>
+            U bent zelf verantwoordelijk voor de content die u plaatst. HKA behoudt zich echter het recht voor ongewenste content zonder discussie of bericht te verwijderen. In geval van misbruik behoudt HKA zich het recht voor uw account te blokkeren.
+        </p>
+        <p>
+            HKA zal pogen de dienst 24 uur per dag, 7 dagen per week, operationeel te houden, en zal de opgeslagen informatie zo zorgvuldig mogelijk behandelen. Mocht dit, door welke omstandigheid dan ook, niet mogelijk blijken, dan zal HKA niet aansprakelijk zijn voor verloren informatie of het niet beschikbaar zijn van het systeem.
+        </p>
+        <h4>Vrijwaring</h4>
+        <p>
+            Omdat veel van de informatie afkomstig is van medegebruikers, kan het voorkomen dat de informatie binnen cWise niet geheel juist, volledig of up-to-date is. De informatie die door gebruikers van cWise wordt geplaatst, wordt niet door HKA gecontroleerd op juistheid. Wel doet HKA haar best om gebruik, dat in strijd is met de gebruiksvoorwaarden, tegen te gaan.
+            HKA is niet verantwoordelijk voor eventuele fouten en onvolkomenheden in de verstrekte informatie en er kunnen geen rechten ontleend worden aan de inhoud van de dienst. HKA is niet aansprakelijk voor enige directe of indirecte schade die voortvloeit uit of verband houdt met het gebruik van cWise of de onmogelijkheid om deze te gebruiken.
+            De gebruiker van de website vrijwaart HKA voor alle aanspraken op schadevergoeding, zowel van de gebruiker zelf als van derden, in verband met de informatie binnen cWise of het gebruik ervan.
+        </p>
+        <h4>Nederlands recht</h4>
+        <p>
+            Op deze voorwaarden is het Nederlands recht van toepassing.
+        </p>
+        <br>
+    </div><p></p>
+        <p><br></p><form onsubmit="akkoordAlgemeneVoorwaarden('b9326e88-50f6-4c8e-a7ff-95569860cd6f');return false" id="algemene_voorwaarden_form">
+        <input type="checkbox" name="algemene_voorwaarden_check" class="algemene_voorwaarden_check" id="algemene_voorwaarden_check"><label for="algemene_voorwaarden_check"><strong> Ik heb de Algemene Voorwaarden gelezen en ik ga akkoord.</strong></label><br><input type="submit" name="algemene_voorwaarden_akkoord" class="algemene_voorwaarden_akkoord" value="Akkoord" id="algemene_voorwaarden_akkoord">
+    </form><p></p>
+        <a style="display: none;" onclick="Modalbox.hide();return false;" title="Sluit venster" id="algemene_voorwaarden_sluit" href="#" class="close_modal">Sluit venster |x</a>
+    </div>
+    <div style="display:block;" id="login_mag_cwise">
+        <span class="alert">Voor deze inschrijving is deelname aan cWise niet toegestaan.</span><a title="Sluit venster" class="close_modal" href="/error.html">Sluit venster |x</a>
+    </div>
+    <div style="display:block;" id="login_nieuwprofiel">
+        <p><span class="info">Geef hier de nickname op die u wilt gebruiken voor recensies, tags etc. U nickname moet bestaan uit minimaal 4 letters en/of cijfers. Als een nickname al in gebruik is, krijgt u voorbeelden van mogelijke andere namen te zien. Natuurlijk mag u ook een hele andere nickname kiezen.
+		</span><span class="info">
+			Tip: Uw nickname wordt op het scherm getoond. Gebruik dus niet uw pincode of postcode.
+		</span></p><p class="melding_leeg" id="nieuwprofiel_melding"></p><br><form onsubmit="loginCheckNickname('b9326e88-50f6-4c8e-a7ff-95569860cd6f', '53895', '', 'nieuwprofiel_form', '4808614');return false" method="post" class="nickname_form" id="nieuwprofiel_form">
+        <p><label>Gewenste nickname: </label><br></p><div id="nickname_div"><input type="text" name="nickname" id="nickname_veld" class="nickname"></div><input style="display: none;" id="checknicknameloader" class="checknicknameloader"><br><div id="nickname_preview"></div><p></p>
+        <br><p><input type="submit" value="Aanvragen" id="nieuwprofiel_form_submit"></p>
+    </form><p></p>
+        <br>
+    </div>
+    <div style="display:block;" id="wijzignickname">
+        <br><div><span class="info"><strong>
+        Wijzig hier uw nickname.
+    </strong></span></div>
+        <p></p><p class="melding_leeg" id="wijzignickname_melding"></p><p style="display: none;" id="org_nickname"></p><form onsubmit="loginCheckNickname('b9326e88-50f6-4c8e-a7ff-95569860cd6f', '53895', '', 'wijzignickname_form', '4808614');return false" method="post" class="nickname_form" id="wijzignickname_form">
+        <p><label>Gewenste nickname: </label><br></p><div id="wijzignickname_div"><input type="text" name="nickname" id="wijzignickname_veld" class="nickname"></div><input style="display: none;" id="checknicknameloader" class="checknicknameloader"><br><div id="wijzignickname_preview"></div><p></p>
+        <div class="breaker"></div>
+        <p class="wijzignickname-controls"><input type="submit" value="Opslaan" id="wijzignickname_submit"> of <input type="button" onclick="Modalbox.hide();return false;" value="Annuleren"></p>
+    </form><p></p>
+        <br><a onclick="Modalbox.hide();return false;" title="Sluit venster" id="wijzignicknamesucces" class="close_modal" href="#">Sluit venster |x</a>
+    </div>
+    <div style="display:block;" id="login_succes">
+        <p></p><p class="melding_leeg" id="login_succes_melding"></p><p></p>
+        <br><br><div style="display:none;" id="nieuwprofiel_privacy_waarschuwing">
+<span class="info">
+			Ter bescherming als gebruiker van cWise kunt u onder <a onclick="haalProfielPrivate('b9326e88-50f6-4c8e-a7ff-95569860cd6f', '8399', '0');return false" href="/error.html" class="bericht_knop instellingen">Instellingen</a> (Privacy instellingen) aangeven of u betreffende zaken zichtbaar voor derden wilt maken, of juist niet.
+		</span><span class="info">
+			Aanbevolen wordt om deze instellingen na te lopen. Mocht u direct willen beginnen klik dan op <a title="Sluit venster" onclick="Modalbox.hide();return false;" href="/error.html">Sluit venster |x</a>.
+			<br><br>
+			Om bij uw instellingen te komen klikt u op 'mijn profiel' dat altijd aanwezig is op iedere pagina, maar alleen als u ingelogd bent.
+		</span>
+    </div>
+        <div class="breaker"></div>
+        <br><a title="Sluit venster" id="close_loginsucces" class="close_modal" href="/error.html">Sluit venster |x</a>
+    </div>
+    <div style="display:block;" id="wijzignickname_succes">
+        <p></p><p class="melding_leeg" id="wijzignickname_succes_melding"></p><p></p>
+        <br><a title="Sluit venster" id="wijzignicknamesucces" class="close_modal" href="/error.html">Sluit venster |x</a>
+    </div>
+</div>
+<script type="text/javascript">
+//		Event.observe(window, 'load', function() {
+//			// ADDTHIS_PERMISSION cookie
+//			if (!readCookie("ADDTHIS_PERMISSION")) {
+//				if (readCookie("ADDTHIS_PERMISSION")==''){} else{
+//					// NO COOKIE
+//					// ASK PERMISSION
+//					doModal('/cgi-bin/bx.pl?sid=b9326e88-50f6-4c8e-a7ff-95569860cd6f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=17;var=portal;event=addthis_permission_set;submap=raw', 'Toestemming vereist');
+//				}
+//			}
+//			// REVIEW VALIDATOR
+//			GreviewVal = 'false';
+//		});
+	</script><script type="text/javascript">
+		if (0 &gt; 100) {
+			cutOff('titel_overzicht_info', 100, 'tab1');
+		}
+	</script>
+
+
+</body></html>
