@@ -13,15 +13,11 @@ class DutchPublicLibrary extends Library with LogHelper {
   val myHttpClient = Config.httpClient
 
   def getBooksByAuthor(authorToSearchFor: Author): List[Book] = {
-    logger.info("Get books for: " + authorToSearchFor)
+    logger.debug("Get books for: " + authorToSearchFor)
     val author = updateAuthorWithLinkToBooks(authorToSearchFor)
     val result = if (author.like(authorToSearchFor)) {
       val bookpage = myHttpClient.getBookPageAsHtmlByAuthor(author)
-      val titlesAndLinks = getBooksFromHtmlPage(bookpage, author)
-      titlesAndLinks map {
-//        titleAndLink => Book(author, titleAndLink._1, titleAndLink._2)
-          titleAndLink => Book(author, titleAndLink)
-      }
+      getBooksFromHtmlPage(bookpage, author)
     } else List()
     logger.debug(result.size + " books found")
     result
@@ -33,7 +29,7 @@ class DutchPublicLibrary extends Library with LogHelper {
   }
 
   protected[library] def updateAuthorWithLinkToBooks(author: Author): Author = {
-    val authorSearchResultPage = myHttpClient.getResultOfSearchByAuthor(author.toFirstNameLastNameString)
+    val authorSearchResultPage = myHttpClient.getResultOfSearchByAuthor(author.toLastNameCommaFirstNameString)
     getAuthorUpdatedWithLink(authorSearchResultPage, author)
   }
 
@@ -69,23 +65,31 @@ class DutchPublicLibrary extends Library with LogHelper {
     result
   }
 
-  // TODO: get link to book page as well as title from this method
-  protected[library] def getBooksFromHtmlPage(bookPageAsHtml: String, author: Author): List[String] = {
+  protected def createBooksWithLink(books: List[String], author: Author) = {
+    books map (Book(author, _, link=author.linkToListOfBooks))
+  }  
+
+  protected[library] def getBooksFromHtmlPage(bookPageAsHtml: String, author: Author): List[Book] = {
     logger.debug("getBooksFromHtmlPage for author: " + author)
-    val patternString = """<a class="title" title="(.*?)""""
+    val patternString = """<h3 class="anoniem_titel"><strong id="anoniem_titel_titel"><img class="stat_icons" title="Boek" alt="bvm_b__.gif" src="/images/bvm_b__.gif">(.*?)</strong></h3>"""
     val pattern = patternString.r
     val books = pattern.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
     val result = books.length match {
       case 0 => {
-        val p2 = """<meta xmlns:og="http://ogp.me/ns#" name="title" content="(.*?)"""".r
-        p2.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
+        // TODO get list of links to pages, get data from each page ?
+        val p="""<a href="(.*?)" title="(.*?)" class="title">""".r
+        val links =  p.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
+        val titles =  p.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
+        val linksAndTitles = links zip titles
+        linksAndTitles map (b => Book (author, b._1, link=b._2 ))
       }
-      case _ => books
+      case _ => createBooksWithLink(books, author)
     }
     logger.debug("getBooksFromHtmlPage result: " + result)
     result
   }
 
+  // TODO: this is a strange place for this code because it doesn't actually use the library
   def getNewBooks(myBooks: List[Book], booksFromWeb: List[Book]): List[Book] = {
     val candidates = booksFromWeb.toSet
     val booksWithStatusReadOrWontRead = myBooks.filter(book => book.status != Book.UNKNOWN)

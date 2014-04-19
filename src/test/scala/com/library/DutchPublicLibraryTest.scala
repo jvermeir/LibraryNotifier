@@ -19,17 +19,20 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
     info("I want to be notified when a new book by one of my favourite authors becomes available at the library")
     info("So that I can go get it")
 
-    scenario("get the list of books from a page for an author") {
+    // TODO: this tests inner workings of DPL, is that ok?
+    // how about other protected methods?
+    ignore("get the list of books from a page for an author") {
       Given("A html page with the list of books for Dan Brown")
       val bookPageAsHtml: String = fromFile("data/test/danBrownBooks.html")(Codec.ISO8859).mkString
       When("we get the list of books")
       val listOfBooks = libraryClient.getBooksFromHtmlPage(bookPageAsHtml, Author("Brown, Dan"))
       Then("the result contains 'The Da Vinci code' and has length 6")
-      listOfBooks must contain("The Da Vinci code")
+      listOfBooks must contain(Book(Author("Brown, Dan"),"The Da Vinci code"))
       listOfBooks.size must be === 6
     }
 
-    scenario("get the books written by a list of authors from the local library") {
+    // TODO: Useless test if we're using a mock
+    ignore("get the books written by a list of authors from the local library") {
       Given("A map of authors")
       val neilGaiman: Author = Author("Gaiman, Neil")
       val douglasCoupland: Author = Author("Coupland, Douglas")
@@ -45,6 +48,49 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
       5 must be === couplandBooks.size
       1 must be === couplandBooks.filter(_.title == "Speler Een").size
     }
+    val neilGaiman = Author("Gaiman, Neil")
+    val alastairReynolds = Author("Reynolds, Alastair")
+
+    scenario("get the book for an author who has written only one book") {
+      Given("An author who wrote only a single book (in the library in Ede, that is...)")
+      val author = alastairReynolds
+      When("We get his books from the library")
+      val books = libraryClient.getBooksByAuthor(author)
+      Then("Terminal world is returned as the only result")
+      val terminalWorld = Book("Reynolds;Alastair;Terminal world")
+      List(terminalWorld) must be === books
+    }
+
+    scenario("all books retrieved from the library have a link to their detail page") {
+      Given("two authors who wrote a couple of books")
+      val listOfAuthors = Map(alastairReynolds.lastName -> alastairReynolds, neilGaiman.lastName -> neilGaiman)
+      When("We get their books from the library")
+      val books = libraryClient.getBooksForAuthors(listOfAuthors)
+      Then("each book has its link field set")
+      val numberOfBooksWithoutLinkFieldSet = books.values.flatten filter (_.title.length == 0)
+      List() must be === numberOfBooksWithoutLinkFieldSet
+    }
+
+    scenario("get the list of books for an author who has written multiple books") {
+      Given("An author with several books in the library")
+      val author = neilGaiman
+      When("We get his books from the library")
+      val books = libraryClient.getBooksByAuthor(author)
+      Then("Terminal world is returned as the only result")
+      10 must be === books.size
+    }
+
+    ignore("get the availability status of a book by an author") {
+      Given("A book")
+      val author = alastairReynolds
+      val book = libraryClient.getBooksByAuthor(author).head
+      When("We get the availability of this book")
+      val availability = book.available
+      Then("The result is true")
+      true must be === availability
+    }
+
+    ignore("get the availability status of a book by an author who has written multiple books") {}
 
     scenario("Comparing the list of books stored on disk and the list retrieved from the Internet, create a list of books to read") {
       Given("A list of books and their status on disk and a list of books retrieved from the Internet")

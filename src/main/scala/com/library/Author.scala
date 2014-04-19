@@ -6,14 +6,14 @@ case class Author(val firstName: String, val lastName: String, val linkToListOfB
   def equalsIgnoreLink(other:Author):Boolean = {
     firstName.equals(other.firstName) && lastName.equals(other.lastName)
   }
-  def toFirstNameLastNameString:String = lastName + ", " + firstName
+  def toLastNameCommaFirstNameString:String = lastName + ", " + firstName
   override def equals (that:Any):Boolean = {
     if (that.isInstanceOf[Author]) {
       val other = that.asInstanceOf[Author]
-      other.toFirstNameLastNameString.equals(toFirstNameLastNameString)
+      other.toLastNameCommaFirstNameString.equals(toLastNameCommaFirstNameString)
     } else false
   }
-  def like(that:Author):Boolean = toFirstNameLastNameString.toLowerCase.startsWith(that.toFirstNameLastNameString.toLowerCase)
+  def like(that:Author):Boolean = toLastNameCommaFirstNameString.toLowerCase.startsWith(that.toLastNameCommaFirstNameString.toLowerCase)
 
   def asJSONString:String = {
     "\"author\" : {\"firstName\" : \"" + firstName +"\",\n" +

@@ -56,7 +56,7 @@ class MyHttpClient extends LogHelper{
     val httpPost = new HttpPost("http://bicat.cultura-ede.nl/cgi-bin/bx.pl")
     val httpParams: HttpParams = new BasicHttpParams
     httpParams.setParameter("Content-Type", "text/plain; charset=ISO-8859-15")
-    val httpclient = new DefaultHttpClient(httpParams) // TODO configure this
+    val httpclient = new DefaultHttpClient(httpParams)
     httpPost.setEntity(entity)
     val response = httpclient.execute(httpPost, httpContext)
     EntityUtils.toString(response.getEntity)

@@ -1,9 +1,6 @@
 package com.library
 
-import scala.io.Source._
-import java.io.File
-
-case class Book (author:Author, title:String, status:String = Book.UNKNOWN, available:Boolean=false) {
+case class Book (author:Author, title:String, status:String = Book.UNKNOWN, available:Boolean=false, link:String="unknown") {
   override def toString = getKey + ";" + status
 
   def setStatus(newStatus:String):Book = new Book(author,title,newStatus)
