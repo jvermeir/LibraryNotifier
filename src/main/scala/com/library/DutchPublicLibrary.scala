@@ -11,6 +11,7 @@ import com.library.service.LogHelper
 class DutchPublicLibrary extends Library with LogHelper {
 
   val myHttpClient = Config.httpClient
+  logger.info("httpClient: " + myHttpClient)
 
   def getBooksByAuthor(authorToSearchFor: Author): List[Book] = {
     logger.debug("Get books for: " + authorToSearchFor)
@@ -69,14 +70,14 @@ class DutchPublicLibrary extends Library with LogHelper {
     books map (Book(author, _, link=author.linkToListOfBooks))
   }  
 
-  protected[library] def getBooksFromHtmlPage(bookPageAsHtml: String, author: Author): List[Book] = {
+  // TODO: cleanup, extract stuff
+  def getBooksFromHtmlPage(bookPageAsHtml: String, author: Author): List[Book] = {
     logger.debug("getBooksFromHtmlPage for author: " + author)
     val patternString = """<h3 class="anoniem_titel"><strong id="anoniem_titel_titel"><img class="stat_icons" title="Boek" alt="bvm_b__.gif" src="/images/bvm_b__.gif">(.*?)</strong></h3>"""
     val pattern = patternString.r
     val books = pattern.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
     val result = books.length match {
       case 0 => {
-        // TODO get list of links to pages, get data from each page ?
         val p="""<a href="(.*?)" title="(.*?)" class="title">""".r
         val links =  p.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
         val titles =  p.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
@@ -89,7 +90,7 @@ class DutchPublicLibrary extends Library with LogHelper {
     result
   }
 
-  // TODO: this is a strange place for this code because it doesn't actually use the library
+  // TODO: this is a strange place for this code because it doesn't actually use the library. Move to BookShelf?
   def getNewBooks(myBooks: List[Book], booksFromWeb: List[Book]): List[Book] = {
     val candidates = booksFromWeb.toSet
     val booksWithStatusReadOrWontRead = myBooks.filter(book => book.status != Book.UNKNOWN)
@@ -97,6 +98,29 @@ class DutchPublicLibrary extends Library with LogHelper {
     newBooks.toList
   }
 
-  override def isBookAvailable(book: Book): Boolean = true
+  val beschikbaarExpression = """class="staticons">(.*)</div>""".r
+  val locationExpression = """"exemplaar_vest">(.*)</div>""".r
+
+  override def isBookAvailable(book: Book): Boolean = {
+    val bookPage = myHttpClient.getBookPageAsHtmlFromBookUrl(book)
+    val indexOfExemplaarInfoTag = bookPage.indexOf("""class="exemplaarinfo""")
+    val indexOfEldersTag = bookPage.indexOf("""<div id="elders_button"""")
+    if (indexOfEldersTag>indexOfExemplaarInfoTag) {
+      val fragment = bookPage.substring(indexOfExemplaarInfoTag, indexOfEldersTag)
+      val lines = fragment.split("\n")
+      val availabilityStatuses = lines filter (_.indexOf("""img alt="""")>0) map (beschikbaarExpression.findFirstMatchIn(_) map (_ group 1))
+      val locations = lines filter (_.indexOf("""div class="exemplaar_vest""")>0) filter (_.indexOf("Vestiging")<0) map (locationExpression.findFirstMatchIn(_) map (_ group 1))
+      val availableInEde = availabilityStatuses zip locations filter (isAvailableInEde(_))
+      availableInEde.length>0
+    } else false
+  }
+
+  private def isAvailableInEde(a:(Option[String],Option[String])):Boolean = {
+    val available = a._1 getOrElse ("N/A") equals "Beschikbaar"
+    val inEde = if (available) {
+      a._2 getOrElse("N/A") equals("Ede Centrale")
+    } else false
+    inEde
+  }
 
 }

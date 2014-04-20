@@ -8,7 +8,7 @@ object Config {
   // TODO: How about ConfigFactory?
   // https://github.com/typesafehub/config
 
-  var httpClient:MyHttpClient = new MyHttpClient
+  var httpClient:MyHttpClient = null //new MyHttpClient
   // TODO: ugly init is necessary because bookshelf tries to load a file
   var libraryClient: Library = null
   // = new DutchPublicLibrary
@@ -16,3 +16,4 @@ object Config {
 
   def reload: Unit = {}
 }
+

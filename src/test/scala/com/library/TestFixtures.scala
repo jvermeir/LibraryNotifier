@@ -17,12 +17,12 @@ trait TestFixtures {
   }
 
   def getBookShelfWithSixBooks: BookShelf = {
-    val book1 = new Book(new Author("first", "lastnameB", ""), "book1", available=true)
-    val book2 = new Book(new Author("first", "lastnameA", ""), "book2", available=true)
-    val book3 = new Book(new Author("first", "lastnameA", ""), "book3", available=true)
-    val book4 = new Book(new Author("first", "lastnameB", ""), "book4", available=true)
-    val book5 = new Book(new Author("first", "lastnameA", ""), "book5", available=true)
-    val book6 = new Book(new Author("first", "lastnameA", ""), "book6")
+    val book1 = new Book(new Author("first", "lastnameB", ""), "book1")
+    val book2 = new Book(new Author("first", "lastnameA", ""), "book2")
+    val book3 = new Book(new Author("first", "lastnameA", ""), "book3")
+    val book4 = new Book(new Author("first", "lastnameB", ""), "book4")
+    val book5 = new Book(new Author("first", "lastnameA", ""), "book5")
+    val book6 = new AvailableBook
     val bookShelf = new TestBookShelf
     bookShelf.add(book1)
     bookShelf.add(book2)
@@ -33,8 +33,9 @@ trait TestFixtures {
     bookShelf.storeRecommendations(bookShelf.getBooksToRead)
     bookShelf
   }
+  class AvailableBook extends Book(new Author("first", "lastnameA", ""), "title") {val availabe = true}
 
-  def getListOfFiveRecommendedBooks:List[Book] = getBookShelfWithSixBooks.getAllBooks filter(_.available)
+  def getListOfOneRecommendedBook:List[Book] = getBookShelfWithSixBooks.getAllBooks filter(_.available)
 
   val author1 = Author("firstName1", "lastName2")
   val author2 = Author("firstName2", "lastName2")
@@ -72,6 +73,10 @@ class LibraryForTest extends Library with TestFixtures{
   def getBooksForAuthors(authors: Map[String, Author]): Map[Author, List[Book]] = books
 
   override def isBookAvailable(book: Book): Boolean = false
+
+  override def getNewBooks(myBooks: List[Book], booksFromWeb: List[Book]): List[Book] = ???
+
+  override def getBooksFromHtmlPage(bookPageAsHtml: String, author: Author): List[Book] = ???
 }
 
 class FirstLibraryForTest extends LibraryForTest {

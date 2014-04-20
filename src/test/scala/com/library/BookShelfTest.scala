@@ -6,9 +6,10 @@ import org.scalatest.GivenWhenThen
 import org.scalatest.matchers.MustMatchers
 import org.junit.runner.RunWith
 import java.io.File
+import com.library.service.LogHelper
 
 @RunWith(classOf[JUnitRunner])
-class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers with TestFixtures{
+class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers with TestFixtures with LogHelper{
 
   feature("The bookshelf shows all books by authors I'm interested in. It also says whether I've read, won't read or haven't read them yet") {
     info("As a family member")

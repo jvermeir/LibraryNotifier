@@ -7,49 +7,25 @@ import org.scalatest.matchers.MustMatchers
 import org.junit.runner.RunWith
 import scala.io.Source._
 import scala.io.Codec
+import com.library.service.LogHelper
 
 @RunWith(classOf[JUnitRunner])
-class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with GivenWhenThen with MustMatchers {
+class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with GivenWhenThen with MustMatchers with LogHelper{
 
+  logger.info("init DutchPublicLibraryTest")
   Config.httpClient = new MockHttpClient
-  val libraryClient = new DutchPublicLibrary
+  Config.libraryClient = new DutchPublicLibrary
+  val libraryClient = Config.libraryClient
+  logger.info("client from DPL: " + new DutchPublicLibrary().myHttpClient )
+  logger.info("end DutchPublicLibraryTest")
+
+  val neilGaiman = Author("Gaiman, Neil")
+  val alastairReynolds = Author("Reynolds, Alastair")
 
   feature("The HTTP client finds books written by a list of authors and reports on their availability") {
     info("As a family member")
     info("I want to be notified when a new book by one of my favourite authors becomes available at the library")
     info("So that I can go get it")
-
-    // TODO: this tests inner workings of DPL, is that ok?
-    // how about other protected methods?
-    ignore("get the list of books from a page for an author") {
-      Given("A html page with the list of books for Dan Brown")
-      val bookPageAsHtml: String = fromFile("data/test/danBrownBooks.html")(Codec.ISO8859).mkString
-      When("we get the list of books")
-      val listOfBooks = libraryClient.getBooksFromHtmlPage(bookPageAsHtml, Author("Brown, Dan"))
-      Then("the result contains 'The Da Vinci code' and has length 6")
-      listOfBooks must contain(Book(Author("Brown, Dan"),"The Da Vinci code"))
-      listOfBooks.size must be === 6
-    }
-
-    // TODO: Useless test if we're using a mock
-    ignore("get the books written by a list of authors from the local library") {
-      Given("A map of authors")
-      val neilGaiman: Author = Author("Gaiman, Neil")
-      val douglasCoupland: Author = Author("Coupland, Douglas")
-      val authors = Map("Gaiman, Neil" -> neilGaiman, "Coupland, Douglas" -> douglasCoupland)
-      When("we get the books for all authors")
-      val books = libraryClient.getBooksForAuthors(authors)
-      Then("the result must contain 'JPod' and 'Amerikaanse goden' and has length 9+12")
-      books.size must be === 2
-      val gaimanBooks = books.getOrElse(neilGaiman, List())
-      13 must be === gaimanBooks.size
-      1 must be === gaimanBooks.filter(_.title == "Amerikaanse goden").size
-      val couplandBooks = books.getOrElse(douglasCoupland, List())
-      5 must be === couplandBooks.size
-      1 must be === couplandBooks.filter(_.title == "Speler Een").size
-    }
-    val neilGaiman = Author("Gaiman, Neil")
-    val alastairReynolds = Author("Reynolds, Alastair")
 
     scenario("get the book for an author who has written only one book") {
       Given("An author who wrote only a single book (in the library in Ede, that is...)")
@@ -80,9 +56,10 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
       10 must be === books.size
     }
 
-    ignore("get the availability status of a book by an author") {
-      Given("A book")
-      val author = alastairReynolds
+    scenario("get the availability status of a book that is available") {
+      Given("A book that is available")
+      logger.info("client in test: " + Config.httpClient)
+      val author = neilGaiman
       val book = libraryClient.getBooksByAuthor(author).head
       When("We get the availability of this book")
       val availability = book.available
@@ -90,7 +67,15 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
       true must be === availability
     }
 
-    ignore("get the availability status of a book by an author who has written multiple books") {}
+    scenario("get the availability status of a book that is not available") {
+      Given("A book that is not available")
+      val author = alastairReynolds
+      val book = libraryClient.getBooksByAuthor(author).head
+      When("We get the availability of this book")
+      val availability = book.available
+      Then("The result is false")
+      false must be === availability
+    }
 
     scenario("Comparing the list of books stored on disk and the list retrieved from the Internet, create a list of books to read") {
       Given("A list of books and their status on disk and a list of books retrieved from the Internet")

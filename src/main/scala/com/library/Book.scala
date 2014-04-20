@@ -1,6 +1,7 @@
 package com.library
 
-case class Book (author:Author, title:String, status:String = Book.UNKNOWN, available:Boolean=false, link:String="unknown") {
+case class Book (author:Author, title:String, status:String = Book.UNKNOWN, link:String="unknown") {
+
   override def toString = getKey + ";" + status
 
   def setStatus(newStatus:String):Book = new Book(author,title,newStatus)
@@ -17,6 +18,11 @@ case class Book (author:Author, title:String, status:String = Book.UNKNOWN, avai
       author.asJSONString +
     ", \"title\" : \"" + title + "\", \"status\" : " + status + "\n"
   }
+
+  lazy val available = isAvailable
+
+  private def isAvailable:Boolean = Config.libraryClient.isBookAvailable(this)
+
 }
 
 object Book {
