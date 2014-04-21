@@ -18,32 +18,28 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
 
     scenario("the bookshelf accesses the library to find out if there are any new books") {
       Given("a bookshelf with 1 book by author1 and one by author2")
-      Config.bookShelf = new TestBookShelf
-      Config.libraryClient = new FirstLibraryForTest
-      val libraryClient = Config.libraryClient
-      val bookShelf = Config.bookShelf
+      val bookShelf = new TestBookShelf
+      val libraryClient = new FirstLibraryForTest
       bookShelf.updateBooks(libraryClient.getBooksForAuthors(authors).values.flatten)
       2 must be === bookShelf.getBooksToRead.size
 
       When("it refreshes itself from a library with an extra book for author2")
-      Config.libraryClient = new SecondLibraryForTest
-      bookShelf.updateBooks(Config.libraryClient.getBooksForAuthors(authors).values.flatten)
+      val secondLibraryClient = new SecondLibraryForTest
+      bookShelf.updateBooks(secondLibraryClient.getBooksForAuthors(authors).values.flatten)
       Then("it finds three books")
       3 must be === bookShelf.getBooksToRead.size
     }
 
     scenario("if the bookshelf contains a book with status other than UNKNOWN, this status is not affected by a refreshBooksFromLibrary call") {
       Given("a bookshelf with a book with status READ")
-      Config.bookShelf = new TestBookShelf
-      Config.libraryClient = new FirstLibraryForStatusTest
-      val libraryClient = Config.libraryClient
-      val bookShelf = Config.bookShelf
+      val bookShelf = new TestBookShelf
+      val libraryClient = new FirstLibraryForStatusTest
       bookShelf.updateBooks(libraryClient.getBooksForAuthors(authors).values.flatten)
 
       1 must be === bookShelf.getBooksToRead.size
       When("it refreshes itself from a library with an extra book for author2")
-      Config.libraryClient = new SecondLibraryForStatusTest
-      bookShelf.updateBooks(Config.libraryClient.getBooksForAuthors(authors).values.flatten)
+      val secondLibraryClient = new SecondLibraryForStatusTest
+      bookShelf.updateBooks(secondLibraryClient.getBooksForAuthors(authors).values.flatten)
       Then("it finds two books to read")
       2 must be === bookShelf.getBooksToRead.size
     }
@@ -155,8 +151,7 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
 
   scenario("The list of books is placed in random order") {
     Given("A bookshelf")
-    Config.bookShelf = new FileBasedBookShelf("data/boeken.dat")
-    val bookShelf = Config.bookShelf
+    val bookShelf = new FileBasedBookShelf("data/boeken.dat")
     When("This list is randomized")
     val books1 = bookShelf.getRandomizedListOfBooks
     val books2 = bookShelf.getRandomizedListOfBooks

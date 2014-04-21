@@ -17,7 +17,7 @@ trait BookShelf {
   protected def read:Unit
   def write:Unit
 
-  // TODO: sneaky init code below...
+  // TODO: sneaky init code below... Move to subclass??
   read
 
   def updateBooks (booksFromLibrary:Iterable[Book]):Unit = {
@@ -83,7 +83,8 @@ trait BookShelf {
 
 class FileBasedBookShelf(val storeFileName:String) extends BookShelf {
 
-  override def read:Unit = { emptyShelf
+  override def read:Unit = {
+    emptyShelf
     if (new File(storeFileName).exists)
       books.++(readFromFile(storeFileName))
   }

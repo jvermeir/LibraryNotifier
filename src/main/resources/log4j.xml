@@ -5,9 +5,18 @@
     <layout class="org.apache.log4j.PatternLayout"> 
       <param name="ConversionPattern" value="%d{HH:mm:ss,SSS} %-5p %c %l %x - %m%n"/> 
     </layout> 
-  </appender> 
+  </appender>
+    <appender name="default.file" class="org.apache.log4j.FileAppender">
+        <param name="file" value="log/log.log" />
+        <param name="append" value="false" />
+        <param name="threshold" value="debug" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{HH:mm:ss,SSS} %-5p %c %l %x - %m%n"/>
+        </layout>
+    </appender>
   <root> 
     <priority value ="info" />
-    <appender-ref ref="consoleAppender" /> 
+      <appender-ref ref="consoleAppender" />
+      <appender-ref ref="default.file" />
   </root>
 </log4j:configuration>

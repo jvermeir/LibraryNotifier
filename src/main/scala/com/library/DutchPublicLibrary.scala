@@ -10,14 +10,13 @@ import com.library.service.LogHelper
 
 class DutchPublicLibrary extends Library with LogHelper {
 
-  val myHttpClient = Config.httpClient
-  logger.info("httpClient: " + myHttpClient)
-
+  val httpClient = Config.httpClient
+  
   def getBooksByAuthor(authorToSearchFor: Author): List[Book] = {
     logger.debug("Get books for: " + authorToSearchFor)
     val author = updateAuthorWithLinkToBooks(authorToSearchFor)
     val result = if (author.like(authorToSearchFor)) {
-      val bookpage = myHttpClient.getBookPageAsHtmlByAuthor(author)
+      val bookpage = httpClient.getBookPageAsHtmlByAuthor(author)
       getBooksFromHtmlPage(bookpage, author)
     } else List()
     logger.debug(result.size + " books found")
@@ -30,7 +29,7 @@ class DutchPublicLibrary extends Library with LogHelper {
   }
 
   protected[library] def updateAuthorWithLinkToBooks(author: Author): Author = {
-    val authorSearchResultPage = myHttpClient.getResultOfSearchByAuthor(author.toLastNameCommaFirstNameString)
+    val authorSearchResultPage = httpClient.getResultOfSearchByAuthor(author.toLastNameCommaFirstNameString)
     getAuthorUpdatedWithLink(authorSearchResultPage, author)
   }
 
@@ -102,7 +101,7 @@ class DutchPublicLibrary extends Library with LogHelper {
   val locationExpression = """"exemplaar_vest">(.*)</div>""".r
 
   override def isBookAvailable(book: Book): Boolean = {
-    val bookPage = myHttpClient.getBookPageAsHtmlFromBookUrl(book)
+    val bookPage = httpClient.getBookPageAsHtmlFromBookUrl(book)
     val indexOfExemplaarInfoTag = bookPage.indexOf("""class="exemplaarinfo""")
     val indexOfEldersTag = bookPage.indexOf("""<div id="elders_button"""")
     if (indexOfEldersTag>indexOfExemplaarInfoTag) {

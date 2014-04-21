@@ -12,7 +12,6 @@ class MockHttpClient extends MyHttpClient with LogHelper {
       case "Gaiman" => fromFile("data/test/pageForBookDetailsForAvailableBook.html")(Codec.ISO8859).mkString
       case "Reynolds" => fromFile("data/test/pageForBookDetailsForUnAvailableBook.html")(Codec.ISO8859).mkString
     }
-    logger.debug("page: " + page)
     page
   }
 
@@ -22,7 +21,6 @@ class MockHttpClient extends MyHttpClient with LogHelper {
       case "Gaiman" => fromFile("data/test/pageForAuthorWithMoreThanOneBook.html")(Codec.ISO8859).mkString
       case "Reynolds" => fromFile("data/test/pageForAuthorWithOneBook.html")(Codec.ISO8859).mkString
     }
-    logger.debug("page: " + page)
     page
   }
 
@@ -31,7 +29,6 @@ class MockHttpClient extends MyHttpClient with LogHelper {
       case "Gaiman, Neil" => fromFile("data/test/resultPageForGaimainSearch.html")(Codec.ISO8859).mkString
       case "Reynolds, Alastair" => fromFile("data/test/resultPageForReynoldsSearch.html")(Codec.ISO8859).mkString
     }
-    logger.debug("page: " + page)
     page
   }
 }
