@@ -13,13 +13,13 @@ class DutchPublicLibrary extends Library with LogHelper {
   val httpClient = Config.httpClient
   
   def getBooksByAuthor(authorToSearchFor: Author): List[Book] = {
-    logger.debug("Get books for: " + authorToSearchFor)
+    logger.info("Get books for: " + authorToSearchFor)
     val author = updateAuthorWithLinkToBooks(authorToSearchFor)
     val result = if (author.like(authorToSearchFor)) {
       val bookpage = httpClient.getBookPageAsHtmlByAuthor(author)
       getBooksFromHtmlPage(bookpage, author)
     } else List()
-    logger.debug(result.size + " books found")
+    logger.info(result.size + " books found")
     result
   }
 
@@ -72,16 +72,18 @@ class DutchPublicLibrary extends Library with LogHelper {
   // TODO: cleanup, extract stuff
   def getBooksFromHtmlPage(bookPageAsHtml: String, author: Author): List[Book] = {
     logger.debug("getBooksFromHtmlPage for author: " + author)
-    val patternString = """<h3 class="anoniem_titel"><strong id="anoniem_titel_titel"><img class="stat_icons" title="Boek" alt="bvm_b__.gif" src="/images/bvm_b__.gif">(.*?)</strong></h3>"""
+    logger.debug("html page: " + bookPageAsHtml)
+    val patternString = """<h3 class="anoniem_titel" id="titeltip_anoniem_titel"><strong id="titeltip_anoniem_titel_titel">(.*?)</strong></h3>"""
     val pattern = patternString.r
     val books = pattern.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
     val result = books.length match {
       case 0 => {
-        val p="""<a href="(.*?)" title="(.*?)" class="title">""".r
-        val links =  p.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
+        val p="""<a class="title" title="(.*?)" href="(.*?)">""".r
+//        val p="""<a href="(.*?)" title="(.*?)" class="title">""".r
+        val links = p.findAllMatchIn(bookPageAsHtml).map(_ group 2).toSet.toList
         val titles =  p.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
         val linksAndTitles = links zip titles
-        linksAndTitles map (b => Book (author, b._1, link=b._2 ))
+        linksAndTitles map (b => Book (author, b._2, link=b._1 ))
       }
       case _ => createBooksWithLink(books, author)
     }

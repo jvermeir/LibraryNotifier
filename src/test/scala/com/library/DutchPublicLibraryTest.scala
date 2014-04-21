@@ -47,7 +47,7 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
       When("We get his books from the library")
       val books = getBooksByAuthor(author)
       Then("Terminal world is returned as the only result")
-      10 must be === books.size
+      13 must be === books.size
     }
 
     scenario("get the availability status of a book that is available") {

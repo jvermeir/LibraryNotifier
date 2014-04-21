@@ -19,7 +19,7 @@ class MockHttpClient extends MyHttpClient with LogHelper {
     logger.debug("getBookPageAsHtmlByAuthor: " + author)
     val page = author.lastName match {
       case "Gaiman" => fromFile("data/test/pageForAuthorWithMoreThanOneBook.html")(Codec.ISO8859).mkString
-      case "Reynolds" => fromFile("data/test/pageForAuthorWithOneBook.html")(Codec.ISO8859).mkString
+      case "Reynolds" => fromFile("data/test/reynolds.html")(Codec.ISO8859).mkString
     }
     page
   }
