@@ -171,6 +171,22 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
     books1(2) must not equal books2(2)
   }
 
+  scenario("A book can be created from its JSON representation") {
+    Given("A book as a JSON string")
+    val jsonBook =
+      """{"author" : {"firstName" : "first",
+        |"lastName" : "lastnameA"}
+        |, "title" : "book2"
+        |, "link" : "mylink"
+        |}
+      """.stripMargin
+    When("The JSON string is used to create a Book")
+    val book = Book.createFromJSONString(jsonBook)
+    Then("We get a book with title 'book2' and link 'mylink'")
+    val expectedBook=Book(Author("first","lastnameA"), "book2", Book.UNKNOWN ,"mylink")
+    expectedBook must be === book
+  }
+
   val expectedShoppingListAsJSON =
     """[{"author" : {"firstName" : "first",
       |"lastName" : "lastnameA"}

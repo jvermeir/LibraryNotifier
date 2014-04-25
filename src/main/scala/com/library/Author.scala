@@ -22,6 +22,7 @@ case class Author(val firstName: String, val lastName: String, val linkToListOfB
 }
 
 object Author {
+
   def apply(authorAsString: String): Author = {
     val parenthesisPattern = """(.*),(.*)\(.*""".r
     val commaPattern = "(.*),(.*)".r
