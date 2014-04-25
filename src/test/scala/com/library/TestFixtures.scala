@@ -6,7 +6,7 @@ package com.library
 trait TestFixtures {
 
   def getBookShelfWithThreeBooks: BookShelf = {
-    val book1 = new Book(new Author("first", "lastnameB", ""), "book1")
+    val book1 = new Book(new Author("first", "lastnameB", ""), "book1", link = "mylink")
     val book2 = new Book(new Author("first", "lastnameA", ""), "book2")
     val book3 = new Book(new Author("first", "lastnameA", ""), "book3")
     val bookShelf = new TestBookShelf

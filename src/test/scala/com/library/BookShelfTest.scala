@@ -146,7 +146,18 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
     Then("a valid JSON document is returned")
     // TODO: find a better test
     actualShoppingListAsJSON.indexOf("""{"books" : [{""") must be === 0
-//    expectedShoppingListAsJSON must be === actualShoppingListAsJSON
+    //    expectedShoppingListAsJSON must be === actualShoppingListAsJSON
+  }
+
+  scenario("The list of books to read is printed as JSON and contains a url in the 'link' field") {
+    Given("a list of books to read from the bookshelf")
+    val bookShelf = getBookShelfWithThreeBooks
+    When("the list is printed as a JSON string")
+    val actualShoppingListAsJSON = bookShelf.printAsJson
+    Then("a valid JSON document is returned")
+    // TODO: find a better test
+    actualShoppingListAsJSON.indexOf(""""link" : """) must be > 0
+    //    expectedShoppingListAsJSON must be === actualShoppingListAsJSON
   }
 
   scenario("The list of books is placed in random order") {

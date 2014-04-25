@@ -16,7 +16,8 @@ case class Book (author:Author, title:String, status:String = Book.UNKNOWN, link
 
   def asJSONString:String = {
       author.asJSONString +
-    ", \"title\" : \"" + title + "\", \"status\" : " + status + "\n"
+    ", \"title\" : \"" + title + "\", \"status\" : " + status +
+    ", \"link\" : \"" + link + "\"" + "\n"
   }
 
   lazy val available = isAvailable
