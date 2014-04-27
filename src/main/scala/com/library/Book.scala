@@ -2,6 +2,9 @@ package com.library
 
 import scala.util.parsing.json.JSON
 
+/**
+ * Represents a Book in the library
+ */
 case class Book(author: Author, title: String, status: String = Book.UNKNOWN, link: String = "unknown") {
 
   override def toString = getKey + ";" + status
@@ -50,31 +53,19 @@ object Book {
 
   // Temporary to help refactoring
   def createFromJSONString(bookAsString: String): Book = {
+    createFromParsedJSON(List(JSON.parseFull(bookAsString).get))
+  }
+
+  def createFromParsedJSON(jsonObject:List[Any]): Book = {
     val book = for {
-      Some(M(map)) <- List(JSON.parseFull(bookAsString))
-      M(book) = map
+      M(book) <- jsonObject
       M(authorMap) = book("author")
       S(firstName) = authorMap("firstName")
       S(lastName) = authorMap("lastName")
       S(title) = book("title")
       S(status) = book("status")
       S(link) = book("link")
-    } yield (Book(Author(firstName,lastName), title, status, link))
-
-
-    val book2 = JSON.parseFull(bookAsString) match {
-      case Some(x) => {
-        val m = x.asInstanceOf[Map[String, Any]]
-        val a = m("author").asInstanceOf[Map[String, String]]
-        val firstName = a("firstName")
-        val lastName = a("lastName")
-        val author = Author(firstName, lastName)
-        val title = m("title").asInstanceOf[String]
-        val link = m("link").asInstanceOf[String]
-        Book(author, title, link)
-      }
-      case None => DummyBook
-    }
+    } yield Book(Author(firstName,lastName), title, status, link)
     book(0)
   }
 }

@@ -2,51 +2,54 @@ package com.library
 
 import scala.io.Source._
 import java.io.File
-import scala.util.parsing.json.{JSONFormat, JSONArray, JSONObject}
+import scala.util.parsing.json.{JSON, JSONFormat, JSONArray, JSONObject}
 import scala.language.postfixOps
 import scala.util.Random
 
 /**
- * Books that are on my book shelf
+ * A Book shelf contains books I've read or haven't read yet.
  */
 
 trait BookShelf {
-  def shouldReload: Boolean = ! new File("dontReload").exists
+  def shouldReload: Boolean = !new File("dontReload").exists
 
   protected[library] lazy val books = scala.collection.mutable.Map[String, Book]()
-  protected def read:Unit
-  def write:Unit
+
+  protected def read: Unit
+
+  def write: Unit
 
   // TODO: sneaky init code below... Move to subclass??
   read
 
-  def updateBooks (booksFromLibrary:Iterable[Book]):Unit = {
-    val newBooks = booksFromLibrary filter (book => !books.contains(book.getKey) )
+  def updateBooks(booksFromLibrary: Iterable[Book]): Unit = {
+    val newBooks = booksFromLibrary filter (book => !books.contains(book.getKey))
     books ++= newBooks map (book => (book.getKey -> book))
     write
   }
 
   // TODO: why would this return a Map?
-  def getBookFromShelf(bookToSearchFor:String):Map[String, Book] = books.filter( _.toString == bookToSearchFor).toMap
+  def getBookFromShelf(bookToSearchFor: String): Map[String, Book] = books.filter(_.toString == bookToSearchFor).toMap
 
-  def getBooksToRead: List[Book] = books.values.toList filter(_.status == Book.UNKNOWN)
+  def getBooksToRead: List[Book] = books.values.toList filter (_.status == Book.UNKNOWN)
 
-  def getAllBooks:List[Book]=books.values.toList
+  def getAllBooks: List[Book] = books.values.toList
 
-  def setStatusForBook(book:Book, newStatus:String):Unit = {
+  def setStatusForBook(book: Book, newStatus: String): Unit = {
     val newBook = book.setStatus(newStatus)
     books += (newBook.getKey -> newBook)
   }
 
-  def add(book:Book):Unit = books += (book.getKey -> book)
+  def add(book: Book): Unit = books += (book.getKey -> book)
 
-  def emptyShelf:Unit = books.retain((k,v) => false)
+  def emptyShelf: Unit = books.retain((k, v) => false)
 
-  def printAsWishList:String = getBooksToRead.sortWith(lessThanForWishList(_,_)) map (book => printBookToWishListItem(book)) mkString("\n")
+  def printAsWishList: String = getBooksToRead.sortWith(lessThanForWishList(_, _)) map (book => printBookToWishListItem(book)) mkString ("\n")
 
-  private def printBookToWishListItem(book: Book): String = book.author.lastName + ";" + book.author.firstName + ";"  + book.title
+  private def printBookToWishListItem(book: Book): String = book.author.lastName + ";" + book.author.firstName + ";" + book.title
 
-  def printAsHtml:String = { val bookTableRowsAsString = getBooksToRead.sortWith(lessThanForWishList(_,_)) map (book => printBookToHtmlTableItem(book)) mkString("\n")
+  def printAsHtml: String = {
+    val bookTableRowsAsString = getBooksToRead.sortWith(lessThanForWishList(_, _)) map (book => printBookToHtmlTableItem(book)) mkString ("\n")
     "<table>\n" + bookTableRowsAsString + "\n</table>"
   }
 
@@ -58,7 +61,7 @@ trait BookShelf {
 
   private def printBookToHtmlTableItem(book: Book): String = "<tr><td>" + book.author.lastName + "</td><td>" + book.author.firstName + "</td><td>" + book.title + "</td></tr>"
 
-  private def lessThanForWishList(firstBook:Book, secondBook:Book):Boolean = {
+  private def lessThanForWishList(firstBook: Book, secondBook: Book): Boolean = {
     val lastNameLessOrEqual = firstBook.author.lastName <= secondBook.author.lastName
     val lastNamesEqual = firstBook.author.lastName == secondBook.author.lastName
     if (lastNameLessOrEqual && lastNamesEqual) {
@@ -66,13 +69,13 @@ trait BookShelf {
     } else lastNameLessOrEqual
   }
 
-  protected[library] def getRandomizedListOfBooks:List[Book] = Random.shuffle(getBooksToRead)
+  protected[library] def getRandomizedListOfBooks: List[Book] = Random.shuffle(getBooksToRead)
 
-  def getRecommendations:List[Book] = recommendations.toList
+  def getRecommendations: List[Book] = recommendations.toList
 
   val recommendations = scala.collection.mutable.ListBuffer[Book]()
 
-  def storeRecommendations(newRecommendations:List[Book]):Unit = recommendations ++= newRecommendations
+  def storeRecommendations(newRecommendations: List[Book]): Unit = recommendations ++= newRecommendations
 
   def printRecommendationsAsJson: String = {
     val booksAsJSON = getRecommendations map (_.asJSONString)
@@ -81,28 +84,49 @@ trait BookShelf {
 
 }
 
-class FileBasedBookShelf(val storeFileName:String) extends BookShelf {
+class FileBasedBookShelf(val storeFileName: String) extends BookShelf {
 
-  override def read:Unit = {
+  override def read: Unit = {
     emptyShelf
     if (new File(storeFileName).exists)
       books.++(readFromFile(storeFileName))
   }
 
-  override def write:Unit = writeBooksToFile(storeFileName, books.values.toList)
+  override def write: Unit = writeBooksToFile(storeFileName, books.values.toList)
 
-  private def readFromFile(fileName:String):Map[String, Book] = {
+  private def readFromFile(fileName: String): Map[String, Book] = {
     emptyShelf
     val booksAsTextLines = fromFile(fileName).getLines()
 
-    books ++= booksAsTextLines map (book => {val b = Book(book); (b.getKey -> b) })
+    books ++= booksAsTextLines map (book => {
+      val b = Book(book); (b.getKey -> b)
+    })
     books.toMap
   }
 
-  private def writeBooksToFile(fileName:String, books:List[Book]):Unit = {
+  def readFromJSONFile(fileName: String): Map[String, Book] = {
+    emptyShelf
+    val booksAsText = fromFile(fileName).mkString
+
+    val booksFromFile = for {
+      Some(M(map)) <- List(JSON.parseFull(booksAsText))
+      L(bookList) = map("books")
+      book <- bookList
+      myBook = Book.createFromParsedJSON(List(book))
+    } yield myBook
+    books ++= booksFromFile.map(book => book.getKey -> book)
+
+    books.toMap
+  }
+
+  private def writeBooksToFile(fileName: String, books: List[Book]): Unit = {
     def printToFile(f: java.io.File)(op: java.io.PrintWriter => Unit) {
       val p = new java.io.PrintWriter(f)
-      try { op(p) } finally { p.close() }
+      try {
+        op(p)
+      } finally {
+        p.close()
+      }
     }
 
     printToFile(new File(fileName))(line => {

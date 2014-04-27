@@ -9,7 +9,7 @@ import java.io.File
 import com.library.service.LogHelper
 
 @RunWith(classOf[JUnitRunner])
-class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers with TestFixtures with LogHelper{
+class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers with TestFixtures with LogHelper {
 
   feature("The bookshelf shows all books by authors I'm interested in. It also says whether I've read, won't read or haven't read them yet") {
     info("As a family member")
@@ -145,7 +145,7 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
     val actualShoppingListAsJSON = bookShelf.printAsJson
     Then("a valid JSON document is returned")
     // TODO: find a better test
-    actualShoppingListAsJSON.indexOf("""{"books" : [{""") must be === 0
+    actualShoppingListAsJSON.indexOf( """{"books" : [{""") must be === 0
     //    expectedShoppingListAsJSON must be === actualShoppingListAsJSON
   }
 
@@ -156,7 +156,7 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
     val actualShoppingListAsJSON = bookShelf.printAsJson
     Then("a valid JSON document is returned")
     // TODO: find a better test
-    actualShoppingListAsJSON.indexOf(""""link" : """) must be > 0
+    actualShoppingListAsJSON.indexOf( """"link" : """) must be > 0
     //    expectedShoppingListAsJSON must be === actualShoppingListAsJSON
   }
 
@@ -171,20 +171,13 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
     books1(2) must not equal books2(2)
   }
 
-  val expectedShoppingListAsJSON =
-    """[{"author" : {"firstName" : "first",
-      |"lastName" : "lastnameA"}
-      |, "title" : "book2"
-      |},
-      |{"author" : {"firstName" : "first",
-      |"lastName" : "lastnameA"}
-      |, "title" : "book3"
-      |},
-      |{"author" : {"firstName" : "first",
-      |"lastName" : "lastnameB"}
-      |, "title" : "book1"
-      |}]
-      |
-    """.stripMargin
+  scenario("A list of books can be read from a JSON string") {
+    Given("A list of books as a JSON string")
+    val jsonFile = "data/test/jsonFileForTestInBookShelfTest.json"
+    When("The list is loaded by a BookShelf")
+    val bookShelf = new FileBasedBookShelf("data/test/dummy.json").readFromJSONFile(jsonFile)
+    Then("The resulting bookshelf contains 3 books")
+    3 must be === bookShelf.size
+  }
 
 }
