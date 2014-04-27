@@ -9,7 +9,7 @@ case class Book(author: Author, title: String, status: String = Book.UNKNOWN, li
 
   override def toString = getKey + ";" + status
 
-  def setStatus(newStatus: String): Book = new Book(author, title, newStatus)
+  def setStatus(newStatus: String): Book = new Book(author, title, newStatus, link)
 
   override def equals(o: Any): Boolean = {
     val other = o.asInstanceOf[Book]
