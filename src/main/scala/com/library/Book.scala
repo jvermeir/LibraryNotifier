@@ -26,8 +26,15 @@ case class Book(author: Author, title: String, status: String = Book.UNKNOWN, li
   lazy val available = isAvailable
 
   private def isAvailable: Boolean = Config.libraryClient.isBookAvailable(this)
-
 }
+
+class CC[T] { def unapply(a:Any):Option[T] = Some(a.asInstanceOf[T]) }
+
+object M extends CC[Map[String, Any]]
+object L extends CC[List[Any]]
+object S extends CC[String]
+object D extends CC[Double]
+object B extends CC[Boolean]
 
 object Book {
   // TODO: this should be some type
@@ -43,7 +50,19 @@ object Book {
 
   // Temporary to help refactoring
   def createFromJSONString(bookAsString: String): Book = {
-    val book = JSON.parseFull(bookAsString) match {
+    val book = for {
+      Some(M(map)) <- List(JSON.parseFull(bookAsString))
+      M(book) = map
+      M(authorMap) = book("author")
+      S(firstName) = authorMap("firstName")
+      S(lastName) = authorMap("lastName")
+      S(title) = book("title")
+      S(status) = book("status")
+      S(link) = book("link")
+    } yield (Book(Author(firstName,lastName), title, status, link))
+
+
+    val book2 = JSON.parseFull(bookAsString) match {
       case Some(x) => {
         val m = x.asInstanceOf[Map[String, Any]]
         val a = m("author").asInstanceOf[Map[String, String]]
@@ -56,7 +75,7 @@ object Book {
       }
       case None => DummyBook
     }
-    book
+    book(0)
   }
 }
 
