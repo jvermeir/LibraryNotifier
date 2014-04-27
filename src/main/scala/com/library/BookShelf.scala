@@ -1,7 +1,7 @@
 package com.library
 
 import scala.io.Source._
-import java.io.File
+import java.io.{PrintWriter, File}
 import scala.util.parsing.json.{JSON, JSONFormat, JSONArray, JSONObject}
 import scala.language.postfixOps
 import scala.util.Random
@@ -117,6 +117,13 @@ class FileBasedBookShelf(val storeFileName: String) extends BookShelf {
     books ++= booksFromFile.map(book => book.getKey -> book)
 
     books.toMap
+  }
+
+  def writeBooksToFile(fileName:String):Unit = {
+    val printWriter = new PrintWriter( new File(fileName))
+    try {
+      printWriter.print(printAsJson)
+    } finally printWriter.close
   }
 
   private def writeBooksToFile(fileName: String, books: List[Book]): Unit = {
