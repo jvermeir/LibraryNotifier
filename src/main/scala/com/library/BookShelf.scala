@@ -90,12 +90,6 @@ trait BookShelf extends LogHelper {
 class FileBasedBookShelf(val storeFileName: String) extends BookShelf {
 
   override def read: Unit = {
-    readFromJSONFile
-  }
-
-  override def write: Unit = writeBooksToFile
-
-  def readFromJSONFile: Map[String, Book] = {
     emptyShelf
     val booksAsText = fromFile(storeFileName).mkString
 
@@ -110,7 +104,7 @@ class FileBasedBookShelf(val storeFileName: String) extends BookShelf {
     books.toMap
   }
 
-  def writeBooksToFile: Unit = {
+  override def write: Unit = {
     val printWriter = new PrintWriter(new File(storeFileName))
     try {
       printWriter.print(printAsJson)

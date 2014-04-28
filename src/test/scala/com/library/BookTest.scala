@@ -26,7 +26,7 @@ class BookTest extends FeatureSpec with GivenWhenThen with MustMatchers with Tes
           |}
         """.stripMargin
       When("The JSON string is used to create a Book")
-      val book = Book.createFromJSONString(jsonBook)
+      val book = Book(jsonBook)
       Then("We get a book with title 'book2' and link 'mylink'")
       val expectedBook = Book(Author("first", "lastnameA"), "book2", Book.UNKNOWN, "mylink")
       expectedBook must be === book

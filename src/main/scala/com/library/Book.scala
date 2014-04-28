@@ -45,12 +45,7 @@ object Book {
   val READ = "read"
   val WONT_READ = "wontRead"
 
-  def apply(bookAsJSONString: String): Book = createFromJSONString(bookAsJSONString)
-
-  // Temporary to help refactoring
-  def createFromJSONString(bookAsString: String): Book = {
-    createFromParsedJSON(List(JSON.parseFull(bookAsString).get))
-  }
+  def apply(bookAsJSONString: String): Book = createFromParsedJSON(List(JSON.parseFull(bookAsJSONString).get))
 
   def createFromParsedJSON(jsonObject:List[Any]): Book = {
     val book = for {
