@@ -85,6 +85,13 @@ trait BookShelf extends LogHelper {
     "{\"books\" : [{" + booksAsJSON.mkString("},\n{") + "}]}"
   }
 
+  def getBooksFromJSON(booksAsText:String):List[Book] =
+    for {
+      Some(M(map)) <- List(JSON.parseFull(booksAsText))
+      L(bookList) = map("books")
+      book <- bookList
+      myBook = Book.createFromParsedJSON(List(book))
+    } yield myBook
 }
 
 class FileBasedBookShelf(val storeFileName: String) extends BookShelf {
@@ -92,15 +99,8 @@ class FileBasedBookShelf(val storeFileName: String) extends BookShelf {
   override def read: Unit = {
     emptyShelf
     val booksAsText = fromFile(storeFileName).mkString
-
-    val booksFromFile = for {
-      Some(M(map)) <- List(JSON.parseFull(booksAsText))
-      L(bookList) = map("books")
-      book <- bookList
-      myBook = Book.createFromParsedJSON(List(book))
-    } yield myBook
+    val booksFromFile = getBooksFromJSON(booksAsText)
     books ++= booksFromFile.map(book => book.getKey -> book)
-
     books.toMap
   }
 
