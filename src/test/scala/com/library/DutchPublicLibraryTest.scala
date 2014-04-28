@@ -15,6 +15,15 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
   
   val neilGaiman = Author("Gaiman, Neil")
   val alastairReynolds = Author("Reynolds, Alastair")
+  val singleBookAuthor =
+    """{"author" : {"firstName" : "Alastair",
+      |"lastName" : "Reynolds"}
+      |, "title" : "Terminal world"
+      |, "status" : "unknown"
+      |, "link" : "mylink"
+      |}
+    """.stripMargin
+
 
   feature("The HTTP client finds books written by a list of authors and reports on their availability") {
     info("As a family member")
@@ -27,7 +36,7 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
       When("We get his books from the library")
       val books = getBooksByAuthor(author)
       Then("Terminal world is returned as the only result")
-      val terminalWorld = Book("Reynolds;Alastair;Terminal world")
+      val terminalWorld = Book(singleBookAuthor)
       List(terminalWorld) must be === books
     }
 

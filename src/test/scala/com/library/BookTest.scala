@@ -31,5 +31,25 @@ class BookTest extends FeatureSpec with GivenWhenThen with MustMatchers with Tes
       val expectedBook = Book(Author("first", "lastnameA"), "book2", Book.UNKNOWN, "mylink")
       expectedBook must be === book
     }
+
+    scenario("A book can be created with a 'read' status") {
+      Given("A book created with status 'read'")
+      val book = new Book(new Author("first", "last", ""), "book", Book.READ)
+      When("we read it's status")
+      val status = book.status
+      Then("the result is 'read'")
+      "read" must be === status
+    }
+
+    scenario("Changing a books status results in a new instance") {
+      Given("A bool with status 'read'")
+      val book = new Book(new Author("first", "last", ""), "book", Book.READ)
+      When("we change it's status to 'unknown'")
+      val updatedBook:Book = book.setStatus(Book.UNKNOWN)
+      Then("the old book instance has status 'read' and the new book instance has status 'unknown'")
+      Book.READ must be === book.status
+      Book.UNKNOWN must be === updatedBook.status
+    }
+
   }
 }

@@ -45,11 +45,7 @@ object Book {
   val READ = "read"
   val WONT_READ = "wontRead"
 
-  def apply(bookAsString: String): Book = {
-    val parts: Array[String] = bookAsString.split(";") map (part => part.trim)
-    val status = if (parts.length > 3) parts(3) else UNKNOWN
-    Book(new Author(firstName = parts(1), lastName = parts(0), ""), parts(2), status)
-  }
+  def apply(bookAsJSONString: String): Book = createFromJSONString(bookAsJSONString)
 
   // Temporary to help refactoring
   def createFromJSONString(bookAsString: String): Book = {
