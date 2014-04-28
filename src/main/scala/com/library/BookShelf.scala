@@ -2,15 +2,16 @@ package com.library
 
 import scala.io.Source._
 import java.io.{PrintWriter, File}
-import scala.util.parsing.json.{JSON, JSONFormat, JSONArray, JSONObject}
+import scala.util.parsing.json.JSON
 import scala.language.postfixOps
 import scala.util.Random
+import com.library.service.LogHelper
 
 /**
  * A Book shelf contains books I've read or haven't read yet.
  */
 
-trait BookShelf {
+trait BookShelf extends LogHelper {
   def shouldReload: Boolean = !new File("dontReload").exists
 
   protected[library] lazy val books = scala.collection.mutable.Map[String, Book]()
@@ -56,7 +57,9 @@ trait BookShelf {
   def printAsJson: String = {
     val sortedBooks = getBooksToRead.sortWith(lessThanForWishList(_, _))
     val booksAsJSON = sortedBooks map (_.asJSONString)
-    "{\"books\" : [{" + booksAsJSON.mkString("},\n{") + "}]}"
+    val result = "{\"books\" : [{" + booksAsJSON.mkString("},\n{") + "}]}"
+    logger.debug("return: " + result)
+    result
   }
 
   private def printBookToHtmlTableItem(book: Book): String = "<tr><td>" + book.author.lastName + "</td><td>" + book.author.firstName + "</td><td>" + book.title + "</td></tr>"
@@ -87,27 +90,10 @@ trait BookShelf {
 class FileBasedBookShelf(val storeFileName: String) extends BookShelf {
 
   override def read: Unit = {
-    // TODO: remove this patch if we've moved to JSON
-    if (storeFileName.endsWith("json")) {
-       readFromJSONFile
-    } else {
-      emptyShelf
-      if (new File(storeFileName).exists)
-        books.++(readFromFile(storeFileName))
-    }
+    readFromJSONFile
   }
 
-  override def write: Unit = writeBooksToFile(storeFileName, books.values.toList)
-
-  private def readFromFile(fileName: String): Map[String, Book] = {
-    emptyShelf
-    val booksAsTextLines = fromFile(fileName).getLines()
-
-    books ++= booksAsTextLines map (book => {
-      val b = Book(book); (b.getKey -> b)
-    })
-    books.toMap
-  }
+  override def write: Unit = writeBooksToFile
 
   def readFromJSONFile: Map[String, Book] = {
     emptyShelf
@@ -124,26 +110,11 @@ class FileBasedBookShelf(val storeFileName: String) extends BookShelf {
     books.toMap
   }
 
-  def writeBooksToFile:Unit = {
-    val printWriter = new PrintWriter( new File(storeFileName))
+  def writeBooksToFile: Unit = {
+    val printWriter = new PrintWriter(new File(storeFileName))
     try {
       printWriter.print(printAsJson)
     } finally printWriter.close
   }
 
-  private def writeBooksToFile(fileName: String, books: List[Book]): Unit = {
-    def printToFile(f: java.io.File)(op: java.io.PrintWriter => Unit) {
-      val p = new java.io.PrintWriter(f)
-      try {
-        op(p)
-      } finally {
-        p.close()
-      }
-    }
-
-    printToFile(new File(fileName))(line => {
-      val sortedBooks = books.sortBy(_.toString)
-      sortedBooks.foreach(line.println)
-    })
-  }
 }

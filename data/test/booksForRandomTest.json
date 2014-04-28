@@ -1,0 +1,1740 @@
+{"books" : [{"author" : {"firstName" : "Gauke",
+"lastName" : "Andriesse"}
+, "title" : "De dode opdrachtgever", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Gauke",
+"lastName" : "Andriesse"}
+, "title" : "De handen van Kalman Teller", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Gauke",
+"lastName" : "Andriesse"}
+, "title" : "De verdwenen schilderijen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Gauke",
+"lastName" : "Andriesse"}
+, "title" : "Stilzwijgen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood"}
+, "title" : "Brave new world", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood"}
+, "title" : "Cat's eye", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood"}
+, "title" : "Dansende meisjes", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood"}
+, "title" : "De blinde huurmoordenaar", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood"}
+, "title" : "De tent", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood"}
+, "title" : "Het jaar van de vloed", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood"}
+, "title" : "Het verhaal van de dienstmaagd", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood"}
+, "title" : "Het was een donkere en stormachtige nacht", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood"}
+, "title" : "MaddAddam", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood"}
+, "title" : "Moreel verval", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood"}
+, "title" : "Penelope : de mythe van de vrouw van Odysseus", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood"}
+, "title" : "The handmaid's tale. - Oorspr. uitg.: London : Cape, 1986.", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood"}
+, "title" : "The tent", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood"}
+, "title" : "The year of the flood", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "De aanslag", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "De laatste man", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "De provocatie", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "De rechtvaardigen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "De samenzwering", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Doelwit", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Duister lot", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Familieverraad", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "First family", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Freddie en de frietvrienden : lang leve de Frieten!", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Geen rust voor de doden : een roman van Jeff Abbott ... Marcia Talley", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Geniaal geheim", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Hell's corner", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Het recht van de macht", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Hour game", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "In het geheim", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "In het hart", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Last man standing", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Nachtreizigers", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Nachtwerk", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Niets dan de waarheid", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Onbewaakt ogenblik", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "One summer", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Onschuldig", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Onschuldig. - 1", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Onschuldig. - 2", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Op eigen gezag", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Rechteloos", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Saving faith", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "The Camel Club", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "The Christmas train", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "The collectors", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "The forgotten", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "The hit", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "The innocent", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Kim",
+"lastName" : "Baldwin"}
+, "title" : "Dubbel doelwit : thriller", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Kim",
+"lastName" : "Baldwin"}
+, "title" : "Explosieve erfenis : thriller", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Kim",
+"lastName" : "Baldwin"}
+, "title" : "Ontmaskerd : thriller", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Jim G.",
+"lastName" : "Ballard"}
+, "title" : "Empire of the sun", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Jim G.",
+"lastName" : "Ballard"}
+, "title" : "Millenniummensen : roman", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Jim G.",
+"lastName" : "Ballard"}
+, "title" : "Super-Cannes : roman", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Linwood",
+"lastName" : "Barclay"}
+, "title" : "Dicht bij huis", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Linwood",
+"lastName" : "Barclay"}
+, "title" : "Fear the worst", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Linwood",
+"lastName" : "Barclay"}
+, "title" : "Geloof je ogen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Linwood",
+"lastName" : "Barclay"}
+, "title" : "Never saw it coming", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Linwood",
+"lastName" : "Barclay"}
+, "title" : "No time for goodbye", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Linwood",
+"lastName" : "Barclay"}
+, "title" : "Too close to home", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Linwood",
+"lastName" : "Barclay"}
+, "title" : "Vrees het ergste", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Linwood",
+"lastName" : "Barclay"}
+, "title" : "Zonder een woord", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Alex",
+"lastName" : "Berenson"}
+, "title" : "De betrouwbare terrorist", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Alex",
+"lastName" : "Berenson"}
+, "title" : "Het Beijing complot", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Blijf dichtbij", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Caught", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Darkest fear", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "De onschuldigen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Dood spel", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Eens beloofd", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Foute boel!", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Geen tweede kans", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Geleende tijd", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Genezing", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Gone for good", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Hold tight", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Houvast", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Ik mis je", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Just one look", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Klein detail", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Laatste kans", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Levenslijn", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Long lost", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Miracle cure", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Momentopname", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "No second chance", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Nu of nooit", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Ontwricht", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Play dead", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Schaduwleven", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Schijnbeweging", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Schuilplaats", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Six years", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Spoorloos", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Stay close", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "The innocent", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "The woods", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Vals spel", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Verloren", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Vermist", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Verzoeking", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Zes jaar", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Betonblond", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Betonblond. - 1", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Betonblond. - 2", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Blind vertrouwen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Bloedbeeld", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Chasing the dime : a novel", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "City of bones", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "De Lincoln-advocaat", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "De Lincoln-advocaat. - Bd. 1", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "De Lincoln-advocaat. - Bd. 2", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "De dichter", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "De herziening", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "De jacht", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "De val", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "De zwarte doos", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Donkerder dan de nacht", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Echo Park", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Het laatste oordeel", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Het laatste oordeel [Bd. 1]. - Bd. 1", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Het laatste oordeel [Bd. 2]. - Bd. 2", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Het recht om te zwijgen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Lost light", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Maanstand", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Nine dragons", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Ongrijpbaar", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Ongrijpbaar [Bd. 1]. - Bd. 1", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Ongrijpbaar [Bd. 2]. - Bd. 2", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Slotakkoord", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Spoordood", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Stad van beenderen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Stroomversnelling", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "The Closers", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "The Lincoln lawyer", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "The black box", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "The brass verdict", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "The drop", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "The fifth witness", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "The gods of guilt", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "The last coyote", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "The overlook", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "The reversal", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "The scarecrow", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Tunnelrat", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Tweede leven", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Tweede leven [Bd. 1]. - Bd. 1", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Tweede leven [Bd. 2]. - Bd. 2", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Connelly"}
+, "title" : "Verloren licht", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Douglas",
+"lastName" : "Coupland"}
+, "title" : "Eleanor Rigby", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Douglas",
+"lastName" : "Coupland"}
+, "title" : "Generatie A : roman", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Douglas",
+"lastName" : "Coupland"}
+, "title" : "Generatie X : vertellingen voor een versnelde cultuur : roman", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Douglas",
+"lastName" : "Coupland"}
+, "title" : "He Nostradamus! : roman", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles",
+"lastName" : "Cumming"}
+, "title" : "A spy by nature", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles",
+"lastName" : "Cumming"}
+, "title" : "The Trinity Six", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles",
+"lastName" : "Cumming"}
+, "title" : "Typhoon", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "warren",
+"lastName" : "Ellis"}
+, "title" : "RED", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "warren",
+"lastName" : "Ellis"}
+, "title" : "RED 2", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Allan",
+"lastName" : "Folsom"}
+, "title" : "Dag van bekentenis", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Allan",
+"lastName" : "Folsom"}
+, "title" : "Dag van de samenzwering", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Allan",
+"lastName" : "Folsom"}
+, "title" : "Dag van ontmaskering", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Allan",
+"lastName" : "Folsom"}
+, "title" : "Dag van vergelding", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Allan",
+"lastName" : "Folsom"}
+, "title" : "De dag na morgen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Allan",
+"lastName" : "Folsom"}
+, "title" : "The Hadrian Memorandum", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Allan",
+"lastName" : "Folsom"}
+, "title" : "The Hadrian memorandum", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Allan",
+"lastName" : "Folsom"}
+, "title" : "The exile", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Neil",
+"lastName" : "Gaiman"}
+, "title" : "Coraline", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Neil",
+"lastName" : "Gaiman"}
+, "title" : "De oceaan aan het einde van het pad", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Neil",
+"lastName" : "Gaiman"}
+, "title" : "Hoge omens : de oprechte en secure voorspellingen van Agnes Nutter, een heks : een roman", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Neil",
+"lastName" : "Gaiman"}
+, "title" : "Neverwhere : a novel", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Neil",
+"lastName" : "Gaiman"}
+, "title" : "Spiegels en rook", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Neil",
+"lastName" : "Gaiman"}
+, "title" : "Stardust", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Neil",
+"lastName" : "Gaiman"}
+, "title" : "Ster", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "William",
+"lastName" : "Gibson"}
+, "title" : "Beeld voor beeld", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "William",
+"lastName" : "Gibson"}
+, "title" : "Het stalker syndroom", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Andrew",
+"lastName" : "Gross"}
+, "title" : "3rd degree", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Andrew",
+"lastName" : "Gross"}
+, "title" : "Code blauw", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Andrew",
+"lastName" : "Gross"}
+, "title" : "Dodelijke gok", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Andrew",
+"lastName" : "Gross"}
+, "title" : "Don't look twice", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Andrew",
+"lastName" : "Gross"}
+, "title" : "Killing hour", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Andrew",
+"lastName" : "Gross"}
+, "title" : "Lifeguard", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Andrew",
+"lastName" : "Gross"}
+, "title" : "Reckless", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Andrew",
+"lastName" : "Gross"}
+, "title" : "Roekeloos", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Andrew",
+"lastName" : "Gross"}
+, "title" : "The blue zone", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Andrew",
+"lastName" : "Gross"}
+, "title" : "Valse lading", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Paul",
+"lastName" : "Harland"}
+, "title" : "Computercode Cthulhu", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tom",
+"lastName" : "Harper"}
+, "title" : "De verloren tempel", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tom",
+"lastName" : "Harper"}
+, "title" : "Erfgename van de graal", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tom",
+"lastName" : "Harper"}
+, "title" : "The Lazarus vault", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tom",
+"lastName" : "Harper"}
+, "title" : "The book of secrets", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "robert",
+"lastName" : "Harris"}
+, "title" : "An officer and a spy", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "robert",
+"lastName" : "Harris"}
+, "title" : "De angst-index", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "robert",
+"lastName" : "Harris"}
+, "title" : "Enigma", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "robert",
+"lastName" : "Harris"}
+, "title" : "Geest", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "robert",
+"lastName" : "Harris"}
+, "title" : "Imperium", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "robert",
+"lastName" : "Harris"}
+, "title" : "Lustrum", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "robert",
+"lastName" : "Harris"}
+, "title" : "Pompeii", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "robert",
+"lastName" : "Harris"}
+, "title" : "The ghost", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Gregg",
+"lastName" : "Hurwitz"}
+, "title" : "Dan sterft ze", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Gregg",
+"lastName" : "Hurwitz"}
+, "title" : "De misdaadschrijver", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Gregg",
+"lastName" : "Hurwitz"}
+, "title" : "They're watching", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Gregg",
+"lastName" : "Hurwitz"}
+, "title" : "We know", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "roel",
+"lastName" : "Jansen"}
+, "title" : "De essentie van tai chi : basisoefeningen voor een bewuster leven", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Guy Gavriel",
+"lastName" : "Kay"}
+, "title" : "Ysabel", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "jens",
+"lastName" : "Lapidus"}
+, "title" : "Bloedlink", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "jens",
+"lastName" : "Lapidus"}
+, "title" : "Snel geld", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "jens",
+"lastName" : "Lapidus"}
+, "title" : "Stockholm Zuid", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "jens",
+"lastName" : "Lapidus"}
+, "title" : "Val dood", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Glenn",
+"lastName" : "Meade"}
+, "title" : "As van het kwaad", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Glenn",
+"lastName" : "Meade"}
+, "title" : "Constantine, discipel van de duivel", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Glenn",
+"lastName" : "Meade"}
+, "title" : "De tweede messias : thriller", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Glenn",
+"lastName" : "Meade"}
+, "title" : "Het Romanov mysterie : thriller", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Glenn",
+"lastName" : "Meade"}
+, "title" : "IJselijk web", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Glenn",
+"lastName" : "Meade"}
+, "title" : "The devil's disciple", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Brad",
+"lastName" : "Meltzer"}
+, "title" : "De 10de rechter", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Brad",
+"lastName" : "Meltzer"}
+, "title" : "De eerste raadsman", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Brad",
+"lastName" : "Meltzer"}
+, "title" : "De miljonairs", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Brad",
+"lastName" : "Meltzer"}
+, "title" : "De wetgevers", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Brad",
+"lastName" : "Meltzer"}
+, "title" : "Het Boek der Leugens", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Brad",
+"lastName" : "Meltzer"}
+, "title" : "Moordzaak", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Brad",
+"lastName" : "Meltzer"}
+, "title" : "The inner circle", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "China",
+"lastName" : "Mieville"}
+, "title" : "Armada", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Bennie",
+"lastName" : "Mols"}
+, "title" : "Doos van licht, lucht en liefde : Yotta en Yocto op zoek naar de bouwstenen van onze wereld", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Bennie",
+"lastName" : "Mols"}
+, "title" : "Turings tango : waarom de mens de computer de baas blijft", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "10th anniversary", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "11th hour", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "12th of never", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "1st to die", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "3rd degree", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "3x liefde...", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "4th of July", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "7th heaven", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "9th judgement", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Achtste bekentenis", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Alex Cross", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Alex Cross, run", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Alex Cross-omnibus", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Beach Road", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Beach Road : a novel", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Belofte maakt schuld", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Bikini", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Cross", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Cross country", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Cross fire", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "De affaire", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "De derde aanslag", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "De eerstverlorene", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "De gave", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "De midnight club", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Don't blink", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Double Cross", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Een hart van glas", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Erewoord, Alex Cross", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Guilty wives", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Heksenjacht", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Het elfde uur", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Hitte", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Hittegolf", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Honeymoon", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "I, Alex Cross", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Ik, Alex Cross", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "In de naam van de vader", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "In naam van de vader", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Je bent gewaarschuwd", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Kat en muis", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Kill Alex Cross", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Kill me if you can", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Lifeguard", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "London bridges", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Mary, Mary", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Meisjes plagen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Mistress", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "The 5th horseman", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "The 6th target", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "The Christmas wedding", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "The beach house", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson"}
+, "title" : "Thriller : verhalen die je uit je slaap houden", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "A blink of the screen : collected short fiction", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Academische boys", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Bam!", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Berevaar", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Dat wonderbare licht", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "De dief van tijd", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "De kleur van toverij", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "De vijfde olifant", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "De vrijgemaakte Ortjes", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Dunne Hein", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Een hoed van lucht", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Geld moet wapperen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Heksen in de lucht", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Het jongste werelddeel", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Hoge omens : de oprechte en secure voorspellingen van Agnes Nutter, een heks : een roman", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Hogfather", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Houzee!", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Ik ga in middernacht", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Interessante tijden", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Kleingoderij", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Lemen voeten", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Maaierstijd", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Meidezeggenschap", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Mirakelse Maurits en zijn gestudeerde knaagdieren", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Monsterlijk regiment", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Pluk de strot", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Posterijen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Pyramides : (Het boek van Derwaarts Gaan)", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Rollende prenten", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Schijfwereld-omnibus", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Snuif", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Te wapen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "The Bromeliad", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "The colour of magic", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "The long earth", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Volk", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Wacht! Wacht!", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Wintersmid", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
+, "title" : "Zieltonen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Douglas",
+"lastName" : "Preston"}
+, "title" : "De gruwelkamer", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Douglas",
+"lastName" : "Preston"}
+, "title" : "De vloek van het oerwoud", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Douglas",
+"lastName" : "Preston"}
+, "title" : "Goddeloos", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Douglas",
+"lastName" : "Preston"}
+, "title" : "IJsgrens", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Douglas",
+"lastName" : "Preston"}
+, "title" : "Virus", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Robotham"}
+, "title" : "Bleed for me", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Robotham"}
+, "title" : "Boetedoening", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Robotham"}
+, "title" : "Bombproof", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Robotham"}
+, "title" : "De afrekening", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Robotham"}
+, "title" : "De verdenking", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Robotham"}
+, "title" : "Door mijn ogen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Robotham"}
+, "title" : "Gebroken", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Robotham"}
+, "title" : "Het verlies", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Robotham"}
+, "title" : "Nachtboot", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Robotham"}
+, "title" : "The wreckage", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Robotham"}
+, "title" : "Vuurvast", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Robotham"}
+, "title" : "Zeg dat het je spijt", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Babyface : King en de moordtransfer : thriller", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Beestachtig : dieren in de misdaadliteratuur", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Blue Curacao : King en de vrouw die twee keer leefde : thriller", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Caribisch complot", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "De Nachtwaker : het koningscomplot", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "De beste spannende verhalen uit Nederland en Vlaanderen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "De klokkenluider", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "De man van Sint Maarten", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "De schuilkelder", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "De tweede november : wie zat er achter de moord op Theo van Gogh?", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "De tweede verlosser", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "De vlucht van de 4de oktober : thriller", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "De vrouw die op Greta Garbo leek", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Denkend aan Holland", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Doelwit Den Haag", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Doorgeladen : twintig jaar Gouden Strop", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Het meisje uit Buenos Aires", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Kidnap", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Mathilde", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Omnibus", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Onze vrouw in Tripoli", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Plaats delict", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Frank",
+"lastName" : "Schätzing"}
+, "title" : "De dood en de duivel", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Daron",
+"lastName" : "Sheehan"}
+, "title" : "Het Socrates project", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Dan",
+"lastName" : "Simmons"}
+, "title" : "Drood", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Dan",
+"lastName" : "Simmons"}
+, "title" : "Lood", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Dan",
+"lastName" : "Simmons"}
+, "title" : "Moedwil", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Dan",
+"lastName" : "Simmons"}
+, "title" : "The abominable", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Dan",
+"lastName" : "Simmons"}
+, "title" : "The terror : a novel", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Rudy",
+"lastName" : "Soetewey"}
+, "title" : "De laatste reis", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Rudy",
+"lastName" : "Soetewey"}
+, "title" : "Getuigen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Rudy",
+"lastName" : "Soetewey"}
+, "title" : "Moord", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Rudy",
+"lastName" : "Soetewey"}
+, "title" : "Vrienden", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Daniel",
+"lastName" : "Suarez"}
+, "title" : "Daemon", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles den",
+"lastName" : "Tex"}
+, "title" : "' Ik ben koopman' : kroniek van de familie Fentener van Vlissingen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles den",
+"lastName" : "Tex"}
+, "title" : "Angstval", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles den",
+"lastName" : "Tex"}
+, "title" : "De erfgenaam", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles den",
+"lastName" : "Tex"}
+, "title" : "Onmacht", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles den",
+"lastName" : "Tex"}
+, "title" : "Wachtwoord", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Thomas",
+"lastName" : "Thiemeyer"}
+, "title" : "Nebra", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Dustin",
+"lastName" : "Thomason"}
+, "title" : "21-12", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Dustin",
+"lastName" : "Thomason"}
+, "title" : "Een Venetiaans geheim", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Simon",
+"lastName" : "Toyne"}
+, "title" : "The key", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Simon",
+"lastName" : "Toyne"}
+, "title" : "The tower", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Jack",
+"lastName" : "Vance"}
+, "title" : "De lokkende verte", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Jack",
+"lastName" : "Vance"}
+, "title" : "De wereldbedenker", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Jack",
+"lastName" : "Vance"}
+, "title" : "De wilde vaart", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Jack",
+"lastName" : "Vance"}
+, "title" : "Emphyrio", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Jack",
+"lastName" : "Vance"}
+, "title" : "Het laatste kasteel", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Jack",
+"lastName" : "Vance"}
+, "title" : "Spelevaren op Grote Planeet", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Herman",
+"lastName" : "Vemde"}
+, "title" : "Basuko", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Herman",
+"lastName" : "Vemde"}
+, "title" : "Dame Blanche : thriller", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Herman",
+"lastName" : "Vemde"}
+, "title" : "Dossier Trapani : thriller", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Herman",
+"lastName" : "Vemde"}
+, "title" : "Harry's dubbelspel : thriller", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Herman",
+"lastName" : "Vemde"}
+, "title" : "Oranjebom", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Herman",
+"lastName" : "Vemde"}
+, "title" : "Sarin", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Karen Thompson",
+"lastName" : "Walker"}
+, "title" : "Wij waren hier", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "christiaan",
+"lastName" : "Weijts"}
+, "title" : "Art. 285b : roman", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "christiaan",
+"lastName" : "Weijts"}
+, "title" : "De donkere kamer van Damokles", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "christiaan",
+"lastName" : "Weijts"}
+, "title" : "De etaleur : dansnovelle", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "christiaan",
+"lastName" : "Weijts"}
+, "title" : "Euforie : roman", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "christiaan",
+"lastName" : "Weijts"}
+, "title" : "Via Cappello 23 : roman", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tommy",
+"lastName" : "Wieringa"}
+, "title" : "Alles over Tristan", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tommy",
+"lastName" : "Wieringa"}
+, "title" : "Alles over Tristan : roman", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tommy",
+"lastName" : "Wieringa"}
+, "title" : "Caesarion", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tommy",
+"lastName" : "Wieringa"}
+, "title" : "Caesarion : roman", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tommy",
+"lastName" : "Wieringa"}
+, "title" : "De grens", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tommy",
+"lastName" : "Wieringa"}
+, "title" : "Dit zijn de namen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tommy",
+"lastName" : "Wieringa"}
+, "title" : "Dit zijn de namen : roman", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tommy",
+"lastName" : "Wieringa"}
+, "title" : "Een mooie jonge vrouw", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tommy",
+"lastName" : "Wieringa"}
+, "title" : "Ga niet naar zee", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tommy",
+"lastName" : "Wieringa"}
+, "title" : "Ik was nooit in Isfahaan : reisverhalen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tommy",
+"lastName" : "Wieringa"}
+, "title" : "Joe Speedboat", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tommy",
+"lastName" : "Wieringa"}
+, "title" : "Joe Speedboot", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tommy",
+"lastName" : "Wieringa"}
+, "title" : "Joe Speedboot : roman", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tommy",
+"lastName" : "Wieringa"}
+, "title" : "Joe speedboot : roman", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tommy",
+"lastName" : "Wieringa"}
+, "title" : "Omdat wij vrienden zijn : verhalen over vriendschap", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tommy",
+"lastName" : "Wieringa"}
+, "title" : "Onderweg", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "linwood",
+"lastName" : "barclay"}
+, "title" : "Dicht bij huis", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "linwood",
+"lastName" : "barclay"}
+, "title" : "Fear the worst", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "linwood",
+"lastName" : "barclay"}
+, "title" : "Geloof je ogen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "linwood",
+"lastName" : "barclay"}
+, "title" : "Kijk niet weg", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "linwood",
+"lastName" : "barclay"}
+, "title" : "Never look away", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "linwood",
+"lastName" : "barclay"}
+, "title" : "Never saw it coming", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "linwood",
+"lastName" : "barclay"}
+, "title" : "No time for goodbye", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "linwood",
+"lastName" : "barclay"}
+, "title" : "Stone rain", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "linwood",
+"lastName" : "barclay"}
+, "title" : "Too close to home", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "linwood",
+"lastName" : "barclay"}
+, "title" : "Trust your eyes", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "linwood",
+"lastName" : "barclay"}
+, "title" : "Vrees het ergste", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "linwood",
+"lastName" : "barclay"}
+, "title" : "Zonder een woord", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "cory",
+"lastName" : "doctorow"}
+, "title" : "Little Brother", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Glenn",
+"lastName" : "meade"}
+, "title" : "As van het kwaad", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Glenn",
+"lastName" : "meade"}
+, "title" : "Constantine, discipel van de duivel", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Glenn",
+"lastName" : "meade"}
+, "title" : "De tweede messias : thriller", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Glenn",
+"lastName" : "meade"}
+, "title" : "Het Romanov mysterie : thriller", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Glenn",
+"lastName" : "meade"}
+, "title" : "IJselijk web", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Glenn",
+"lastName" : "meade"}
+, "title" : "The devil's disciple", "status" : "unknown", "link" : "unknown"
+}]}

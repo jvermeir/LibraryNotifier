@@ -16,11 +16,12 @@ class LibraryServiceActor extends Actor with LibraryService {
   def receive = runRoute(libraryRoute)
 }
 
-trait LibraryService extends HttpService {
+trait LibraryService extends HttpService with LogHelper {
   def bookShelf = Config.bookShelf
 
   val libraryRoute =
     path("books") {
+      logger.info("handling 'books' request")
       get {
         respondWithMediaType(`application/json`) {
           complete {

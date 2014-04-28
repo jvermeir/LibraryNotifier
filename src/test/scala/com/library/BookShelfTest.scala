@@ -66,7 +66,9 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
         , new Book(new Author("firstname1", "lastname1", ""), "book2")
         , new Book(new Author("firstname3", "lastname3", ""), "book3"))
       val fileName = "data/test/tmp.txt"
-      new File(fileName).delete
+      val tempFile = new File(fileName)
+      tempFile.delete
+      tempFile.createNewFile
       When("the list is saved in a temp file, the shelf is emptied and the file read back")
       val bookShelf = new FileBasedBookShelf(fileName)
       bookShelf.emptyShelf
@@ -162,7 +164,7 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
 
   scenario("The list of books is placed in random order") {
     Given("A bookshelf")
-    val bookShelf = new FileBasedBookShelf("data/boeken.dat")
+    val bookShelf = new FileBasedBookShelf("data/test/booksForRandomTest.json")
     When("This list is randomized")
     val books1 = bookShelf.getRandomizedListOfBooks
     val books2 = bookShelf.getRandomizedListOfBooks

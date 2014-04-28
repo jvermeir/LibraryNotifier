@@ -1,3 +1,15 @@
-lastname1; firstname1; book1
-lastname1; firstname1; book2
-lastname3; firstname3 ; book3
+{"books" : [
+{"author" : {"firstName" : "firstname1",
+"lastName" : "lastname1"}
+, "title" : "book1", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "firstname1",
+"lastName" : "lastname1"}
+, "title" : "book2", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "firstname3",
+"lastName" : "lastname3"}
+, "title" : "book3", "status" : "unknown", "link" : "unknown"
+}
+]
+}
