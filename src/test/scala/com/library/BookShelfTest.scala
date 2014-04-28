@@ -175,7 +175,7 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
     Given("A list of books as a JSON string")
     val jsonFile = "data/test/jsonFileForTestInBookShelfTest.json"
     When("The list is loaded by a BookShelf")
-    val bookShelf = new FileBasedBookShelf("data/test/dummy.json").readFromJSONFile(jsonFile)
+    val bookShelf = new FileBasedBookShelf(jsonFile).readFromJSONFile
     Then("The resulting bookshelf contains 3 books")
     3 must be === bookShelf.size
   }

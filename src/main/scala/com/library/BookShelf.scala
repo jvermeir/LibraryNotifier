@@ -87,9 +87,14 @@ trait BookShelf {
 class FileBasedBookShelf(val storeFileName: String) extends BookShelf {
 
   override def read: Unit = {
-    emptyShelf
-    if (new File(storeFileName).exists)
-      books.++(readFromFile(storeFileName))
+    // TODO: remove this patch if we've moved to JSON
+    if (storeFileName.endsWith("json")) {
+       readFromJSONFile
+    } else {
+      emptyShelf
+      if (new File(storeFileName).exists)
+        books.++(readFromFile(storeFileName))
+    }
   }
 
   override def write: Unit = writeBooksToFile(storeFileName, books.values.toList)
@@ -104,9 +109,9 @@ class FileBasedBookShelf(val storeFileName: String) extends BookShelf {
     books.toMap
   }
 
-  def readFromJSONFile(fileName: String): Map[String, Book] = {
+  def readFromJSONFile: Map[String, Book] = {
     emptyShelf
-    val booksAsText = fromFile(fileName).mkString
+    val booksAsText = fromFile(storeFileName).mkString
 
     val booksFromFile = for {
       Some(M(map)) <- List(JSON.parseFull(booksAsText))
@@ -119,8 +124,8 @@ class FileBasedBookShelf(val storeFileName: String) extends BookShelf {
     books.toMap
   }
 
-  def writeBooksToFile(fileName:String):Unit = {
-    val printWriter = new PrintWriter( new File(fileName))
+  def writeBooksToFile:Unit = {
+    val printWriter = new PrintWriter( new File(storeFileName))
     try {
       printWriter.print(printAsJson)
     } finally printWriter.close

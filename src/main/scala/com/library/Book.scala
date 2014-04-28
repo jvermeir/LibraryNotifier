@@ -69,5 +69,3 @@ object Book {
     book(0)
   }
 }
-
-object DummyBook extends Book(Author("dummy, dummy"), "dummy", Book.UNKNOWN, "unknown")
