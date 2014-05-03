@@ -115,10 +115,10 @@ class AuthorTest extends FeatureSpec with GivenWhenThen with MustMatchers {
 
     scenario("Author can be parsed from JSON string") {
       Given("an Author as a JSON string")
-      val author = """{"firstName" : "firstName",
+      val author = """{"author" : {"firstName" : "firstName",
                      |"lastName" : "lastName",
                      |"link" : "link"}
-                     |""".stripMargin
+                     |}""".stripMargin
       When("An Author is created from the JSON string")
       val authorFromJSON = Author.fromJSONString(author)
       Then("it must match {firstName, lastName, link}")
@@ -127,17 +127,28 @@ class AuthorTest extends FeatureSpec with GivenWhenThen with MustMatchers {
 
     scenario("List of Authors can be parsed from JSON string") {
       Given("a list of Authors as a JSON string")
-      val authors = """{"authors" : [{"firstName" : "firstName",
-                     |"lastName" : "lastName",
-                     |"link" : "link"},
-                     |{"firstName" : "firstName2",
-                     |"lastName" : "lastName2",
-                     |"link" : "link"}]}
-                     |""".stripMargin
       When("Authors are created from the JSON string")
       val authorsFromJSON = Author.getAuthorsFromJSON(authors)
       Then("The list must contain 2 authors")
       2 must be === authorsFromJSON.size
     }
+
+    scenario("A list of authors written as JSON can be read as JSON") {
+      Given("some Authors in 'authors'")
+      val authorFromJSON = Author.getAuthorsFromJSON(authors)
+      When("The list of authors is converted to a string and parsed again")
+      val l = authorFromJSON map (author => author.toLastNameCommaFirstNameString -> author)
+      val authorsAsString = Author.authorsAsJSONString(l.toMap)
+      Then("if they're parsed again there are still 2 left")
+      val reparsedAuthors = Author.getAuthorsFromJSON(authorsAsString)
+      2 must be === reparsedAuthors.size
+    }
   }
+  val authors = """{"authors" : [{"author" : {"firstName" : "firstName",
+                  |"lastName" : "lastName",
+                  |"link" : "link"}},
+                  |{"author" : {"firstName" : "firstName2",
+                  |"lastName" : "lastName2",
+                  |"link" : "link"}}]}
+                  |""".stripMargin
 }

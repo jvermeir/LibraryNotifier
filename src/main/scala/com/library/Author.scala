@@ -59,11 +59,17 @@ object Author {
   def createFromParsedJSON(jsonObject: List[Any]): Author = {
     val author = for {
       M(author) <- jsonObject
-      S(firstName) = author("firstName")
-      S(lastName) = author("lastName")
-      S(link) = author("link")
+      M(authorMap) = author("author")
+      S(firstName) = authorMap("firstName")
+      S(lastName) = authorMap("lastName")
+      S(link) = authorMap("link")
     } yield Author(firstName, lastName, link)
     author(0)
+  }
+
+  def authorsAsJSONString(authors:Map[String, Author]):String = {
+    val authorsAsJSON = authors.values.map(_.asJSONString)
+    """{"authors" : [{""" + authorsAsJSON.mkString("},\n{") + """}]}"""
   }
 
   def parseAuthorsFromListOfStrings(authors: List[String]):Map[String, Author] = {
