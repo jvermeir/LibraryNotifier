@@ -11,7 +11,7 @@ object Config {
   var httpClient:MyHttpClient = new MyHttpClient
   // TODO: fix ugly init in bookshelf that tries to load a file
   var libraryClient: Library = new DutchPublicLibrary
-  var bookShelf: BookShelf = new FileBasedBookShelf("data/boeken.dat")
+  var bookShelf: BookShelf = new FileBasedBookShelf("data/books.json")
 
   def reload: Unit = {}
 

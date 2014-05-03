@@ -24,7 +24,7 @@ object Boot extends App  {
   implicit val system: ActorSystem = ActorSystem("on-spray-can")
 
   val libraryService = system.actorOf(Props[LibraryServiceActor], "library-service")
-  val authors = AuthorParser.loadAuthorsFromFile("data/authors.dat")
+  val authors = Author.loadAuthorsFromFile("data/authors.dat")
 
   getRecommendations
   reloadBooksFromLibrary

@@ -1,23 +1,33 @@
 package com.library
 
-import scala.io.Source._
+import org.apache.commons.io.FileUtils
 
-case class Author(val firstName: String, val lastName: String, val linkToListOfBooks: String)  {
-  def equalsIgnoreLink(other:Author):Boolean = {
+import scala.io.Source._
+import java.io.File
+import scala.util.parsing.json.JSON
+import scala.language.postfixOps
+
+
+case class Author(val firstName: String, val lastName: String, val linkToListOfBooks: String) {
+  def equalsIgnoreLink(other: Author): Boolean = {
     firstName.equals(other.firstName) && lastName.equals(other.lastName)
   }
-  def toLastNameCommaFirstNameString:String = lastName + ", " + firstName
-  override def equals (that:Any):Boolean = {
+
+  def toLastNameCommaFirstNameString: String = lastName + ", " + firstName
+
+  override def equals(that: Any): Boolean = {
     if (that.isInstanceOf[Author]) {
       val other = that.asInstanceOf[Author]
       other.toLastNameCommaFirstNameString.equals(toLastNameCommaFirstNameString)
     } else false
   }
-  def like(that:Author):Boolean = toLastNameCommaFirstNameString.toLowerCase.startsWith(that.toLastNameCommaFirstNameString.toLowerCase)
 
-  def asJSONString:String = {
-    "\"author\" : {\"firstName\" : \"" + firstName +"\",\n" +
-      "\"lastName\" : \"" + lastName +"\"}\n"
+  def like(that: Author): Boolean = toLastNameCommaFirstNameString.toLowerCase.startsWith(that.toLastNameCommaFirstNameString.toLowerCase)
+
+  def asJSONString: String = {
+    "\"author\" : {\"firstName\" : \"" + firstName + "\",\n" +
+      "\"lastName\" : \"" + lastName + "\",\n" +
+      "\"link\" : \"" + linkToListOfBooks + "\"}\n"
   }
 }
 
@@ -43,10 +53,46 @@ object Author {
     Author(firstName, lastName, "")
   }
 
-  def main(args: Array[String]): Unit = {
-    val authors = AuthorParser.loadAuthorsFromFile("data/authors.dat")
-    println(authors)
+  def fromJSONString(authorAsJSONString: String): Author =
+    createFromParsedJSON(List(JSON.parseFull(authorAsJSONString).get))
+
+  def createFromParsedJSON(jsonObject: List[Any]): Author = {
+    val author = for {
+      M(author) <- jsonObject
+      S(firstName) = author("firstName")
+      S(lastName) = author("lastName")
+      S(link) = author("link")
+    } yield Author(firstName, lastName, link)
+    author(0)
   }
+
+  def parseAuthorsFromListOfStrings(authors: List[String]):Map[String, Author] = {
+    val authorList:List[Author] = authors map (Author(_))
+    val lastNameList =  authorList map (_.lastName)
+    (lastNameList zip authorList).toMap
+  }
+
+  def loadAuthorsFromFile(fileName:String): Map[String, Author] = {
+    val authorsAsText = FileUtils.readFileToString(new File(fileName))
+    parseAuthorsFromListOfStrings(authorsAsText.split("\n").toList.filter(_.trim.length>0))
+  }
+
+  def loadAuthorsFromJSONFile(fileName:String): Map[String, Author] = {
+    val authorsAsText = fromFile(fileName).mkString
+    val authors = getAuthorsFromJSON(authorsAsText)
+    val result = authors.map(author => author.toLastNameCommaFirstNameString -> author)
+    result.toMap
+  }
+
+  def getAuthorsFromJSON(authorsAsText:String):List[Author] = {
+    for {
+      Some(M(map)) <- List(JSON.parseFull(authorsAsText))
+      L(authorList) = map("authors")
+      author <- authorList
+      myAuthor = Author.createFromParsedJSON(List(author))
+    } yield myAuthor
+  }
+
 
 }
 

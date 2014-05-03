@@ -68,7 +68,7 @@ class AuthorTest extends FeatureSpec with GivenWhenThen with MustMatchers {
       Given("a list of authors in 'Lastname, Firstname', 'Firstname Lastname', 'Lastname' format")
       val authorsAsStrings = List("Dan Brown1","Brown2, Dan","Brown3")
       When("the string is parsed")
-      val authors = AuthorParser.parseAuthorsFromListOfStrings(authorsAsStrings)
+      val authors = Author.parseAuthorsFromListOfStrings(authorsAsStrings)
       Then("two authors are found")
       val expectedResult = Map[String, Author]("Brown1" ->  Author("Dan", "Brown1"), "Brown2" ->  Author("Dan", "Brown2"), "Brown3" ->  Author("", "Brown3"))
       expectedResult must be === authors
@@ -78,7 +78,7 @@ class AuthorTest extends FeatureSpec with GivenWhenThen with MustMatchers {
       Given("a file with a number of lines that represent authors in various formats")
       val authorsAsStrings = List("Dan Brown1","Brown2, Dan","Brown3")
       When("the file is loaded and the list of authors is parsed")
-      val authors = AuthorParser.loadAuthorsFromFile("data/test/testFileWith3Authors.txt")
+      val authors = Author.loadAuthorsFromFile("data/test/testFileWith3Authors.txt")
       Then("three authors are found")
       val expectedResult = Map[String, Author]("Brown1" ->  Author("Dan", "Brown1"), "Brown2" ->  Author("Dan", "Brown2"), "Brown3" ->  Author("", "Brown3"))
       expectedResult must be === authors
@@ -88,7 +88,7 @@ class AuthorTest extends FeatureSpec with GivenWhenThen with MustMatchers {
       Given("a file with a number of lines that represent authors in various formats as well as some empty lines and lines with leading spaces")
       val authorsAsStrings = List("Dan Brown1","Brown2, Dan","Brown3")
       When("the file is loaded and the list of authors is parsed")
-      val authors = AuthorParser.loadAuthorsFromFile("data/test/testFileWithEmptyLinesAndLeadingSpaces.txt")
+      val authors = Author.loadAuthorsFromFile("data/test/testFileWithEmptyLinesAndLeadingSpaces.txt")
       Then("three authors are found")
       val expectedResult = Map[String, Author]("Brown1" ->  Author("Dan", "Brown1"), "Brown2" ->  Author("Dan", "Brown2"), "Brown3" ->  Author("", "Brown3"))
       expectedResult must be === authors
@@ -111,6 +111,33 @@ class AuthorTest extends FeatureSpec with GivenWhenThen with MustMatchers {
       val author = Author.apply(authorNameStartingWithABlank)
       Then("leading blanks are removed")
       Author("firstname", "lastname") must be === author
+    }
+
+    scenario("Author can be parsed from JSON string") {
+      Given("an Author as a JSON string")
+      val author = """{"firstName" : "firstName",
+                     |"lastName" : "lastName",
+                     |"link" : "link"}
+                     |""".stripMargin
+      When("An Author is created from the JSON string")
+      val authorFromJSON = Author.fromJSONString(author)
+      Then("it must match {firstName, lastName, link}")
+      Author("firstName", "lastName", "link") must be === authorFromJSON
+    }
+
+    scenario("List of Authors can be parsed from JSON string") {
+      Given("a list of Authors as a JSON string")
+      val authors = """{"authors" : [{"firstName" : "firstName",
+                     |"lastName" : "lastName",
+                     |"link" : "link"},
+                     |{"firstName" : "firstName2",
+                     |"lastName" : "lastName2",
+                     |"link" : "link"}]}
+                     |""".stripMargin
+      When("Authors are created from the JSON string")
+      val authorsFromJSON = Author.getAuthorsFromJSON(authors)
+      Then("The list must contain 2 authors")
+      2 must be === authorsFromJSON.size
     }
   }
 }

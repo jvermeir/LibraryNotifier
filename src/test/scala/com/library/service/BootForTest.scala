@@ -11,7 +11,7 @@ object BootForTest extends App {
   private val HTTP_PORT: Int = 9181
 
   Config.libraryClient = new LibraryForTest
-  Config.bookShelf = new FileBasedBookShelf("data/boeken.dat")
+  Config.bookShelf = new FileBasedBookShelf("data/books.json")
 
   // TODO: Actor isn't restarted?
   implicit val system: ActorSystem = ActorSystem("on-spray-can")
@@ -23,7 +23,7 @@ object BootForTest extends App {
   IO(Http) ! Http.Bind(service, interface = "192.168.10.129", port = HTTP_PORT)
 
   def reloadBooksFromLibrary: Unit = {
-    val authors = AuthorParser.loadAuthorsFromFile("data/authors.dat")
+    val authors = Author.loadAuthorsFromFile("data/books.json")
     val reloadService = system.actorOf(Props[ReloadActor], "reload-service")
     reloadService ! new ReloadMessage(authors, Config.bookShelf)
   }
