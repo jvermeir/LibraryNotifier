@@ -29,9 +29,6 @@ trait BookShelf extends LogHelper {
     write
   }
 
-  // TODO: why would this return a Map?
-  def getBookFromShelf(bookToSearchFor: String): Map[String, Book] = books.filter(_.toString == bookToSearchFor).toMap
-
   def getBooksToRead: List[Book] = books.values.toList filter (_.status == Book.UNKNOWN)
 
   def getAllBooks: List[Book] = books.values.toList
@@ -54,8 +51,10 @@ trait BookShelf extends LogHelper {
     "<table>\n" + bookTableRowsAsString + "\n</table>"
   }
 
+  // TODO: pass in list of books because this differs beteen usage in to print to database and for rest service
   def printAsJson: String = {
-    val sortedBooks = getBooksToRead.sortWith(lessThanForWishList(_, _))
+//    val sortedBooks = getBooksToRead.sortWith(lessThanForWishList(_, _))
+    val sortedBooks = books.values.toList.sortWith(lessThanForWishList(_, _))
     val booksAsJSON = sortedBooks map (_.asJSONString)
     val result = "{\"books\" : [{" + booksAsJSON.mkString("},\n{") + "}]}"
     logger.debug("return: " + result)

@@ -32,6 +32,14 @@
 },
 {"author" : {"firstName" : "Margaret",
 "lastName" : "Atwood"}
+, "title" : "De blinde huurmoordenaar. - Dl. 1", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood"}
+, "title" : "De blinde huurmoordenaar. - Dl. 2", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood"}
 , "title" : "De tent", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "Margaret",
@@ -53,6 +61,14 @@
 {"author" : {"firstName" : "Margaret",
 "lastName" : "Atwood"}
 , "title" : "Moreel verval", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood"}
+, "title" : "Oryx and Crake", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood"}
+, "title" : "Oryx en Crake", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "Margaret",
 "lastName" : "Atwood"}
@@ -84,11 +100,31 @@
 },
 {"author" : {"firstName" : "David",
 "lastName" : "Baldacci"}
+, "title" : "De provocatie : dyslexie vriendelijke uitgave", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
 , "title" : "De rechtvaardigen", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "David",
 "lastName" : "Baldacci"}
+, "title" : "De rechtvaardigen [Bd. 1]. - Bd. 1", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "De rechtvaardigen [Bd. 2]. - Bd. 2", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
 , "title" : "De samenzwering", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Deliver us from evil", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Divine justice", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "David",
 "lastName" : "Baldacci"}
@@ -101,6 +137,14 @@
 {"author" : {"firstName" : "David",
 "lastName" : "Baldacci"}
 , "title" : "Familieverraad", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Familieverraad [Bd. 1]. - Bd. 1", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Familieverraad [Bd. 2]. - Bd. 2", "status" : "wontread", "link" : "unknown"
 },
 {"author" : {"firstName" : "David",
 "lastName" : "Baldacci"}
@@ -120,6 +164,10 @@
 },
 {"author" : {"firstName" : "David",
 "lastName" : "Baldacci"}
+, "title" : "Geniaal geheim, bd. 1", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
 , "title" : "Hell's corner", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "David",
@@ -133,6 +181,14 @@
 {"author" : {"firstName" : "David",
 "lastName" : "Baldacci"}
 , "title" : "In het geheim", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "In het geheim [Bd. 1]. - Bd. 1", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "In het geheim [Bd. 2]. - Bd. 2", "status" : "wontread", "link" : "unknown"
 },
 {"author" : {"firstName" : "David",
 "lastName" : "Baldacci"}
@@ -156,7 +212,27 @@
 },
 {"author" : {"firstName" : "David",
 "lastName" : "Baldacci"}
+, "title" : "Niets dan de waarheid. - Bd. 1", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Niets dan de waarheid. - Bd. 2", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
 , "title" : "Onbewaakt ogenblik", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Onbewaakt ogenblik. - Bd. 1", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Onbewaakt ogenblik. - Bd. 2", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Onder druk", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "David",
 "lastName" : "Baldacci"}
@@ -181,6 +257,14 @@
 {"author" : {"firstName" : "David",
 "lastName" : "Baldacci"}
 , "title" : "Rechteloos", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Rechteloos [Bd. 1]. - Bd. 1", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "David",
+"lastName" : "Baldacci"}
+, "title" : "Rechteloos [Bd. 2]. - Bd. 2", "status" : "wontread", "link" : "unknown"
 },
 {"author" : {"firstName" : "David",
 "lastName" : "Baldacci"}
@@ -248,6 +332,18 @@
 },
 {"author" : {"firstName" : "Linwood",
 "lastName" : "Barclay"}
+, "title" : "Het ongeluk", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Linwood",
+"lastName" : "Barclay"}
+, "title" : "Kijk niet weg", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Linwood",
+"lastName" : "Barclay"}
+, "title" : "Never look away", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Linwood",
+"lastName" : "Barclay"}
 , "title" : "Never saw it coming", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "Linwood",
@@ -256,11 +352,31 @@
 },
 {"author" : {"firstName" : "Linwood",
 "lastName" : "Barclay"}
+, "title" : "Stone rain", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Linwood",
+"lastName" : "Barclay"}
+, "title" : "The accident", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Linwood",
+"lastName" : "Barclay"}
 , "title" : "Too close to home", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "Linwood",
 "lastName" : "Barclay"}
+, "title" : "Trust your eyes", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Linwood",
+"lastName" : "Barclay"}
 , "title" : "Vrees het ergste", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Linwood",
+"lastName" : "Barclay"}
+, "title" : "Vrees het ergste. - 1", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Linwood",
+"lastName" : "Barclay"}
+, "title" : "Vrees het ergste. - 2", "status" : "wontread", "link" : "unknown"
 },
 {"author" : {"firstName" : "Linwood",
 "lastName" : "Barclay"}
@@ -273,6 +389,10 @@
 {"author" : {"firstName" : "Alex",
 "lastName" : "Berenson"}
 , "title" : "Het Beijing complot", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Alex",
+"lastName" : "Berenson"}
+, "title" : "The Midnight House", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "Harlan",
 "lastName" : "Coben"}
@@ -308,7 +428,23 @@
 },
 {"author" : {"firstName" : "Harlan",
 "lastName" : "Coben"}
+, "title" : "Geen tweede kans. - Bd. 1", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Geen tweede kans. - Bd. 2", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
 , "title" : "Geleende tijd", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Geleende tijd. - Bd. 1", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Geleende tijd. - Bd. 2", "status" : "wontread", "link" : "unknown"
 },
 {"author" : {"firstName" : "Harlan",
 "lastName" : "Coben"}
@@ -360,6 +496,10 @@
 },
 {"author" : {"firstName" : "Harlan",
 "lastName" : "Coben"}
+, "title" : "Niemand vertellen", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
 , "title" : "No second chance", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "Harlan",
@@ -397,6 +537,14 @@
 {"author" : {"firstName" : "Harlan",
 "lastName" : "Coben"}
 , "title" : "Stay close", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Tegenwerking", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben"}
+, "title" : "Tell no one", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "Harlan",
 "lastName" : "Coben"}
@@ -616,6 +764,10 @@
 },
 {"author" : {"firstName" : "Douglas",
 "lastName" : "Coupland"}
+, "title" : "De kauwgomdief", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Douglas",
+"lastName" : "Coupland"}
 , "title" : "Eleanor Rigby", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "Douglas",
@@ -629,6 +781,22 @@
 {"author" : {"firstName" : "Douglas",
 "lastName" : "Coupland"}
 , "title" : "He Nostradamus! : roman", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Douglas",
+"lastName" : "Coupland"}
+, "title" : "JPod", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Douglas",
+"lastName" : "Coupland"}
+, "title" : "Miss Wyoming : roman", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Douglas",
+"lastName" : "Coupland"}
+, "title" : "Speler Een", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Douglas",
+"lastName" : "Coupland"}
+, "title" : "The gum thief", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "Charles",
 "lastName" : "Cumming"}
@@ -684,11 +852,27 @@
 },
 {"author" : {"firstName" : "Neil",
 "lastName" : "Gaiman"}
+, "title" : "Alles is breekbaar", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Neil",
+"lastName" : "Gaiman"}
+, "title" : "Amerikaanse goden", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Neil",
+"lastName" : "Gaiman"}
 , "title" : "Coraline", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "Neil",
 "lastName" : "Gaiman"}
+, "title" : "De bende van Anansi", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Neil",
+"lastName" : "Gaiman"}
 , "title" : "De oceaan aan het einde van het pad", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Neil",
+"lastName" : "Gaiman"}
+, "title" : "Het kerkhof", "status" : "wontread", "link" : "unknown"
 },
 {"author" : {"firstName" : "Neil",
 "lastName" : "Gaiman"}
@@ -697,6 +881,14 @@
 {"author" : {"firstName" : "Neil",
 "lastName" : "Gaiman"}
 , "title" : "Neverwhere : a novel", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Neil",
+"lastName" : "Gaiman"}
+, "title" : "Niemandsland", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Neil",
+"lastName" : "Gaiman"}
+, "title" : "Odd and the frost giants", "status" : "wontread", "link" : "unknown"
 },
 {"author" : {"firstName" : "Neil",
 "lastName" : "Gaiman"}
@@ -756,11 +948,19 @@
 },
 {"author" : {"firstName" : "Andrew",
 "lastName" : "Gross"}
+, "title" : "The dark tide", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Andrew",
+"lastName" : "Gross"}
 , "title" : "Valse lading", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "Paul",
 "lastName" : "Harland"}
 , "title" : "Computercode Cthulhu", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Paul",
+"lastName" : "Harland"}
+, "title" : "De werelden van Vince-Crux", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "Tom",
 "lastName" : "Harper"}
@@ -769,6 +969,10 @@
 {"author" : {"firstName" : "Tom",
 "lastName" : "Harper"}
 , "title" : "Erfgename van de graal", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tom",
+"lastName" : "Harper"}
+, "title" : "Het verboden boek", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "Tom",
 "lastName" : "Harper"}
@@ -824,7 +1028,19 @@
 },
 {"author" : {"firstName" : "Gregg",
 "lastName" : "Hurwitz"}
+, "title" : "Trust no one", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Gregg",
+"lastName" : "Hurwitz"}
+, "title" : "Vertrouw niemand", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Gregg",
+"lastName" : "Hurwitz"}
 , "title" : "We know", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Gregg",
+"lastName" : "Hurwitz"}
+, "title" : "You're next", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "roel",
 "lastName" : "Jansen"}
@@ -849,6 +1065,30 @@
 {"author" : {"firstName" : "jens",
 "lastName" : "Lapidus"}
 , "title" : "Val dood", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Paul",
+"lastName" : "Maier"}
+, "title" : "Codex Constantijn", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Paul",
+"lastName" : "Maier"}
+, "title" : "De brand van Rome : roman", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Paul",
+"lastName" : "Maier"}
+, "title" : "En het geschiedde... : de historische gegevens rond de geboorte van Jezus", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Paul",
+"lastName" : "Maier"}
+, "title" : "Het Rama-document en Operatie Wederkomst : twee spannende romans van Paul Maier", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Paul",
+"lastName" : "Maier"}
+, "title" : "Operatie Wederkomst", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Paul",
+"lastName" : "Maier"}
+, "title" : "Pontius Pilatus : historische roman", "status" : "wontread", "link" : "unknown"
 },
 {"author" : {"firstName" : "Glenn",
 "lastName" : "Meade"}
@@ -906,9 +1146,17 @@
 "lastName" : "Mieville"}
 , "title" : "Armada", "status" : "unknown", "link" : "unknown"
 },
+{"author" : {"firstName" : "China",
+"lastName" : "Mieville"}
+, "title" : "Station Perido", "status" : "read", "link" : "unknown"
+},
 {"author" : {"firstName" : "Bennie",
 "lastName" : "Mols"}
 , "title" : "Doos van licht, lucht en liefde : Yotta en Yocto op zoek naar de bouwstenen van onze wereld", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Bennie",
+"lastName" : "Mols"}
+, "title" : "Opgelost : toepassingen van wiskunde en informatica", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "Bennie",
 "lastName" : "Mols"}
@@ -1216,6 +1464,10 @@
 },
 {"author" : {"firstName" : "Terry",
 "lastName" : "Pratchett"}
+, "title" : "Making money", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
 , "title" : "Meidezeggenschap", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "Terry",
@@ -1268,6 +1520,10 @@
 },
 {"author" : {"firstName" : "Terry",
 "lastName" : "Pratchett"}
+, "title" : "Unseen academicals", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett"}
 , "title" : "Volk", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "Terry",
@@ -1301,6 +1557,14 @@
 {"author" : {"firstName" : "Douglas",
 "lastName" : "Preston"}
 , "title" : "Virus", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Rik",
+"lastName" : "Raven"}
+, "title" : "Zucht", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Alastair",
+"lastName" : "Reynolds"}
+, "title" : "Terminal world", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "Michael",
 "lastName" : "Robotham"}
@@ -1340,6 +1604,10 @@
 },
 {"author" : {"firstName" : "Michael",
 "lastName" : "Robotham"}
+, "title" : "Shatter", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Robotham"}
 , "title" : "The wreckage", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "Michael",
@@ -1360,6 +1628,10 @@
 },
 {"author" : {"firstName" : "Tomas",
 "lastName" : "Ross"}
+, "title" : "Beta : thriller", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
 , "title" : "Blue Curacao : King en de vrouw die twee keer leefde : thriller", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "Tomas",
@@ -1372,7 +1644,23 @@
 },
 {"author" : {"firstName" : "Tomas",
 "lastName" : "Ross"}
+, "title" : "De anjercode", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
 , "title" : "De beste spannende verhalen uit Nederland en Vlaanderen", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "De dubbelganger", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "De hand van God", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "De honden van het verraad", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "Tomas",
 "lastName" : "Ross"}
@@ -1380,11 +1668,31 @@
 },
 {"author" : {"firstName" : "Tomas",
 "lastName" : "Ross"}
+, "title" : "De man die twee keer verdronk", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
 , "title" : "De man van Sint Maarten", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "Tomas",
 "lastName" : "Ross"}
+, "title" : "De marionet", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "De oorlog is nog lang niet voorbij : het dagelijks leven in de Tweede Wereldoorlog", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
 , "title" : "De schuilkelder", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "De stem in de grot", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "De tranen van Mata Hari", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "Tomas",
 "lastName" : "Ross"}
@@ -1404,6 +1712,10 @@
 },
 {"author" : {"firstName" : "Tomas",
 "lastName" : "Ross"}
+, "title" : "De zesde mei", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
 , "title" : "Denkend aan Holland", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "Tomas",
@@ -1416,11 +1728,47 @@
 },
 {"author" : {"firstName" : "Tomas",
 "lastName" : "Ross"}
+, "title" : "Help, ze ontvoeren de koningin!", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Het geheim van het verdronken dorp", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
 , "title" : "Het meisje uit Buenos Aires", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "Tomas",
 "lastName" : "Ross"}
+, "title" : "Het verraad van '42", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Jaromir en het raadsel van de ringen", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
 , "title" : "Kidnap", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "King Kong : het verraad van Arnhem", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Koerier voor Sarajevo", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Koerier voor Sarajevo : thriller. - Bd. 1", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Koerier voor Sarajevo : thriller. - Bd. 2", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Kort", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "Tomas",
 "lastName" : "Ross"}
@@ -1432,15 +1780,43 @@
 },
 {"author" : {"firstName" : "Tomas",
 "lastName" : "Ross"}
+, "title" : "Omwille van de troon", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
 , "title" : "Onze vrouw in Tripoli", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "Tomas",
 "lastName" : "Ross"}
 , "title" : "Plaats delict", "status" : "unknown", "link" : "unknown"
 },
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Schuldige plaatsen in Nederland", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Take care! : omzien naar Van Gogh", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "Ross"}
+, "title" : "Tranen over Hollandia", "status" : "wontread", "link" : "unknown"
+},
 {"author" : {"firstName" : "Frank",
 "lastName" : "Schätzing"}
 , "title" : "De dood en de duivel", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Frank",
+"lastName" : "Schätzing"}
+, "title" : "De zwerm", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Frank",
+"lastName" : "Schätzing"}
+, "title" : "Geluidloos", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Frank",
+"lastName" : "Schätzing"}
+, "title" : "Limiet", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "Daron",
 "lastName" : "Sheehan"}
@@ -1452,6 +1828,14 @@
 },
 {"author" : {"firstName" : "Dan",
 "lastName" : "Simmons"}
+, "title" : "Hyperion en, De ondergang van Hyperion", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Dan",
+"lastName" : "Simmons"}
+, "title" : "Ilium", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Dan",
+"lastName" : "Simmons"}
 , "title" : "Lood", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "Dan",
@@ -1460,11 +1844,19 @@
 },
 {"author" : {"firstName" : "Dan",
 "lastName" : "Simmons"}
+, "title" : "Olympos", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Dan",
+"lastName" : "Simmons"}
 , "title" : "The abominable", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "Dan",
 "lastName" : "Simmons"}
 , "title" : "The terror : a novel", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Rudy",
+"lastName" : "Soetewey"}
+, "title" : "2017", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "Rudy",
 "lastName" : "Soetewey"}
@@ -1482,6 +1874,14 @@
 "lastName" : "Soetewey"}
 , "title" : "Vrienden", "status" : "unknown", "link" : "unknown"
 },
+{"author" : {"firstName" : "Robert",
+"lastName" : "Stone"}
+, "title" : "Damascuspoort", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Daniel",
+"lastName" : "Suarez"}
+, "title" : "Ctrl Alt Delete", "status" : "read", "link" : "unknown"
+},
 {"author" : {"firstName" : "Daniel",
 "lastName" : "Suarez"}
 , "title" : "Daemon", "status" : "unknown", "link" : "unknown"
@@ -1496,7 +1896,39 @@
 },
 {"author" : {"firstName" : "Charles den",
 "lastName" : "Tex"}
+, "title" : "Bellicher. - [De complete 2e televisieserie]: Cel / [cast] Daan Schuurmans ... [et al.]regie Peter de Baan", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles den",
+"lastName" : "Tex"}
+, "title" : "Cel", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles den",
+"lastName" : "Tex"}
+, "title" : "Claim", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles den",
+"lastName" : "Tex"}
+, "title" : "Code 39", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles den",
+"lastName" : "Tex"}
 , "title" : "De erfgenaam", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles den",
+"lastName" : "Tex"}
+, "title" : "De macht van meneer Miller", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles den",
+"lastName" : "Tex"}
+, "title" : "De vriend", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles den",
+"lastName" : "Tex"}
+, "title" : "Deal", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles den",
+"lastName" : "Tex"}
+, "title" : "Dump", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "Charles den",
 "lastName" : "Tex"}
@@ -1504,7 +1936,35 @@
 },
 {"author" : {"firstName" : "Charles den",
 "lastName" : "Tex"}
+, "title" : "Schijn van kans", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles den",
+"lastName" : "Tex"}
+, "title" : "Spijt", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles den",
+"lastName" : "Tex"}
+, "title" : "Stegger", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles den",
+"lastName" : "Tex"}
+, "title" : "Transfer", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles den",
+"lastName" : "Tex"}
+, "title" : "Verdwijning", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Charles den",
+"lastName" : "Tex"}
 , "title" : "Wachtwoord", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Thomas",
+"lastName" : "Thiemeyer"}
+, "title" : "Corona", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Thomas",
+"lastName" : "Thiemeyer"}
+, "title" : "Magma", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "Thomas",
 "lastName" : "Thiemeyer"}
@@ -1520,11 +1980,19 @@
 },
 {"author" : {"firstName" : "Simon",
 "lastName" : "Toyne"}
+, "title" : "Sanctus", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "Simon",
+"lastName" : "Toyne"}
 , "title" : "The key", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "Simon",
 "lastName" : "Toyne"}
 , "title" : "The tower", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Jack",
+"lastName" : "Vance"}
+, "title" : "De drakenruiters", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "Jack",
 "lastName" : "Vance"}
@@ -1545,6 +2013,10 @@
 {"author" : {"firstName" : "Jack",
 "lastName" : "Vance"}
 , "title" : "Het laatste kasteel", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Jack",
+"lastName" : "Vance"}
+, "title" : "Marune", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "Jack",
 "lastName" : "Vance"}
@@ -1573,6 +2045,10 @@
 {"author" : {"firstName" : "Herman",
 "lastName" : "Vemde"}
 , "title" : "Sarin", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Herman",
+"lastName" : "Vemde"}
+, "title" : "Tequila Sunrise", "status" : "read", "link" : "unknown"
 },
 {"author" : {"firstName" : "Karen Thompson",
 "lastName" : "Walker"}
@@ -1676,6 +2152,10 @@
 },
 {"author" : {"firstName" : "linwood",
 "lastName" : "barclay"}
+, "title" : "Het ongeluk", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "linwood",
+"lastName" : "barclay"}
 , "title" : "Kijk niet weg", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "linwood",
@@ -1696,6 +2176,10 @@
 },
 {"author" : {"firstName" : "linwood",
 "lastName" : "barclay"}
+, "title" : "The accident", "status" : "read", "link" : "unknown"
+},
+{"author" : {"firstName" : "linwood",
+"lastName" : "barclay"}
 , "title" : "Too close to home", "status" : "unknown", "link" : "unknown"
 },
 {"author" : {"firstName" : "linwood",
@@ -1705,6 +2189,14 @@
 {"author" : {"firstName" : "linwood",
 "lastName" : "barclay"}
 , "title" : "Vrees het ergste", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "linwood",
+"lastName" : "barclay"}
+, "title" : "Vrees het ergste. - 1", "status" : "wontread", "link" : "unknown"
+},
+{"author" : {"firstName" : "linwood",
+"lastName" : "barclay"}
+, "title" : "Vrees het ergste. - 2", "status" : "wontread", "link" : "unknown"
 },
 {"author" : {"firstName" : "linwood",
 "lastName" : "barclay"}
@@ -1737,4 +2229,8 @@
 {"author" : {"firstName" : "Glenn",
 "lastName" : "meade"}
 , "title" : "The devil's disciple", "status" : "unknown", "link" : "unknown"
+},
+{"author" : {"firstName" : "Alexander gordon",
+"lastName" : "smith"}
+, "title" : "Geillustreerde jeugdatlas van de wereld", "status" : "wontread", "link" : "unknown"
 }]}
