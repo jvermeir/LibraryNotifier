@@ -88,7 +88,6 @@ class MyHttpClient extends LogHelper{
     val httpget = new HttpGet(url)
     val response = httpclient.execute(httpget, localContext)
     val result = scala.io.Source.fromInputStream(response.getEntity.getContent)(Codec.ISO8859).mkString("")
-    //Request.Get("http://bicat.cultura-ede.nl" + link).execute().returnContent().asString()
     logger.debug("getBookPageAsHtmlByAuthor: " + result)
     result
   }

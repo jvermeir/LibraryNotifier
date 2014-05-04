@@ -28,7 +28,7 @@ class DutchPublicLibrary extends Library with LogHelper {
     books.toMap
   }
 
-  protected[library] def updateAuthorWithLinkToBooks(author: Author): Author = {
+  def updateAuthorWithLinkToBooks(author: Author): Author = {
     val authorSearchResultPage = httpClient.getResultOfSearchByAuthor(author.toLastNameCommaFirstNameString)
     getAuthorUpdatedWithLink(authorSearchResultPage, author)
   }
@@ -39,8 +39,8 @@ class DutchPublicLibrary extends Library with LogHelper {
     val multiLineAuthorFragmentPattern = """(?m)<td class="thsearch_wordlink">.*\n(.*)\n.*</td>"""
     val result = getAuthorUpdatedWithLink(webPage, singleLineAuthorFragmentPattern, authorWithoutLink)
     result match {
-      case None => getAuthorUpdatedWithLink(webPage, multiLineAuthorFragmentPattern, authorWithoutLink) getOrElse new UnknownAuthor
-      case _ => result getOrElse new UnknownAuthor
+      case None => getAuthorUpdatedWithLink(webPage, multiLineAuthorFragmentPattern, authorWithoutLink) getOrElse authorWithoutLink
+      case _ => result getOrElse authorWithoutLink
     }
   }
 
@@ -72,14 +72,13 @@ class DutchPublicLibrary extends Library with LogHelper {
   // TODO: cleanup, extract stuff
   def getBooksFromHtmlPage(bookPageAsHtml: String, author: Author): List[Book] = {
     logger.debug("getBooksFromHtmlPage for author: " + author)
-    logger.debug("html page: " + bookPageAsHtml)
+//    logger.debug("html page: " + bookPageAsHtml)
     val patternString = """<h3 class="anoniem_titel" id="titeltip_anoniem_titel"><strong id="titeltip_anoniem_titel_titel">(.*?)</strong></h3>"""
     val pattern = patternString.r
     val books = pattern.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
     val result = books.length match {
       case 0 => {
         val p="""<a class="title" title="(.*?)" href="(.*?)">""".r
-//        val p="""<a href="(.*?)" title="(.*?)" class="title">""".r
         val links = p.findAllMatchIn(bookPageAsHtml).map(_ group 2).toSet.toList
         val titles =  p.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
         val linksAndTitles = links zip titles
@@ -87,7 +86,7 @@ class DutchPublicLibrary extends Library with LogHelper {
       }
       case _ => createBooksWithLink(books, author)
     }
-    logger.debug("getBooksFromHtmlPage result: " + result)
+//    logger.debug("getBooksFromHtmlPage result: " + result)
     result
   }
 

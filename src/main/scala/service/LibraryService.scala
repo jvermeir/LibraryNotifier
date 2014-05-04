@@ -25,11 +25,21 @@ trait LibraryService extends HttpService with LogHelper {
       get {
         respondWithMediaType(`application/json`) {
           complete {
-            bookShelf.printAsJson
+            bookShelf.printBooksWithUnknownStatusAsJson
           }
         }
       }
     } ~
+      path("allbooks") {
+        logger.info("handling 'allbooks' request")
+        get {
+          respondWithMediaType(`application/json`) {
+            complete {
+              bookShelf.printAsJson
+            }
+          }
+        }
+      } ~
       path("recommendations") {
         get {
           respondWithMediaType(`application/json`) {

@@ -51,10 +51,16 @@ trait BookShelf extends LogHelper {
     "<table>\n" + bookTableRowsAsString + "\n</table>"
   }
 
-  // TODO: pass in list of books because this differs beteen usage in to print to database and for rest service
-  def printAsJson: String = {
-//    val sortedBooks = getBooksToRead.sortWith(lessThanForWishList(_, _))
-    val sortedBooks = books.values.toList.sortWith(lessThanForWishList(_, _))
+  def printAsJson: String = printAsJson(lessThanForWishList, includeAll)
+  def printBooksWithUnknownStatusAsJson: String = printAsJson(lessThanForWishList, includeUnknownBooks)
+
+  def includeAll(book:Book):Boolean = true
+
+  def includeUnknownBooks(book:Book):Boolean = book.status == Book.UNKNOWN
+
+  def printAsJson(lessThan: (Book, Book) => Boolean, include: Book => Boolean) = {
+    val booksToPrint = books.values.toList filter (include(_))
+    val sortedBooks = booksToPrint sortWith(lessThan(_, _))
     val booksAsJSON = sortedBooks map (_.asJSONString)
     val result = "{\"books\" : [{" + booksAsJSON.mkString("},\n{") + "}]}"
     logger.debug("return: " + result)
@@ -84,7 +90,7 @@ trait BookShelf extends LogHelper {
     "{\"books\" : [{" + booksAsJSON.mkString("},\n{") + "}]}"
   }
 
-  def getBooksFromJSON(booksAsText:String):List[Book] =
+  def getBooksFromJSON(booksAsText: String): List[Book] =
     for {
       Some(M(map)) <- List(JSON.parseFull(booksAsText))
       L(bookList) = map("books")

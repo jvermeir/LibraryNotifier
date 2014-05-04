@@ -1,0 +1,20 @@
+{"books" :
+[   {"author" : {"firstName" : "first",
+    "lastName" : "lastnameA"}
+    , "title" : "book2"
+    , "status" : "unknown"
+    , "link" : "mylink2"
+    },
+    {"author" : {"firstName" : "first",
+       "lastName" : "lastnameA"}
+        , "title" : "book3"
+    , "status" : "read"
+        , "link" : "mylink3"
+    },
+        {"author" : {"firstName" : "first",
+        "lastName" : "lastnameB"}
+        , "title" : "book1"
+    , "status" : "wontread"
+        , "link" : "mylink1"
+    }
+]}

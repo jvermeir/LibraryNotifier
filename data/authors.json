@@ -1,0 +1,304 @@
+{"authors" : [{"author" : {"firstName" : "Michael",
+"lastName" : "Robotham",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Robotham%2C%20Michael;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Robotham%2C%20Michael;wzsrc=;recent=N;rubplus=TS0;recno=25631678;sid=a3c67bbc-a253-400e-9d07-bf7f62ab3b40;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Thomas",
+"lastName" : "Thiemeyer",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Thiemeyer%2C%20Thomas;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Thiemeyer%2C%20Thomas;wzsrc=;recent=N;rubplus=TS0;recno=7527576;sid=0daec7bc-dc0b-413c-8af4-6e669afd5e51;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "jens",
+"lastName" : "Lapidus",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Lapidus%2C%20Jens;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Lapidus%2C%20jens;wzsrc=;recent=N;rubplus=TS0;recno=30841806;sid=78b7b909-4a93-4eb2-ab14-85ec5e998b3e;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "",
+"lastName" : "ballard",
+"link" : ""}
+},
+{"author" : {"firstName" : "Alexander gordon",
+"lastName" : "smith",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Smith%2C%20Alexander%20Gordon;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=smith%2C%20Alexander%20gordon;wzsrc=;recent=N;rubplus=TS0;recno=27451303;sid=b2df4c67-6c56-4260-87b4-c3f11e06ecd5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Kim",
+"lastName" : "Baldwin",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Baldwin%2C%20Kim;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Baldwin%2C%20Kim;wzsrc=;recent=N;rubplus=TS0;recno=32153640;sid=66db073c-a1bd-46bd-9c27-c945af7dcb8e;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Terry",
+"lastName" : "Pratchett",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Pratchett%2C%20Terry;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Pratchett%2C%20Terry;wzsrc=;recent=N;rubplus=TS0;recno=7381993;sid=e208890f-99ad-4ff9-8a83-115f6f2b442e;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Glenn",
+"lastName" : "Meade",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Meade%2C%20Glenn;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Meade%2C%20Glenn;wzsrc=;recent=N;rubplus=TS0;recno=11445704;sid=b3ed4f50-1af9-48cb-808b-b7b0a68f5e14;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Daron",
+"lastName" : "Sheehan",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Sheehan%2C%20Daron;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Sheehan%2C%20Daron;wzsrc=;recent=N;rubplus=TS0;recno=35554580;sid=917a409f-b966-4d0b-964d-0bee084b1591;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "roel",
+"lastName" : "Jansen",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Jansen%2C%20Roel;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Jansen%2C%20roel;wzsrc=;recent=N;rubplus=TS0;recno=1701292731;sid=d7e9ed08-7aab-4471-9c93-8ddc0d2b217d;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "jeffrey",
+"lastName" : "ford",
+"link" : ""}
+},
+{"author" : {"firstName" : "Tomas",
+"lastName" : "sedlacek",
+"link" : ""}
+},
+{"author" : {"firstName" : "Frank",
+"lastName" : "Schätzing",
+"link" : ""}
+},
+{"author" : {"firstName" : "Lois McMaster",
+"lastName" : "Bujold",
+"link" : ""}
+},
+{"author" : {"firstName" : "Ben",
+"lastName" : "aaronovich",
+"link" : ""}
+},
+{"author" : {"firstName" : "phil",
+"lastName" : "Jones",
+"link" : ""}
+},
+{"author" : {"firstName" : "Mary",
+"lastName" : "Rosenblum",
+"link" : ""}
+},
+{"author" : {"firstName" : "Harlan",
+"lastName" : "Coben",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Coben%2C%20Harlan;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Coben%2C%20Harlan;wzsrc=;recent=N;rubplus=TS0;recno=1701973010;sid=536c9f52-5074-4972-a687-640bce5db798;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "paul",
+"lastName" : "Harris",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Harris%2C%20Paul;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Harris%2C%20paul;wzsrc=;recent=N;rubplus=TS0;recno=30476720;sid=181b09e3-29ee-431e-975b-33aa01765b69;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Karen Thompson",
+"lastName" : "Walker",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Walker%2C%20Karen%20Thompson;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Walker%2C%20Karen%20Thompson;wzsrc=;recent=N;rubplus=TS0;recno=33989196;sid=49a50b53-8e5c-4293-8aea-a1ef76ff8484;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Neil",
+"lastName" : "Gaiman",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Gaiman%2C%20Neil;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Gaiman%2C%20Neil;wzsrc=;recent=N;rubplus=TS0;recno=7488613;sid=02376595-d8b4-438b-81c7-617bdf8fa83b;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Bennie",
+"lastName" : "Mols",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Mols%2C%20Bennie;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Mols%2C%20Bennie;wzsrc=;recent=N;rubplus=TS0;recno=18258387;sid=a5c52554-fbab-4502-a391-b473e84aa46a;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Margaret",
+"lastName" : "Atwood",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Atwood%2C%20Margaret;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Atwood%2C%20Margaret;wzsrc=;recent=N;rubplus=TS0;recno=6843807;sid=e66c2e27-aec1-42b1-ae0e-18f7a474ec76;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Ian",
+"lastName" : "Creasey",
+"link" : ""}
+},
+{"author" : {"firstName" : "ben",
+"lastName" : "Burgis",
+"link" : ""}
+},
+{"author" : {"firstName" : "Andy",
+"lastName" : "duncan",
+"link" : ""}
+},
+{"author" : {"firstName" : "Rudy",
+"lastName" : "rucker",
+"link" : ""}
+},
+{"author" : {"firstName" : "ken",
+"lastName" : "scholes",
+"link" : ""}
+},
+{"author" : {"firstName" : "Herman",
+"lastName" : "Vemde",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Vemde%2C%20Herman;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Vemde%2C%20Herman;wzsrc=;recent=N;rubplus=TS0;recno=21821931;sid=5bf795aa-c6f3-4cbd-b045-873eec71e198;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "paolo",
+"lastName" : "bacigalupi",
+"link" : ""}
+},
+{"author" : {"firstName" : "James",
+"lastName" : "Patterson",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Patterson%2C%20James;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Patterson%2C%20James;wzsrc=;recent=N;rubplus=TS0;recno=7285685;sid=47362767-819f-46cd-9392-919eb00fc134;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Kathryn",
+"lastName" : "Cramer",
+"link" : ""}
+},
+{"author" : {"firstName" : "charlie jane",
+"lastName" : "Anders",
+"link" : ""}
+},
+{"author" : {"firstName" : "Cathy",
+"lastName" : "Clamp",
+"link" : ""}
+},
+{"author" : {"firstName" : "Charles",
+"lastName" : "Cumming",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Cumming%2C%20Charles;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Cumming%2C%20Charles;wzsrc=;recent=N;rubplus=TS0;recno=21738504;sid=0274ddc1-4c66-40cd-a1a3-61d85a8f1f03;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Ken",
+"lastName" : "liu",
+"link" : ""}
+},
+{"author" : {"firstName" : "Rudy",
+"lastName" : "Soetewey",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Soetewey%2C%20Rudy;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Soetewey%2C%20Rudy;wzsrc=;recent=N;rubplus=TS0;recno=11037682;sid=c9bcb1bd-00ef-41db-b06a-72ac573d143f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Charlie",
+"lastName" : "Tomasson",
+"link" : ""}
+},
+{"author" : {"firstName" : "alan dean",
+"lastName" : "foster",
+"link" : ""}
+},
+{"author" : {"firstName" : "Mint",
+"lastName" : "Kang",
+"link" : ""}
+},
+{"author" : {"firstName" : "Jonathan L.",
+"lastName" : "Howard",
+"link" : ""}
+},
+{"author" : {"firstName" : "Douglas",
+"lastName" : "Coupland",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Coupland%2C%20Douglas;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Coupland%2C%20Douglas;wzsrc=;recent=N;rubplus=TS0;recno=9785789;sid=3c713ac5-d432-4144-b21d-b7cfe9d5953b;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Carlos",
+"lastName" : "Ruiz Zafón",
+"link" : ""}
+},
+{"author" : {"firstName" : "Robert R.",
+"lastName" : "Chase",
+"link" : ""}
+},
+{"author" : {"firstName" : "christiaan",
+"lastName" : "Weijts",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Weijts%2C%20Christiaan;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Weijts%2C%20christiaan;wzsrc=;recent=N;rubplus=TS0;recno=17316983;sid=d323bc5d-8564-43e8-8f64-4874f66e3ea8;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Adam",
+"lastName" : "Christopher",
+"link" : ""}
+},
+{"author" : {"firstName" : "Paul",
+"lastName" : "Maier",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Maier%2C%20Paul;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Maier%2C%20Paul;wzsrc=;recent=N;rubplus=TS0;recno=7329226;sid=79308306-470f-436e-91e0-e8efdf479db4;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "José Carlos",
+"lastName" : "Somoza",
+"link" : ""}
+},
+{"author" : {"firstName" : "Adam Troy",
+"lastName" : "Castro",
+"link" : ""}
+},
+{"author" : {"firstName" : "Paul",
+"lastName" : "Harland",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Harland%2C%20Paul%20%28pseud.%20van%3A%20John%20Smit%29;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Harland%2C%20Paul;wzsrc=;recent=N;rubplus=TS0;recno=1701355997;sid=a4658531-2d54-40e2-80d0-4991b5f6c50c;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Jon",
+"lastName" : "Armstrong",
+"link" : ""}
+},
+{"author" : {"firstName" : "Gareth",
+"lastName" : "Roberts",
+"link" : ""}
+},
+{"author" : {"firstName" : "michael",
+"lastName" : "stanwick",
+"link" : ""}
+},
+{"author" : {"firstName" : "Gauke",
+"lastName" : "Andriesse",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Andriesse%2C%20Gauke;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Andriesse%2C%20Gauke;wzsrc=;recent=N;rubplus=TS0;recno=29214238;sid=05aead48-a84b-4acd-83a3-8229933c2351;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Richard",
+"lastName" : "Kadrey",
+"link" : ""}
+},
+{"author" : {"firstName" : "Charles",
+"lastName" : "Stross",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Stross%2C%20Charles;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Stross%2C%20Charles;wzsrc=;recent=N;rubplus=TS0;recno=26544990;sid=ae71692e-c5a6-4ce4-8051-90b9f44bec2a;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Steven Lyle",
+"lastName" : "Jordan",
+"link" : ""}
+},
+{"author" : {"firstName" : "Ted",
+"lastName" : "Chiang",
+"link" : ""}
+},
+{"author" : {"firstName" : "Daniel",
+"lastName" : "Suarez",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Suarez%2C%20Daniel;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Suarez%2C%20Daniel;wzsrc=;recent=N;rubplus=TS0;recno=31628607;sid=7badef0f-2b78-4671-906b-b152c92f995f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Linwood",
+"lastName" : "Barclay",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Barclay%2C%20Linwood;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Barclay%2C%20Linwood;wzsrc=;recent=N;rubplus=TS0;recno=30376130;sid=3f3d2163-1573-400f-95ba-54f53b32ff59;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "karl",
+"lastName" : "schroder",
+"link" : ""}
+},
+{"author" : {"firstName" : "jay",
+"lastName" : "lake",
+"link" : ""}
+},
+{"author" : {"firstName" : "rene",
+"lastName" : "appel",
+"link" : ""}
+},
+{"author" : {"firstName" : "Robert",
+"lastName" : "Goddard",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Goddard%2C%20Robert;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Goddard%2C%20Robert;wzsrc=;recent=N;rubplus=TS0;recno=7353302;sid=6175452a-7e4c-4eba-ac5f-191445fc5bb0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Simon",
+"lastName" : "Toyne",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Toyne%2C%20Simon;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Toyne%2C%20Simon;wzsrc=;recent=N;rubplus=TS0;recno=32990876;sid=78ef41a3-1f28-438b-bac7-b752437584f4;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Richard",
+"lastName" : "Parks",
+"link" : ""}
+},
+{"author" : {"firstName" : "cory",
+"lastName" : "doctorov",
+"link" : ""}
+},
+{"author" : {"firstName" : "robert",
+"lastName" : "reed",
+"link" : ""}
+},
+{"author" : {"firstName" : "tom",
+"lastName" : "doyle",
+"link" : ""}
+},
+{"author" : {"firstName" : "Michael",
+"lastName" : "Underwood",
+"link" : ""}
+},
+{"author" : {"firstName" : "brit",
+"lastName" : "Mandelo",
+"link" : ""}
+},
+{"author" : {"firstName" : "Stephen",
+"lastName" : "King",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=King%2C%20Stephen;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=King%2C%20Stephen;wzsrc=;recent=N;rubplus=TS0;recno=6865519;sid=21eb0cbc-8275-4ad4-b6a5-f22326fa5233;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "ken",
+"lastName" : "macleod",
+"link" : ""}
+},
+{"author" : {"firstName" : "r.a.",
+"lastName" : "Lafferty",
+"link" : ""}
+},
+{"author" : {"firstName" : "warren",
+"lastName" : "Ellis",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Ellis%2C%20Warren;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Ellis%2C%20warren;wzsrc=;recent=N;rubplus=TS0;recno=33165707;sid=576e6df4-d2c5-4504-8b1f-0c8175a1155b;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+},
+{"author" : {"firstName" : "Glenn",
+"lastName" : "meade",
+"link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Meade%2C%20Glenn;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=meade%2C%20Glenn;wzsrc=;recent=N;rubplus=TS0;recno=11445704;sid=5415f4d8-11ac-4372-8262-37275140a17b;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"}
+}]}

@@ -5,7 +5,7 @@ import org.scalatest.FeatureSpec
 import org.scalatest.GivenWhenThen
 import org.scalatest.matchers.MustMatchers
 import org.junit.runner.RunWith
-import java.io.File
+import java.io.{PrintWriter, File}
 import com.library.service.LogHelper
 
 @RunWith(classOf[JUnitRunner])
@@ -183,6 +183,23 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
     bookShelf.read
     Then("The resulting bookshelf contains 3 books")
     3 must be === bookShelf.getAllBooks.size
+  }
+
+  scenario("Print only books with status UNREAD as JSON") {
+    Given("A list of books")
+    val jsonFile = "data/test/jsonFileForStatusTestInBookShelfTest.json"
+    When("The list is loaded by a BookShelf")
+    val bookShelf = new FileBasedBookShelf(jsonFile)
+    bookShelf.read
+    val unknownBooks = bookShelf.printBooksWithUnknownStatusAsJson
+    val printWriter = new PrintWriter(new File("/tmp/unreadbooksonly.json"))
+    try {
+      printWriter.print(unknownBooks)
+    } finally printWriter.close
+    val bookShelfUnread = new FileBasedBookShelf("/tmp/unreadbooksonly.json")
+    bookShelfUnread.read
+    Then("The resulting bookshelf contains 1 book")
+    1 must be === bookShelfUnread.getAllBooks.size
   }
 
 }
