@@ -5,11 +5,12 @@ import scala.util.parsing.json.JSON
 /**
  * Represents a Book in the library
  */
-case class Book(author: Author, title: String, status: String = Book.UNKNOWN, link: String = "unknown") {
+case class Book(author: Author, title: String, status: String = Book.UNKNOWN, link: String = "empty") {
 
   override def toString = getKey + ";" + status
 
   def setStatus(newStatus: String): Book = new Book(author, title, newStatus, link)
+  def setLink(newLink:String):Book = new Book(author, title, status, newLink)
 
   override def equals(o: Any): Boolean = {
     val other = o.asInstanceOf[Book]

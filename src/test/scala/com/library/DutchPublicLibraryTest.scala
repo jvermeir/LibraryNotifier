@@ -91,5 +91,16 @@ class DutchPublicLibraryTest extends DutchPublicLibrary with FeatureSpec with Gi
       Then("only books with status 'UNKNOWN' are returned")
       booksToBeRead must be === List(unknownBook)
     }
+
+    scenario("replace sid in a books link") {
+      Given("A book link and an sid")
+      val sid = httpClient.startBicatSessionAndReturnSid
+      val link = """http://bicat.cultura-ede.nl/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Atwood%2C%20Margaret;titcode=294174;rubplus=TS0;vv=JN;vestfiltgrp=;sid=5e4b3e16-e6b2-420e-b026-b247fe387488;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"""
+      When("We call the setSid method")
+      val newLink = httpClient.setSidInLink(link)
+      Then("The result contains the new sid")
+      true must be === newLink.contains(httpClient.sid)
+    }
+
   }
 }

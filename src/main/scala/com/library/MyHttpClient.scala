@@ -41,7 +41,9 @@ class MyHttpClient extends LogHelper{
     val response = httpclient.execute(httpget, httpContext)
     val page = EntityUtils.toString(response.getEntity)
     val pattern = """";sid=.*?;"""".r
-    pattern.findFirstMatchIn(page).map(_ group 1).getOrElse("")
+    val s = pattern.findFirstMatchIn(page).map(_ group 1).getOrElse("")
+    logger.debug("sid: " + sid)
+    s
   }
 
   protected[library] def getBicatCookie: Cookie = {
@@ -80,16 +82,18 @@ class MyHttpClient extends LogHelper{
   protected[library] def getBookPageAsHtmlByAuthor(author: Author): String = {
     logger.debug("getBookPageAsHtmlByAuthor: " + author)
     val link = author.linkToListOfBooks
-    val httpParams:HttpParams  = new BasicHttpParams
-    httpParams.setParameter("Content-Type","text/plain; charset=ISO-8859-15")
-    val httpclient = new DefaultHttpClient(httpParams)
-    val url = "http://bicat.cultura-ede.nl" + link
-    val localContext = new BasicHttpContext
-    val httpget = new HttpGet(url)
-    val response = httpclient.execute(httpget, localContext)
-    val result = scala.io.Source.fromInputStream(response.getEntity.getContent)(Codec.ISO8859).mkString("")
-    logger.debug("getBookPageAsHtmlByAuthor: " + result)
-    result
+    val bookPage=if (link!="unknown") {
+      val httpParams: HttpParams = new BasicHttpParams
+      httpParams.setParameter("Content-Type", "text/plain; charset=ISO-8859-15")
+      val httpclient = new DefaultHttpClient(httpParams)
+      val url = "http://bicat.cultura-ede.nl" + link
+      val localContext = new BasicHttpContext
+      val httpget = new HttpGet(url)
+      val response = httpclient.execute(httpget, localContext)
+      scala.io.Source.fromInputStream(response.getEntity.getContent)(Codec.ISO8859).mkString("")
+    } else "page not found"
+    logger.debug("getBookPageAsHtmlByAuthor: " + bookPage)
+    bookPage
   }
 
   def getBookPageAsHtmlFromBookUrl(book: Book): String = {
@@ -97,7 +101,7 @@ class MyHttpClient extends LogHelper{
     val httpParams:HttpParams  = new BasicHttpParams
     httpParams.setParameter("Content-Type","text/plain; charset=ISO-8859-15")
     val httpclient = new DefaultHttpClient(httpParams)
-    val url = "http://bicat.cultura-ede.nl" + book.link
+    val url = "http://bicat.cultura-ede.nl" + setSidInLink(book.link)
     val localContext = new BasicHttpContext
     val httpget = new HttpGet(url)
     val response = httpclient.execute(httpget, localContext)
@@ -105,5 +109,13 @@ class MyHttpClient extends LogHelper{
     logger.debug("result: " + result)
     result
   }
+
+  def setSidInLink(link:String):String = {
+    val pattern = """;sid=.*?;""".r
+    val newLink = pattern.replaceAllIn(link, ";sid="+sid+";")
+    logger.info("old link: " + link + "\nnew link: " + newLink)
+    newLink
+  }
+
 
 }

@@ -1,2236 +1,2795 @@
 {"books" : [{"author" : {"firstName" : "Gauke",
-"lastName" : "Andriesse"}
-, "title" : "De dode opdrachtgever", "status" : "unknown", "link" : "unknown"
+"lastName" : "Andriesse",
+"link" : ""}
+, "title" : "De dode opdrachtgever", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Andriesse%2C%20Gauke;titcode=22978;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=0ac5b4fa-7c92-48bf-9b0d-2642caf318be;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Gauke",
-"lastName" : "Andriesse"}
-, "title" : "De handen van Kalman Teller", "status" : "unknown", "link" : "unknown"
+"lastName" : "Andriesse",
+"link" : ""}
+, "title" : "De handen van Kalman Teller", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Andriesse%2C%20Gauke;titcode=23023;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=0ac5b4fa-7c92-48bf-9b0d-2642caf318be;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Gauke",
-"lastName" : "Andriesse"}
-, "title" : "De verdwenen schilderijen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Andriesse",
+"link" : ""}
+, "title" : "De verdwenen schilderijen", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Andriesse%2C%20Gauke;titcode=23192;rubplus=TS0;vv=JN;vestfiltgrp=;sid=0ac5b4fa-7c92-48bf-9b0d-2642caf318be;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Gauke",
-"lastName" : "Andriesse"}
-, "title" : "Stilzwijgen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Andriesse",
+"link" : ""}
+, "title" : "Stilzwijgen", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Andriesse%2C%20Gauke;titcode=23159;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=0ac5b4fa-7c92-48bf-9b0d-2642caf318be;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Margaret",
-"lastName" : "Atwood"}
-, "title" : "Brave new world", "status" : "unknown", "link" : "unknown"
+"lastName" : "Atwood",
+"link" : ""}
+, "title" : "Brave new world", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Atwood%2C%20Margaret;titcode=24213;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=5e4b3e16-e6b2-420e-b026-b247fe387488;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Margaret",
-"lastName" : "Atwood"}
-, "title" : "Cat's eye", "status" : "unknown", "link" : "unknown"
+"lastName" : "Atwood",
+"link" : ""}
+, "title" : "Cat's eye", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Atwood%2C%20Margaret;titcode=20092;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=5e4b3e16-e6b2-420e-b026-b247fe387488;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Margaret",
-"lastName" : "Atwood"}
-, "title" : "Dansende meisjes", "status" : "unknown", "link" : "unknown"
+"lastName" : "Atwood",
+"link" : ""}
+, "title" : "Dansende meisjes", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Atwood%2C%20Margaret;titcode=24212;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=5e4b3e16-e6b2-420e-b026-b247fe387488;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Margaret",
-"lastName" : "Atwood"}
-, "title" : "De blinde huurmoordenaar", "status" : "unknown", "link" : "unknown"
+"lastName" : "Atwood",
+"link" : ""}
+, "title" : "De blinde huurmoordenaar", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Atwood%2C%20Margaret;titcode=24209;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=5e4b3e16-e6b2-420e-b026-b247fe387488;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Margaret",
-"lastName" : "Atwood"}
-, "title" : "De blinde huurmoordenaar. - Dl. 1", "status" : "wontread", "link" : "unknown"
+"lastName" : "Atwood",
+"link" : ""}
+, "title" : "De blinde huurmoordenaar. - Dl. 1", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Margaret",
-"lastName" : "Atwood"}
-, "title" : "De blinde huurmoordenaar. - Dl. 2", "status" : "wontread", "link" : "unknown"
+"lastName" : "Atwood",
+"link" : ""}
+, "title" : "De blinde huurmoordenaar. - Dl. 2", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Margaret",
-"lastName" : "Atwood"}
-, "title" : "De tent", "status" : "unknown", "link" : "unknown"
+"lastName" : "Atwood",
+"link" : ""}
+, "title" : "De tent", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Atwood%2C%20Margaret;titcode=24216;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=5e4b3e16-e6b2-420e-b026-b247fe387488;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Margaret",
-"lastName" : "Atwood"}
-, "title" : "Het jaar van de vloed", "status" : "unknown", "link" : "unknown"
+"lastName" : "Atwood",
+"link" : ""}
+, "title" : "Het jaar van de vloed", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Atwood%2C%20Margaret;titcode=24222;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=5e4b3e16-e6b2-420e-b026-b247fe387488;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Margaret",
-"lastName" : "Atwood"}
-, "title" : "Het verhaal van de dienstmaagd", "status" : "unknown", "link" : "unknown"
+"lastName" : "Atwood",
+"link" : ""}
+, "title" : "Het verhaal van de dienstmaagd", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Atwood%2C%20Margaret;titcode=24210;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=5e4b3e16-e6b2-420e-b026-b247fe387488;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Margaret",
-"lastName" : "Atwood"}
-, "title" : "Het was een donkere en stormachtige nacht", "status" : "unknown", "link" : "unknown"
+"lastName" : "Atwood",
+"link" : ""}
+, "title" : "Het was een donkere en stormachtige nacht", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Atwood%2C%20Margaret;titcode=24226;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=5e4b3e16-e6b2-420e-b026-b247fe387488;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Margaret",
-"lastName" : "Atwood"}
-, "title" : "MaddAddam", "status" : "unknown", "link" : "unknown"
+"lastName" : "Atwood",
+"link" : ""}
+, "title" : "MaddAddam", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Atwood%2C%20Margaret;titcode=24219;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=5e4b3e16-e6b2-420e-b026-b247fe387488;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Margaret",
-"lastName" : "Atwood"}
-, "title" : "Moreel verval", "status" : "unknown", "link" : "unknown"
+"lastName" : "Atwood",
+"link" : ""}
+, "title" : "Moreel verval", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Atwood%2C%20Margaret;titcode=495468;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=5e4b3e16-e6b2-420e-b026-b247fe387488;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Margaret",
-"lastName" : "Atwood"}
-, "title" : "Oryx and Crake", "status" : "read", "link" : "unknown"
+"lastName" : "Atwood",
+"link" : ""}
+, "title" : "Oryx and Crake", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Atwood%2C%20Margaret;titcode=24207;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=5e4b3e16-e6b2-420e-b026-b247fe387488;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Margaret",
-"lastName" : "Atwood"}
-, "title" : "Oryx en Crake", "status" : "read", "link" : "unknown"
+"lastName" : "Atwood",
+"link" : ""}
+, "title" : "Oryx en Crake", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Atwood%2C%20Margaret;titcode=24217;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=5e4b3e16-e6b2-420e-b026-b247fe387488;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Margaret",
-"lastName" : "Atwood"}
-, "title" : "Penelope : de mythe van de vrouw van Odysseus", "status" : "unknown", "link" : "unknown"
+"lastName" : "Atwood",
+"link" : ""}
+, "title" : "Penelope : de mythe van de vrouw van Odysseus", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Atwood%2C%20Margaret;titcode=24224;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=5e4b3e16-e6b2-420e-b026-b247fe387488;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Margaret",
-"lastName" : "Atwood"}
-, "title" : "The handmaid's tale. - Oorspr. uitg.: London : Cape, 1986.", "status" : "unknown", "link" : "unknown"
+"lastName" : "Atwood",
+"link" : ""}
+, "title" : "The handmaid's tale. - Oorspr. uitg.: London : Cape, 1986.", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Atwood%2C%20Margaret;titcode=24220;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=5e4b3e16-e6b2-420e-b026-b247fe387488;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Margaret",
-"lastName" : "Atwood"}
-, "title" : "The tent", "status" : "unknown", "link" : "unknown"
+"lastName" : "Atwood",
+"link" : ""}
+, "title" : "The tent", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Margaret",
-"lastName" : "Atwood"}
-, "title" : "The year of the flood", "status" : "unknown", "link" : "unknown"
+"lastName" : "Atwood",
+"link" : ""}
+, "title" : "The year of the flood", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Atwood%2C%20Margaret;titcode=294174;rubplus=TS0;vv=JN;vestfiltgrp=;sid=5e4b3e16-e6b2-420e-b026-b247fe387488;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "De aanslag", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "De aanslag", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "De laatste man", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "De laatste man", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "De provocatie", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "De provocatie", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "De provocatie : dyslexie vriendelijke uitgave", "status" : "wontread", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "De provocatie : dyslexie vriendelijke uitgave", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "De rechtvaardigen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "De rechtvaardigen", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "De rechtvaardigen [Bd. 1]. - Bd. 1", "status" : "wontread", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "De rechtvaardigen [Bd. 1]. - Bd. 1", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "De rechtvaardigen [Bd. 2]. - Bd. 2", "status" : "wontread", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "De rechtvaardigen [Bd. 2]. - Bd. 2", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "De samenzwering", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "De samenzwering", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Deliver us from evil", "status" : "read", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Deliver us from evil", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Divine justice", "status" : "read", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Divine justice", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Doelwit", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Doelwit", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Duister lot", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Duister lot", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Familieverraad", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Familieverraad", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Familieverraad [Bd. 1]. - Bd. 1", "status" : "wontread", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Familieverraad [Bd. 1]. - Bd. 1", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Familieverraad [Bd. 2]. - Bd. 2", "status" : "wontread", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Familieverraad [Bd. 2]. - Bd. 2", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "First family", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "First family", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Freddie en de frietvrienden : lang leve de Frieten!", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Freddie en de frietvrienden : lang leve de Frieten!", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Geen rust voor de doden : een roman van Jeff Abbott ... Marcia Talley", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Geen rust voor de doden : een roman van Jeff Abbott ... Marcia Talley", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Geniaal geheim", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Geniaal geheim", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Geniaal geheim, bd. 1", "status" : "wontread", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Geniaal geheim, bd. 1", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Hell's corner", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Hell's corner", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Het recht van de macht", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Het recht van de macht", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Hour game", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Hour game", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "In het geheim", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "In het geheim", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "In het geheim [Bd. 1]. - Bd. 1", "status" : "wontread", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "In het geheim [Bd. 1]. - Bd. 1", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "In het geheim [Bd. 2]. - Bd. 2", "status" : "wontread", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "In het geheim [Bd. 2]. - Bd. 2", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "In het hart", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "In het hart", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Last man standing", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Last man standing", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Nachtreizigers", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Nachtreizigers", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Nachtwerk", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Nachtwerk", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Niets dan de waarheid", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Niets dan de waarheid", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Niets dan de waarheid. - Bd. 1", "status" : "wontread", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Niets dan de waarheid. - Bd. 1", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Niets dan de waarheid. - Bd. 2", "status" : "wontread", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Niets dan de waarheid. - Bd. 2", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Onbewaakt ogenblik", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Onbewaakt ogenblik", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Onbewaakt ogenblik. - Bd. 1", "status" : "wontread", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Onbewaakt ogenblik. - Bd. 1", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Onbewaakt ogenblik. - Bd. 2", "status" : "wontread", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Onbewaakt ogenblik. - Bd. 2", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Onder druk", "status" : "read", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Onder druk", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "One summer", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "One summer", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Onschuldig", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Onschuldig", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Onschuldig. - 1", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Onschuldig. - 1", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Onschuldig. - 2", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Onschuldig. - 2", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Op eigen gezag", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Op eigen gezag", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Rechteloos", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Rechteloos", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Rechteloos [Bd. 1]. - Bd. 1", "status" : "wontread", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Rechteloos [Bd. 1]. - Bd. 1", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Rechteloos [Bd. 2]. - Bd. 2", "status" : "wontread", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Rechteloos [Bd. 2]. - Bd. 2", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "Saving faith", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "Saving faith", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "The Camel Club", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "The Camel Club", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "The Christmas train", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "The Christmas train", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "The collectors", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "The collectors", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "The forgotten", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "The forgotten", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "The hit", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "The hit", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "David",
-"lastName" : "Baldacci"}
-, "title" : "The innocent", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldacci",
+"link" : ""}
+, "title" : "The innocent", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Kim",
-"lastName" : "Baldwin"}
-, "title" : "Dubbel doelwit : thriller", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldwin",
+"link" : ""}
+, "title" : "Dubbel doelwit : thriller", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Baldwin%2C%20Kim;titcode=25611;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=e8a3c925-b114-4825-a198-e36cb5c483c1;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Kim",
-"lastName" : "Baldwin"}
-, "title" : "Explosieve erfenis : thriller", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldwin",
+"link" : ""}
+, "title" : "Explosieve erfenis : thriller", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Baldwin%2C%20Kim;titcode=25622;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e8a3c925-b114-4825-a198-e36cb5c483c1;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Kim",
-"lastName" : "Baldwin"}
-, "title" : "Ontmaskerd : thriller", "status" : "unknown", "link" : "unknown"
+"lastName" : "Baldwin",
+"link" : ""}
+, "title" : "Ontmaskerd : thriller", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Baldwin%2C%20Kim;titcode=371152;rubplus=TS0;vv=JN;vestfiltgrp=;sid=e8a3c925-b114-4825-a198-e36cb5c483c1;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Jim G.",
-"lastName" : "Ballard"}
-, "title" : "Empire of the sun", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ballard",
+"link" : ""}
+, "title" : "Empire of the sun", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Jim G.",
-"lastName" : "Ballard"}
-, "title" : "Millenniummensen : roman", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ballard",
+"link" : ""}
+, "title" : "Millenniummensen : roman", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Jim G.",
-"lastName" : "Ballard"}
-, "title" : "Super-Cannes : roman", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ballard",
+"link" : ""}
+, "title" : "Super-Cannes : roman", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Linwood",
-"lastName" : "Barclay"}
-, "title" : "Dicht bij huis", "status" : "unknown", "link" : "unknown"
+"lastName" : "Barclay",
+"link" : ""}
+, "title" : "Dicht bij huis", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Barclay%2C%20Linwood;titcode=26171;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=f365757d-3e76-44a6-9e76-07fd9e0ec7fa;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Linwood",
-"lastName" : "Barclay"}
-, "title" : "Fear the worst", "status" : "unknown", "link" : "unknown"
+"lastName" : "Barclay",
+"link" : ""}
+, "title" : "Fear the worst", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Barclay%2C%20Linwood;titcode=458242;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=f365757d-3e76-44a6-9e76-07fd9e0ec7fa;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Linwood",
-"lastName" : "Barclay"}
-, "title" : "Geloof je ogen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Barclay",
+"link" : ""}
+, "title" : "Geloof je ogen", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Barclay%2C%20Linwood;titcode=438826;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=f365757d-3e76-44a6-9e76-07fd9e0ec7fa;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Linwood",
-"lastName" : "Barclay"}
-, "title" : "Het ongeluk", "status" : "wontread", "link" : "unknown"
+"lastName" : "Barclay",
+"link" : ""}
+, "title" : "Het ongeluk", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Barclay%2C%20Linwood;titcode=26049;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=f365757d-3e76-44a6-9e76-07fd9e0ec7fa;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Linwood",
-"lastName" : "Barclay"}
-, "title" : "Kijk niet weg", "status" : "read", "link" : "unknown"
+"lastName" : "Barclay",
+"link" : ""}
+, "title" : "Kijk niet weg", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Barclay%2C%20Linwood;titcode=335779;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=f365757d-3e76-44a6-9e76-07fd9e0ec7fa;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Linwood",
-"lastName" : "Barclay"}
-, "title" : "Never look away", "status" : "read", "link" : "unknown"
+"lastName" : "Barclay",
+"link" : ""}
+, "title" : "Never look away", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Linwood",
-"lastName" : "Barclay"}
-, "title" : "Never saw it coming", "status" : "unknown", "link" : "unknown"
+"lastName" : "Barclay",
+"link" : ""}
+, "title" : "Never saw it coming", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Barclay%2C%20Linwood;titcode=347317;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=f365757d-3e76-44a6-9e76-07fd9e0ec7fa;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Linwood",
-"lastName" : "Barclay"}
-, "title" : "No time for goodbye", "status" : "unknown", "link" : "unknown"
+"lastName" : "Barclay",
+"link" : ""}
+, "title" : "No time for goodbye", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Barclay%2C%20Linwood;titcode=26275;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=f365757d-3e76-44a6-9e76-07fd9e0ec7fa;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Linwood",
-"lastName" : "Barclay"}
-, "title" : "Stone rain", "status" : "read", "link" : "unknown"
+"lastName" : "Barclay",
+"link" : ""}
+, "title" : "Stone rain", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Barclay%2C%20Linwood;titcode=347314;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=f365757d-3e76-44a6-9e76-07fd9e0ec7fa;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Linwood",
-"lastName" : "Barclay"}
-, "title" : "The accident", "status" : "read", "link" : "unknown"
+"lastName" : "Barclay",
+"link" : ""}
+, "title" : "The accident", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Barclay%2C%20Linwood;titcode=26387;rubplus=TS0;vv=JN;vestfiltgrp=;sid=f365757d-3e76-44a6-9e76-07fd9e0ec7fa;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Linwood",
-"lastName" : "Barclay"}
-, "title" : "Too close to home", "status" : "unknown", "link" : "unknown"
+"lastName" : "Barclay",
+"link" : ""}
+, "title" : "Too close to home", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Barclay%2C%20Linwood;titcode=26009;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=f365757d-3e76-44a6-9e76-07fd9e0ec7fa;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Linwood",
-"lastName" : "Barclay"}
-, "title" : "Trust your eyes", "status" : "read", "link" : "unknown"
+"lastName" : "Barclay",
+"link" : ""}
+, "title" : "Trust your eyes", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Barclay%2C%20Linwood;titcode=26250;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=f365757d-3e76-44a6-9e76-07fd9e0ec7fa;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Linwood",
-"lastName" : "Barclay"}
-, "title" : "Vrees het ergste", "status" : "unknown", "link" : "unknown"
+"lastName" : "Barclay",
+"link" : ""}
+, "title" : "Vrees het ergste", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Barclay%2C%20Linwood;titcode=26237;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=f365757d-3e76-44a6-9e76-07fd9e0ec7fa;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Linwood",
-"lastName" : "Barclay"}
-, "title" : "Vrees het ergste. - 1", "status" : "wontread", "link" : "unknown"
+"lastName" : "Barclay",
+"link" : ""}
+, "title" : "Vrees het ergste. - 1", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Barclay%2C%20Linwood;titcode=483056;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=f365757d-3e76-44a6-9e76-07fd9e0ec7fa;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Linwood",
-"lastName" : "Barclay"}
-, "title" : "Vrees het ergste. - 2", "status" : "wontread", "link" : "unknown"
+"lastName" : "Barclay",
+"link" : ""}
+, "title" : "Vrees het ergste. - 2", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Barclay%2C%20Linwood;titcode=273412;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=f365757d-3e76-44a6-9e76-07fd9e0ec7fa;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Linwood",
-"lastName" : "Barclay"}
-, "title" : "Zonder een woord", "status" : "unknown", "link" : "unknown"
+"lastName" : "Barclay",
+"link" : ""}
+, "title" : "Zonder een woord", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Barclay%2C%20Linwood;titcode=490186;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=f365757d-3e76-44a6-9e76-07fd9e0ec7fa;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Alex",
-"lastName" : "Berenson"}
-, "title" : "De betrouwbare terrorist", "status" : "unknown", "link" : "unknown"
+"lastName" : "Berenson",
+"link" : ""}
+, "title" : "De betrouwbare terrorist", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Alex",
-"lastName" : "Berenson"}
-, "title" : "Het Beijing complot", "status" : "unknown", "link" : "unknown"
+"lastName" : "Berenson",
+"link" : ""}
+, "title" : "Het Beijing complot", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Alex",
-"lastName" : "Berenson"}
-, "title" : "The Midnight House", "status" : "read", "link" : "unknown"
+"lastName" : "Berenson",
+"link" : ""}
+, "title" : "The Midnight House", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Blijf dichtbij", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Blijf dichtbij", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Caught", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Caught", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Darkest fear", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Darkest fear", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "De onschuldigen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "De onschuldigen", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Dood spel", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Dood spel", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Eens beloofd", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Eens beloofd", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Foute boel!", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Foute boel!", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Geen tweede kans", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Geen tweede kans", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Geen tweede kans. - Bd. 1", "status" : "wontread", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Geen tweede kans. - Bd. 1", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Geen tweede kans. - Bd. 2", "status" : "wontread", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Geen tweede kans. - Bd. 2", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Geleende tijd", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Geleende tijd", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Geleende tijd. - Bd. 1", "status" : "wontread", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Geleende tijd. - Bd. 1", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Geleende tijd. - Bd. 2", "status" : "wontread", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Geleende tijd. - Bd. 2", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Genezing", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Genezing", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Gone for good", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Gone for good", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Hold tight", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Hold tight", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Houvast", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Houvast", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Ik mis je", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Ik mis je", "status" : "unknown", "link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Coben%2C%20Harlan;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Coben%2C%20Harlan;wzsrc=;recent=N;rubplus=TS0;recno=1701973010;sid=22f37ebb-7a13-4083-b390-0dedfa339d88;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Just one look", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Just one look", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Klein detail", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Klein detail", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Laatste kans", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Laatste kans", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Levenslijn", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Levenslijn", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Long lost", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Long lost", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Miracle cure", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Miracle cure", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Momentopname", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Momentopname", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Niemand vertellen", "status" : "read", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Niemand vertellen", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "No second chance", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "No second chance", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Nu of nooit", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Nu of nooit", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Ontwricht", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Ontwricht", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Play dead", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Play dead", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Schaduwleven", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Schaduwleven", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Schijnbeweging", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Schijnbeweging", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Schuilplaats", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Schuilplaats", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Six years", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Six years", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Spoorloos", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Spoorloos", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Stay close", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Stay close", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Tegenwerking", "status" : "read", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Tegenwerking", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Tell no one", "status" : "read", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Tell no one", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "The innocent", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "The innocent", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "The woods", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "The woods", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Vals spel", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Vals spel", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Verloren", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Verloren", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Vermist", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Vermist", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Verzoeking", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Verzoeking", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Harlan",
-"lastName" : "Coben"}
-, "title" : "Zes jaar", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coben",
+"link" : ""}
+, "title" : "Zes jaar", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Betonblond", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Betonblond", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Betonblond. - 1", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Betonblond. - 1", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Betonblond. - 2", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Betonblond. - 2", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Blind vertrouwen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Blind vertrouwen", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Bloedbeeld", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Bloedbeeld", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Chasing the dime : a novel", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Chasing the dime : a novel", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "City of bones", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "City of bones", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "De Lincoln-advocaat", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "De Lincoln-advocaat", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "De Lincoln-advocaat. - Bd. 1", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "De Lincoln-advocaat. - Bd. 1", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "De Lincoln-advocaat. - Bd. 2", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "De Lincoln-advocaat. - Bd. 2", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "De dichter", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "De dichter", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "De herziening", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "De herziening", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "De jacht", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "De jacht", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "De val", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "De val", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "De zwarte doos", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "De zwarte doos", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Donkerder dan de nacht", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Donkerder dan de nacht", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Echo Park", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Echo Park", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Het laatste oordeel", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Het laatste oordeel", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Het laatste oordeel [Bd. 1]. - Bd. 1", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Het laatste oordeel [Bd. 1]. - Bd. 1", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Het laatste oordeel [Bd. 2]. - Bd. 2", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Het laatste oordeel [Bd. 2]. - Bd. 2", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Het recht om te zwijgen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Het recht om te zwijgen", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Lost light", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Lost light", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Maanstand", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Maanstand", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Nine dragons", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Nine dragons", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Ongrijpbaar", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Ongrijpbaar", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Ongrijpbaar [Bd. 1]. - Bd. 1", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Ongrijpbaar [Bd. 1]. - Bd. 1", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Ongrijpbaar [Bd. 2]. - Bd. 2", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Ongrijpbaar [Bd. 2]. - Bd. 2", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Slotakkoord", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Slotakkoord", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Spoordood", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Spoordood", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Stad van beenderen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Stad van beenderen", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Stroomversnelling", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Stroomversnelling", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "The Closers", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "The Closers", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "The Lincoln lawyer", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "The Lincoln lawyer", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "The black box", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "The black box", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "The brass verdict", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "The brass verdict", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "The drop", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "The drop", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "The fifth witness", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "The fifth witness", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "The gods of guilt", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "The gods of guilt", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "The last coyote", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "The last coyote", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "The overlook", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "The overlook", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "The reversal", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "The reversal", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "The scarecrow", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "The scarecrow", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Tunnelrat", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Tunnelrat", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Tweede leven", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Tweede leven", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Tweede leven [Bd. 1]. - Bd. 1", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Tweede leven [Bd. 1]. - Bd. 1", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Tweede leven [Bd. 2]. - Bd. 2", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Tweede leven [Bd. 2]. - Bd. 2", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Connelly"}
-, "title" : "Verloren licht", "status" : "unknown", "link" : "unknown"
+"lastName" : "Connelly",
+"link" : ""}
+, "title" : "Verloren licht", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Douglas",
-"lastName" : "Coupland"}
-, "title" : "De kauwgomdief", "status" : "read", "link" : "unknown"
+"lastName" : "Coupland",
+"link" : ""}
+, "title" : "De kauwgomdief", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Coupland%2C%20Douglas;titcode=378944;rubplus=TS0;vv=JN;vestfiltgrp=;sid=c79cdf1a-4cb7-4fe9-987e-8e82dcb7c1d0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Douglas",
-"lastName" : "Coupland"}
-, "title" : "Eleanor Rigby", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coupland",
+"link" : ""}
+, "title" : "Eleanor Rigby", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Coupland%2C%20Douglas;titcode=41069;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=c79cdf1a-4cb7-4fe9-987e-8e82dcb7c1d0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Douglas",
-"lastName" : "Coupland"}
-, "title" : "Generatie A : roman", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coupland",
+"link" : ""}
+, "title" : "Generatie A : roman", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Douglas",
-"lastName" : "Coupland"}
-, "title" : "Generatie X : vertellingen voor een versnelde cultuur : roman", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coupland",
+"link" : ""}
+, "title" : "Generatie X : vertellingen voor een versnelde cultuur : roman", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Coupland%2C%20Douglas;titcode=41027;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=c79cdf1a-4cb7-4fe9-987e-8e82dcb7c1d0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Douglas",
-"lastName" : "Coupland"}
-, "title" : "He Nostradamus! : roman", "status" : "unknown", "link" : "unknown"
+"lastName" : "Coupland",
+"link" : ""}
+, "title" : "He Nostradamus! : roman", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Douglas",
-"lastName" : "Coupland"}
-, "title" : "JPod", "status" : "read", "link" : "unknown"
+"lastName" : "Coupland",
+"link" : ""}
+, "title" : "JPod", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Douglas",
-"lastName" : "Coupland"}
-, "title" : "Miss Wyoming : roman", "status" : "read", "link" : "unknown"
+"lastName" : "Coupland",
+"link" : ""}
+, "title" : "Miss Wyoming : roman", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Douglas",
-"lastName" : "Coupland"}
-, "title" : "Speler Een", "status" : "read", "link" : "unknown"
+"lastName" : "Coupland",
+"link" : ""}
+, "title" : "Speler Een", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Coupland%2C%20Douglas;titcode=41048;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=c79cdf1a-4cb7-4fe9-987e-8e82dcb7c1d0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Douglas",
-"lastName" : "Coupland"}
-, "title" : "The gum thief", "status" : "read", "link" : "unknown"
+"lastName" : "Coupland",
+"link" : ""}
+, "title" : "The gum thief", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Coupland%2C%20Douglas;titcode=41046;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=c79cdf1a-4cb7-4fe9-987e-8e82dcb7c1d0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Charles",
-"lastName" : "Cumming"}
-, "title" : "A spy by nature", "status" : "unknown", "link" : "unknown"
+"lastName" : "Cumming",
+"link" : ""}
+, "title" : "A spy by nature", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Cumming%2C%20Charles;titcode=41859;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=0d031dc4-3b4d-47dd-8bc7-35b43cb49244;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Charles",
-"lastName" : "Cumming"}
-, "title" : "The Trinity Six", "status" : "unknown", "link" : "unknown"
+"lastName" : "Cumming",
+"link" : ""}
+, "title" : "The Trinity Six", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Cumming%2C%20Charles;titcode=41860;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=0d031dc4-3b4d-47dd-8bc7-35b43cb49244;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Charles",
-"lastName" : "Cumming"}
-, "title" : "Typhoon", "status" : "unknown", "link" : "unknown"
+"lastName" : "Cumming",
+"link" : ""}
+, "title" : "Typhoon", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Cumming%2C%20Charles;titcode=41862;rubplus=TS0;vv=JN;vestfiltgrp=;sid=0d031dc4-3b4d-47dd-8bc7-35b43cb49244;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "warren",
-"lastName" : "Ellis"}
-, "title" : "RED", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ellis",
+"link" : ""}
+, "title" : "RED", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Ellis%2C%20Warren;titcode=16069;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=af6ce584-dc95-4995-8e6d-7391d6e66d1a;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "warren",
-"lastName" : "Ellis"}
-, "title" : "RED 2", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ellis",
+"link" : ""}
+, "title" : "RED 2", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Ellis%2C%20Warren;titcode=502812;rubplus=TS0;vv=JN;vestfiltgrp=;sid=af6ce584-dc95-4995-8e6d-7391d6e66d1a;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Allan",
-"lastName" : "Folsom"}
-, "title" : "Dag van bekentenis", "status" : "unknown", "link" : "unknown"
+"lastName" : "Folsom",
+"link" : ""}
+, "title" : "Dag van bekentenis", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Allan",
-"lastName" : "Folsom"}
-, "title" : "Dag van de samenzwering", "status" : "unknown", "link" : "unknown"
+"lastName" : "Folsom",
+"link" : ""}
+, "title" : "Dag van de samenzwering", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Allan",
-"lastName" : "Folsom"}
-, "title" : "Dag van ontmaskering", "status" : "unknown", "link" : "unknown"
+"lastName" : "Folsom",
+"link" : ""}
+, "title" : "Dag van ontmaskering", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Allan",
-"lastName" : "Folsom"}
-, "title" : "Dag van vergelding", "status" : "unknown", "link" : "unknown"
+"lastName" : "Folsom",
+"link" : ""}
+, "title" : "Dag van vergelding", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Allan",
-"lastName" : "Folsom"}
-, "title" : "De dag na morgen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Folsom",
+"link" : ""}
+, "title" : "De dag na morgen", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Allan",
-"lastName" : "Folsom"}
-, "title" : "The Hadrian Memorandum", "status" : "unknown", "link" : "unknown"
+"lastName" : "Folsom",
+"link" : ""}
+, "title" : "The Hadrian Memorandum", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Allan",
-"lastName" : "Folsom"}
-, "title" : "The Hadrian memorandum", "status" : "unknown", "link" : "unknown"
+"lastName" : "Folsom",
+"link" : ""}
+, "title" : "The Hadrian memorandum", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Allan",
-"lastName" : "Folsom"}
-, "title" : "The exile", "status" : "unknown", "link" : "unknown"
+"lastName" : "Folsom",
+"link" : ""}
+, "title" : "The exile", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Neil",
-"lastName" : "Gaiman"}
-, "title" : "Alles is breekbaar", "status" : "read", "link" : "unknown"
+"lastName" : "Gaiman",
+"link" : ""}
+, "title" : "Alles is breekbaar", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Gaiman%2C%20Neil;titcode=53893;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=02356dc9-8ec4-4e44-8bf7-9af93cd50ded;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Neil",
-"lastName" : "Gaiman"}
-, "title" : "Amerikaanse goden", "status" : "read", "link" : "unknown"
+"lastName" : "Gaiman",
+"link" : ""}
+, "title" : "Amerikaanse goden", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Gaiman%2C%20Neil;titcode=53903;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=02356dc9-8ec4-4e44-8bf7-9af93cd50ded;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Neil",
-"lastName" : "Gaiman"}
-, "title" : "Coraline", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gaiman",
+"link" : ""}
+, "title" : "Coraline", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Gaiman%2C%20Neil;titcode=53895;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=02356dc9-8ec4-4e44-8bf7-9af93cd50ded;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Neil",
-"lastName" : "Gaiman"}
-, "title" : "De bende van Anansi", "status" : "read", "link" : "unknown"
+"lastName" : "Gaiman",
+"link" : ""}
+, "title" : "De bende van Anansi", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Gaiman%2C%20Neil;titcode=53906;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=02356dc9-8ec4-4e44-8bf7-9af93cd50ded;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Neil",
-"lastName" : "Gaiman"}
-, "title" : "De oceaan aan het einde van het pad", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gaiman",
+"link" : ""}
+, "title" : "De oceaan aan het einde van het pad", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Gaiman%2C%20Neil;titcode=53910;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=02356dc9-8ec4-4e44-8bf7-9af93cd50ded;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Neil",
-"lastName" : "Gaiman"}
-, "title" : "Het kerkhof", "status" : "wontread", "link" : "unknown"
+"lastName" : "Gaiman",
+"link" : ""}
+, "title" : "Het kerkhof", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Gaiman%2C%20Neil;titcode=485419;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=02356dc9-8ec4-4e44-8bf7-9af93cd50ded;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Neil",
-"lastName" : "Gaiman"}
-, "title" : "Hoge omens : de oprechte en secure voorspellingen van Agnes Nutter, een heks : een roman", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gaiman",
+"link" : ""}
+, "title" : "Hoge omens : de oprechte en secure voorspellingen van Agnes Nutter, een heks : een roman", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Gaiman%2C%20Neil;titcode=53911;rubplus=TS0;vv=JN;vestfiltgrp=;sid=02356dc9-8ec4-4e44-8bf7-9af93cd50ded;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Neil",
-"lastName" : "Gaiman"}
-, "title" : "Neverwhere : a novel", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gaiman",
+"link" : ""}
+, "title" : "Neverwhere : a novel", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Gaiman%2C%20Neil;titcode=53896;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=02356dc9-8ec4-4e44-8bf7-9af93cd50ded;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Neil",
-"lastName" : "Gaiman"}
-, "title" : "Niemandsland", "status" : "read", "link" : "unknown"
+"lastName" : "Gaiman",
+"link" : ""}
+, "title" : "Niemandsland", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Gaiman%2C%20Neil;titcode=53909;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=02356dc9-8ec4-4e44-8bf7-9af93cd50ded;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Neil",
-"lastName" : "Gaiman"}
-, "title" : "Odd and the frost giants", "status" : "wontread", "link" : "unknown"
+"lastName" : "Gaiman",
+"link" : ""}
+, "title" : "Odd and the frost giants", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Gaiman%2C%20Neil;titcode=53907;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=02356dc9-8ec4-4e44-8bf7-9af93cd50ded;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Neil",
-"lastName" : "Gaiman"}
-, "title" : "Spiegels en rook", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gaiman",
+"link" : ""}
+, "title" : "Spiegels en rook", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Gaiman%2C%20Neil;titcode=53905;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=02356dc9-8ec4-4e44-8bf7-9af93cd50ded;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Neil",
-"lastName" : "Gaiman"}
-, "title" : "Stardust", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gaiman",
+"link" : ""}
+, "title" : "Stardust", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Gaiman%2C%20Neil;titcode=53897;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=02356dc9-8ec4-4e44-8bf7-9af93cd50ded;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Neil",
-"lastName" : "Gaiman"}
-, "title" : "Ster", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gaiman",
+"link" : ""}
+, "title" : "Ster", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Gaiman%2C%20Neil;titcode=53900;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=02356dc9-8ec4-4e44-8bf7-9af93cd50ded;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "William",
-"lastName" : "Gibson"}
-, "title" : "Beeld voor beeld", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gibson",
+"link" : ""}
+, "title" : "Beeld voor beeld", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "William",
-"lastName" : "Gibson"}
-, "title" : "Het stalker syndroom", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gibson",
+"link" : ""}
+, "title" : "Het stalker syndroom", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Andrew",
-"lastName" : "Gross"}
-, "title" : "3rd degree", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gross",
+"link" : ""}
+, "title" : "3rd degree", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Andrew",
-"lastName" : "Gross"}
-, "title" : "Code blauw", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gross",
+"link" : ""}
+, "title" : "Code blauw", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Andrew",
-"lastName" : "Gross"}
-, "title" : "Dodelijke gok", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gross",
+"link" : ""}
+, "title" : "Dodelijke gok", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Andrew",
-"lastName" : "Gross"}
-, "title" : "Don't look twice", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gross",
+"link" : ""}
+, "title" : "Don't look twice", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Andrew",
-"lastName" : "Gross"}
-, "title" : "Killing hour", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gross",
+"link" : ""}
+, "title" : "Killing hour", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Andrew",
-"lastName" : "Gross"}
-, "title" : "Lifeguard", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gross",
+"link" : ""}
+, "title" : "Lifeguard", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Andrew",
-"lastName" : "Gross"}
-, "title" : "Reckless", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gross",
+"link" : ""}
+, "title" : "Reckless", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Andrew",
-"lastName" : "Gross"}
-, "title" : "Roekeloos", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gross",
+"link" : ""}
+, "title" : "Roekeloos", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Andrew",
-"lastName" : "Gross"}
-, "title" : "The blue zone", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gross",
+"link" : ""}
+, "title" : "The blue zone", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Andrew",
-"lastName" : "Gross"}
-, "title" : "The dark tide", "status" : "read", "link" : "unknown"
+"lastName" : "Gross",
+"link" : ""}
+, "title" : "The dark tide", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Andrew",
-"lastName" : "Gross"}
-, "title" : "Valse lading", "status" : "unknown", "link" : "unknown"
+"lastName" : "Gross",
+"link" : ""}
+, "title" : "Valse lading", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Paul",
-"lastName" : "Harland"}
-, "title" : "Computercode Cthulhu", "status" : "unknown", "link" : "unknown"
+"lastName" : "Harland",
+"link" : ""}
+, "title" : "Computercode Cthulhu", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Harland%2C%20Paul%20%28pseud.%20van%3A%20John%20Smit%29;titcode=114820;rubplus=TS0;vv=JN;vestfiltgrp=;sid=31b60435-40ad-4369-b188-c0e68ec39a2e;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Paul",
-"lastName" : "Harland"}
-, "title" : "De werelden van Vince-Crux", "status" : "read", "link" : "unknown"
+"lastName" : "Harland",
+"link" : ""}
+, "title" : "De werelden van Vince-Crux", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Harland%2C%20Paul%20%28pseud.%20van%3A%20John%20Smit%29;titcode=61416;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=31b60435-40ad-4369-b188-c0e68ec39a2e;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Tom",
-"lastName" : "Harper"}
-, "title" : "De verloren tempel", "status" : "unknown", "link" : "unknown"
+"lastName" : "Harper",
+"link" : ""}
+, "title" : "De verloren tempel", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tom",
-"lastName" : "Harper"}
-, "title" : "Erfgename van de graal", "status" : "unknown", "link" : "unknown"
+"lastName" : "Harper",
+"link" : ""}
+, "title" : "Erfgename van de graal", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tom",
-"lastName" : "Harper"}
-, "title" : "Het verboden boek", "status" : "read", "link" : "unknown"
+"lastName" : "Harper",
+"link" : ""}
+, "title" : "Het verboden boek", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Tom",
-"lastName" : "Harper"}
-, "title" : "The Lazarus vault", "status" : "unknown", "link" : "unknown"
+"lastName" : "Harper",
+"link" : ""}
+, "title" : "The Lazarus vault", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tom",
-"lastName" : "Harper"}
-, "title" : "The book of secrets", "status" : "unknown", "link" : "unknown"
+"lastName" : "Harper",
+"link" : ""}
+, "title" : "The book of secrets", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "robert",
-"lastName" : "Harris"}
-, "title" : "An officer and a spy", "status" : "unknown", "link" : "unknown"
+"lastName" : "Harris",
+"link" : ""}
+, "title" : "An officer and a spy", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "robert",
-"lastName" : "Harris"}
-, "title" : "De angst-index", "status" : "unknown", "link" : "unknown"
+"lastName" : "Harris",
+"link" : ""}
+, "title" : "De angst-index", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "robert",
-"lastName" : "Harris"}
-, "title" : "Enigma", "status" : "unknown", "link" : "unknown"
+"lastName" : "Harris",
+"link" : ""}
+, "title" : "Enigma", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "robert",
-"lastName" : "Harris"}
-, "title" : "Geest", "status" : "unknown", "link" : "unknown"
+"lastName" : "Harris",
+"link" : ""}
+, "title" : "Geest", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "robert",
-"lastName" : "Harris"}
-, "title" : "Imperium", "status" : "unknown", "link" : "unknown"
+"lastName" : "Harris",
+"link" : ""}
+, "title" : "Imperium", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "robert",
-"lastName" : "Harris"}
-, "title" : "Lustrum", "status" : "unknown", "link" : "unknown"
+"lastName" : "Harris",
+"link" : ""}
+, "title" : "Lustrum", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "robert",
-"lastName" : "Harris"}
-, "title" : "Pompeii", "status" : "unknown", "link" : "unknown"
+"lastName" : "Harris",
+"link" : ""}
+, "title" : "Pompeii", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "robert",
-"lastName" : "Harris"}
-, "title" : "The ghost", "status" : "unknown", "link" : "unknown"
+"lastName" : "Harris",
+"link" : ""}
+, "title" : "The ghost", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Gregg",
-"lastName" : "Hurwitz"}
-, "title" : "Dan sterft ze", "status" : "unknown", "link" : "unknown"
+"lastName" : "Hurwitz",
+"link" : ""}
+, "title" : "Dan sterft ze", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Gregg",
-"lastName" : "Hurwitz"}
-, "title" : "De misdaadschrijver", "status" : "unknown", "link" : "unknown"
+"lastName" : "Hurwitz",
+"link" : ""}
+, "title" : "De misdaadschrijver", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Gregg",
-"lastName" : "Hurwitz"}
-, "title" : "They're watching", "status" : "unknown", "link" : "unknown"
+"lastName" : "Hurwitz",
+"link" : ""}
+, "title" : "They're watching", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Gregg",
-"lastName" : "Hurwitz"}
-, "title" : "Trust no one", "status" : "read", "link" : "unknown"
+"lastName" : "Hurwitz",
+"link" : ""}
+, "title" : "Trust no one", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Gregg",
-"lastName" : "Hurwitz"}
-, "title" : "Vertrouw niemand", "status" : "wontread", "link" : "unknown"
+"lastName" : "Hurwitz",
+"link" : ""}
+, "title" : "Vertrouw niemand", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Gregg",
-"lastName" : "Hurwitz"}
-, "title" : "We know", "status" : "unknown", "link" : "unknown"
+"lastName" : "Hurwitz",
+"link" : ""}
+, "title" : "We know", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Gregg",
-"lastName" : "Hurwitz"}
-, "title" : "You're next", "status" : "read", "link" : "unknown"
+"lastName" : "Hurwitz",
+"link" : ""}
+, "title" : "You're next", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "roel",
-"lastName" : "Jansen"}
-, "title" : "De essentie van tai chi : basisoefeningen voor een bewuster leven", "status" : "unknown", "link" : "unknown"
+"lastName" : "Jansen",
+"link" : ""}
+, "title" : "De essentie van tai chi : basisoefeningen voor een bewuster leven", "status" : "unknown", "link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Jansen%2C%20Roel;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Jansen%2C%20roel;wzsrc=;recent=N;rubplus=TS0;recno=1701292731;sid=113adb1e-fb29-4970-81c5-e880b1e4612d;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"
 },
 {"author" : {"firstName" : "Guy Gavriel",
-"lastName" : "Kay"}
-, "title" : "Ysabel", "status" : "unknown", "link" : "unknown"
+"lastName" : "Kay",
+"link" : ""}
+, "title" : "Ysabel", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "jens",
-"lastName" : "Lapidus"}
-, "title" : "Bloedlink", "status" : "unknown", "link" : "unknown"
+"lastName" : "Lapidus",
+"link" : ""}
+, "title" : "Bloedlink", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Lapidus%2C%20Jens;titcode=77544;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=424895a0-fe9d-4888-bad7-8434bb358f4f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "jens",
-"lastName" : "Lapidus"}
-, "title" : "Snel geld", "status" : "unknown", "link" : "unknown"
+"lastName" : "Lapidus",
+"link" : ""}
+, "title" : "Snel geld", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Lapidus%2C%20Jens;titcode=77562;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=424895a0-fe9d-4888-bad7-8434bb358f4f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "jens",
-"lastName" : "Lapidus"}
-, "title" : "Stockholm Zuid", "status" : "unknown", "link" : "unknown"
+"lastName" : "Lapidus",
+"link" : ""}
+, "title" : "Stockholm Zuid", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Lapidus%2C%20Jens;titcode=371156;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=424895a0-fe9d-4888-bad7-8434bb358f4f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "jens",
-"lastName" : "Lapidus"}
-, "title" : "Val dood", "status" : "unknown", "link" : "unknown"
+"lastName" : "Lapidus",
+"link" : ""}
+, "title" : "Val dood", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Lapidus%2C%20Jens;titcode=303962;rubplus=TS0;vv=JN;vestfiltgrp=;sid=424895a0-fe9d-4888-bad7-8434bb358f4f;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Paul",
-"lastName" : "Maier"}
-, "title" : "Codex Constantijn", "status" : "wontread", "link" : "unknown"
+"lastName" : "Maier",
+"link" : ""}
+, "title" : "Codex Constantijn", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Maier%2C%20Paul;titcode=83348;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=bf9f31a0-469e-4f5d-9a40-d01ed8d91859;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Paul",
-"lastName" : "Maier"}
-, "title" : "De brand van Rome : roman", "status" : "wontread", "link" : "unknown"
+"lastName" : "Maier",
+"link" : ""}
+, "title" : "De brand van Rome : roman", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Maier%2C%20Paul;titcode=405131;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=bf9f31a0-469e-4f5d-9a40-d01ed8d91859;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Paul",
-"lastName" : "Maier"}
-, "title" : "En het geschiedde... : de historische gegevens rond de geboorte van Jezus", "status" : "wontread", "link" : "unknown"
+"lastName" : "Maier",
+"link" : ""}
+, "title" : "En het geschiedde... : de historische gegevens rond de geboorte van Jezus", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Maier%2C%20Paul;titcode=83321;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=bf9f31a0-469e-4f5d-9a40-d01ed8d91859;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Paul",
-"lastName" : "Maier"}
-, "title" : "Het Rama-document en Operatie Wederkomst : twee spannende romans van Paul Maier", "status" : "wontread", "link" : "unknown"
+"lastName" : "Maier",
+"link" : ""}
+, "title" : "Het Rama-document en Operatie Wederkomst : twee spannende romans van Paul Maier", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Maier%2C%20Paul;titcode=83351;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=bf9f31a0-469e-4f5d-9a40-d01ed8d91859;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Paul",
-"lastName" : "Maier"}
-, "title" : "Operatie Wederkomst", "status" : "wontread", "link" : "unknown"
+"lastName" : "Maier",
+"link" : ""}
+, "title" : "Operatie Wederkomst", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Maier%2C%20Paul;titcode=83324;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=bf9f31a0-469e-4f5d-9a40-d01ed8d91859;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Paul",
-"lastName" : "Maier"}
-, "title" : "Pontius Pilatus : historische roman", "status" : "wontread", "link" : "unknown"
+"lastName" : "Maier",
+"link" : ""}
+, "title" : "Pontius Pilatus : historische roman", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Maier%2C%20Paul;titcode=83352;rubplus=TS0;vv=JN;vestfiltgrp=;sid=bf9f31a0-469e-4f5d-9a40-d01ed8d91859;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Glenn",
-"lastName" : "Meade"}
-, "title" : "As van het kwaad", "status" : "unknown", "link" : "unknown"
+"lastName" : "Meade",
+"link" : ""}
+, "title" : "As van het kwaad", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Meade%2C%20Glenn;titcode=367372;rubplus=TS0;vv=JN;vestfiltgrp=;sid=52a412ea-9378-485a-99bc-0025efb49385;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Glenn",
-"lastName" : "Meade"}
-, "title" : "Constantine, discipel van de duivel", "status" : "unknown", "link" : "unknown"
+"lastName" : "Meade",
+"link" : ""}
+, "title" : "Constantine, discipel van de duivel", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Meade%2C%20Glenn;titcode=85397;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=52a412ea-9378-485a-99bc-0025efb49385;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Glenn",
-"lastName" : "Meade"}
-, "title" : "De tweede messias : thriller", "status" : "unknown", "link" : "unknown"
+"lastName" : "Meade",
+"link" : ""}
+, "title" : "De tweede messias : thriller", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Meade%2C%20Glenn;titcode=85393;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=52a412ea-9378-485a-99bc-0025efb49385;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Glenn",
-"lastName" : "Meade"}
-, "title" : "Het Romanov mysterie : thriller", "status" : "unknown", "link" : "unknown"
+"lastName" : "Meade",
+"link" : ""}
+, "title" : "Het Romanov mysterie : thriller", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Meade%2C%20Glenn;titcode=85399;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=52a412ea-9378-485a-99bc-0025efb49385;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Glenn",
-"lastName" : "Meade"}
-, "title" : "IJselijk web", "status" : "unknown", "link" : "unknown"
+"lastName" : "Meade",
+"link" : ""}
+, "title" : "IJselijk web", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Meade%2C%20Glenn;titcode=473742;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=52a412ea-9378-485a-99bc-0025efb49385;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Glenn",
-"lastName" : "Meade"}
-, "title" : "The devil's disciple", "status" : "unknown", "link" : "unknown"
+"lastName" : "Meade",
+"link" : ""}
+, "title" : "The devil's disciple", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Meade%2C%20Glenn;titcode=85411;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=52a412ea-9378-485a-99bc-0025efb49385;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Brad",
-"lastName" : "Meltzer"}
-, "title" : "De 10de rechter", "status" : "unknown", "link" : "unknown"
+"lastName" : "Meltzer",
+"link" : ""}
+, "title" : "De 10de rechter", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Brad",
-"lastName" : "Meltzer"}
-, "title" : "De eerste raadsman", "status" : "unknown", "link" : "unknown"
+"lastName" : "Meltzer",
+"link" : ""}
+, "title" : "De eerste raadsman", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Brad",
-"lastName" : "Meltzer"}
-, "title" : "De miljonairs", "status" : "unknown", "link" : "unknown"
+"lastName" : "Meltzer",
+"link" : ""}
+, "title" : "De miljonairs", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Brad",
-"lastName" : "Meltzer"}
-, "title" : "De wetgevers", "status" : "unknown", "link" : "unknown"
+"lastName" : "Meltzer",
+"link" : ""}
+, "title" : "De wetgevers", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Brad",
-"lastName" : "Meltzer"}
-, "title" : "Het Boek der Leugens", "status" : "unknown", "link" : "unknown"
+"lastName" : "Meltzer",
+"link" : ""}
+, "title" : "Het Boek der Leugens", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Brad",
-"lastName" : "Meltzer"}
-, "title" : "Moordzaak", "status" : "unknown", "link" : "unknown"
+"lastName" : "Meltzer",
+"link" : ""}
+, "title" : "Moordzaak", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Brad",
-"lastName" : "Meltzer"}
-, "title" : "The inner circle", "status" : "unknown", "link" : "unknown"
+"lastName" : "Meltzer",
+"link" : ""}
+, "title" : "The inner circle", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "China",
-"lastName" : "Mieville"}
-, "title" : "Armada", "status" : "unknown", "link" : "unknown"
+"lastName" : "Mieville",
+"link" : ""}
+, "title" : "Armada", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "China",
-"lastName" : "Mieville"}
-, "title" : "Station Perido", "status" : "read", "link" : "unknown"
+"lastName" : "Mieville",
+"link" : ""}
+, "title" : "Station Perido", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Bennie",
-"lastName" : "Mols"}
-, "title" : "Doos van licht, lucht en liefde : Yotta en Yocto op zoek naar de bouwstenen van onze wereld", "status" : "unknown", "link" : "unknown"
+"lastName" : "Mols",
+"link" : ""}
+, "title" : "Doos van licht, lucht en liefde : Yotta en Yocto op zoek naar de bouwstenen van onze wereld", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Bennie",
-"lastName" : "Mols"}
-, "title" : "Opgelost : toepassingen van wiskunde en informatica", "status" : "read", "link" : "unknown"
+"lastName" : "Mols",
+"link" : ""}
+, "title" : "Opgelost : toepassingen van wiskunde en informatica", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Mols%2C%20Bennie;titcode=88017;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=11fe32d4-323d-4675-9400-04e686800dc8;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Bennie",
-"lastName" : "Mols"}
-, "title" : "Turings tango : waarom de mens de computer de baas blijft", "status" : "unknown", "link" : "unknown"
+"lastName" : "Mols",
+"link" : ""}
+, "title" : "Turings tango : waarom de mens de computer de baas blijft", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Mols%2C%20Bennie;titcode=360998;rubplus=TS0;vv=JN;vestfiltgrp=;sid=11fe32d4-323d-4675-9400-04e686800dc8;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "10th anniversary", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "10th anniversary", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=429219;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "11th hour", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "11th hour", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94955;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "12th of never", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "12th of never", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94986;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "1st to die", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "1st to die", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "3rd degree", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "3rd degree", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94966;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "3x liefde...", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "3x liefde...", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=429198;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "4th of July", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "4th of July", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94974;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "7th heaven", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "7th heaven", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94994;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "9th judgement", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "9th judgement", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94961;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Achtste bekentenis", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Achtste bekentenis", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94956;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Alex Cross", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Alex Cross", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=440897;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Alex Cross, run", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Alex Cross, run", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=274431;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Alex Cross-omnibus", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Alex Cross-omnibus", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Beach Road", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Beach Road", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=429134;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Beach Road : a novel", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Beach Road : a novel", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Belofte maakt schuld", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Belofte maakt schuld", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=95040;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Bikini", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Bikini", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94973;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Cross", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Cross", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=95047;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Cross country", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Cross country", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=340948;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Cross fire", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Cross fire", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94989;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "De affaire", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "De affaire", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94977;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "De derde aanslag", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "De derde aanslag", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=374690;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "De eerstverlorene", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "De eerstverlorene", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=305139;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "De gave", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "De gave", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=372431;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "De midnight club", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "De midnight club", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=95038;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Don't blink", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Don't blink", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94995;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Double Cross", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Double Cross", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94960;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Een hart van glas", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Een hart van glas", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=95025;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Erewoord, Alex Cross", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Erewoord, Alex Cross", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=95032;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Guilty wives", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Guilty wives", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=445369;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Heksenjacht", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Heksenjacht", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=95033;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Het elfde uur", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Het elfde uur", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94992;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Hitte", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Hitte", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=95018;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Hittegolf", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Hittegolf", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94985;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Honeymoon", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Honeymoon", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=504041;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "I, Alex Cross", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "I, Alex Cross", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=95017;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Ik, Alex Cross", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Ik, Alex Cross", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=95006;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "In de naam van de vader", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "In de naam van de vader", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94959;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "In naam van de vader", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "In naam van de vader", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=95026;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Je bent gewaarschuwd", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Je bent gewaarschuwd", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=95042;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Kat en muis", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Kat en muis", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=95048;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Kill Alex Cross", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Kill Alex Cross", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=2209;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Kill me if you can", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Kill me if you can", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94998;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Lifeguard", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Lifeguard", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=95043;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "London bridges", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "London bridges", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=522764;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Mary, Mary", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Mary, Mary", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=18299;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Meisjes plagen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Meisjes plagen", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94988;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Mistress", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Mistress", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "The 5th horseman", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "The 5th horseman", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94957;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "The 6th target", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "The 6th target", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94962;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "The Christmas wedding", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "The Christmas wedding", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=490295;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "The beach house", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "The beach house", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=94980;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "James",
-"lastName" : "Patterson"}
-, "title" : "Thriller : verhalen die je uit je slaap houden", "status" : "unknown", "link" : "unknown"
+"lastName" : "Patterson",
+"link" : ""}
+, "title" : "Thriller : verhalen die je uit je slaap houden", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Patterson%2C%20James;titcode=409340;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=1b67a763-2439-493a-81bf-9b11db4f31b6;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "A blink of the screen : collected short fiction", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "A blink of the screen : collected short fiction", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=347294;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Academische boys", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Academische boys", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98231;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Bam!", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Bam!", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98264;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Berevaar", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Berevaar", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98301;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Dat wonderbare licht", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Dat wonderbare licht", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=480757;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "De dief van tijd", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "De dief van tijd", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98184;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "De kleur van toverij", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "De kleur van toverij", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=53900;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "De vijfde olifant", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "De vijfde olifant", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98169;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "De vrijgemaakte Ortjes", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "De vrijgemaakte Ortjes", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98260;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Dunne Hein", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Dunne Hein", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98267;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Een hoed van lucht", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Een hoed van lucht", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=432213;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Geld moet wapperen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Geld moet wapperen", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98243;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Heksen in de lucht", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Heksen in de lucht", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98167;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Het jongste werelddeel", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Het jongste werelddeel", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98300;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Hoge omens : de oprechte en secure voorspellingen van Agnes Nutter, een heks : een roman", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Hoge omens : de oprechte en secure voorspellingen van Agnes Nutter, een heks : een roman", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=454627;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Hogfather", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Hogfather", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98209;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Houzee!", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Houzee!", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98238;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Ik ga in middernacht", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Ik ga in middernacht", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98299;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Interessante tijden", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Interessante tijden", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98279;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Kleingoderij", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Kleingoderij", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=433570;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Lemen voeten", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Lemen voeten", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98218;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Maaierstijd", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Maaierstijd", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98305;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Making money", "status" : "read", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Making money", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98263;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Meidezeggenschap", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Meidezeggenschap", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=142044;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Mirakelse Maurits en zijn gestudeerde knaagdieren", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Mirakelse Maurits en zijn gestudeerde knaagdieren", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98205;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Monsterlijk regiment", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Monsterlijk regiment", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98236;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Pluk de strot", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Pluk de strot", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98200;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Posterijen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Posterijen", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98194;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Pyramides : (Het boek van Derwaarts Gaan)", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Pyramides : (Het boek van Derwaarts Gaan)", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98245;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Rollende prenten", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Rollende prenten", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98182;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Schijfwereld-omnibus", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Schijfwereld-omnibus", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98225;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Snuif", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Snuif", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98224;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Te wapen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Te wapen", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98310;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "The Bromeliad", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "The Bromeliad", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98162;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "The colour of magic", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "The colour of magic", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98220;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "The long earth", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "The long earth", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98165;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Unseen academicals", "status" : "read", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Unseen academicals", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98216;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Volk", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Volk", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98247;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Wacht! Wacht!", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Wacht! Wacht!", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98293;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Wintersmid", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Wintersmid", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=98230;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Terry",
-"lastName" : "Pratchett"}
-, "title" : "Zieltonen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Pratchett",
+"link" : ""}
+, "title" : "Zieltonen", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Pratchett%2C%20Terry;titcode=530270;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=69573e4a-6bd2-496e-9106-dcfc98724ce5;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Douglas",
-"lastName" : "Preston"}
-, "title" : "De gruwelkamer", "status" : "unknown", "link" : "unknown"
+"lastName" : "Preston",
+"link" : ""}
+, "title" : "De gruwelkamer", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Douglas",
-"lastName" : "Preston"}
-, "title" : "De vloek van het oerwoud", "status" : "unknown", "link" : "unknown"
+"lastName" : "Preston",
+"link" : ""}
+, "title" : "De vloek van het oerwoud", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Douglas",
-"lastName" : "Preston"}
-, "title" : "Goddeloos", "status" : "unknown", "link" : "unknown"
+"lastName" : "Preston",
+"link" : ""}
+, "title" : "Goddeloos", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Douglas",
-"lastName" : "Preston"}
-, "title" : "IJsgrens", "status" : "unknown", "link" : "unknown"
+"lastName" : "Preston",
+"link" : ""}
+, "title" : "IJsgrens", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Douglas",
-"lastName" : "Preston"}
-, "title" : "Virus", "status" : "unknown", "link" : "unknown"
+"lastName" : "Preston",
+"link" : ""}
+, "title" : "Virus", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Rik",
-"lastName" : "Raven"}
-, "title" : "Zucht", "status" : "read", "link" : "unknown"
+"lastName" : "Raven",
+"link" : ""}
+, "title" : "Zucht", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Alastair",
-"lastName" : "Reynolds"}
-, "title" : "Terminal world", "status" : "read", "link" : "unknown"
+"lastName" : "Reynolds",
+"link" : ""}
+, "title" : "Terminal world", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Robotham"}
-, "title" : "Bleed for me", "status" : "unknown", "link" : "unknown"
+"lastName" : "Robotham",
+"link" : ""}
+, "title" : "Bleed for me", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Robotham%2C%20Michael;titcode=408042;rubplus=TS0;vv=JN;vestfiltgrp=;sid=e32efb5f-3ba6-4042-a24b-a21787e49ec0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Robotham"}
-, "title" : "Boetedoening", "status" : "unknown", "link" : "unknown"
+"lastName" : "Robotham",
+"link" : ""}
+, "title" : "Boetedoening", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Robotham%2C%20Michael;titcode=101782;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e32efb5f-3ba6-4042-a24b-a21787e49ec0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Robotham"}
-, "title" : "Bombproof", "status" : "unknown", "link" : "unknown"
+"lastName" : "Robotham",
+"link" : ""}
+, "title" : "Bombproof", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Robotham%2C%20Michael;titcode=101771;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e32efb5f-3ba6-4042-a24b-a21787e49ec0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Robotham"}
-, "title" : "De afrekening", "status" : "unknown", "link" : "unknown"
+"lastName" : "Robotham",
+"link" : ""}
+, "title" : "De afrekening", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Robotham%2C%20Michael;titcode=101674;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e32efb5f-3ba6-4042-a24b-a21787e49ec0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Robotham"}
-, "title" : "De verdenking", "status" : "unknown", "link" : "unknown"
+"lastName" : "Robotham",
+"link" : ""}
+, "title" : "De verdenking", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Robotham%2C%20Michael;titcode=490289;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e32efb5f-3ba6-4042-a24b-a21787e49ec0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Robotham"}
-, "title" : "Door mijn ogen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Robotham",
+"link" : ""}
+, "title" : "Door mijn ogen", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Robotham%2C%20Michael;titcode=339487;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e32efb5f-3ba6-4042-a24b-a21787e49ec0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Robotham"}
-, "title" : "Gebroken", "status" : "unknown", "link" : "unknown"
+"lastName" : "Robotham",
+"link" : ""}
+, "title" : "Gebroken", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Robotham%2C%20Michael;titcode=101770;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e32efb5f-3ba6-4042-a24b-a21787e49ec0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Robotham"}
-, "title" : "Het verlies", "status" : "unknown", "link" : "unknown"
+"lastName" : "Robotham",
+"link" : ""}
+, "title" : "Het verlies", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Robotham%2C%20Michael;titcode=101541;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e32efb5f-3ba6-4042-a24b-a21787e49ec0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Robotham"}
-, "title" : "Nachtboot", "status" : "unknown", "link" : "unknown"
+"lastName" : "Robotham",
+"link" : ""}
+, "title" : "Nachtboot", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Robotham%2C%20Michael;titcode=101528;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e32efb5f-3ba6-4042-a24b-a21787e49ec0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Robotham"}
-, "title" : "Shatter", "status" : "read", "link" : "unknown"
+"lastName" : "Robotham",
+"link" : ""}
+, "title" : "Shatter", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Robotham%2C%20Michael;titcode=261652;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e32efb5f-3ba6-4042-a24b-a21787e49ec0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Robotham"}
-, "title" : "The wreckage", "status" : "unknown", "link" : "unknown"
+"lastName" : "Robotham",
+"link" : ""}
+, "title" : "The wreckage", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Robotham%2C%20Michael;titcode=101598;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e32efb5f-3ba6-4042-a24b-a21787e49ec0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Robotham"}
-, "title" : "Vuurvast", "status" : "unknown", "link" : "unknown"
+"lastName" : "Robotham",
+"link" : ""}
+, "title" : "Vuurvast", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Robotham%2C%20Michael;titcode=101726;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e32efb5f-3ba6-4042-a24b-a21787e49ec0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Michael",
-"lastName" : "Robotham"}
-, "title" : "Zeg dat het je spijt", "status" : "unknown", "link" : "unknown"
+"lastName" : "Robotham",
+"link" : ""}
+, "title" : "Zeg dat het je spijt", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Robotham%2C%20Michael;titcode=101540;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=e32efb5f-3ba6-4042-a24b-a21787e49ec0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Babyface : King en de moordtransfer : thriller", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Babyface : King en de moordtransfer : thriller", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Beestachtig : dieren in de misdaadliteratuur", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Beestachtig : dieren in de misdaadliteratuur", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Beta : thriller", "status" : "read", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Beta : thriller", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Blue Curacao : King en de vrouw die twee keer leefde : thriller", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Blue Curacao : King en de vrouw die twee keer leefde : thriller", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Caribisch complot", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Caribisch complot", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De Nachtwaker : het koningscomplot", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De Nachtwaker : het koningscomplot", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De anjercode", "status" : "wontread", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De anjercode", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De beste spannende verhalen uit Nederland en Vlaanderen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De beste spannende verhalen uit Nederland en Vlaanderen", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De dubbelganger", "status" : "wontread", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De dubbelganger", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De hand van God", "status" : "read", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De hand van God", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De honden van het verraad", "status" : "read", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De honden van het verraad", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De klokkenluider", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De klokkenluider", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De man die twee keer verdronk", "status" : "wontread", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De man die twee keer verdronk", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De man van Sint Maarten", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De man van Sint Maarten", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De marionet", "status" : "read", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De marionet", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De oorlog is nog lang niet voorbij : het dagelijks leven in de Tweede Wereldoorlog", "status" : "wontread", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De oorlog is nog lang niet voorbij : het dagelijks leven in de Tweede Wereldoorlog", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De schuilkelder", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De schuilkelder", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De stem in de grot", "status" : "wontread", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De stem in de grot", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De tranen van Mata Hari", "status" : "read", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De tranen van Mata Hari", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De tweede november : wie zat er achter de moord op Theo van Gogh?", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De tweede november : wie zat er achter de moord op Theo van Gogh?", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De tweede verlosser", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De tweede verlosser", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De vlucht van de 4de oktober : thriller", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De vlucht van de 4de oktober : thriller", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De vrouw die op Greta Garbo leek", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De vrouw die op Greta Garbo leek", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "De zesde mei", "status" : "wontread", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "De zesde mei", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Denkend aan Holland", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Denkend aan Holland", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Doelwit Den Haag", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Doelwit Den Haag", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Doorgeladen : twintig jaar Gouden Strop", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Doorgeladen : twintig jaar Gouden Strop", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Help, ze ontvoeren de koningin!", "status" : "wontread", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Help, ze ontvoeren de koningin!", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Het geheim van het verdronken dorp", "status" : "wontread", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Het geheim van het verdronken dorp", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Het meisje uit Buenos Aires", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Het meisje uit Buenos Aires", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Het verraad van '42", "status" : "wontread", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Het verraad van '42", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Jaromir en het raadsel van de ringen", "status" : "wontread", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Jaromir en het raadsel van de ringen", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Kidnap", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Kidnap", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "King Kong : het verraad van Arnhem", "status" : "wontread", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "King Kong : het verraad van Arnhem", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Koerier voor Sarajevo", "status" : "wontread", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Koerier voor Sarajevo", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Koerier voor Sarajevo : thriller. - Bd. 1", "status" : "wontread", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Koerier voor Sarajevo : thriller. - Bd. 1", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Koerier voor Sarajevo : thriller. - Bd. 2", "status" : "wontread", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Koerier voor Sarajevo : thriller. - Bd. 2", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Kort", "status" : "read", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Kort", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Mathilde", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Mathilde", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Omnibus", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Omnibus", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Omwille van de troon", "status" : "wontread", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Omwille van de troon", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Onze vrouw in Tripoli", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Onze vrouw in Tripoli", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Plaats delict", "status" : "unknown", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Plaats delict", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Schuldige plaatsen in Nederland", "status" : "wontread", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Schuldige plaatsen in Nederland", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Take care! : omzien naar Van Gogh", "status" : "wontread", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Take care! : omzien naar Van Gogh", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Tomas",
-"lastName" : "Ross"}
-, "title" : "Tranen over Hollandia", "status" : "wontread", "link" : "unknown"
+"lastName" : "Ross",
+"link" : ""}
+, "title" : "Tranen over Hollandia", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Frank",
-"lastName" : "Schätzing"}
-, "title" : "De dood en de duivel", "status" : "unknown", "link" : "unknown"
+"lastName" : "Schätzing",
+"link" : ""}
+, "title" : "De dood en de duivel", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Frank",
-"lastName" : "Schätzing"}
-, "title" : "De zwerm", "status" : "read", "link" : "unknown"
+"lastName" : "Schätzing",
+"link" : ""}
+, "title" : "De zwerm", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Frank",
-"lastName" : "Schätzing"}
-, "title" : "Geluidloos", "status" : "read", "link" : "unknown"
+"lastName" : "Schätzing",
+"link" : ""}
+, "title" : "Geluidloos", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Frank",
-"lastName" : "Schätzing"}
-, "title" : "Limiet", "status" : "read", "link" : "unknown"
+"lastName" : "Schätzing",
+"link" : ""}
+, "title" : "Limiet", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Daron",
-"lastName" : "Sheehan"}
-, "title" : "Het Socrates project", "status" : "unknown", "link" : "unknown"
+"lastName" : "Sheehan",
+"link" : ""}
+, "title" : "Het Socrates project", "status" : "unknown", "link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Sheehan%2C%20Daron;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Sheehan%2C%20Daron;wzsrc=;recent=N;rubplus=TS0;recno=35554580;sid=5be1222c-9f64-4dea-a306-65b3db4301cc;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"
 },
 {"author" : {"firstName" : "Dan",
-"lastName" : "Simmons"}
-, "title" : "Drood", "status" : "unknown", "link" : "unknown"
+"lastName" : "Simmons",
+"link" : ""}
+, "title" : "Drood", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Dan",
-"lastName" : "Simmons"}
-, "title" : "Hyperion en, De ondergang van Hyperion", "status" : "read", "link" : "unknown"
+"lastName" : "Simmons",
+"link" : ""}
+, "title" : "Hyperion en, De ondergang van Hyperion", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Dan",
-"lastName" : "Simmons"}
-, "title" : "Ilium", "status" : "read", "link" : "unknown"
+"lastName" : "Simmons",
+"link" : ""}
+, "title" : "Ilium", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Dan",
-"lastName" : "Simmons"}
-, "title" : "Lood", "status" : "unknown", "link" : "unknown"
+"lastName" : "Simmons",
+"link" : ""}
+, "title" : "Lood", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Dan",
-"lastName" : "Simmons"}
-, "title" : "Moedwil", "status" : "unknown", "link" : "unknown"
+"lastName" : "Simmons",
+"link" : ""}
+, "title" : "Moedwil", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Dan",
-"lastName" : "Simmons"}
-, "title" : "Olympos", "status" : "read", "link" : "unknown"
+"lastName" : "Simmons",
+"link" : ""}
+, "title" : "Olympos", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Dan",
-"lastName" : "Simmons"}
-, "title" : "The abominable", "status" : "unknown", "link" : "unknown"
+"lastName" : "Simmons",
+"link" : ""}
+, "title" : "The abominable", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Dan",
-"lastName" : "Simmons"}
-, "title" : "The terror : a novel", "status" : "unknown", "link" : "unknown"
+"lastName" : "Simmons",
+"link" : ""}
+, "title" : "The terror : a novel", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Rudy",
-"lastName" : "Soetewey"}
-, "title" : "2017", "status" : "read", "link" : "unknown"
+"lastName" : "Soetewey",
+"link" : ""}
+, "title" : "2017", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Soetewey%2C%20Rudy;titcode=457644;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=504a25e4-eef6-4982-bc1a-62968f66f63a;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Rudy",
-"lastName" : "Soetewey"}
-, "title" : "De laatste reis", "status" : "unknown", "link" : "unknown"
+"lastName" : "Soetewey",
+"link" : ""}
+, "title" : "De laatste reis", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Soetewey%2C%20Rudy;titcode=110456;rubplus=TS0;vv=JN;vestfiltgrp=;sid=504a25e4-eef6-4982-bc1a-62968f66f63a;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Rudy",
-"lastName" : "Soetewey"}
-, "title" : "Getuigen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Soetewey",
+"link" : ""}
+, "title" : "Getuigen", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Soetewey%2C%20Rudy;titcode=110441;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=504a25e4-eef6-4982-bc1a-62968f66f63a;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Rudy",
-"lastName" : "Soetewey"}
-, "title" : "Moord", "status" : "unknown", "link" : "unknown"
+"lastName" : "Soetewey",
+"link" : ""}
+, "title" : "Moord", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Soetewey%2C%20Rudy;titcode=383370;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=504a25e4-eef6-4982-bc1a-62968f66f63a;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Rudy",
-"lastName" : "Soetewey"}
-, "title" : "Vrienden", "status" : "unknown", "link" : "unknown"
+"lastName" : "Soetewey",
+"link" : ""}
+, "title" : "Vrienden", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Soetewey%2C%20Rudy;titcode=168144;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=504a25e4-eef6-4982-bc1a-62968f66f63a;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Robert",
-"lastName" : "Stone"}
-, "title" : "Damascuspoort", "status" : "read", "link" : "unknown"
+"lastName" : "Stone",
+"link" : ""}
+, "title" : "Damascuspoort", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Daniel",
-"lastName" : "Suarez"}
-, "title" : "Ctrl Alt Delete", "status" : "read", "link" : "unknown"
+"lastName" : "Suarez",
+"link" : ""}
+, "title" : "Ctrl Alt Delete", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Suarez%2C%20Daniel;titcode=113620;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=ee8c2f77-e43b-4f65-b6d9-e8c7a64cefab;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Daniel",
-"lastName" : "Suarez"}
-, "title" : "Daemon", "status" : "unknown", "link" : "unknown"
+"lastName" : "Suarez",
+"link" : ""}
+, "title" : "Daemon", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Suarez%2C%20Daniel;titcode=113621;rubplus=TS0;vv=JN;vestfiltgrp=;sid=ee8c2f77-e43b-4f65-b6d9-e8c7a64cefab;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Charles den",
-"lastName" : "Tex"}
-, "title" : "' Ik ben koopman' : kroniek van de familie Fentener van Vlissingen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Tex",
+"link" : ""}
+, "title" : "' Ik ben koopman' : kroniek van de familie Fentener van Vlissingen", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Charles den",
-"lastName" : "Tex"}
-, "title" : "Angstval", "status" : "unknown", "link" : "unknown"
+"lastName" : "Tex",
+"link" : ""}
+, "title" : "Angstval", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Charles den",
-"lastName" : "Tex"}
-, "title" : "Bellicher. - [De complete 2e televisieserie]: Cel / [cast] Daan Schuurmans ... [et al.]regie Peter de Baan", "status" : "wontread", "link" : "unknown"
+"lastName" : "Tex",
+"link" : ""}
+, "title" : "Bellicher. - [De complete 2e televisieserie]: Cel / [cast] Daan Schuurmans ... [et al.]regie Peter de Baan", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Charles den",
-"lastName" : "Tex"}
-, "title" : "Cel", "status" : "read", "link" : "unknown"
+"lastName" : "Tex",
+"link" : ""}
+, "title" : "Cel", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Charles den",
-"lastName" : "Tex"}
-, "title" : "Claim", "status" : "read", "link" : "unknown"
+"lastName" : "Tex",
+"link" : ""}
+, "title" : "Claim", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Charles den",
-"lastName" : "Tex"}
-, "title" : "Code 39", "status" : "read", "link" : "unknown"
+"lastName" : "Tex",
+"link" : ""}
+, "title" : "Code 39", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Charles den",
-"lastName" : "Tex"}
-, "title" : "De erfgenaam", "status" : "unknown", "link" : "unknown"
+"lastName" : "Tex",
+"link" : ""}
+, "title" : "De erfgenaam", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Charles den",
-"lastName" : "Tex"}
-, "title" : "De macht van meneer Miller", "status" : "read", "link" : "unknown"
+"lastName" : "Tex",
+"link" : ""}
+, "title" : "De macht van meneer Miller", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Charles den",
-"lastName" : "Tex"}
-, "title" : "De vriend", "status" : "read", "link" : "unknown"
+"lastName" : "Tex",
+"link" : ""}
+, "title" : "De vriend", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Charles den",
-"lastName" : "Tex"}
-, "title" : "Deal", "status" : "read", "link" : "unknown"
+"lastName" : "Tex",
+"link" : ""}
+, "title" : "Deal", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Charles den",
-"lastName" : "Tex"}
-, "title" : "Dump", "status" : "read", "link" : "unknown"
+"lastName" : "Tex",
+"link" : ""}
+, "title" : "Dump", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Charles den",
-"lastName" : "Tex"}
-, "title" : "Onmacht", "status" : "unknown", "link" : "unknown"
+"lastName" : "Tex",
+"link" : ""}
+, "title" : "Onmacht", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Charles den",
-"lastName" : "Tex"}
-, "title" : "Schijn van kans", "status" : "read", "link" : "unknown"
+"lastName" : "Tex",
+"link" : ""}
+, "title" : "Schijn van kans", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Charles den",
-"lastName" : "Tex"}
-, "title" : "Spijt", "status" : "read", "link" : "unknown"
+"lastName" : "Tex",
+"link" : ""}
+, "title" : "Spijt", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Charles den",
-"lastName" : "Tex"}
-, "title" : "Stegger", "status" : "read", "link" : "unknown"
+"lastName" : "Tex",
+"link" : ""}
+, "title" : "Stegger", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Charles den",
-"lastName" : "Tex"}
-, "title" : "Transfer", "status" : "wontread", "link" : "unknown"
+"lastName" : "Tex",
+"link" : ""}
+, "title" : "Transfer", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "Charles den",
-"lastName" : "Tex"}
-, "title" : "Verdwijning", "status" : "read", "link" : "unknown"
+"lastName" : "Tex",
+"link" : ""}
+, "title" : "Verdwijning", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Charles den",
-"lastName" : "Tex"}
-, "title" : "Wachtwoord", "status" : "unknown", "link" : "unknown"
+"lastName" : "Tex",
+"link" : ""}
+, "title" : "Wachtwoord", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Thomas",
-"lastName" : "Thiemeyer"}
-, "title" : "Corona", "status" : "read", "link" : "unknown"
+"lastName" : "Thiemeyer",
+"link" : ""}
+, "title" : "Corona", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Thiemeyer%2C%20Thomas;titcode=115307;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=8e8fe2ea-6cbd-4264-92c4-8c5cae75c7a0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Thomas",
-"lastName" : "Thiemeyer"}
-, "title" : "Magma", "status" : "read", "link" : "unknown"
+"lastName" : "Thiemeyer",
+"link" : ""}
+, "title" : "Magma", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Thiemeyer%2C%20Thomas;titcode=115426;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=8e8fe2ea-6cbd-4264-92c4-8c5cae75c7a0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Thomas",
-"lastName" : "Thiemeyer"}
-, "title" : "Nebra", "status" : "unknown", "link" : "unknown"
+"lastName" : "Thiemeyer",
+"link" : ""}
+, "title" : "Nebra", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Thiemeyer%2C%20Thomas;titcode=115437;rubplus=TS0;vv=JN;vestfiltgrp=;sid=8e8fe2ea-6cbd-4264-92c4-8c5cae75c7a0;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Dustin",
-"lastName" : "Thomason"}
-, "title" : "21-12", "status" : "unknown", "link" : "unknown"
+"lastName" : "Thomason",
+"link" : ""}
+, "title" : "21-12", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Dustin",
-"lastName" : "Thomason"}
-, "title" : "Een Venetiaans geheim", "status" : "unknown", "link" : "unknown"
+"lastName" : "Thomason",
+"link" : ""}
+, "title" : "Een Venetiaans geheim", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Simon",
-"lastName" : "Toyne"}
-, "title" : "Sanctus", "status" : "read", "link" : "unknown"
+"lastName" : "Toyne",
+"link" : ""}
+, "title" : "Sanctus", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Toyne%2C%20Simon;titcode=116812;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=d09f26ba-f62b-4687-9597-a0c259bc5997;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Simon",
-"lastName" : "Toyne"}
-, "title" : "The key", "status" : "unknown", "link" : "unknown"
+"lastName" : "Toyne",
+"link" : ""}
+, "title" : "The key", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Toyne%2C%20Simon;titcode=350226;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=d09f26ba-f62b-4687-9597-a0c259bc5997;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Simon",
-"lastName" : "Toyne"}
-, "title" : "The tower", "status" : "unknown", "link" : "unknown"
+"lastName" : "Toyne",
+"link" : ""}
+, "title" : "The tower", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Toyne%2C%20Simon;titcode=251802;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=d09f26ba-f62b-4687-9597-a0c259bc5997;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Jack",
-"lastName" : "Vance"}
-, "title" : "De drakenruiters", "status" : "read", "link" : "unknown"
+"lastName" : "Vance",
+"link" : ""}
+, "title" : "De drakenruiters", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Jack",
-"lastName" : "Vance"}
-, "title" : "De lokkende verte", "status" : "unknown", "link" : "unknown"
+"lastName" : "Vance",
+"link" : ""}
+, "title" : "De lokkende verte", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Jack",
-"lastName" : "Vance"}
-, "title" : "De wereldbedenker", "status" : "unknown", "link" : "unknown"
+"lastName" : "Vance",
+"link" : ""}
+, "title" : "De wereldbedenker", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Jack",
-"lastName" : "Vance"}
-, "title" : "De wilde vaart", "status" : "unknown", "link" : "unknown"
+"lastName" : "Vance",
+"link" : ""}
+, "title" : "De wilde vaart", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Jack",
-"lastName" : "Vance"}
-, "title" : "Emphyrio", "status" : "unknown", "link" : "unknown"
+"lastName" : "Vance",
+"link" : ""}
+, "title" : "Emphyrio", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Jack",
-"lastName" : "Vance"}
-, "title" : "Het laatste kasteel", "status" : "unknown", "link" : "unknown"
+"lastName" : "Vance",
+"link" : ""}
+, "title" : "Het laatste kasteel", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Jack",
-"lastName" : "Vance"}
-, "title" : "Marune", "status" : "read", "link" : "unknown"
+"lastName" : "Vance",
+"link" : ""}
+, "title" : "Marune", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "Jack",
-"lastName" : "Vance"}
-, "title" : "Spelevaren op Grote Planeet", "status" : "unknown", "link" : "unknown"
+"lastName" : "Vance",
+"link" : ""}
+, "title" : "Spelevaren op Grote Planeet", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Herman",
-"lastName" : "Vemde"}
-, "title" : "Basuko", "status" : "unknown", "link" : "unknown"
+"lastName" : "Vemde",
+"link" : ""}
+, "title" : "Basuko", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Vemde%2C%20Herman;titcode=119915;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=ac0f4606-a90b-48b5-aee9-b126a2d2b50a;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Herman",
-"lastName" : "Vemde"}
-, "title" : "Dame Blanche : thriller", "status" : "unknown", "link" : "unknown"
+"lastName" : "Vemde",
+"link" : ""}
+, "title" : "Dame Blanche : thriller", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Vemde%2C%20Herman;titcode=119918;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=ac0f4606-a90b-48b5-aee9-b126a2d2b50a;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Herman",
-"lastName" : "Vemde"}
-, "title" : "Dossier Trapani : thriller", "status" : "unknown", "link" : "unknown"
+"lastName" : "Vemde",
+"link" : ""}
+, "title" : "Dossier Trapani : thriller", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Vemde%2C%20Herman;titcode=119917;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=ac0f4606-a90b-48b5-aee9-b126a2d2b50a;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Herman",
-"lastName" : "Vemde"}
-, "title" : "Harry's dubbelspel : thriller", "status" : "unknown", "link" : "unknown"
+"lastName" : "Vemde",
+"link" : ""}
+, "title" : "Harry's dubbelspel : thriller", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Vemde%2C%20Herman;titcode=383375;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=ac0f4606-a90b-48b5-aee9-b126a2d2b50a;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Herman",
-"lastName" : "Vemde"}
-, "title" : "Oranjebom", "status" : "unknown", "link" : "unknown"
+"lastName" : "Vemde",
+"link" : ""}
+, "title" : "Oranjebom", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Vemde%2C%20Herman;titcode=119920;rubplus=TS0;vv=JN;vestfiltgrp=;sid=ac0f4606-a90b-48b5-aee9-b126a2d2b50a;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Herman",
-"lastName" : "Vemde"}
-, "title" : "Sarin", "status" : "unknown", "link" : "unknown"
+"lastName" : "Vemde",
+"link" : ""}
+, "title" : "Sarin", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Herman",
-"lastName" : "Vemde"}
-, "title" : "Tequila Sunrise", "status" : "read", "link" : "unknown"
+"lastName" : "Vemde",
+"link" : ""}
+, "title" : "Tequila Sunrise", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Vemde%2C%20Herman;titcode=119916;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=ac0f4606-a90b-48b5-aee9-b126a2d2b50a;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Karen Thompson",
-"lastName" : "Walker"}
-, "title" : "Wij waren hier", "status" : "unknown", "link" : "unknown"
+"lastName" : "Walker",
+"link" : ""}
+, "title" : "Wij waren hier", "status" : "unknown", "link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Walker%2C%20Karen%20Thompson;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=Walker%2C%20Karen%20Thompson;wzsrc=;recent=N;rubplus=TS0;recno=33989196;sid=b5d9275e-31dd-424c-8f66-25fdc35ddc54;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"
 },
 {"author" : {"firstName" : "christiaan",
-"lastName" : "Weijts"}
-, "title" : "Art. 285b : roman", "status" : "unknown", "link" : "unknown"
+"lastName" : "Weijts",
+"link" : ""}
+, "title" : "Art. 285b : roman", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Weijts%2C%20Christiaan;titcode=91761;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=f21c9f29-d865-4d48-a0bf-6626e4c0ed6d;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "christiaan",
-"lastName" : "Weijts"}
-, "title" : "De donkere kamer van Damokles", "status" : "unknown", "link" : "unknown"
+"lastName" : "Weijts",
+"link" : ""}
+, "title" : "De donkere kamer van Damokles", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Weijts%2C%20Christiaan;titcode=124863;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=f21c9f29-d865-4d48-a0bf-6626e4c0ed6d;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "christiaan",
-"lastName" : "Weijts"}
-, "title" : "De etaleur : dansnovelle", "status" : "unknown", "link" : "unknown"
+"lastName" : "Weijts",
+"link" : ""}
+, "title" : "De etaleur : dansnovelle", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Weijts%2C%20Christiaan;titcode=395183;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=f21c9f29-d865-4d48-a0bf-6626e4c0ed6d;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "christiaan",
-"lastName" : "Weijts"}
-, "title" : "Euforie : roman", "status" : "unknown", "link" : "unknown"
+"lastName" : "Weijts",
+"link" : ""}
+, "title" : "Euforie : roman", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Weijts%2C%20Christiaan;titcode=420066;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=f21c9f29-d865-4d48-a0bf-6626e4c0ed6d;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "christiaan",
-"lastName" : "Weijts"}
-, "title" : "Via Cappello 23 : roman", "status" : "unknown", "link" : "unknown"
+"lastName" : "Weijts",
+"link" : ""}
+, "title" : "Via Cappello 23 : roman", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Weijts%2C%20Christiaan;titcode=124955;rubplus=TS0;vv=JN;vestfiltgrp=;sid=f21c9f29-d865-4d48-a0bf-6626e4c0ed6d;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Tommy",
-"lastName" : "Wieringa"}
-, "title" : "Alles over Tristan", "status" : "unknown", "link" : "unknown"
+"lastName" : "Wieringa",
+"link" : ""}
+, "title" : "Alles over Tristan", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tommy",
-"lastName" : "Wieringa"}
-, "title" : "Alles over Tristan : roman", "status" : "unknown", "link" : "unknown"
+"lastName" : "Wieringa",
+"link" : ""}
+, "title" : "Alles over Tristan : roman", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tommy",
-"lastName" : "Wieringa"}
-, "title" : "Caesarion", "status" : "unknown", "link" : "unknown"
+"lastName" : "Wieringa",
+"link" : ""}
+, "title" : "Caesarion", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tommy",
-"lastName" : "Wieringa"}
-, "title" : "Caesarion : roman", "status" : "unknown", "link" : "unknown"
+"lastName" : "Wieringa",
+"link" : ""}
+, "title" : "Caesarion : roman", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tommy",
-"lastName" : "Wieringa"}
-, "title" : "De grens", "status" : "unknown", "link" : "unknown"
+"lastName" : "Wieringa",
+"link" : ""}
+, "title" : "De grens", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tommy",
-"lastName" : "Wieringa"}
-, "title" : "Dit zijn de namen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Wieringa",
+"link" : ""}
+, "title" : "Dit zijn de namen", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tommy",
-"lastName" : "Wieringa"}
-, "title" : "Dit zijn de namen : roman", "status" : "unknown", "link" : "unknown"
+"lastName" : "Wieringa",
+"link" : ""}
+, "title" : "Dit zijn de namen : roman", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tommy",
-"lastName" : "Wieringa"}
-, "title" : "Een mooie jonge vrouw", "status" : "unknown", "link" : "unknown"
+"lastName" : "Wieringa",
+"link" : ""}
+, "title" : "Een mooie jonge vrouw", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tommy",
-"lastName" : "Wieringa"}
-, "title" : "Ga niet naar zee", "status" : "unknown", "link" : "unknown"
+"lastName" : "Wieringa",
+"link" : ""}
+, "title" : "Ga niet naar zee", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tommy",
-"lastName" : "Wieringa"}
-, "title" : "Ik was nooit in Isfahaan : reisverhalen", "status" : "unknown", "link" : "unknown"
+"lastName" : "Wieringa",
+"link" : ""}
+, "title" : "Ik was nooit in Isfahaan : reisverhalen", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tommy",
-"lastName" : "Wieringa"}
-, "title" : "Joe Speedboat", "status" : "unknown", "link" : "unknown"
+"lastName" : "Wieringa",
+"link" : ""}
+, "title" : "Joe Speedboat", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tommy",
-"lastName" : "Wieringa"}
-, "title" : "Joe Speedboot", "status" : "unknown", "link" : "unknown"
+"lastName" : "Wieringa",
+"link" : ""}
+, "title" : "Joe Speedboot", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tommy",
-"lastName" : "Wieringa"}
-, "title" : "Joe Speedboot : roman", "status" : "unknown", "link" : "unknown"
+"lastName" : "Wieringa",
+"link" : ""}
+, "title" : "Joe Speedboot : roman", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tommy",
-"lastName" : "Wieringa"}
-, "title" : "Joe speedboot : roman", "status" : "unknown", "link" : "unknown"
+"lastName" : "Wieringa",
+"link" : ""}
+, "title" : "Joe speedboot : roman", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tommy",
-"lastName" : "Wieringa"}
-, "title" : "Omdat wij vrienden zijn : verhalen over vriendschap", "status" : "unknown", "link" : "unknown"
+"lastName" : "Wieringa",
+"link" : ""}
+, "title" : "Omdat wij vrienden zijn : verhalen over vriendschap", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Tommy",
-"lastName" : "Wieringa"}
-, "title" : "Onderweg", "status" : "unknown", "link" : "unknown"
+"lastName" : "Wieringa",
+"link" : ""}
+, "title" : "Onderweg", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "linwood",
-"lastName" : "barclay"}
-, "title" : "Dicht bij huis", "status" : "unknown", "link" : "unknown"
+"lastName" : "barclay",
+"link" : ""}
+, "title" : "Dicht bij huis", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "linwood",
-"lastName" : "barclay"}
-, "title" : "Fear the worst", "status" : "unknown", "link" : "unknown"
+"lastName" : "barclay",
+"link" : ""}
+, "title" : "Fear the worst", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "linwood",
-"lastName" : "barclay"}
-, "title" : "Geloof je ogen", "status" : "unknown", "link" : "unknown"
+"lastName" : "barclay",
+"link" : ""}
+, "title" : "Geloof je ogen", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "linwood",
-"lastName" : "barclay"}
-, "title" : "Het ongeluk", "status" : "wontread", "link" : "unknown"
+"lastName" : "barclay",
+"link" : ""}
+, "title" : "Het ongeluk", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "linwood",
-"lastName" : "barclay"}
-, "title" : "Kijk niet weg", "status" : "unknown", "link" : "unknown"
+"lastName" : "barclay",
+"link" : ""}
+, "title" : "Kijk niet weg", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "linwood",
-"lastName" : "barclay"}
-, "title" : "Never look away", "status" : "unknown", "link" : "unknown"
+"lastName" : "barclay",
+"link" : ""}
+, "title" : "Never look away", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "linwood",
-"lastName" : "barclay"}
-, "title" : "Never saw it coming", "status" : "unknown", "link" : "unknown"
+"lastName" : "barclay",
+"link" : ""}
+, "title" : "Never saw it coming", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "linwood",
-"lastName" : "barclay"}
-, "title" : "No time for goodbye", "status" : "unknown", "link" : "unknown"
+"lastName" : "barclay",
+"link" : ""}
+, "title" : "No time for goodbye", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "linwood",
-"lastName" : "barclay"}
-, "title" : "Stone rain", "status" : "unknown", "link" : "unknown"
+"lastName" : "barclay",
+"link" : ""}
+, "title" : "Stone rain", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "linwood",
-"lastName" : "barclay"}
-, "title" : "The accident", "status" : "read", "link" : "unknown"
+"lastName" : "barclay",
+"link" : ""}
+, "title" : "The accident", "status" : "read", "link" : "empty"
 },
 {"author" : {"firstName" : "linwood",
-"lastName" : "barclay"}
-, "title" : "Too close to home", "status" : "unknown", "link" : "unknown"
+"lastName" : "barclay",
+"link" : ""}
+, "title" : "Too close to home", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "linwood",
-"lastName" : "barclay"}
-, "title" : "Trust your eyes", "status" : "unknown", "link" : "unknown"
+"lastName" : "barclay",
+"link" : ""}
+, "title" : "Trust your eyes", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "linwood",
-"lastName" : "barclay"}
-, "title" : "Vrees het ergste", "status" : "unknown", "link" : "unknown"
+"lastName" : "barclay",
+"link" : ""}
+, "title" : "Vrees het ergste", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "linwood",
-"lastName" : "barclay"}
-, "title" : "Vrees het ergste. - 1", "status" : "wontread", "link" : "unknown"
+"lastName" : "barclay",
+"link" : ""}
+, "title" : "Vrees het ergste. - 1", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "linwood",
-"lastName" : "barclay"}
-, "title" : "Vrees het ergste. - 2", "status" : "wontread", "link" : "unknown"
+"lastName" : "barclay",
+"link" : ""}
+, "title" : "Vrees het ergste. - 2", "status" : "wontread", "link" : "empty"
 },
 {"author" : {"firstName" : "linwood",
-"lastName" : "barclay"}
-, "title" : "Zonder een woord", "status" : "unknown", "link" : "unknown"
+"lastName" : "barclay",
+"link" : ""}
+, "title" : "Zonder een woord", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "cory",
-"lastName" : "doctorow"}
-, "title" : "Little Brother", "status" : "unknown", "link" : "unknown"
+"lastName" : "doctorow",
+"link" : ""}
+, "title" : "Little Brother", "status" : "unknown", "link" : "empty"
 },
 {"author" : {"firstName" : "Glenn",
-"lastName" : "meade"}
-, "title" : "As van het kwaad", "status" : "unknown", "link" : "unknown"
+"lastName" : "meade",
+"link" : ""}
+, "title" : "As van het kwaad", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Meade%2C%20Glenn;titcode=367372;rubplus=TS0;vv=JN;vestfiltgrp=;sid=4876b816-a558-48a2-9e60-f394bd839265;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Glenn",
-"lastName" : "meade"}
-, "title" : "Constantine, discipel van de duivel", "status" : "unknown", "link" : "unknown"
+"lastName" : "meade",
+"link" : ""}
+, "title" : "Constantine, discipel van de duivel", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Meade%2C%20Glenn;titcode=85393;rubplus=TS0;vv=NJ;vestfiltgrp=;sid=4876b816-a558-48a2-9e60-f394bd839265;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Glenn",
-"lastName" : "meade"}
-, "title" : "De tweede messias : thriller", "status" : "unknown", "link" : "unknown"
+"lastName" : "meade",
+"link" : ""}
+, "title" : "De tweede messias : thriller", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Meade%2C%20Glenn;titcode=85397;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=4876b816-a558-48a2-9e60-f394bd839265;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Glenn",
-"lastName" : "meade"}
-, "title" : "Het Romanov mysterie : thriller", "status" : "unknown", "link" : "unknown"
+"lastName" : "meade",
+"link" : ""}
+, "title" : "Het Romanov mysterie : thriller", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Meade%2C%20Glenn;titcode=85399;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=4876b816-a558-48a2-9e60-f394bd839265;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Glenn",
-"lastName" : "meade"}
-, "title" : "IJselijk web", "status" : "unknown", "link" : "unknown"
+"lastName" : "meade",
+"link" : ""}
+, "title" : "IJselijk web", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Meade%2C%20Glenn;titcode=85411;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=4876b816-a558-48a2-9e60-f394bd839265;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Glenn",
-"lastName" : "meade"}
-, "title" : "The devil's disciple", "status" : "unknown", "link" : "unknown"
+"lastName" : "meade",
+"link" : ""}
+, "title" : "The devil's disciple", "status" : "unknown", "link" : "/cgi-bin/bx.pl?dcat=1;wzstype=;extsdef=01;event=tdetail;wzsrc=;woord=Meade%2C%20Glenn;titcode=473742;rubplus=TS0;vv=JJ;vestfiltgrp=;sid=4876b816-a558-48a2-9e60-f394bd839265;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;zl_v=N;sn=12;var=portal"
 },
 {"author" : {"firstName" : "Alexander gordon",
-"lastName" : "smith"}
-, "title" : "Geillustreerde jeugdatlas van de wereld", "status" : "wontread", "link" : "unknown"
+"lastName" : "smith",
+"link" : ""}
+, "title" : "Geillustreerde jeugdatlas van de wereld", "status" : "unknown", "link" : "/cgi-bin/bx.pl?wzstype=;zl_v=N;woord=Smith%2C%20Alexander%20Gordon;vestfiltgrp=;dcat=1;nieuw=;extsdef=01;event=titelset;qs=smith%2C%20Alexander%20gordon;wzsrc=;recent=N;rubplus=TS0;recno=27451303;sid=8b711d08-04f3-4c27-b2d2-afdc374ee98c;groepfx=10;vestnr=8399;prt=INTERNET;taal=1;sn=11;var=portal;aantal=60"
 }]}

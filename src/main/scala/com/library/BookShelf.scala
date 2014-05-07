@@ -32,9 +32,15 @@ trait BookShelf extends LogHelper {
   def getBooksToRead: List[Book] = books.values.toList filter (_.status == Book.UNKNOWN)
 
   def getAllBooks: List[Book] = books.values.toList
+  def findBook(key:String):Book = books.get(key).getOrElse {throw new BookNotFoundException(key)}
 
   def setStatusForBook(book: Book, newStatus: String): Unit = {
     val newBook = book.setStatus(newStatus)
+    books += (newBook.getKey -> newBook)
+  }
+
+  def setLinkForBook(book: Book, newLink: String): Unit = {
+    val newBook = book.setLink(newLink)
     books += (newBook.getKey -> newBook)
   }
 
@@ -53,9 +59,7 @@ trait BookShelf extends LogHelper {
 
   def printAsJson: String = printAsJson(lessThanForWishList, includeAll)
   def printBooksWithUnknownStatusAsJson: String = printAsJson(lessThanForWishList, includeUnknownBooks)
-
   def includeAll(book:Book):Boolean = true
-
   def includeUnknownBooks(book:Book):Boolean = book.status == Book.UNKNOWN
 
   def printAsJson(lessThan: (Book, Book) => Boolean, include: Book => Boolean) = {
@@ -97,6 +101,7 @@ trait BookShelf extends LogHelper {
       book <- bookList
       myBook = Book.createFromParsedJSON(List(book))
     } yield myBook
+
 }
 
 class FileBasedBookShelf(val storeFileName: String) extends BookShelf {

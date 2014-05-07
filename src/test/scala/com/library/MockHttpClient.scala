@@ -6,6 +6,8 @@ import com.library.service.LogHelper
 
 class MockHttpClient extends MyHttpClient with LogHelper {
 
+  override lazy val sid = "dummySid"
+
   override def getBookPageAsHtmlFromBookUrl(book: Book): String = {
     logger.debug("getBookPageAsHtmlFromBookUrl: " + book)
     val page = book.author.lastName match {
@@ -31,4 +33,6 @@ class MockHttpClient extends MyHttpClient with LogHelper {
     }
     page
   }
+
+  override def startBicatSessionAndReturnSid: String = sid
 }
