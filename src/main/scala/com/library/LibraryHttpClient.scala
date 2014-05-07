@@ -80,7 +80,7 @@ class LibraryHttpClient extends LogHelper{
   protected[library] def getBookPageAsHtmlByAuthor(author: Author): String = {
     logger.debug("getBookPageAsHtmlByAuthor: " + author)
     val link = author.linkToListOfBooks
-    val bookPage=if (link!="unknown") {
+    val bookPage=if (link!=Book.LINK_UNKNOWN) {
       val httpParams: HttpParams = new BasicHttpParams
       httpParams.setParameter("Content-Type", "text/plain; charset=ISO-8859-15")
       val httpclient = new DefaultHttpClient(httpParams)

@@ -5,7 +5,7 @@ import scala.util.parsing.json.JSON
 /**
  * Represents a Book in the library
  */
-case class Book(author: Author, title: String, status: String = Book.UNKNOWN, link: String = "empty") {
+case class Book(author: Author, title: String, status: String = Book.UNKNOWN, link: String = Book.LINK_UNKNOWN) {
 
   override def toString = getKey + ";" + status
 
@@ -45,6 +45,7 @@ object Book {
   val UNKNOWN = "unknown"
   val READ = "read"
   val WONT_READ = "wontRead"
+  val LINK_UNKNOWN = "empty"
 
   def apply(bookAsJSONString: String): Book = createFromParsedJSON(List(JSON.parseFull(bookAsJSONString).get))
 
