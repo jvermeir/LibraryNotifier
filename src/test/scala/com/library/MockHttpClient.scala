@@ -4,7 +4,7 @@ import scala.io.Source._
 import scala.io.Codec
 import com.library.service.LogHelper
 
-class MockHttpClient extends MyHttpClient with LogHelper {
+class MockHttpClient extends LibraryHttpClient with LogHelper {
 
   override lazy val sid = "dummySid"
 

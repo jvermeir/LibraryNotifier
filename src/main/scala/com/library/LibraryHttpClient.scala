@@ -20,7 +20,7 @@ import com.library.service.LogHelper
 /**
  * All the stuff we need to connect to a web server, using Apache HTTP client.
  */
-class MyHttpClient extends LogHelper{
+class LibraryHttpClient extends LogHelper{
 
   val bicatStartOfSessionUrl = "http://bicat.cultura-ede.nl/cgi-bin/bx.pl?taal=1&xdoit=y&groepfx=10&vestnr=8399&cdef=002"
   val cookieStore = new BasicCookieStore
