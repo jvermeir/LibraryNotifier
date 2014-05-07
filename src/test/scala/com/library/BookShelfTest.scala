@@ -202,4 +202,17 @@ class BookShelfTest extends FeatureSpec with GivenWhenThen with MustMatchers wit
     1 must be === bookShelfUnread.getAllBooks.size
   }
 
+  scenario("Comparing the list of books stored on disk and the list retrieved from the Internet, create a list of books to read") {
+    Given("A list of books and their status on disk and a list of books retrieved from the Internet")
+    val unknownBook: Book = new Book(Author("", "b"), "unknown", Book.UNKNOWN)
+    val wontReadBook: Book = new Book(Author("a", "b"), "wont read", Book.WONT_READ)
+    val readBook: Book = new Book(Author("a", "b"), "read", Book.READ)
+    val booksFromFile: List[Book] = List(readBook, wontReadBook)
+    val booksFromWeb: List[Book] = List(readBook, wontReadBook, unknownBook)
+    When("the lists are compared")
+    val bookShelf = Config.bookShelf
+    val booksToBeRead: List[Book] = bookShelf.getNewBooks(booksFromFile, booksFromWeb)
+    Then("only books with status 'UNKNOWN' are returned")
+    booksToBeRead must be === List(unknownBook)
+  }
 }

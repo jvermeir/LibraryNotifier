@@ -90,14 +90,6 @@ class DutchPublicLibrary extends Library with LogHelper {
     books map (Book(author, _, link = author.linkToListOfBooks))
   }
 
-  // TODO: this is a strange place for this code because it doesn't actually use the library. Move to BookShelf?
-  def getNewBooks(myBooks: List[Book], booksFromWeb: List[Book]): List[Book] = {
-    val candidates = booksFromWeb.toSet
-    val booksWithStatusReadOrWontRead = myBooks.filter(book => book.status != Book.UNKNOWN)
-    val newBooks = candidates -- booksWithStatusReadOrWontRead
-    newBooks.toList
-  }
-
   override def isBookAvailable(book: Book): Boolean = {
     val bookPage = httpClient.getBookPageAsHtmlFromBookUrl(book)
     val indexOfExemplaarInfoTag = bookPage.indexOf( """class="exemplaarinfo""")

@@ -102,6 +102,13 @@ trait BookShelf extends LogHelper {
       myBook = Book.createFromParsedJSON(List(book))
     } yield myBook
 
+  // TODO: when to call?
+  def getNewBooks(booksOnShelf: List[Book], booksFromWeb: List[Book]): List[Book] = {
+    val candidates = booksFromWeb.toSet
+    val booksWithStatusReadOrWontRead = booksOnShelf.filter(book => book.status != Book.UNKNOWN)
+    val newBooks = candidates -- booksWithStatusReadOrWontRead
+    newBooks.toList
+  }
 }
 
 class FileBasedBookShelf(val storeFileName: String) extends BookShelf {

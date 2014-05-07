@@ -9,5 +9,4 @@ trait Library {
 
   def getBooksFromHtmlPage(bookPageAsHtml: String, author: Author): List[Book]
 
-  def getNewBooks(myBooks: List[Book], booksFromWeb: List[Book]): List[Book]
 }

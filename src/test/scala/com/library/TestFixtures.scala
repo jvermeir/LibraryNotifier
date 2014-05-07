@@ -74,8 +74,6 @@ class LibraryForTest extends Library with TestFixtures{
 
   override def isBookAvailable(book: Book): Boolean = false
 
-  override def getNewBooks(myBooks: List[Book], booksFromWeb: List[Book]): List[Book] = ???
-
   override def getBooksFromHtmlPage(bookPageAsHtml: String, author: Author): List[Book] = ???
 }
 
