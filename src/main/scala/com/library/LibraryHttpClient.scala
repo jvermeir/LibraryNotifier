@@ -28,6 +28,7 @@ class LibraryHttpClient extends LogHelper{
   lazy val httpclient = initHttpClient
   lazy val sid = startBicatSessionAndReturnSid
   lazy val bicatCookie = getBicatCookie
+  val sidPattern = """;sid=.*?;""".r
 
   def initHttpClient: HttpClient = {
     val client = new DefaultHttpClient
@@ -40,10 +41,7 @@ class LibraryHttpClient extends LogHelper{
     val httpget = new HttpGet(bicatStartOfSessionUrl)
     val response = httpclient.execute(httpget, httpContext)
     val page = EntityUtils.toString(response.getEntity)
-    val pattern = """";sid=.*?;"""".r
-    val s = pattern.findFirstMatchIn(page).map(_ group 1).getOrElse("")
-    logger.debug("sid: " + sid)
-    s
+    sidPattern.findFirstMatchIn(page).map(_ group 1).getOrElse("")
   }
 
   protected[library] def getBicatCookie: Cookie = {
@@ -75,8 +73,8 @@ class LibraryHttpClient extends LogHelper{
   )
 
   def readTextFromUrl(url: String): String = {
-    val content = Request.Get(url).execute().returnContent()
-    content.asString()
+    val content = Request.Get(url).execute().returnContent
+    content.asString
   }
 
   protected[library] def getBookPageAsHtmlByAuthor(author: Author): String = {
@@ -110,12 +108,6 @@ class LibraryHttpClient extends LogHelper{
     result
   }
 
-  def setSidInLink(link:String):String = {
-    val pattern = """;sid=.*?;""".r
-    val newLink = pattern.replaceAllIn(link, ";sid="+sid+";")
-    logger.info("old link: " + link + "\nnew link: " + newLink)
-    newLink
-  }
-
+  def setSidInLink(link:String):String = sidPattern.replaceAllIn(link, ";sid="+sid+";")
 
 }
