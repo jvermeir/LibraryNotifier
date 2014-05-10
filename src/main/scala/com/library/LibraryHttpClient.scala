@@ -41,7 +41,7 @@ class LibraryHttpClient extends LogHelper{
     val httpget = new HttpGet(bicatStartOfSessionUrl)
     val response = httpclient.execute(httpget, httpContext)
     val page = EntityUtils.toString(response.getEntity)
-    sidPattern.findFirstMatchIn(page).map(_ group 1).getOrElse("")
+    sidPattern.findFirstMatchIn(page).map(_ group 0).getOrElse("")
   }
 
   protected[library] def getBicatCookie: Cookie = {
@@ -109,5 +109,4 @@ class LibraryHttpClient extends LogHelper{
   }
 
   def setSidInLink(link:String):String = sidPattern.replaceAllIn(link, ";sid="+sid+";")
-
 }

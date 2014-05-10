@@ -74,14 +74,18 @@ class DutchPublicLibrary extends Library with LogHelper {
     val books = singleBookResultExpression.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
     val result = books.length match {
       case 0 => createBooksFromHTML(bookPageAsHtml, author)
-      case _ => createBooksFromListOfBooks(books, author)
+      case 1 => createBooksFromListOfBooks(books, author)
+      case _ => {
+        logger.info( author + " should have only one book")
+        List()
+      }
     }
     result
   }
 
   protected def createBooksFromHTML(bookPageAsHtml: String, author: Author): List[Book] = {
-    val links = multipleBookResultExpression.findAllMatchIn(bookPageAsHtml).map(_ group 2).toSet.toList
-    val titles = multipleBookResultExpression.findAllMatchIn(bookPageAsHtml).map(_ group 1).toSet.toList
+    val links = multipleBookResultExpression.findAllMatchIn(bookPageAsHtml).map(_ group 2).toList
+    val titles = multipleBookResultExpression.findAllMatchIn(bookPageAsHtml).map(_ group 1).toList
     val linksAndTitles = links zip titles
     linksAndTitles map (b => Book(author, b._2, link = b._1))
   }
