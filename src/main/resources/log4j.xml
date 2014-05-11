@@ -9,7 +9,7 @@
     <appender name="default.file" class="org.apache.log4j.FileAppender">
         <param name="file" value="log/log.log" />
         <param name="append" value="false" />
-        <param name="threshold" value="debug" />
+        <param name="threshold" value="info" />
         <layout class="org.apache.log4j.PatternLayout">
             <param name="ConversionPattern" value="%d{HH:mm:ss,SSS} %-5p %c %l %x - %m%n"/>
         </layout>

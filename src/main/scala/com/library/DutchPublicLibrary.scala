@@ -13,7 +13,7 @@ class DutchPublicLibrary extends Library with LogHelper {
   val httpClient = Config.httpClient
   private val singleBookResultExpression = """<h3 class="anoniem_titel" id="titeltip_anoniem_titel"><strong id="titeltip_anoniem_titel_titel">(.*?)</strong></h3>""".r
   private val multipleBookResultExpression = """<a class="title" title="(.*?)" href="(.*?)">""".r
-  private val beschikbaarExpression = """class="staticons">(.*)</div>""".r
+  private val beschikbaarExpression = """>(.*)</div>""".r
   private val locationExpression = """"exemplaar_vest">(.*)</div>""".r
 
   def getBooksByAuthor(authorToSearchFor: Author): List[Book] = {
@@ -76,7 +76,7 @@ class DutchPublicLibrary extends Library with LogHelper {
       case 0 => createBooksFromHTML(bookPageAsHtml, author)
       case 1 => createBooksFromListOfBooks(books, author)
       case _ => {
-        logger.info( author + " should have only one book")
+        logger.error( author + " should have only one book")
         List()
       }
     }
@@ -97,11 +97,12 @@ class DutchPublicLibrary extends Library with LogHelper {
   override def isBookAvailable(book: Book): Boolean = {
     val bookPage = httpClient.getBookPageAsHtmlFromBookUrl(book)
     val indexOfExemplaarInfoTag = bookPage.indexOf( """class="exemplaarinfo""")
-    val indexOfEldersTag = bookPage.indexOf( """<div id="elders_button"""")
-    if (indexOfEldersTag > indexOfExemplaarInfoTag) {
-      val fragment = bookPage.substring(indexOfExemplaarInfoTag, indexOfEldersTag)
+    val indexOfeajaxTag = bookPage.indexOf( """<div id="eajax"></div>""")
+    if (indexOfeajaxTag > indexOfExemplaarInfoTag) {      logger.info("exemplaartag:" + indexOfExemplaarInfoTag + " eajaxtag: " + indexOfeajaxTag)
+      val fragment = bookPage.substring(indexOfExemplaarInfoTag, indexOfeajaxTag)
       val lines = fragment.split("\n")
-      val availabilityStatuses = lines filter (_.indexOf( """img alt="""") > 0) map (beschikbaarExpression.findFirstMatchIn(_) map (_ group 1))
+      val availabilityStatuses = lines filter
+        {line => line.indexOf( """<img class=""") >= 0 || line.indexOf( """<img alt=""") >= 0} map (beschikbaarExpression.findFirstMatchIn(_) map (_ group 1))
       val locations = lines filter (_.indexOf( """div class="exemplaar_vest""") > 0) filter (_.indexOf("Vestiging") < 0) map (locationExpression.findFirstMatchIn(_) map (_ group 1))
       val availableInEde = availabilityStatuses zip locations filter (isAvailableInEde(_))
       availableInEde.length > 0
@@ -115,5 +116,4 @@ class DutchPublicLibrary extends Library with LogHelper {
     } else false
     inEde
   }
-
 }

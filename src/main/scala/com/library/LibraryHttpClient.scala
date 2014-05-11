@@ -95,17 +95,18 @@ class LibraryHttpClient extends LogHelper{
   }
 
   def getBookPageAsHtmlFromBookUrl(book: Book): String = {
-    logger.debug("isBookAvailable: " + book)
-    val httpParams:HttpParams  = new BasicHttpParams
-    httpParams.setParameter("Content-Type","text/plain; charset=ISO-8859-15")
-    val httpclient = new DefaultHttpClient(httpParams)
-    val url = "http://bicat.cultura-ede.nl" + setSidInLink(book.link)
-    val localContext = new BasicHttpContext
-    val httpget = new HttpGet(url)
-    val response = httpclient.execute(httpget, localContext)
-    val result = scala.io.Source.fromInputStream(response.getEntity.getContent)(Codec.ISO8859).mkString("")
-    logger.debug("result: " + result)
-    result
+    logger.info("isBookAvailable: " + book)
+    if (book.link != Book.LINK_UNKNOWN) {
+      logger.info("link: " + book.link)
+      val httpParams: HttpParams = new BasicHttpParams
+      httpParams.setParameter("Content-Type", "text/plain; charset=ISO-8859-15")
+      val httpclient = new DefaultHttpClient(httpParams)
+      val url = "http://bicat.cultura-ede.nl" + setSidInLink(book.link)
+      val localContext = new BasicHttpContext
+      val httpget = new HttpGet(url)
+      val response = httpclient.execute(httpget, localContext)
+      scala.io.Source.fromInputStream(response.getEntity.getContent)(Codec.ISO8859).mkString("")
+    } else "Book page not available"
   }
 
   def setSidInLink(link:String):String = sidPattern.replaceAllIn(link, ";sid="+sid+";")
