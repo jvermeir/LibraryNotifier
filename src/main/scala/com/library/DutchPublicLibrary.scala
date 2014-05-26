@@ -96,9 +96,13 @@ class DutchPublicLibrary extends Library with LogHelper {
 
   override def isBookAvailable(book: Book): Boolean = {
     val bookPage = httpClient.getBookPageAsHtmlFromBookUrl(book)
+    isBookAvailable(bookPage)
+  }
+
+  def isBookAvailable(bookPage:String): Boolean = {
     val indexOfExemplaarInfoTag = bookPage.indexOf( """class="exemplaarinfo""")
     val indexOfeajaxTag = bookPage.indexOf( """<div id="eajax"></div>""")
-    if (indexOfeajaxTag > indexOfExemplaarInfoTag) {      logger.info("exemplaartag:" + indexOfExemplaarInfoTag + " eajaxtag: " + indexOfeajaxTag)
+    if (indexOfeajaxTag > indexOfExemplaarInfoTag) {
       val fragment = bookPage.substring(indexOfExemplaarInfoTag, indexOfeajaxTag)
       val lines = fragment.split("\n")
       val availabilityStatuses = lines filter

@@ -42,6 +42,14 @@
 "lastName" : "ford",
 "link" : ""}
 },
+{"author" : {"firstName" : "andreas",
+"lastName" : "eschbach",
+"link" : ""}
+},
+{"author" : {"firstName" : "mosby",
+"lastName" : "steve",
+"link" : ""}
+},
 {"author" : {"firstName" : "Tomas",
 "lastName" : "sedlacek",
 "link" : ""}
@@ -92,6 +100,10 @@
 },
 {"author" : {"firstName" : "Ian",
 "lastName" : "Creasey",
+"link" : ""}
+},
+{"author" : {"firstName" : "douglas",
+"lastName" : "preston",
 "link" : ""}
 },
 {"author" : {"firstName" : "ben",

@@ -61,6 +61,28 @@ class TestBookShelfThatContainsABookWithStatusRead extends BookShelf with TestFi
 
   def write: Unit = {}
 }
+          /*     TODO:
+class BookShelfForRecommendationTest extends BookShelf {
+  val bookShelf = new FileBasedBookShelf("data/books.json")
+  val temp = bookShelf.getAllBooks.take(6)
+  override lazy val books = temp map (book => book.author -> book )
+  override def getAllBooks:List[Book] = books map (_._2)
+  override def write:Unit = ???
+  override def read:Unit = ???
+}           */
+
+class LibraryForRecommendationTest extends DutchPublicLibrary {
+  val bookShelf = new FileBasedBookShelf("data/books.json")
+  val books = bookShelf.getAllBooks.take(6)
+
+  override def getBooksByAuthor(authorToSearchFor: Author): List[Book] = books
+
+  override def getBooksForAuthors(authors: Map[String, Author]): Map[Author, List[Book]] = Map{Author("a","b") -> books}
+
+  override def isBookAvailable(book: Book): Boolean = true
+
+  override def getBooksFromHtmlPage(bookPageAsHtml: String, author: Author): List[Book] = ???
+}
 
 class LibraryForTest extends Library with TestFixtures{
   val book1 = Book(author1, "title1")
@@ -72,7 +94,7 @@ class LibraryForTest extends Library with TestFixtures{
 
   def getBooksForAuthors(authors: Map[String, Author]): Map[Author, List[Book]] = books
 
-  override def isBookAvailable(book: Book): Boolean = false
+  override def isBookAvailable(book: Book): Boolean = true
 
   override def getBooksFromHtmlPage(bookPageAsHtml: String, author: Author): List[Book] = ???
 }

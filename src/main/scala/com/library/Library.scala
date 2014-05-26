@@ -1,6 +1,6 @@
 package com.library
 
-trait Library {
+trait  Library {
   def isBookAvailable(book: Book): Boolean
 
   def getBooksByAuthor(authorToSearchFor: Author): List[Book]

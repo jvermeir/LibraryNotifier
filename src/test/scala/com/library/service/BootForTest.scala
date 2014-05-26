@@ -5,29 +5,41 @@ import akka.io.IO
 import spray.can.Http
 import com.library._
 import com.library.service.ReloadActorProtocol.ReloadMessage
+import com.library.service.RecommendationProtocol.GetRecommendationsMessage
+import scala.concurrent.{ExecutionContext, Await}
+import scala.util.{Failure, Success}
+import scala.concurrent.duration._
+import akka.pattern.ask
+import scala.language.postfixOps
+import ExecutionContext.Implicits.global
+import akka.util.Timeout
 
-object BootForTest extends App {
+object BootForTest extends App  {
 
   private val HTTP_PORT: Int = 9181
-
-  Config.libraryClient = new LibraryForTest
+  Config.libraryClient = new LibraryForRecommendationTest
   Config.bookShelf = new FileBasedBookShelf("data/books.json")
 
   // TODO: Actor isn't restarted?
   implicit val system: ActorSystem = ActorSystem("on-spray-can")
 
-  val service = system.actorOf(Props[LibraryServiceActor], "library-service")
+  val libraryService = system.actorOf(Props[LibraryServiceActor], "library-service")
+  val authors = Author.loadAuthorsFromJSONFile("data/authors.json")
 
+  getRecommendations
   reloadBooksFromLibrary
 
-  IO(Http) ! Http.Bind(service, interface = "192.168.10.129", port = HTTP_PORT)
+  IO(Http) ! Http.Bind(libraryService, interface = "0.0.0.0", port = HTTP_PORT)
+
+  def getRecommendations: Unit = {
+    val recommendationService = system.actorOf(Props(new RecommendationActor(Config.bookShelf)), "recommendation-service")
+    recommendationService ! GetRecommendationsMessage
+  }
 
   def reloadBooksFromLibrary: Unit = {
-    val authors = Author.loadAuthorsFromFile("data/books.json")
     val reloadService = system.actorOf(Props[ReloadActor], "reload-service")
     reloadService ! new ReloadMessage(authors, Config.bookShelf)
   }
-
 }
 
 class ReloadActor extends Actor {
@@ -42,9 +54,12 @@ class ReloadActor extends Actor {
   }
 
   private def reload(authors: Map[String, Author], bookShelf: BookShelf):Unit = {
-    val libraryClient = Config.libraryClient
-    val booksFromLibrary:Iterable[Book] = libraryClient.getBooksForAuthors(authors).values.flatten
-    bookShelf.updateBooks(booksFromLibrary)
+    // TODO: reload decision should be taken by bookShelf, so refactor use of libraryclient into bookshelf
+    if (bookShelf.shouldReload) {
+      val libraryClient = Config.libraryClient
+      val booksFromLibrary: Iterable[Book] = libraryClient.getBooksForAuthors(authors).values.flatten
+      bookShelf.updateBooks(booksFromLibrary)
+    }
   }
 }
 
